@@ -11,9 +11,16 @@ import {
 const productRouter = Router();
 
 productRouter.post("/create", auth, createProductController);
-productRouter.post("/get", getProductController);
+
+productRouter.get("/get", getProductController);
+
 productRouter.post("/get-product-by-category", getProductByCategory);
-productRouter.post("/get-product-by-category-and-subcategory", getProductByCategoryAndSubCategory);
+productRouter.post(
+  "/get-product-by-category-and-subcategory",
+  getProductByCategoryAndSubCategory
+);
+
+// product details (GET /:productId)
 productRouter.get("/get-product-details/:productId", getProductDetails);
 
 export default productRouter;
