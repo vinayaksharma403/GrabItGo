@@ -1,8 +1,9 @@
 import ProductModel from "../models/product.model.js";
 
-/** ===============================
- *  CREATE PRODUCT
- * =============================== */
+const listCache = new Map();
+
+const CACHE_TTL_MS = 60_000; // 1 minute
+
 export const createProductController = async (req, res) => {
   try {
     const {
@@ -48,7 +49,7 @@ export const createProductController = async (req, res) => {
       error: false,
     });
   } catch (error) {
-    res.status(500).json({
+    return res.status(500).json({
       message: error.message || error,
       success: false,
       error: true,
@@ -56,38 +57,64 @@ export const createProductController = async (req, res) => {
   }
 };
 
-/** ===============================
- *  GET ALL PRODUCTS (Paginated)
- * =============================== */
+/** GET ALL PRODUCTS (FAST + CACHED) */
 export const getProductController = async (req, res) => {
+  console.time("getProductController_total");
   try {
-    let { page = 1, limit = 10, search } = req.body;
+    // read from query params
+    let { page = 1, limit = 20, search = "" } = req.query;
+    page = Number(page) || 1;
+    limit = Number(limit) || 20;
+    search = (search || "").trim();
 
-    const query = search
-      ? { $text: { $search: search } }
-      : {};
+    const cacheKey = `${page}:${limit}:${search}`;
+    if (listCache.has(cacheKey)) {
+      console.log("getProductController: cache hit", cacheKey);
+      console.timeEnd("getProductController_total");
+      return res.json(listCache.get(cacheKey));
+    }
 
     const skip = (page - 1) * limit;
 
+    const query = search
+      ? {
+          $or: [
+            { name: { $regex: search, $options: "i" } },
+            { description: { $regex: search, $options: "i" } },
+          ],
+        }
+      : {};
+
+    console.time("MongoQuery");
     const [data, totalCount] = await Promise.all([
       ProductModel.find(query)
         .sort({ createdAt: -1 })
         .skip(skip)
-        .limit(Number(limit))
-        .lean(), // ✅ Much faster
+        .limit(limit)
+        .select("name price image stock unit brand createdAt") // small payload
+        .lean(),
       ProductModel.countDocuments(query),
     ]);
+    console.timeEnd("MongoQuery");
 
-    return res.json({
+    const responsePayload = {
       message: "Product data fetched successfully",
       data,
       totalCount,
       totalPages: Math.ceil(totalCount / limit),
       success: true,
       error: false,
-    });
+    };
+
+    // cache it for TTL
+    listCache.set(cacheKey, responsePayload);
+    setTimeout(() => listCache.delete(cacheKey), CACHE_TTL_MS);
+
+    console.timeEnd("getProductController_total");
+    return res.json(responsePayload);
   } catch (error) {
-    res.status(500).json({
+    console.timeEnd("getProductController_total");
+    return res.status(500).json({
       message: error.message || error,
       success: false,
       error: true,
@@ -95,13 +122,10 @@ export const getProductController = async (req, res) => {
   }
 };
 
-/** ===============================
- *  GET PRODUCT BY CATEGORY
- * =============================== */
+/** GET PRODUCT BY CATEGORY */
 export const getProductByCategory = async (req, res) => {
   try {
     const { id } = req.body;
-
     if (!id) {
       return res.status(400).json({
         message: "Provide category ID",
@@ -112,7 +136,8 @@ export const getProductByCategory = async (req, res) => {
 
     const products = await ProductModel.find({ category: { $in: id } })
       .limit(15)
-      .lean(); // ✅ Faster
+      .select("name price image stock unit brand")
+      .lean();
 
     return res.json({
       message: "Category product list fetched successfully",
@@ -121,7 +146,7 @@ export const getProductByCategory = async (req, res) => {
       error: false,
     });
   } catch (error) {
-    res.status(500).json({
+    return res.status(500).json({
       message: error.message || error,
       success: false,
       error: true,
@@ -129,13 +154,10 @@ export const getProductByCategory = async (req, res) => {
   }
 };
 
-/** ===============================
- *  GET PRODUCT BY CATEGORY + SUBCATEGORY
- * =============================== */
+/** GET PRODUCT BY CATEGORY + SUBCATEGORY */
 export const getProductByCategoryAndSubCategory = async (req, res) => {
   try {
     let { categoryId, subCategoryId, page = 1, limit = 10 } = req.body;
-
     if (!categoryId || !subCategoryId) {
       return res.status(400).json({
         message: "Provide categoryId and subCategoryId",
@@ -144,19 +166,22 @@ export const getProductByCategoryAndSubCategory = async (req, res) => {
       });
     }
 
+    page = Number(page) || 1;
+    limit = Number(limit) || 10;
+    const skip = (page - 1) * limit;
+
     const query = {
       category: { $in: categoryId },
       subCategory: { $in: subCategoryId },
     };
-
-    const skip = (page - 1) * limit;
 
     const [data, totalCount] = await Promise.all([
       ProductModel.find(query)
         .sort({ createdAt: -1 })
         .skip(skip)
         .limit(Number(limit))
-        .lean(), // ✅ Faster
+        .select("name price image stock unit brand createdAt")
+        .lean(),
       ProductModel.countDocuments(query),
     ]);
 
@@ -169,7 +194,7 @@ export const getProductByCategoryAndSubCategory = async (req, res) => {
       error: false,
     });
   } catch (error) {
-    res.status(500).json({
+    return res.status(500).json({
       message: error.message || error,
       success: false,
       error: true,
@@ -177,13 +202,10 @@ export const getProductByCategoryAndSubCategory = async (req, res) => {
   }
 };
 
-/** ===============================
- *  GET PRODUCT DETAILS (FAST)
- * =============================== */
+/** GET PRODUCT DETAILS (FAST) */
 export const getProductDetails = async (req, res) => {
   try {
-    const { productId } = req.params; // ✅ Using params instead of body
-
+    const { productId } = req.params;
     if (!productId) {
       return res.status(400).json({
         message: "Product ID is required",
@@ -192,9 +214,7 @@ export const getProductDetails = async (req, res) => {
       });
     }
 
-    // ✅ Use lean() for faster JSON serialization
     const product = await ProductModel.findById(productId).lean();
-
     if (!product) {
       return res.status(404).json({
         message: "Product not found",
@@ -210,7 +230,7 @@ export const getProductDetails = async (req, res) => {
       error: false,
     });
   } catch (error) {
-    res.status(500).json({
+    return res.status(500).json({
       message: error.message || error,
       success: false,
       error: true,
