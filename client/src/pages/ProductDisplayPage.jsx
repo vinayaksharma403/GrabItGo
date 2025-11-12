@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 const ProductDisplayPage = () => {
   const params = useParams();
   const productId = params?.product?.split("-")?.slice(-1)[0];
-  
+
   const [data, setData] = useState({
     name: "",
     image: [],
@@ -21,22 +21,22 @@ const ProductDisplayPage = () => {
   const [loading, setLoading] = useState(false);
   const [activeImg, setActiveImg] = useState(null);
 
- const fetchProductDetails = async () => {
-  try {
-    setLoading(true);
-    const response = await Axios.get(`${SummaryApi.getProductDetails}/${productId}`);
-    const { data: responseData } = response;
-    if (responseData.success) {
-      setData(responseData.data);
-      setActiveImg(responseData.data?.image?.[0] || null);
-    }
-  } catch (error) {
-    AxiosToastError(error);
-  } finally {
-    setLoading(false);
-  }
-};
+  const fetchProductDetails = async () => {
+    try {
+      setLoading(true);
+      const response = await Axios.get(`${SummaryApi.getProductDetails}/${productId}`);
+      const { data: responseData } = response;
 
+      if (responseData.success) {
+        setData(responseData.data);
+        setActiveImg(responseData.data?.image?.[0] || null);
+      }
+    } catch (error) {
+      AxiosToastError(error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
     fetchProductDetails();
@@ -53,11 +53,9 @@ const ProductDisplayPage = () => {
   return (
     <section className="relative top-24 lg:top-20 px-4 sm:px-6 md:px-10 py-8 bg-gray-50 min-h-screen">
       <div className="container mx-auto bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col lg:flex-row gap-10 p-6 transition-all duration-300 hover:shadow-xl">
-        
+
         {/* LEFT: Product Images */}
         <div className="w-full lg:w-1/2 flex flex-col items-center">
-          
-          {/* Main Image */}
           <div className="w-full flex justify-center bg-gray-100 rounded-2xl overflow-hidden p-6 transition-all duration-300 hover:scale-[1.02]">
             {activeImg && (
               <img
@@ -68,7 +66,7 @@ const ProductDisplayPage = () => {
             )}
           </div>
 
-          {/* Scrollable Thumbnails */}
+          {/* Thumbnails */}
           {data?.image?.length > 1 && (
             <div className="flex gap-4 mt-4 overflow-x-auto scrollbar-thin scrollbar-thumb-[#22c55e] scrollbar-track-gray-100 py-2 px-1 w-full justify-start lg:justify-center">
               {data.image.map((img, index) =>
@@ -127,7 +125,6 @@ const ProductDisplayPage = () => {
             {data?.stock > 0 ? "In Stock" : "Out of Stock"}
           </p>
 
-          {/* Buttons */}
           <div className="flex flex-wrap gap-4 mt-6">
             <button className="bg-[#22c55e] text-white px-6 py-3 rounded-xl font-semibold hover:bg-[#16a34a] active:scale-95 transition-all duration-300 shadow-md hover:shadow-[#22c55e]/40">
               Add to Cart
