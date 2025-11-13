@@ -73,7 +73,7 @@ const ProductDisplayPage = () => {
                 img ? (
                   <div
                     key={index}
-                    className={`border-2 rounded-xl min-w-[5rem] h-[5rem] flex items-center justify-center cursor-pointer transition-all duration-300 ${
+                    className={`border-2 rounded-xl min-w-[20] h-[20] flex items-center justify-center cursor-pointer transition-all duration-300 ${
                       activeImg === img
                         ? "border-[#22c55e] scale-105"
                         : "border-transparent hover:border-gray-300"

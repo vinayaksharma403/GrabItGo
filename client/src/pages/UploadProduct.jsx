@@ -63,20 +63,31 @@ const UploadProduct = () => {
 
   // 🟡 Fetch categories/subcategories async
   const fetchCategoryAndSubCategory = async () => {
-    try {
-      const [catRes, subCatRes] = await Promise.allSettled([
-        Axios({ ...SummaryApi.getCategory }),
-        Axios({ ...SummaryApi.getSubCategory }),
-      ]);
+  try {
+    const [catRes, subCatRes] = await Promise.allSettled([
+      Axios({ ...SummaryApi.getCategory }),
+      Axios({ ...SummaryApi.getSubCategory, data: {} }), // 👈 even if it's GET, send data:{} to test
+    ]);
 
-      if (catRes.status === "fulfilled" && catRes.value.data.success)
-        setCategoryList(catRes.value.data.data);
-      if (subCatRes.status === "fulfilled" && subCatRes.value.data.success)
-        setSubCategoryList(subCatRes.value.data.data);
-    } catch (error) {
-      AxiosToastError(error);
+    console.log("Category API Response:", catRes);
+    console.log("SubCategory API Response:", subCatRes);
+
+    if (catRes.status === "fulfilled") {
+      console.log("Category data ->", catRes.value.data);
     }
-  };
+    if (subCatRes.status === "fulfilled") {
+      console.log("SubCategory data ->", subCatRes.value.data);
+    }
+
+    if (catRes.status === "fulfilled" && catRes.value.data.success)
+      setCategoryList(catRes.value.data.data || catRes.value.data.category || []);
+    if (subCatRes.status === "fulfilled" && subCatRes.value.data.success)
+      setSubCategoryList(subCatRes.value.data.data || subCatRes.value.data.subcategory || []);
+  } catch (error) {
+    AxiosToastError(error);
+  }
+};
+
 
   useEffect(() => {
     fetchCategoryAndSubCategory();
