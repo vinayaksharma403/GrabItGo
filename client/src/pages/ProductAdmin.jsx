@@ -5,6 +5,7 @@ import Axios from "../utils/axios";
 import Loading from "../components/Loading";
 import ProductCardAdmin from "../components/ProductCardAdmin";
 
+
 const ProductAdmin = () => {
   const [productData, setProductData] = useState([]);
   const [page, setPage] = useState(1);
@@ -107,6 +108,7 @@ const ProductAdmin = () => {
           </div>
         </>
       )}
+      
     </section>
   );
 };

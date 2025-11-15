@@ -1,3 +1,4 @@
+import { request, response } from "express";
 import ProductModel from "../models/product.model.js";
 
 const listCache = new Map();
@@ -78,11 +79,11 @@ export const getProductController = async (req, res) => {
 
     const query = search
       ? {
-          $or: [
-            { name: { $regex: search, $options: "i" } },
-            { description: { $regex: search, $options: "i" } },
-          ],
-        }
+        $or: [
+          { name: { $regex: search, $options: "i" } },
+          { description: { $regex: search, $options: "i" } },
+        ],
+      }
       : {};
 
     console.time("MongoQuery");
@@ -237,3 +238,121 @@ export const getProductDetails = async (req, res) => {
     });
   }
 };
+
+export const updateProductDetails = async (request, response) => {
+  try {
+    const { _id } = request.body
+
+    if (!_id) {
+      return response.status(400).json({
+        message: "Provide product _id",
+        error: true,
+        success: false
+      })
+    }
+
+    const updateProduct = await ProductModel.updateOne({ _id: _id }, {
+      ...request.body
+    })
+
+    return response.json({
+      message: "Updated Successfully",
+      data: updateProduct,
+      error: false,
+      success: true
+    })
+  } catch (error) {
+    return response.status(500).json({
+      message: error.message || error,
+      error: true,
+      success: false
+    })
+
+  }
+}
+
+// export const deleteProductDetails = async (request, response) => {
+//   try {
+//     console.log("QUERY:", request.query);
+//     console.log("BODY:", request.body);
+//     console.log("PARAMS:", request.params);
+
+//     const { _id } = request.query
+
+//     if (!_id) {
+//       return response.status(400).json({
+//         message: "Provide _id",
+//         error: true,
+//         success: false
+//       })
+
+
+//     }
+
+//     const deleteProduct = await ProductModel.deleteOne({ _id: _id })
+
+//     return response.json({
+//       message: "Deleted Successfully",
+//       error: false,
+//       success: true,
+//       data: deleteProduct
+//     })
+//   } catch (error) {
+//     return response.status(500).json({
+//       message: error.message || error,
+//       error: true,
+//       success: false
+//     })
+
+//   }
+// }
+
+export async function deleteProductDetails(req, res) {
+  try {
+    console.log("👉 DELETE HIT");
+    console.log("Query:", req.query);
+    console.log("Body:", req.body);
+    console.log("User:", req.user);
+
+    const productId = req.query._id || req.body._id;
+
+    console.log("Product ID received:", productId);
+
+    if (!productId) {
+      return res.status(400).json({
+        message: "Product ID missing",
+        error: true,
+        success: false
+      });
+    }
+
+    const deletedProduct = await ProductModel.findByIdAndDelete(productId);
+
+    console.log("Deleted product:", deletedProduct);
+
+    if (!deletedProduct) {
+      return res.status(404).json({
+        message: "Product not found",
+        error: true,
+        success: false,
+      });
+    }
+
+    return res.json({
+      message: "Product deleted successfully",
+      success: true,
+    });
+
+  } catch (err) {
+    console.log("🔥 Delete error:", err);
+    return res.status(500).json({
+      message: err.message,
+      error: true,
+      success: false,
+    });
+  }
+}
+
+
+
+

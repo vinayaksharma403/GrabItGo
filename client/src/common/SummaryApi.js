@@ -31,7 +31,6 @@ const SummaryApi = {
 
   // PRODUCT
   createProduct: { url: "/api/product/create", method: "post" },
-
   getProduct: { url: "/api/product/get", method: "get" },
 
   getProductByCategory: {
@@ -43,8 +42,12 @@ const SummaryApi = {
     method: "post",
   },
 
-  // product details base path (we'll append /:id in front-end)
+  // GET PRODUCT DETAILS (append /:id manually)
   getProductDetails: "/api/product/get-product-details",
+
+  // ✅ NEW: UPDATE PRODUCT (append /:productId manually)
+  updateProduct: { url: "/api/product/update-product-details", method: "put" },
+  deleteProductDetails : {url : "/api/product/delete-product",method : "delete"}
 };
 
 export default SummaryApi;

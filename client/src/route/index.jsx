@@ -19,9 +19,11 @@ import ProductAdmin from "../pages/ProductAdmin";
 import AdminPermission from "../layouts/AdminPermission";
 import ProductListPage from "../pages/ProductListPage";
 import ProductDisplayPage from "../pages/ProductDisplayPage";
+import EditProductAdmin from "../components/EditProductAdmin";
 
 
 const router = createBrowserRouter ([
+    
     {
        path : "/",
        element : <App/>,
@@ -87,7 +89,12 @@ const router = createBrowserRouter ([
                 },
                 {
                     path : 'product',
-                    element : <ProductAdmin/>
+                    element : <AdminPermission><ProductAdmin/></AdminPermission>
+                    
+                },
+                {
+                    path : 'product/edit/:id',
+                    element : <AdminPermission><EditProductAdmin/></AdminPermission>
                 }
             ]
 
