@@ -9,6 +9,7 @@ import ProductCardAdmin from "../components/ProductCardAdmin";
 const ProductAdmin = () => {
   const [productData, setProductData] = useState([]);
   const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [debouncedSearch, setDebouncedSearch] = useState("");
@@ -31,8 +32,10 @@ const ProductAdmin = () => {
       const { data: responseData } = response;
       if (responseData?.success) {
         setProductData(responseData.data || []);
+        setTotalPages(responseData.totalPages || 1);
       } else {
         setProductData([]);
+        setTotalPages(1);
       }
     } catch (error) {
       AxiosToastError(error);
@@ -101,7 +104,10 @@ const ProductAdmin = () => {
 
             <button
               onClick={() => setPage((prev) => prev + 1)}
-              className="px-5 py-2 rounded-md border border-amber-400 text-gray-700 font-medium transition-all duration-200 hover:bg-amber-500 hover:text-white hover:border-amber-500 shadow-sm"
+              disabled={page >= totalPages}
+              className={`px-5 py-2 rounded-md border border-amber-400 text-gray-700 font-medium transition-all duration-200 ${
+                page >= totalPages ? "opacity-50 cursor-not-allowed" : "hover:bg-amber-500 hover:text-white hover:border-amber-500 shadow-sm"
+              }`}
             >
               Next
             </button>

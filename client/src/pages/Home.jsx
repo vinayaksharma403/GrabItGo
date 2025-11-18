@@ -83,7 +83,7 @@ const Home = () => {
 
       {/* display category product  */}
       {
-        categoryData.map((c,index)=>{
+        categoryData.slice().reverse().map((c,index)=>{
           return(
 
             <CategoryWiseProductDisplay key={c?._id+"CategoryWiseProduct"} id={c?._id} name={c?.name}/>

@@ -44,7 +44,7 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
   return (
   <section className="relative w-full py-6 bg-white z-[1]">
     {/* Category Header */}
-    <div className="container mx-auto px-4 flex items-center justify-between mb-3 sticky top-[80px] bg-white z-[50] shadow-sm">
+    <div className="container mx-auto px-4 flex items-center justify-between mb-3 bg-white shadow-sm">
       <h3 className="font-semibold text-lg md:text-xl text-gray-800">
         {name}
       </h3>

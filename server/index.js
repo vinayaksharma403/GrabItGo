@@ -31,14 +31,21 @@ app.use(helmet({
     crossOriginResourcePolicy: false
 }))
 
-// Optional: Add logging for requests (if needed)
-// app.use(morgan('dev'))
+// Enable logging for requests
+app.use(morgan('dev'))
 
 const PORT = process.env.PORT || 8050
 
 app.get("/", (request, response) => {
     response.json({
         message: "Server is running " + PORT
+    })
+})
+
+app.get("/welcome", (request, response) => {
+    console.log(`Request received: ${request.method} ${request.path}`)
+    response.json({
+        message: "Welcome to the GrabItGo API Service!"
     })
 })
 
