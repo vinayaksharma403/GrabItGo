@@ -47,7 +47,18 @@ const SummaryApi = {
 
   // ✅ NEW: UPDATE PRODUCT (append /:productId manually)
   updateProduct: { url: "/api/product/update-product-details", method: "put" },
-  deleteProductDetails : {url : "/api/product/delete-product",method : "delete"}
+  deleteProductDetails : {url : "/api/product/delete-product",method : "delete"},
+
+  // CART
+  addToCart: { url: "/api/cart/add", method: "post" },
+  getCart: { url: "/api/cart/get", method: "get" },
+  updateCart: { url: "/api/cart/update", method: "put" },
+  removeFromCart: { url: "/api/cart/remove", method: "delete" },
+
+  // ORDER
+  createOrder: { url: "/api/order/create", method: "post" },
+  getOrders: { url: "/api/order/get", method: "get" },
+  updateOrderStatus: { url: "/api/order/update-status", method: "put" },
 };
 
 export default SummaryApi;

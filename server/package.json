@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "mode index.js",
+    "start": "node index.js",
     "dev": "nodemon index.js"
   },
   "keywords": [],
@@ -23,7 +23,8 @@
     "mongoose": "^8.19.1",
     "morgan": "^1.10.1",
     "multer": "^2.0.2",
-    "resend": "^6.1.2"
+    "resend": "^6.1.2",
+    "stripe": "^19.3.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"

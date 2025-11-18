@@ -103,7 +103,7 @@ const Header = () => {
                                         <button onClick={redirectToLoginPage} className='text-lg px-2 cursor-pointer'>Login</button>
                                     )
                                 }
-                                <button className='flex items-center gap-2 bg-green-800 hover:bg-green-700 px-3 py-3 rounded text-white'>
+                                <Link to="/cart" className='flex items-center gap-2 bg-green-800 hover:bg-green-700 px-3 py-3 rounded text-white'>
                                     {/* add to cart icons  */}
                                     <div className='animate-bounce'>
                                         <BsCart4 size={30} />
@@ -115,7 +115,7 @@ const Header = () => {
 
 
                                     </div>
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
