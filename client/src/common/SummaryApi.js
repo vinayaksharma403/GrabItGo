@@ -59,6 +59,12 @@ const SummaryApi = {
   createOrder: { url: "/api/order/create", method: "post" },
   getOrders: { url: "/api/order/get", method: "get" },
   updateOrderStatus: { url: "/api/order/update-status", method: "put" },
+
+  // ADDRESS
+  addAddress: { url: "/api/address/add", method: "post" },
+  getAddress: { url: "/api/address/get", method: "get" },
+  updateAddress: { url: "/api/address/update", method: "put" },
+  deleteAddress: { url: "/api/address/delete", method: "delete" },
 };
 
 export default SummaryApi;
