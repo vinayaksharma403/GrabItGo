@@ -8,7 +8,6 @@ import Axios from '../utils/Axios';
 import AxiosToastError from '../utils/AxiosToastError';
 import toast from 'react-hot-toast';
 import { useGlobalContext } from '../provider/GlobalProvider';
-import noDataImage from '../assets/Nothing here yet.png'
 
 const Address = () => {
   const addressList = useSelector(state => state.addresses.addressList)
@@ -18,7 +17,7 @@ const Address = () => {
   const handleDisableAddress = async (addressId) => {
     try {
       const response = await Axios({
-        ...SummaryApi.disableAddress,
+        ...SummaryApi.deleteAddress,
         data: {
           _id: addressId
         }
@@ -59,11 +58,6 @@ const Address = () => {
 
           {addressList.length === 0 ? (
             <div className='flex flex-col items-center justify-center py-12'>
-              <img
-                src={noDataImage}
-                alt="No addresses"
-                className='w-48 h-48 object-contain mb-4'
-              />
               <p className='text-gray-500 text-lg'>No addresses added yet</p>
               <p className='text-gray-400 text-sm'>Add your first address to get started</p>
             </div>

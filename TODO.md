@@ -1,0 +1,2 @@
+- [x] Edit client/src/components/NoData.jsx: Remove import of NoDataImage and the img tag
+- [x] Edit client/src/pages/Address.jsx: Remove import of noDataImage and the img tag

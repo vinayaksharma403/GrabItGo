@@ -6,12 +6,15 @@ import { RouterProvider } from 'react-router-dom'
 import router from './route/index.jsx'
 import { Provider } from 'react-redux'
 import { store } from './store/store.js'
+import GlobalProvider from './provider/GlobalProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router}/>
+      <GlobalProvider>
+        <RouterProvider router={router}/>
+      </GlobalProvider>
     </Provider>
-    
+
   // </StrictMode>,
 )
