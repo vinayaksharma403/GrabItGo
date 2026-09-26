@@ -1,0 +1,207 @@
+{
+  "$schemaDescription": "GrabItGo Phase 9G.21 — Batch 6 Source Asset Verification Audit",
+  "generatedAt": "2026-09-26T11:51:00.000Z",
+  "status": "VERIFICATION_AUDIT_ONLY — Zero database mutations or uploads performed",
+  "summary": {
+    "totalBatchItems": 11,
+    "approvedCount": 11,
+    "needsReviewCount": 0,
+    "rejectedCount": 0,
+    "allFilesExist": true,
+    "allFilesReadable": true,
+    "standardDimensionCount": 11,
+    "totalActiveCatalogProducts": 0,
+    "databaseMutations": 0,
+    "cloudinaryUploads": 0,
+    "exactExceptions": []
+  },
+  "items": [
+    {
+      "id": "690e265cbb3427cd33190e69",
+      "name": "Bhujia & Mixtures",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Bhujia & Mixtures.webp",
+      "dimensions": "288x480",
+      "format": "image/webp",
+      "fileSize": 41318,
+      "sha256": "4c9a3af827a00a9ea2429d4b75b0e5bd200e176190453068b0d1c0864ba2a310",
+      "semanticFit": "EXCELLENT — Depicts authentic traditional Indian bhujia and crispy savory mixture snacks",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e267abb3427cd33190e71",
+      "name": "Energy Bars",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Energy Bars.png",
+      "dimensions": "288x480",
+      "format": "image/png",
+      "fileSize": 29658,
+      "sha256": "e6d468d8b65ea12ff6118f2a0fbed12a0cce88645821190b4b6a984c597ee0e8",
+      "semanticFit": "EXCELLENT — Depicts wholesome nutrition and energy snack bars",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e2686bb3427cd33190e75",
+      "name": "Granola",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Granola.webp",
+      "dimensions": "288x480",
+      "format": "image/webp",
+      "fileSize": 126844,
+      "sha256": "f00a7874960bed8b3abe02f4c83d44cb93a49110a67c3d0f5069aeaa3e541a40",
+      "semanticFit": "EXCELLENT — Depicts rolled oats granola and cluster snacks",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e26c2bb3427cd33190e84",
+      "name": "Makhana & More",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Makhana & More.jpg",
+      "dimensions": "288x480",
+      "format": "image/jpeg",
+      "fileSize": 31483,
+      "sha256": "b7202f3644c8e9788847142e5aa606c624e99635867212770df76fbf805e2a88",
+      "semanticFit": "EXCELLENT — Depicts roasted fox nuts (makhana) healthy snack pack",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e26f7bb3427cd33190e94",
+      "name": "Namkeen Snacks",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Namkeen Snacks.webp",
+      "dimensions": "288x480",
+      "format": "image/webp",
+      "fileSize": 99018,
+      "sha256": "9334f119da10ade7f367e1bd222b76ea9990d665388096cf591af1e9ec15d0f2",
+      "semanticFit": "EXCELLENT — Depicts savory namkeen snacks assortment",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e26b1bb3427cd33190e80",
+      "name": "Imported Snacks",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Imported Snacks.webp",
+      "dimensions": "288x480",
+      "format": "image/webp",
+      "fileSize": 126884,
+      "sha256": "578d5f87d6c30c46671566c6f24a86e7ac5031333375e5dab37ed203f9f49588",
+      "semanticFit": "EXCELLENT — Depicts premium imported international snack items",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e26eabb3427cd33190e90",
+      "name": "Nachos",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Nachos.webp",
+      "dimensions": "288x480",
+      "format": "image/webp",
+      "fileSize": 23310,
+      "sha256": "7decdd5381f922d2873be52c4d2aff54e4f9452d56c45122a61e83c7d4a3f7df",
+      "semanticFit": "EXCELLENT — Depicts authentic tortilla corn nacho crisps",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e275abb3427cd33190ea4",
+      "name": "Rusks & Wafers",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Rusks & Wafers.jpg",
+      "dimensions": "288x480",
+      "format": "image/jpeg",
+      "fileSize": 24870,
+      "sha256": "2150185b4e8ddee2ac63d8d699136b4aa2973773778b087acd3d6cdb43ecf421",
+      "semanticFit": "EXCELLENT — Depicts crispy tea-time rusks and savory wafers",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e26ddbb3427cd33190e8c",
+      "name": "Munchies Gift Packs",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Munchies Gift Packs.png",
+      "dimensions": "288x480",
+      "format": "image/png",
+      "fileSize": 142503,
+      "sha256": "39f5df2a916c8bc9c21a546a85ca004f42ff732520626c2f29ef51af10889229",
+      "semanticFit": "EXCELLENT — Depicts festive and curated snack gift assortments",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e274dbb3427cd33190ea0",
+      "name": "Popcorn",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Popcorn.webp",
+      "dimensions": "288x480",
+      "format": "image/webp",
+      "fileSize": 22798,
+      "sha256": "36f71142bfbb9010725496a0601f5bc6a97aedbdd8ab724fc7c8100ff314388b",
+      "semanticFit": "EXCELLENT — Depicts classic buttered and salted popped corn snacks",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    },
+    {
+      "id": "690e2705bb3427cd33190e98",
+      "name": "Papad & Fryums",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Snacks & Munchies/Papad & Fryums.webp",
+      "dimensions": "288x480",
+      "format": "image/webp",
+      "fileSize": 29892,
+      "sha256": "e39682e16be20e7d51e763b67facf0937ae01b57c5497a925ca6e02337a1417b",
+      "semanticFit": "EXCELLENT — Depicts ready-to-fry papad and fryum snack varieties",
+      "authenticity": "HIGH — Authentic retail catalog photography asset",
+      "verdict": "APPROVED"
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "version": "1.0",
+  "batch": "9F-1",
+  "description": "GrabItGo Batch 1 Authentic Product Image Manifest (14 Pilot Products across 6 Core Departments)",
+  "createdAt": "2026-09-24T08:50:00.000Z",
+  "products": [
+    {
+      "productId": "690edd48c9b8cdb75b3905d5",
+      "productName": "Aashirvaad Superior MP Atta",
+      "category": "Atta , Rice & Dal",
+      "subCategory": "Atta",
+      "unit": "5 kg",
+      "expectedImages": [
+        "./products/690edd48c9b8cdb75b3905d5-1.webp",
+        "./products/690edd48c9b8cdb75b3905d5-2.webp",
+        "./products/690edd48c9b8cdb75b3905d5-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "690ede68c9b8cdb75b3905d7",
+      "productName": "Fortune Chakki Fresh (100% Atta, 0% Maida) Atta",
+      "category": "Atta , Rice & Dal",
+      "subCategory": "Atta",
+      "unit": "5 kg",
+      "expectedImages": [
+        "./products/690ede68c9b8cdb75b3905d7-1.webp",
+        "./products/690ede68c9b8cdb75b3905d7-2.webp",
+        "./products/690ede68c9b8cdb75b3905d7-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "6910a54d103c0bf39ffe72ce",
+      "productName": "Daawat Pulav Basmati Rice (Slender Grains)",
+      "category": "Atta , Rice & Dal",
+      "subCategory": "Rice",
+      "unit": "1 Kg",
+      "expectedImages": [
+        "./products/6910a54d103c0bf39ffe72ce-1.webp",
+        "./products/6910a54d103c0bf39ffe72ce-2.webp",
+        "./products/6910a54d103c0bf39ffe72ce-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "6910a1c9103c0bf39ffe72be",
+      "productName": "Tata Sampann Unpolished Yellow Moong Dal (Dhuli) Split",
+      "category": "Atta , Rice & Dal",
+      "subCategory": "Moong & Masoor",
+      "unit": "1 Kg",
+      "expectedImages": [
+        "./products/6910a1c9103c0bf39ffe72be-1.webp",
+        "./products/6910a1c9103c0bf39ffe72be-2.webp",
+        "./products/6910a1c9103c0bf39ffe72be-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "69157813b8ebf60a0d946d9f",
+      "productName": "Maggi Masala - 2 Minutes Instant Noodles",
+      "category": "Breakfast & Instant Food",
+      "subCategory": "Noodles",
+      "unit": "1 Pack",
+      "expectedImages": [
+        "./products/69157813b8ebf60a0d946d9f-1.webp",
+        "./products/69157813b8ebf60a0d946d9f-2.webp",
+        "./products/69157813b8ebf60a0d946d9f-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "69157436b8ebf60a0d946d8b",
+      "productName": "Slurrp Farm Banana Chocochip Pancake Mix",
+      "category": "Breakfast & Instant Food",
+      "subCategory": "Dessert & Cake Mixes",
+      "unit": "1 Pack",
+      "expectedImages": [
+        "./products/69157436b8ebf60a0d946d8b-1.webp",
+        "./products/69157436b8ebf60a0d946d8b-2.webp",
+        "./products/69157436b8ebf60a0d946d8b-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "6913789cd2e87ae4de6fb368",
+      "productName": "Cadbury Oreo Original Vanilla Sandwich Cream Biscuits 481.25 g - Jumbo Pack",
+      "category": "Bakery & Biscuits",
+      "subCategory": "Cream Biscuits",
+      "unit": "481.25 g",
+      "expectedImages": [
+        "./products/6913789cd2e87ae4de6fb368-1.webp",
+        "./products/6913789cd2e87ae4de6fb368-2.webp",
+        "./products/6913789cd2e87ae4de6fb368-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "69137994d2e87ae4de6fb370",
+      "productName": "Parle-G Glucose Biscuit - Pack of 2",
+      "category": "Bakery & Biscuits",
+      "subCategory": "Glucose & Marie",
+      "unit": "2 Pack",
+      "expectedImages": [
+        "./products/69137994d2e87ae4de6fb370-1.webp",
+        "./products/69137994d2e87ae4de6fb370-2.webp",
+        "./products/69137994d2e87ae4de6fb370-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "691ace82ebb882a9fa93acfd",
+      "productName": "Red Bull Energy Drink (250 ml)",
+      "category": "Cold Drinks & Juices",
+      "subCategory": "Energy Drinks",
+      "unit": "250 ml",
+      "expectedImages": [
+        "./products/691ace82ebb882a9fa93acfd-1.webp",
+        "./products/691ace82ebb882a9fa93acfd-2.webp",
+        "./products/691ace82ebb882a9fa93acfd-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "691acbf1ebb882a9fa93ace9",
+      "productName": "Raw Pressery Coconut Water - Pack of 6",
+      "category": "Cold Drinks & Juices",
+      "subCategory": "Coconut Water",
+      "unit": "6 Pack",
+      "expectedImages": [
+        "./products/691acbf1ebb882a9fa93ace9-1.webp",
+        "./products/691acbf1ebb882a9fa93ace9-2.webp",
+        "./products/691acbf1ebb882a9fa93ace9-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "691583b2b8ebf60a0d946de4",
+      "productName": "Surf Excel Easy Wash Detergent Powder (1 kg)",
+      "category": "Cleaning Essentials",
+      "subCategory": "Cleaning Tools",
+      "unit": "1 kg",
+      "expectedImages": [
+        "./products/691583b2b8ebf60a0d946de4-1.webp",
+        "./products/691583b2b8ebf60a0d946de4-2.webp",
+        "./products/691583b2b8ebf60a0d946de4-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "691587c3b8ebf60a0d946dfc",
+      "productName": "Vim Lemon Dishwash Gel",
+      "category": "Cleaning Essentials",
+      "subCategory": "Dishwashing Gels & Powder",
+      "unit": "500 ml",
+      "expectedImages": [
+        "./products/691587c3b8ebf60a0d946dfc-1.webp",
+        "./products/691587c3b8ebf60a0d946dfc-2.webp",
+        "./products/691587c3b8ebf60a0d946dfc-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "6912133a90633218b30f093f",
+      "productName": "Mamaearth Gentle Cleansing Baby Shampoo",
+      "category": "Baby Care",
+      "subCategory": "Bathing Needs",
+      "unit": "1 Bottle",
+      "expectedImages": [
+        "./products/6912133a90633218b30f093f-1.webp",
+        "./products/6912133a90633218b30f093f-2.webp",
+        "./products/6912133a90633218b30f093f-3.webp"
+      ],
+      "images": []
+    },
+    {
+      "productId": "69137045d2e87ae4de6fb336",
+      "productName": "Pampers All Round Protection Diaper (Pants, XXL, 15-25 kg)",
+      "category": "Baby Care",
+      "subCategory": "Diapers & More",
+      "unit": "1 Pack",
+      "expectedImages": [
+        "./products/69137045d2e87ae4de6fb336-1.webp",
+        "./products/69137045d2e87ae4de6fb336-2.webp",
+        "./products/69137045d2e87ae4de6fb336-3.webp"
+      ],
+      "images": []
+    }
+  ]
+}

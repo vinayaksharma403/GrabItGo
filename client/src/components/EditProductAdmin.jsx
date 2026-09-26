@@ -1,236 +1,297 @@
-import React, { useEffect, useState } from "react";
-import { IoClose } from "react-icons/io5";
-import uploadImage from "../utils/uploadImage";
-import Axios from "../utils/axios";
-import SummaryApi from "../common/SummaryApi";
-import AxiosToastError from "../utils/AxiosToastError";
-import { toast } from "react-hot-toast";
+import React, { useEffect, useState, useCallback } from 'react'
+import { IoClose } from 'react-icons/io5'
+import uploadImage from '../utils/uploadImage'
+import Axios from '../utils/axios'
+import SummaryApi from '../common/SummaryApi'
+import AxiosToastError from '../utils/AxiosToastError'
+import { toast } from 'react-hot-toast'
+import { FiUploadCloud, FiX, FiCheck } from 'react-icons/fi'
 
 const EditProductAdmin = ({ close, productId, fetchData }) => {
-  const [loading, setLoading] = useState(true);
-  const [saving, setSaving] = useState(false);
+  const [loading, setLoading] = useState(true)
+  const [saving, setSaving] = useState(false)
 
-  const [categories, setCategories] = useState([]);
-  const [subcategories, setSubcategories] = useState([]);
+  const [categories, setCategories] = useState([])
+  const [subcategories, setSubcategories] = useState([])
 
-  const [originalData, setOriginalData] = useState(null);
+  const [originalData, setOriginalData] = useState(null)
   const [data, setData] = useState({
-    _id: "",
-    name: "",
-    category: "",
-    subcategory: "",
-    unit: "",
-    price: "",
-    discount: "",
-    stock: "",
-    description: "",
-    images: [],
-  });
+    _id: '',
+    name: '',
+    category: '',
+    subcategory: '',
+    unit: '',
+    price: '',
+    discount: '',
+    stock: '',
+    description: '',
+    images: []
+  })
 
   /** Fetch categories & subcategories */
-  const getCategoriesAndSubcategories = async () => {
+  const getCategoriesAndSubcategories = useCallback(async () => {
     try {
       const [catResp, subResp] = await Promise.all([
         Axios(SummaryApi.getCategory),
-        Axios(SummaryApi.getSubCategory),
-      ]);
+        Axios(SummaryApi.getSubCategory)
+      ])
 
-      if (catResp.data?.success) setCategories(catResp.data.data || []);
-      if (subResp.data?.success) setSubcategories(subResp.data.data || []);
+      if (catResp.data?.success) setCategories(catResp.data.data || [])
+      if (subResp.data?.success) setSubcategories(subResp.data.data || [])
     } catch (err) {
-      AxiosToastError(err);
+      AxiosToastError(err)
     }
-  };
+  }, [])
 
   /** Fetch product details */
-  const fetchProductDetails = async () => {
-    if (!productId) return;
+  const fetchProductDetails = useCallback(async () => {
+    if (!productId) return
     try {
-      const resp = await Axios.get(`${SummaryApi.getProductDetails}/${productId}`);
-      const p = resp.data?.data || {};
+      const resp = await Axios.get(`${SummaryApi.getProductDetails}/${productId}`)
+      const p = resp.data?.data || {}
 
       const formatted = {
-        _id: p._id || "",
-        name: p.name || "",
-        category: p.category?._id || "",
-        subcategory: p.subCategory?._id || "",
-        unit: p.unit || "",
-        price: p.price || "",
-        discount: p.discount || "",
-        stock: p.stock || "",
-        description: p.description || "",
-        images: p.image || [],
-      };
+        _id: p._id || '',
+        name: p.name || '',
+        category: p.category?._id || p.category || '',
+        subcategory: p.subCategory?._id || p.subCategory || '',
+        unit: p.unit || '',
+        price: p.price ?? '',
+        discount: p.discount ?? '',
+        stock: p.stock ?? '',
+        description: p.description || '',
+        images: Array.isArray(p.image) ? p.image : []
+      }
 
-      setData(formatted);
-      setOriginalData(formatted);
+      setData(formatted)
+      setOriginalData(formatted)
     } catch (err) {
-      AxiosToastError(err);
+      AxiosToastError(err)
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }, [productId])
 
   useEffect(() => {
-    getCategoriesAndSubcategories();
-    fetchProductDetails();
-  }, [productId]);
+    getCategoriesAndSubcategories()
+    fetchProductDetails()
+  }, [getCategoriesAndSubcategories, fetchProductDetails])
 
   const handleOnChange = (e) => {
-    const { name, value } = e.target;
-    setData((prev) => ({ ...prev, [name]: value }));
+    const { name, value } = e.target
+    setData((prev) => ({ ...prev, [name]: value }))
 
-    // Reset subcategory if category changes
-    if (name === "category") {
-      setData((prev) => ({ ...prev, subcategory: "" }));
+    if (name === 'category') {
+      setData((prev) => ({ ...prev, subcategory: '' }))
     }
-  };
+  }
 
   const handleUploadImages = async (e) => {
-    const files = e.target.files;
-    if (!files || files.length === 0) return;
+    const files = e.target.files
+    if (!files || files.length === 0) return
 
-    setSaving(true);
+    setSaving(true)
     try {
-      const uploadedImages = [...(data.images || [])];
+      const uploadedImages = [...(data.images || [])]
       for (let i = 0; i < files.length; i++) {
-        const uploadResp = await uploadImage(files[i]);
+        const uploadResp = await uploadImage(files[i])
         const url =
           uploadResp?.data?.data?.url ||
           uploadResp?.data?.url ||
           uploadResp?.data ||
-          null;
-        if (url) uploadedImages.push(url);
+          null
+        if (url) uploadedImages.push(url)
       }
-      setData((prev) => ({ ...prev, images: uploadedImages }));
+      setData((prev) => ({ ...prev, images: uploadedImages }))
+      toast.success('Image uploaded')
     } catch (err) {
-      AxiosToastError(err);
+      AxiosToastError(err)
     } finally {
-      setSaving(false);
+      setSaving(false)
     }
-  };
+  }
 
   const handleDeleteImage = (index) => {
-    const copy = [...(data.images || [])];
-    copy.splice(index, 1);
-    setData((prev) => ({ ...prev, images: copy }));
-  };
+    const copy = [...(data.images || [])]
+    copy.splice(index, 1)
+    setData((prev) => ({ ...prev, images: copy }))
+  }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (!data.name || !data.category || !data.subcategory) {
-      toast.error("Please fill all required fields!");
-      return;
+      toast.error('Please fill all required fields!')
+      return
     }
 
     try {
-      setSaving(true);
+      setSaving(true)
       const payload = {
         ...data,
         category: data.category,
         subCategory: data.subcategory,
-      };
+        image: data.images
+      }
 
       const resp = await Axios({
         ...SummaryApi.updateProduct,
-        data: payload,
-      });
+        data: payload
+      })
 
       if (resp.data?.success) {
-        toast.success(resp.data.message || "Product updated successfully 🎉");
-        fetchData && fetchData();
-        close && close();
+        toast.success(resp.data.message || 'Product updated successfully')
+        fetchData?.()
+        close?.()
       } else {
-        toast.error(resp.data?.message || "Update failed");
+        toast.error(resp.data?.message || 'Update failed')
       }
     } catch (err) {
-      AxiosToastError(err);
+      AxiosToastError(err)
     } finally {
-      setSaving(false);
+      setSaving(false)
     }
-  };
+  }
 
-  const isChanged = originalData && JSON.stringify(originalData) !== JSON.stringify(data);
+  const isChanged =
+    originalData && JSON.stringify(originalData) !== JSON.stringify(data)
 
   if (loading) {
     return (
-      <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
-        <div className="bg-white p-4 rounded shadow">
-          Loading product details...
+      <div className='fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center z-50 p-4'>
+        <div className='bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3'>
+          <svg
+            className='animate-spin h-5 w-5 text-emerald-600'
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+          >
+            <circle
+              className='opacity-25'
+              cx='12'
+              cy='12'
+              r='10'
+              stroke='currentColor'
+              strokeWidth='4'
+            />
+            <path
+              className='opacity-75'
+              fill='currentColor'
+              d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
+            />
+          </svg>
+          <span className='text-sm font-semibold text-slate-800'>Loading SKU details...</span>
         </div>
       </div>
-    );
+    )
   }
 
   return (
     <section
-      className="fixed inset-0 p-4 bg-neutral-800/60 flex items-center justify-center z-50 overflow-auto"
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='edit-product-heading'
+      onKeyDown={(e) => {
+        if (e.key === 'Escape') close?.()
+      }}
+      className='fixed inset-0 p-4 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center z-50 overflow-y-auto animate-fadeIn'
       onClick={close}
     >
       <div
-        className="bg-white w-full max-w-3xl p-5 rounded-lg shadow-lg relative"
+        className='bg-white w-full max-w-3xl p-6 sm:p-7 rounded-2xl shadow-2xl border border-slate-200/80 relative my-auto max-h-[90vh] overflow-y-auto'
         onClick={(e) => e.stopPropagation()}
       >
-        <button
-          onClick={close}
-          className="absolute top-3 right-3 text-gray-600 hover:text-gray-900"
-        >
-          <IoClose size={28} />
-        </button>
-
-        <h1 className="text-xl font-semibold mb-4">Edit Product</h1>
-
-        {/* Images */}
-        <div className="flex gap-4 overflow-x-auto pb-4">
-          {(data.images || []).map((img, idx) => (
-            <div key={idx} className="relative w-28 h-28 border rounded">
-              <img
-                src={img}
-                alt={`img-${idx}`}
-                className="w-full h-full object-cover rounded"
-              />
-              <button
-                type="button"
-                className="absolute top-1 right-1 bg-red-600 text-white rounded-full p-1"
-                onClick={() => handleDeleteImage(idx)}
-              >
-                <IoClose size={14} />
-              </button>
-            </div>
-          ))}
-          <label className="w-28 h-28 border rounded flex items-center justify-center cursor-pointer bg-blue-50">
-            {saving ? "..." : "+ Add"}
-            <input
-              type="file"
-              multiple
-              className="hidden"
-              onChange={handleUploadImages}
-            />
-          </label>
+        {/* Header */}
+        <div className='flex items-center justify-between pb-4 mb-4 border-b border-slate-100'>
+          <div>
+            <h2 id='edit-product-heading' className='text-lg font-bold text-slate-900'>
+              Edit Product SKU
+            </h2>
+            <p className='text-xs text-slate-500'>Update product details, pricing, and media</p>
+          </div>
+          <button
+            type='button'
+            onClick={close}
+            aria-label='Close dialog'
+            className='text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer'
+          >
+            <IoClose size={22} />
+          </button>
         </div>
 
-        {/* Form */}
-        <form onSubmit={handleSubmit} className="grid gap-4">
+        {/* Product Images Strip */}
+        <div className='mb-5'>
+          <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2'>
+            Product Media
+          </label>
+          <div className='flex gap-3 overflow-x-auto pb-2'>
+            {(data.images || []).map((img, idx) => (
+              <div
+                key={idx}
+                className='relative w-24 h-24 border border-slate-200 rounded-xl overflow-hidden shrink-0 bg-slate-50 p-1'
+              >
+                <img
+                  src={img}
+                  alt={`${data.name || 'Product'} preview ${idx + 1}`}
+                  className='w-full h-full object-contain'
+                />
+                <button
+                  type='button'
+                  aria-label={`Delete image ${idx + 1}`}
+                  className='absolute top-1 right-1 bg-black/70 hover:bg-rose-600 text-white rounded-full p-1 transition-colors'
+                  onClick={() => handleDeleteImage(idx)}
+                >
+                  <FiX size={12} />
+                </button>
+              </div>
+            ))}
+            <label
+              tabIndex={0}
+              role='button'
+              aria-label='Add more images'
+              className='w-24 h-24 border-2 border-dashed border-slate-300 hover:border-emerald-500 rounded-xl flex flex-col items-center justify-center cursor-pointer bg-slate-50 hover:bg-emerald-50/40 shrink-0 transition-colors'
+            >
+              <FiUploadCloud size={20} className='text-slate-400 mb-1' />
+              <span className='text-[10px] font-semibold text-slate-600'>
+                {saving ? 'Uploading...' : '+ Add'}
+              </span>
+              <input
+                type='file'
+                multiple
+                className='hidden'
+                onChange={handleUploadImages}
+              />
+            </label>
+          </div>
+        </div>
+
+        {/* Form Fields */}
+        <form onSubmit={handleSubmit} className='space-y-4'>
           <div>
-            <label className="block text-sm font-medium mb-1">Name*</label>
+            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+              Product Name *
+            </label>
             <input
-              name="name"
+              name='name'
               value={data.name}
               onChange={handleOnChange}
-              className="w-full border p-2 rounded bg-blue-50"
+              required
+              className='input-field'
             />
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <div>
-              <label className="block text-sm font-medium mb-1">Category*</label>
+              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+                Category *
+              </label>
               <select
-                name="category"
+                name='category'
                 value={data.category}
                 onChange={handleOnChange}
-                className="w-full border p-2 rounded bg-blue-50"
+                required
+                className='input-field bg-white'
               >
-                <option value="">Select Category</option>
+                <option value=''>Select Category</option>
                 {categories.map((c) => (
                   <option key={c._id} value={c._id}>
                     {c.name}
@@ -240,17 +301,28 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Subcategory*</label>
+              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+                Subcategory *
+              </label>
               <select
-                name="subcategory"
+                name='subcategory'
                 value={data.subcategory}
                 onChange={handleOnChange}
-                className="w-full border p-2 rounded bg-blue-50"
+                required
+                className='input-field bg-white'
                 disabled={!data.category}
               >
-                <option value="">Select Subcategory</option>
+                <option value=''>Select Subcategory</option>
                 {subcategories
-                  .filter((s) => s.category === data.category)
+                  .filter((s) => {
+                    if (!data.category) return false
+                    if (Array.isArray(s.category)) {
+                      return s.category.some(
+                        (c) => (c?._id || c) === data.category
+                      )
+                    }
+                    return s.category === data.category
+                  })
                   .map((s) => (
                     <option key={s._id} value={s._id}>
                       {s.name}
@@ -260,77 +332,101 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
             </div>
           </div>
 
-          <div>
-            <label className="block text-sm font-medium mb-1">Unit</label>
-            <input
-              name="unit"
-              value={data.unit}
-              onChange={handleOnChange}
-              className="w-full border p-2 rounded bg-blue-50"
-            />
-          </div>
-
-          <div className="grid grid-cols-2 gap-4">
+          <div className='grid grid-cols-1 sm:grid-cols-3 gap-4'>
             <div>
-              <label className="block text-sm font-medium mb-1">Price</label>
+              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+                Unit / Size
+              </label>
               <input
-                name="price"
-                type="number"
+                name='unit'
+                value={data.unit}
+                onChange={handleOnChange}
+                className='input-field'
+              />
+            </div>
+
+            <div>
+              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+                Price (₹) *
+              </label>
+              <input
+                name='price'
+                type='number'
                 value={data.price}
                 onChange={handleOnChange}
-                className="w-full border p-2 rounded bg-blue-50"
+                required
+                className='input-field'
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Stock</label>
+              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+                Stock
+              </label>
               <input
-                name="stock"
-                type="number"
+                name='stock'
+                type='number'
                 value={data.stock}
                 onChange={handleOnChange}
-                className="w-full border p-2 rounded bg-blue-50"
+                className='input-field'
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Discount (%)</label>
+            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+              Discount (%)
+            </label>
             <input
-              name="discount"
-              type="number"
+              name='discount'
+              type='number'
               value={data.discount}
               onChange={handleOnChange}
-              className="w-full border p-2 rounded bg-blue-50"
+              className='input-field'
             />
           </div>
 
           <div>
-            <label className="block text-sm font-medium mb-1">Description</label>
+            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+              Description
+            </label>
             <textarea
-              name="description"
-              rows="3"
+              name='description'
+              rows={3}
               value={data.description}
               onChange={handleOnChange}
-              className="w-full border p-2 rounded bg-blue-50"
+              className='input-field'
             />
           </div>
 
-          <button
-            type="submit"
-            className={`w-full py-2 rounded font-semibold text-white ${
-              saving || !isChanged
-                ? "bg-gray-300 cursor-not-allowed"
-                : "bg-amber-500 hover:bg-amber-600"
-            }`}
-            disabled={saving || !isChanged}
-          >
-            {saving ? "Saving..." : "Save Changes"}
-          </button>
+          {/* Action Buttons */}
+          <div className='flex items-center justify-end gap-3 pt-3 border-t border-slate-100'>
+            <button
+              type='button'
+              onClick={close}
+              className='btn-secondary py-2 px-4 text-xs font-semibold'
+            >
+              Cancel
+            </button>
+            <button
+              type='submit'
+              disabled={saving || !isChanged}
+              className='btn-primary py-2 px-5 text-xs font-semibold inline-flex items-center gap-2'
+            >
+              {saving ? (
+                <span>Saving...</span>
+              ) : (
+                <>
+                  <FiCheck size={15} />
+                  <span>Save Changes</span>
+                </>
+              )}
+            </button>
+          </div>
         </form>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default EditProductAdmin;
+export default EditProductAdmin

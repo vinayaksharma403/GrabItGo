@@ -1,122 +1,177 @@
-import React, { useState, useEffect } from "react";
-import SummaryApi from "../common/SummaryApi";
-import AxiosToastError from "../utils/AxiosToastError";
-import Axios from "../utils/axios";
-import Loading from "../components/Loading";
-import ProductCardAdmin from "../components/ProductCardAdmin";
-
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import SummaryApi from '../common/SummaryApi'
+import AxiosToastError from '../utils/AxiosToastError'
+import Axios from '../utils/axios'
+import ProductCardAdmin from '../components/ProductCardAdmin'
+import NoData from '../components/NoData'
+import { FiSearch, FiPlus, FiBox, FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 const ProductAdmin = () => {
-  const [productData, setProductData] = useState([]);
-  const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const [loading, setLoading] = useState(false);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [debouncedSearch, setDebouncedSearch] = useState("");
+  const [productData, setProductData] = useState([])
+  const [page, setPage] = useState(1)
+  const [totalPages, setTotalPages] = useState(1)
+  const [totalCount, setTotalCount] = useState(0)
+  const [loading, setLoading] = useState(true)
+  const [searchQuery, setSearchQuery] = useState('')
+  const [debouncedSearch, setDebouncedSearch] = useState('')
 
-  // Debounce search input (500ms)
+  // Debounce search input (400ms)
   useEffect(() => {
     const handler = setTimeout(() => {
-      setDebouncedSearch(searchQuery.trim());
-    }, 500);
-    return () => clearTimeout(handler);
-  }, [searchQuery]);
+      setDebouncedSearch(searchQuery.trim())
+      setPage(1)
+    }, 400)
+    return () => clearTimeout(handler)
+  }, [searchQuery])
 
   const fetchProductData = async () => {
     try {
-      setLoading(true);
+      setLoading(true)
       const response = await Axios.get(SummaryApi.getProduct.url, {
-        params: { page, search: debouncedSearch },
-      });
+        params: { page, search: debouncedSearch }
+      })
 
-      const { data: responseData } = response;
+      const { data: responseData } = response
       if (responseData?.success) {
-        setProductData(responseData.data || []);
-        setTotalPages(responseData.totalPages || 1);
+        setProductData(responseData.data || [])
+        setTotalPages(responseData.totalPages || 1)
+        setTotalCount(responseData.totalCount || responseData.totalNoProduct || (responseData.data?.length || 0))
       } else {
-        setProductData([]);
-        setTotalPages(1);
+        setProductData([])
+        setTotalPages(1)
+        setTotalCount(0)
       }
     } catch (error) {
-      AxiosToastError(error);
-      setProductData([]);
+      AxiosToastError(error)
+      setProductData([])
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   useEffect(() => {
-    fetchProductData();
+    fetchProductData()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [page, debouncedSearch]);
+  }, [page, debouncedSearch])
 
   return (
-    <section className="min-h-screen bg-gray-50">
-      <div className="p-4 bg-white shadow flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sticky top-0 z-10">
-        <h2 className="font-semibold text-lg text-gray-800">Products</h2>
+    <div className='space-y-6 animate-fadeIn'>
+      {/* Page Header */}
+      <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
+        <div>
+          <div className='flex items-center gap-2'>
+            <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+              Product Inventory
+            </h1>
+            {!loading && totalCount > 0 && (
+              <span className='badge-brand text-xs font-semibold px-2.5 py-0.5'>
+                {totalCount} SKUs
+              </span>
+            )}
+          </div>
+          <p className='text-sm text-slate-500 mt-1'>
+            Manage catalog pricing, stock inventory, and product listings
+          </p>
+        </div>
 
-        <div className="relative w-full sm:w-1/3">
+        <Link
+          to='/dashboard/upload-product'
+          className='btn-primary self-start sm:self-auto inline-flex items-center gap-2 font-semibold text-sm shadow-subtle'
+        >
+          <FiPlus size={16} />
+          <span>Upload Product</span>
+        </Link>
+      </div>
+
+      {/* Search & Filter Bar */}
+      <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-4'>
+        <div className='relative max-w-md'>
+          <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400'>
+            <FiSearch size={16} />
+          </div>
           <input
-            type="text"
-            placeholder="Search product here..."
+            type='text'
+            aria-label='Search products in inventory'
+            placeholder='Search product by name or SKU...'
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-4 py-2 border border-amber-400 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none placeholder-gray-400 text-gray-700 transition-all duration-200"
+            className='input-field pl-10'
           />
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute right-3 top-2.5 w-5 h-5 text-gray-400"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
         </div>
       </div>
 
+      {/* Product Content Area */}
       {loading ? (
-        <div className="flex justify-center items-center h-[70vh]">
-          <Loading />
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4'>
+          {[...Array(10)].map((_, i) => (
+            <div
+              key={i}
+              className='bg-white rounded-2xl border border-slate-200/80 p-4 shadow-card animate-pulse space-y-3'
+            >
+              <div className='w-full h-40 bg-slate-200 rounded-xl' />
+              <div className='h-4 bg-slate-200 rounded w-3/4' />
+              <div className='h-3 bg-slate-100 rounded w-1/2' />
+              <div className='h-5 bg-slate-200 rounded w-1/3 pt-2' />
+            </div>
+          ))}
+        </div>
+      ) : productData.length === 0 ? (
+        <div className='bg-white rounded-2xl border border-slate-200/80 p-8 sm:p-12 shadow-card'>
+          <NoData
+            icon={FiBox}
+            title={debouncedSearch ? 'No matching products found' : 'No products in inventory'}
+            description={
+              debouncedSearch
+                ? `No products match "${debouncedSearch}". Try a different search term.`
+                : 'Upload your first product SKU to start populating your catalog.'
+            }
+            actionText={debouncedSearch ? 'Clear Search' : 'Upload Product'}
+            onAction={debouncedSearch ? () => setSearchQuery('') : undefined}
+            actionHref={debouncedSearch ? undefined : '/dashboard/upload-product'}
+          />
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4">
-            {productData.length > 0 ? (
-              productData.map((p) => <ProductCardAdmin key={p._id} data={p} />)
-            ) : (
-              <p className="col-span-full text-center text-gray-500">No products found</p>
-            )}
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4'>
+            {productData.map((p) => (
+              <ProductCardAdmin key={p._id} data={p} fetchData={fetchProductData} />
+            ))}
           </div>
 
-          <div className="flex items-center justify-between p-6 bg-gray-50 border-t mt-4">
-            <button
-              onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
-              disabled={page === 1}
-              className={`px-5 py-2 rounded-md border border-amber-400 text-gray-700 font-medium transition-all duration-200 ${
-                page === 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-amber-500 hover:text-white hover:border-amber-500 shadow-sm"
-              }`}
-            >
-              Previous
-            </button>
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className='flex items-center justify-between bg-white rounded-2xl border border-slate-200/80 shadow-card p-4'>
+              <button
+                type='button'
+                onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
+                disabled={page === 1}
+                className='btn-secondary py-2 px-3 sm:px-4 text-xs font-semibold inline-flex items-center gap-1.5'
+              >
+                <FiChevronLeft size={15} />
+                <span>Previous</span>
+              </button>
 
-            <span className="text-gray-600 font-medium">{page}</span>
+              <span className='text-xs font-semibold text-slate-600'>
+                Page <span className='text-slate-900 font-bold'>{page}</span> of{' '}
+                <span className='text-slate-900 font-bold'>{totalPages}</span>
+              </span>
 
-            <button
-              onClick={() => setPage((prev) => prev + 1)}
-              disabled={page >= totalPages}
-              className={`px-5 py-2 rounded-md border border-amber-400 text-gray-700 font-medium transition-all duration-200 ${
-                page >= totalPages ? "opacity-50 cursor-not-allowed" : "hover:bg-amber-500 hover:text-white hover:border-amber-500 shadow-sm"
-              }`}
-            >
-              Next
-            </button>
-          </div>
+              <button
+                type='button'
+                onClick={() => setPage((prev) => Math.min(prev + 1, totalPages))}
+                disabled={page >= totalPages}
+                className='btn-secondary py-2 px-3 sm:px-4 text-xs font-semibold inline-flex items-center gap-1.5'
+              >
+                <span>Next</span>
+                <FiChevronRight size={15} />
+              </button>
+            </div>
+          )}
         </>
       )}
-      
-    </section>
-  );
-};
+    </div>
+  )
+}
 
-export default ProductAdmin;
+export default ProductAdmin

@@ -1,0 +1,351 @@
+{
+  "$schemaDescription": "GrabItGo Phase 9G.17 — Batch 5 Source Asset Verification Audit",
+  "generatedAt": "2026-09-26T11:32:00.000Z",
+  "status": "VERIFICATION_AUDIT_ONLY — Zero database mutations or uploads performed",
+  "summary": {
+    "totalBatchItems": 12,
+    "approvedCount": 12,
+    "needsReviewCount": 0,
+    "rejectedCount": 0,
+    "allFilesExist": true,
+    "allFilesReadable": true,
+    "standardDimensionCount": 12,
+    "totalActiveCatalogProducts": 31,
+    "databaseMutations": 0,
+    "cloudinaryUploads": 0,
+    "exactExceptions": []
+  },
+  "items": [
+    {
+      "id": "690e1727bb3427cd33190bc4",
+      "name": "Dessert & Cake Mixes",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "MTR Gulab Jamun Dessert Mix",
+        "Pillsbury Chocolate Cooker Cake Mix",
+        "Slurrp Farm Banana Chocochip Pancake Mix"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Breakfast & Instant Food/Dessert & Cake Mixes.webp",
+      "fileSize": 85330,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "e8776d7164bca383fe2bd8855868486b2a6dea8e22b14a72ed3fee6bbf439586",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Gits Gulab Jamun Dessert Mix retail packaging box with plated gulab jamun dessert",
+      "semanticAssessment": "PASS — Accurately portrays packaged dessert mix, directly matching MTR and Pillsbury dessert mixes in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph, clear typography and genuine branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic packaging asset at standard 288x480 dimensions. Fully representative of dessert & cake mix products."
+    },
+    {
+      "id": "690e1756bb3427cd33190bc8",
+      "name": "Herbs & Seasoning",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Snapin Red Chilli Flakes Seasoning",
+        "Snapin Oregano",
+        "Snapin Chilli Flakes"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Breakfast & Instant Food/Herbs & Seasoning.webp",
+      "fileSize": 28190,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "b8243cf60bcc018431bcc42654ba433c5139e940719cfa6334f61c5fdd787fad",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Keya Mixed Herbs sprinkler jar packaging bottle",
+      "semanticAssessment": "PASS — Accurately portrays herb and seasoning bottle, directly matching Snapin oregano and chilli flakes in catalog",
+      "authenticityAssessment": "PASS — Authentic retail spice bottle photograph with genuine Keya branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic seasoning jar asset at standard 288x480 dimensions. Directly representative of culinary herbs and seasoning."
+    },
+    {
+      "id": "690e176abb3427cd33190bcc",
+      "name": "Imported Noodles & Pasta",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "Barilla Lasagne Egg Pasta",
+        "Nongshim Kimchi Ramyun Noodle Soup"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Breakfast & Instant Food/Imported Noodles & Pasta.webp",
+      "fileSize": 100646,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "fbba327c4300e825afb08731b6aaddef3dfe27a6e50b297219a0e5a688fd0c3d",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Nongshim Shin Ramyun Gourmet Spicy Noodle Soup retail packaging pack",
+      "semanticAssessment": "PASS — Accurately portrays imported gourmet Korean ramen soup, directly matching Nongshim Kimchi Ramyun in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph with genuine Nongshim branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic imported ramen packaging asset at standard 288x480 dimensions. Accurately represents imported noodles category."
+    },
+    {
+      "id": "690e177cbb3427cd33190bd0",
+      "name": "Instant Mixes",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Knorr Chinese Manchurian Instant Mix",
+        "Betty Crocker Original Pancake Mix",
+        "Ching's Secret Schezwan Fried Rice Masala - Pack of 5"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Breakfast & Instant Food/Instant Mixes.webp",
+      "fileSize": 100438,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "c0a512c4efdfe4a46f32a50cde96b3f4715e951ffca0dc3bfefca673d9e288e3",
+      "sha256MatchedPlan": true,
+      "visualDescription": "MTR Rava Idli Ready Mix pouch packaging with fresh idlis",
+      "semanticAssessment": "PASS — Accurately portrays instant breakfast ready mix, representative of instant meal and breakfast mixes in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph with genuine MTR branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic instant mix packaging asset at standard 288x480 dimensions. Accurately represents ready-to-make mixes."
+    },
+    {
+      "id": "690e17aebb3427cd33190bd8",
+      "name": "Pasta",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Sunfeast Yipee Instant Pasta Treat - Masala",
+        "Chef's Basket Durum Wheat Penne Domestic Pasta",
+        "Yu Pink Sauce Instant Wheat Pasta (Penne) - Buy 1 Get 1 Free"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Breakfast & Instant Food/Pasta.webp",
+      "fileSize": 128726,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "1618406eaaadcc2ded82b8fa73775fe469ca937fc9de388c4a5a1766d5870990",
+      "sha256MatchedPlan": true,
+      "visualDescription": "DiSano Pastalicious 100% Durum Wheat Semolina Penne Pasta retail packaging bag",
+      "semanticAssessment": "PASS — Accurately portrays retail penne pasta package, directly matching Chef's Basket and Yu Penne Pasta in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph with genuine DiSano branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic pasta bag packaging asset at standard 288x480 dimensions. Directly matches catalog pasta products."
+    },
+    {
+      "id": "690e17c0bb3427cd33190bdc",
+      "name": "Ready to Cook & Eat",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Tata Sampann Yumside Cheesy Pasta With Black Olives - Ready to Eat",
+        "Tata Sampann Yumside Classic Chicken Seekh Kebab",
+        "Haldiram's Minute Khana Pav Bhaji"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Breakfast & Instant Food/Ready to Cook & Eat.webp",
+      "fileSize": 80404,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "418aec793187495dc9adfb03894622b29233eaf759ce95e611d1afb9740b7eec",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Gits Ready Meals Heat & Eat Dal Makhani retail packaging box",
+      "semanticAssessment": "PASS — Accurately portrays heat-and-eat meal packaging, representative of Tata Sampann and Haldiram's ready meals in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph with genuine Gits branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic ready-to-eat meal box asset at standard 288x480 dimensions. Directly represents heat-and-eat meals."
+    },
+    {
+      "id": "690e17ddbb3427cd33190be0",
+      "name": "Soup",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Knorr Thick Tomato Soup",
+        "Knorr Hot & Sour Vegetable Soup",
+        "Knorr International Italian Mushroom Soup"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Breakfast & Instant Food/Soup.webp",
+      "fileSize": 89036,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "7c757f2d2945ee4cae17dcebd3d949cdcbcbb36c6525f3ed260574e891815e77",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Knorr Thick Tomato Soup retail sachet packaging",
+      "semanticAssessment": "PASS — Accurately portrays instant soup packaging, directly matching Knorr Thick Tomato Soup and Knorr soup line in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph with genuine Knorr branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic soup sachet asset at standard 288x480 dimensions. Exact 1-to-1 match with catalog products."
+    },
+    {
+      "id": "690e1948bb3427cd33190c20",
+      "name": "Beverages Gift Packs",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 1,
+      "activeProducts": [
+        "Lazy Cocktails & Co. Variety Pack"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Cold Drinks & Juices/Beverages Gift Packs.webp",
+      "fileSize": 59990,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "795cb3834fae74f6e4e935da1e8d425917e68e6f4f98b5acf713625389be8368",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Real Greetings Festive Delight beverage gift pack box with carry handle",
+      "semanticAssessment": "PASS — Accurately portrays multi-pack beverage gift pack, representative of Lazy Cocktails & Co. variety packs in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph with genuine Real branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic beverage gift pack asset at standard 288x480 dimensions. Representative of celebratory beverage packs."
+    },
+    {
+      "id": "690e19a2bb3427cd33190c34",
+      "name": "Concentrates & Syrups",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "Guruji Kesaria Thandai",
+        "Hamdard Rooh Afza Rose Sharbat"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Cold Drinks & Juices/Concentrates & Syrups.webp",
+      "fileSize": 66768,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "1b25435a774f69216287f47a732b91e9203a9131b422d9055bd75801e0e6a90e",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Hamdard Sharbat Rooh Afza glass bottle packaging",
+      "semanticAssessment": "PASS — Accurately portrays authentic herbal sharbat syrup bottle, directly matching Hamdard Rooh Afza and Guruji Thandai in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product bottle photograph with genuine Hamdard branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic syrup bottle asset at standard 288x480 dimensions. Direct match with catalog sharbat products."
+    },
+    {
+      "id": "690e20b8bb3427cd33190d7a",
+      "name": "Cookies & Wafers",
+      "parentCategory": {
+        "id": "690a1d6c9dae4dbb7e20c110",
+        "name": "Organic & Healthy Living"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Cadbury Chocobakes Choco Chip Cookies",
+        "Let's Try Ragi Kaju Pista Cookies",
+        "RiteBite Max Protein Choco Chips Cookie",
+        "Parle Milano Chocolate Chip Biscuit"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Organic & Healthy Living/Cookies & Wafers.webp",
+      "fileSize": 64690,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "c5d422eb69491ae8e839e4ea29cbb107c92a2dc995590d4860b2754850bc29aa",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Lotus Biscoff caramelised biscuit cookie retail packaging pack",
+      "semanticAssessment": "PASS — Accurately portrays packaged cookies, representative of Cadbury Chocobakes, Parle Milano, and healthy ragi cookies in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph with genuine Lotus Biscoff branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic cookie packaging asset at standard 288x480 dimensions. Accurately represents cookies & wafer category."
+    },
+    {
+      "id": "690e280dbb3427cd33190ed4",
+      "name": "Energy Drinks",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Monster Energy Drink",
+        "Red Bull Energy Drink (250 ml)",
+        "Sting Energy Drink (250 ml)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Tea, Coffee & Health Drink/Energy Drinks.webp",
+      "fileSize": 84320,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "3d34844d2cd7813457573878e87443c506dd6aefe6365d87a224b37e5637834b",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Red Bull Energy Drink 250ml beverage can",
+      "semanticAssessment": "PASS — Accurately portrays iconic energy drink can, directly matching Red Bull Energy Drink (250 ml) and Monster/Sting in catalog",
+      "authenticityAssessment": "PASS — Authentic retail beverage can photograph with genuine Red Bull branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic energy drink can asset at standard 288x480 dimensions. Direct 1-to-1 match with catalog products."
+    },
+    {
+      "id": "690e281bbb3427cd33190ed8",
+      "name": "Fruit Juices",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 1,
+      "activeProducts": [
+        "B Natural Orange Juice - Pack of 2"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Tea, Coffee & Health Drink/Fruit Juices.webp",
+      "fileSize": 32600,
+      "extension": ".webp",
+      "actualFormat": "webp (VP8L)",
+      "width": 288,
+      "height": 480,
+      "dimensions": "288x480",
+      "sha256": "836abac4f7d8de90b7a0de052ce353ab7672c08df131822b24e7fc960bdd5c14",
+      "sha256MatchedPlan": true,
+      "visualDescription": "Real Fruit Power Apple Juice 1L tetra pack carton",
+      "semanticAssessment": "PASS — Accurately portrays fruit juice carton packaging, representative of packaged fruit juices in catalog",
+      "authenticityAssessment": "PASS — Authentic retail product packaging photograph with genuine Real branding",
+      "finalClassification": "APPROVED",
+      "reason": "Authentic fruit juice carton asset at standard 288x480 dimensions. Directly representative of fruit juice category."
+    }
+  ]
+}

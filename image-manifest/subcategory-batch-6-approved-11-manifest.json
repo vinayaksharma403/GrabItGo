@@ -1,0 +1,151 @@
+{
+  "$schemaDescription": "GrabItGo Scoped Import Manifest — Batch 6 Approved 11 Subcategories",
+  "generatedAt": "2026-09-26T11:52:00.000Z",
+  "status": "IMPORT_READY_SCOPED_MANIFEST — Zero database mutations or uploads performed in current phase",
+  "scope": {
+    "categories": 0,
+    "products": 0,
+    "subcategories": 11,
+    "alreadyMigratedExcluded": 49,
+    "flaggedRecordsExcluded": 3,
+    "protectionsExcluded": 1,
+    "lowResNoodlesExcluded": 1,
+    "dualScopeOralHealthEyeCareExcluded": 1
+  },
+  "categories": [],
+  "products": [],
+  "subcategories": [
+    {
+      "id": "690e265cbb3427cd33190e69",
+      "name": "Bhujia & Mixtures",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Bhujia & Mixtures.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 41318,
+      "sha256": "4c9a3af827a00a9ea2429d4b75b0e5bd200e176190453068b0d1c0864ba2a310",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e267abb3427cd33190e71",
+      "name": "Energy Bars",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Energy Bars.png",
+      "expectedFormat": "image/png",
+      "expectedDimensions": "288x480",
+      "fileSize": 29658,
+      "sha256": "e6d468d8b65ea12ff6118f2a0fbed12a0cce88645821190b4b6a984c597ee0e8",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2686bb3427cd33190e75",
+      "name": "Granola",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Granola.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 126844,
+      "sha256": "f00a7874960bed8b3abe02f4c83d44cb93a49110a67c3d0f5069aeaa3e541a40",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e26c2bb3427cd33190e84",
+      "name": "Makhana & More",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Makhana & More.jpg",
+      "expectedFormat": "image/jpeg",
+      "expectedDimensions": "288x480",
+      "fileSize": 31483,
+      "sha256": "b7202f3644c8e9788847142e5aa606c624e99635867212770df76fbf805e2a88",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e26f7bb3427cd33190e94",
+      "name": "Namkeen Snacks",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Namkeen Snacks.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 99018,
+      "sha256": "9334f119da10ade7f367e1bd222b76ea9990d665388096cf591af1e9ec15d0f2",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e26b1bb3427cd33190e80",
+      "name": "Imported Snacks",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Imported Snacks.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 126884,
+      "sha256": "578d5f87d6c30c46671566c6f24a86e7ac5031333375e5dab37ed203f9f49588",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e26eabb3427cd33190e90",
+      "name": "Nachos",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Nachos.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 23310,
+      "sha256": "7decdd5381f922d2873be52c4d2aff54e4f9452d56c45122a61e83c7d4a3f7df",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e275abb3427cd33190ea4",
+      "name": "Rusks & Wafers",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Rusks & Wafers.jpg",
+      "expectedFormat": "image/jpeg",
+      "expectedDimensions": "288x480",
+      "fileSize": 24870,
+      "sha256": "2150185b4e8ddee2ac63d8d699136b4aa2973773778b087acd3d6cdb43ecf421",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e26ddbb3427cd33190e8c",
+      "name": "Munchies Gift Packs",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Munchies Gift Packs.png",
+      "expectedFormat": "image/png",
+      "expectedDimensions": "288x480",
+      "fileSize": 142503,
+      "sha256": "39f5df2a916c8bc9c21a546a85ca004f42ff732520626c2f29ef51af10889229",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e274dbb3427cd33190ea0",
+      "name": "Popcorn",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Popcorn.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 22798,
+      "sha256": "36f71142bfbb9010725496a0601f5bc6a97aedbdd8ab724fc7c8100ff314388b",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2705bb3427cd33190e98",
+      "name": "Papad & Fryums",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Papad & Fryums.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 29892,
+      "sha256": "e39682e16be20e7d51e763b67facf0937ae01b57c5497a925ca6e02337a1417b",
+      "currentImageState": "Base64"
+    }
+  ]
+}

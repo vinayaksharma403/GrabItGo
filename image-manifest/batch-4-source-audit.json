@@ -1,0 +1,307 @@
+{
+  "$schemaDescription": "GrabItGo Phase 9G.13 — Batch 4 Source Asset Verification Audit",
+  "generatedAt": "2026-09-26T11:18:30.000Z",
+  "status": "VERIFICATION_AUDIT_ONLY — Zero database mutations or uploads performed",
+  "summary": {
+    "totalBatchItems": 11,
+    "approvedCount": 11,
+    "needsReviewCount": 0,
+    "needsAuthenticImageCount": 0,
+    "allFilesExist": true,
+    "allFilesReadable": true,
+    "standardDimensionCount": 11,
+    "totalActiveCatalogProducts": 34,
+    "databaseMutations": 0,
+    "cloudinaryUploads": 0,
+    "exactExceptions": []
+  },
+  "items": [
+    {
+      "id": "690e15a6bb3427cd33190b80",
+      "name": "Diapers & More",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "MamyPoko Pants Standard Diaper (M, 7-12 kg)",
+        "Pampers All Round Protection Diaper (Pants, XXL, 15-25 kg)",
+        "Huggies Wonder Diaper (Pants, XXL, 15-25 kg)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Baby Care/Dispers & More.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 65976,
+      "sha256": "6bbbe06d69213f5f61e4631d0641a475c722bd4b2c0e19c385c0d49f397e7f83",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Huggies Complete Comfort Wonder Pants diaper retail packaging",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic diaper packaging image at standard 288x480 dimensions. Directly matches Huggies, Pampers, and MamyPoko diaper products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e160fbb3427cd33190b94",
+      "name": "Mom Care Needs",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "LuvLap Manual Breast Pump",
+        "The Moms Co. Natural Butter Nipple Cream (With Mono Cartons)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Baby Care/Mom Care Needs.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 24486,
+      "sha256": "5310f07f1203ff6cca6f4af81a232aee1810a1cc521ac8e2b13a54fff3b9f0c1",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Horlicks Mother's Plus pregnancy and lactation nutrition pack",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic maternal nutrition and wellness packaging at standard 288x480 dimensions. Accurately represents maternal and mom care products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e15e0bb3427cd33190b8c",
+      "name": "Health & Safety",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Himalaya Diaper Rash Cream",
+        "Mamaearth Digestion & Colic Relief Tummy Roll On",
+        "Mother Sparsh Tummy Roll On"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Baby Care/Health & Safety.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 20902,
+      "sha256": "bc311af7820feaf6d7ddfe5c560c2b07a5bf4e31a03f8023ead2e393946a1532",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Himalaya Bonnisan Liquid baby healthcare bottle",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic baby healthcare liquid bottle image at standard 288x480 dimensions. Accurately represents baby health and wellness remedies in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e15fdbb3427cd33190b90",
+      "name": "Hygiene",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Chicco Fresh Spring Baby Laundry Detergent",
+        "LuvLap Baby Laundry Detergent",
+        "Mee Mee Anti-Bacterial Baby Liquid Cleanser (Refill)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Baby Care/Hygiene.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 28418,
+      "sha256": "758a39e2d205329605984b39eb3d78b76af0721253276b2de55140f11e1a57ee",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Himalaya Gentle Baby Laundry Wash refill pouch",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic baby laundry cleanser pouch image at standard 288x480 dimensions. Directly matches baby detergents and liquid cleanser products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e15cbbb3427cd33190b88",
+      "name": "Feeding",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "LuvLap Blue Feeding Bottle (with Silicone Nipple, 250 ml)",
+        "LuvLap Washable Breast Pad",
+        "LuvLap Natura Flo Wide Neck Feeding Bottle (3 Months+)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Baby Care/Feeding.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 30546,
+      "sha256": "e436b149c106bbff5a5f08eed33195140a6cdeba8e4c03b22d5fdf95646569cc",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Chicco decorated baby feeding bottle with silicone teat",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic baby feeding bottle image at standard 288x480 dimensions. Directly matches feeding bottles and nursing pads in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e1628bb3427cd33190b98",
+      "name": "Nursing",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Nuluv Burp Cloth (0 to 6 Months)",
+        "Oyo Baby Bed Protector Sheet",
+        "Oyo Baby Blanket (Star Blue)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Baby Care/Nursing.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 116142,
+      "sha256": "a0f7813f83e040632f38fa7e27fcac37fb6b0e66fec14a51d4cea65a502c6d05",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Plush baby hooded swaddle wrap and blanket",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic baby blanket / wrap image at standard 288x480 dimensions. Directly matches Oyo baby blankets, burp cloths, and bed protector sheets in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e18bebb3427cd33190c08",
+      "name": "Disinfectant & More",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Dettol Liquid Disinfectant (Menthol Cool)",
+        "Pee Safe Toilet Seat Disinfectant Spray (Mint)",
+        "Savlon Surface Disinfectant Spray - Pack of 2",
+        "Dettol Original Multi-Use Skin & Surface Wet Wipes"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Cleaning Essentials/Disinfectant & More.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 71242,
+      "sha256": "c7cd2517c434aec8e93a7aefae95473f970ec645adbf8ac102f1ff4f554232b8",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Savlon Clothes Disinfectant & Refreshing Spray aerosol can",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic disinfectant spray packaging image at standard 288x480 dimensions. Accurately represents Savlon, Dettol, and Pee Safe disinfectant sprays and wipes in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e187cbb3427cd33190bfc",
+      "name": "Dishwashing Accessories",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Koparo Clean Large Kitchen Sponge Wipe (18 x 20.5 cm)",
+        "Scotch Brite Stainless Steel Scrubber with 1 Scrub Pad",
+        "Scotch Brite Silver Sparks Scrub Pad"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Cleaning Essentials/Dishwashing Accessories.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 26714,
+      "sha256": "36a0a56e6fbd933bb231b01155131cf17c8a7059a45d5f57e01d74b95836a2cb",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Scotch-Brite Silver Sparks Scrub Pad retail package",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic Scotch-Brite scrub pad packaging image at standard 288x480 dimensions. Directly matches Scotch-Brite scrubbers and sponge wipes in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e185ebb3427cd33190bf8",
+      "name": "Detergent Powder & Bars",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "Tide Double Power Jasmine & Rose Detergent Powder - Get 1 kg Free",
+        "Wheel 2 in 1 Clean & Fresh Detergent Powder"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Cleaning Essentials/Detergent Powder & Bars.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 102246,
+      "sha256": "add3f76ed98db87761843b5d760630661d2a666f926f7d385e129fafb8a4d7e8",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Tide Double Power Jasmine & Rose detergent powder packaging bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic Tide Double Power detergent bag image at standard 288x480 dimensions. Directly matches Tide and Wheel detergent products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e18dcbb3427cd33190c0c",
+      "name": "Floor Cleaners & More",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Lizol Disinfectant Surface & Floor Cleaner",
+        "Colin Glass Cleaner (500 ml)",
+        "Lizol Disinfectant Surface & Floor Cleaner (Citrus) 500 ml"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Cleaning Essentials/Floor Cleaners & More.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 25708,
+      "sha256": "d7a9f6f05efb20711790fe0d5ffac20ddc91518c8bde930ecb1346a9f5ef39a5",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Lizol Disinfectant Surface & Floor Cleaner Citrus bottle",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic Lizol floor cleaner bottle image at standard 288x480 dimensions. Directly matches Lizol and Colin floor/glass cleaner products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    },
+    {
+      "id": "690e1d82bb3427cd33190cec",
+      "name": "Cleaning Tools",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 5,
+      "activeProducts": [
+        "Gala Broom  Jhadu (Plastic Sticks)",
+        "Scotch Brite - Broom  Jhadu",
+        "Gala Wiper with Replaceable Handle",
+        "Surf Excel Easy Wash Detergent Powder (1 kg)",
+        "Gala No Dust 90 cm Broom  Jhadu (Plastic, Blue & Brown)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Home & Office/Cleaning Tools.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 26402,
+      "sha256": "eccf9ff15eaa589402fa533074e56912560662d71eacd45d55305c098562981b",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Scotch-Brite / Gala cleaning wiper with handle",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic cleaning wiper tool image at standard 288x480 dimensions. Representative of Gala wipers and broom cleaning tools in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_4_MANIFEST"
+    }
+  ]
+}

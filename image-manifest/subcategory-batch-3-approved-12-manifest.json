@@ -1,0 +1,162 @@
+{
+  "$schemaDescription": "GrabItGo Scoped Import Manifest — Batch 3 Approved 12 Subcategories",
+  "generatedAt": "2026-09-26T11:10:56.449Z",
+  "status": "IMPORT_READY_SCOPED_MANIFEST — Zero database mutations or uploads performed in current phase",
+  "scope": {
+    "categories": 0,
+    "products": 0,
+    "subcategories": 12,
+    "alreadyMigratedExcluded": 14,
+    "protectionsExcluded": 1,
+    "lowResNoodlesExcluded": 1,
+    "dualScopeOralHealthEyeCareExcluded": 1
+  },
+  "categories": [],
+  "products": [],
+  "subcategories": [
+    {
+      "id": "690b49b12377ad754feb97c5",
+      "name": "Besan, Sooji & Maida",
+      "categoryId": "69076e6a4b6d776262c05137",
+      "categoryName": "Atta , Rice & Dal",
+      "sourceImage": "incoming-catalog/subcategories/Atta, Rice & Dal/Besan, Sooji & Maida.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 36916,
+      "sha256": "e4b09e708f939100d15e536685770f92ee2795ceb4ee4931bc227fa6773364cf",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690cd086e317bd6dbcecab64",
+      "name": "Moong & Masoor",
+      "categoryId": "69076e6a4b6d776262c05137",
+      "categoryName": "Atta , Rice & Dal",
+      "sourceImage": "incoming-catalog/subcategories/Atta, Rice & Dal/Moong & Masoor.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 85876,
+      "sha256": "6cf46b669440e62929a2df1f0784ae8094b4b04062265cd92e39a65cda10b949",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e150bbb3427cd33190b68",
+      "name": "Toor, Urad & Chana",
+      "categoryId": "69076e6a4b6d776262c05137",
+      "categoryName": "Atta , Rice & Dal",
+      "sourceImage": "incoming-catalog/subcategories/Atta, Rice & Dal/Toor, Urad & Chana.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 33590,
+      "sha256": "333614a562929908d9ca8242b9f1ef0d07384b18c3b28ec6027b72f2e20c8a8a",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e142bbb3427cd33190b60",
+      "name": "Rajma, Chhole & Others",
+      "categoryId": "69076e6a4b6d776262c05137",
+      "categoryName": "Atta , Rice & Dal",
+      "sourceImage": "incoming-catalog/subcategories/Atta, Rice & Dal/Rajma, Chhole & Others.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 111592,
+      "sha256": "8a4c315fc414d895830c0786da61caa0acb9a349070d6264f81da38b319be159",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690c3bfc00c5b0f7df354468",
+      "name": "Millet & Other Flours",
+      "categoryId": "69076e6a4b6d776262c05137",
+      "categoryName": "Atta , Rice & Dal",
+      "sourceImage": "incoming-catalog/subcategories/Atta, Rice & Dal/Millet & Other Flours.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 30780,
+      "sha256": "c18e9999e8d2d4eac5f4e8a51fa9cf95ed14230f95b4732dfe772b5fc820d915",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1463bb3427cd33190b64",
+      "name": "Rice",
+      "categoryId": "69076e6a4b6d776262c05137",
+      "categoryName": "Atta , Rice & Dal",
+      "sourceImage": "incoming-catalog/subcategories/Atta, Rice & Dal/Rice.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 39196,
+      "sha256": "c5eeb26d20c296ee6f5dccebc0ddf342964a6a32e123d9f9a476b2add237ceba",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e16e7bb3427cd33190bb8",
+      "name": "Healthy & Digestive",
+      "categoryId": "690a1c319dae4dbb7e20c0f5",
+      "categoryName": "Bakery & Biscuits",
+      "sourceImage": "incoming-catalog/subcategories/Bakery  Biscuits/Healthy & Digestive.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 76590,
+      "sha256": "75a290d305d134b20e174f91425c2a1ba9d69c80f95f096623d00af055569af8",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e16d4bb3427cd33190bb4",
+      "name": "Glucose & Marie",
+      "categoryId": "690a1c319dae4dbb7e20c0f5",
+      "categoryName": "Bakery & Biscuits",
+      "sourceImage": "incoming-catalog/subcategories/Bakery  Biscuits/Glucose & Marie.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 49352,
+      "sha256": "9f343c01697a4952c6f1489aa1f38603beee1dbb78e3c9168ffe7ffe942e2ce6",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e170ebb3427cd33190bc0",
+      "name": "Sweet & Salty",
+      "categoryId": "690a1c319dae4dbb7e20c0f5",
+      "categoryName": "Bakery & Biscuits",
+      "sourceImage": "incoming-catalog/subcategories/Bakery  Biscuits/Sweet & Salty.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 43118,
+      "sha256": "ecbc00bd93f40c2bf8d921a8b211f9debf60614a28aa660f8a17f5c589a95b29",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1bfbbb3427cd33190ca4",
+      "name": "Poha, Daliya & Other Grains",
+      "categoryId": "690a1cd89dae4dbb7e20c104",
+      "categoryName": "Dairy, Bread & Eggs",
+      "sourceImage": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Poha, Daliya & Other Grains.png",
+      "expectedFormat": "image/png",
+      "expectedDimensions": "288x480",
+      "fileSize": 36215,
+      "sha256": "cb7c3937d208ea354e8d02b20ed5c1b28a3607e5fab2a5b8876b7646b32624d7",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1c0cbb3427cd33190ca8",
+      "name": "Sausage, Salami & Ham",
+      "categoryId": "690a1cd89dae4dbb7e20c104",
+      "categoryName": "Dairy, Bread & Eggs",
+      "sourceImage": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Sausage, Salami & Ham.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 31712,
+      "sha256": "770bdcaf9c6bb4367e6600839f4c2282cd68799c2536fde718e6673d836f6ad4",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e181fbb3427cd33190bec",
+      "name": "Fish & Seafood",
+      "categoryId": "690a1c7a9dae4dbb7e20c0fb",
+      "categoryName": "Chicken, Meat & Fish",
+      "sourceImage": "incoming-catalog/subcategories/Chicken, Meat & Fish/Fish & Seafood.png",
+      "expectedFormat": "image/png",
+      "expectedDimensions": "288x480",
+      "fileSize": 37230,
+      "sha256": "8a9d94e711c61eb08f0453a2853de63fc729693646e66a63e6a368d3655c7f6b",
+      "currentImageState": "Base64"
+    }
+  ]
+}

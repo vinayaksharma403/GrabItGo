@@ -1,32 +1,74 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback, useRef } from "react";
 import Axios from "../utils/axios";
 import SummaryApi from "../common/SummaryApi";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import AxiosToastError from "../utils/AxiosToastError";
-import Loading from "../components/Loading";
+import CardLoading from "../components/CardLoading";
 import CardProduct from "../components/CardProduct";
+import NoData from "../components/NoData";
+import ProductSortFilter from "../components/ProductSortFilter";
 import { useSelector } from "react-redux";
 import { validURLConvert } from "../utils/validURLConver";
+import { FiChevronRight, FiHome } from "react-icons/fi";
 
 const ProductListPage = () => {
   const [data, setData] = useState([]);
-  const [page, setPage] = useState(1);
+  const [totalCount, setTotalCount] = useState(0);
+  const [page] = useState(1);
   const [loading, setLoading] = useState(false);
-  const [totalPage, setTotalPage] = useState(1);
   const params = useParams();
-  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const AllSubCategory = useSelector((state) => state.product.allSubCategory);
   const [DisplaySubCategory, setDisplayCategory] = useState([]);
+  const requestSeqRef = useRef(0);
 
-  const subCategory = params?.subCategory?.split("-");
-  const subCategoryName = subCategory
-    ?.slice(0, subCategory?.length - 1)
-    ?.join(" ");
+  const sort = searchParams.get("sort") || "";
+  const inStock = searchParams.get("inStock") === "true";
 
-  const categoryId = params.category.split("-").slice(-1)[0];
-  const subCategoryId = params.subCategory.split("-").slice(-1)[0];
+  const categorySegments = params?.category?.split("-") || [];
+  const categoryName = categorySegments.slice(0, -1).join(" ") || "Category";
+  const categoryId = categorySegments.slice(-1)[0];
 
-  const fetchProductData = async () => {
+  const subCategorySegments = params?.subCategory?.split("-") || [];
+  const subCategoryName = subCategorySegments.slice(0, -1).join(" ") || "Products";
+  const subCategoryId = subCategorySegments.slice(-1)[0];
+
+  const handleSortChange = (newSort) => {
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      if (newSort) {
+        next.set("sort", newSort);
+      } else {
+        next.delete("sort");
+      }
+      return next;
+    });
+  };
+
+  const handleInStockChange = (newInStock) => {
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      if (newInStock) {
+        next.set("inStock", "true");
+      } else {
+        next.delete("inStock");
+      }
+      return next;
+    });
+  };
+
+  const handleReset = () => {
+    setSearchParams((prev) => {
+      const next = new URLSearchParams(prev);
+      next.delete("sort");
+      next.delete("inStock");
+      return next;
+    });
+  };
+
+  const fetchProductData = useCallback(async () => {
+    if (!categoryId || !subCategoryId) return;
+    const currentSeq = ++requestSeqRef.current;
     try {
       setLoading(true);
       const response = await Axios({
@@ -35,116 +77,171 @@ const ProductListPage = () => {
           categoryId,
           subCategoryId,
           page,
-          limit: 8,
+          limit: 24,
+          sort,
+          inStock,
         },
       });
 
       const { data: responseData } = response;
-      if (responseData.success) {
-        if (responseData.page === 1) {
-          setData(responseData.data);
-        } else {
-          setData([...data, ...responseData.data]);
-        }
-        setTotalPage(responseData.totalCount);
+      if (currentSeq === requestSeqRef.current && responseData.success) {
+        setData(responseData.data || []);
+        setTotalCount(responseData.totalCount ?? (responseData.data || []).length);
       }
     } catch (error) {
-      AxiosToastError(error);
+      if (currentSeq === requestSeqRef.current) {
+        AxiosToastError(error);
+      }
     } finally {
-      setLoading(false);
+      if (currentSeq === requestSeqRef.current) {
+        setLoading(false);
+      }
     }
-  };
+  }, [categoryId, subCategoryId, page, sort, inStock]);
 
   useEffect(() => {
     fetchProductData();
-  }, [params]);
+  }, [fetchProductData]);
 
   useEffect(() => {
+    if (!categoryId) return;
     const sub = AllSubCategory.filter((s) => {
-      const filterData = s.category.some((e1) => e1._id == categoryId);
-      return filterData ? filterData : null;
+      return s.category?.some((e1) => (typeof e1 === "object" ? e1._id === categoryId : e1 === categoryId));
     });
     setDisplayCategory(sub);
-  }, [params, AllSubCategory]);
+  }, [categoryId, AllSubCategory]);
+
+  const isFiltered = Boolean(sort || inStock);
 
   return (
-    <section className="relative top-24 lg:top-20 px-3 sm:px-5 md:px-8 py-4 min-h-screen bg-gray-50">
-      <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-6">
-        {/* Sidebar (Sub Category Section) */}
-        <aside className="md:col-span-2 lg:col-span-3 bg-white rounded-2xl shadow-lg border border-gray-100 p-4 min-h-[80vh] max-h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-green-500 scrollbar-track-gray-100 hover:scrollbar-thumb-green-600 transition-all duration-200">
-          <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-4 border-b border-gray-200 pb-2 text-center">
-            Subcategories
-          </h2>
+    <section className="px-3 sm:px-5 md:px-8 py-4 min-h-[calc(100vh-80px)] bg-surface-50">
+      <div className="max-w-7xl mx-auto">
+        {/* Accessible Breadcrumb Trail */}
+        <nav aria-label="Breadcrumb" className="mb-4 text-xs font-medium text-surface-muted flex items-center gap-1.5 flex-wrap">
+          <Link to="/" className="inline-flex items-center gap-1 hover:text-brand-600 transition-colors p-0.5">
+            <FiHome size={13} />
+            <span>Home</span>
+          </Link>
+          <FiChevronRight size={13} className="text-surface-muted/60" />
+          <span className="capitalize">{categoryName}</span>
+          <FiChevronRight size={13} className="text-surface-muted/60" />
+          <span className="font-semibold text-surface-title capitalize">{subCategoryName}</span>
+        </nav>
 
-          {/* Subcategory Images */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4">
-            {DisplaySubCategory.map((s, index) => {
-              const isActive = subCategoryId === s._id;
-              
-              const link = `/${validURLConvert(s?.category[0]?.name)}-${s?.category[0]?._id}/${validURLConvert(s.name)}-${s._id}`
-              return (
-                <Link to={link}
-                  key={index}
-                  onClick={() =>
-                    navigate(`/product/${params.category}/${s.name}-${s._id}`)
-                  }
-                  className={`flex flex-col items-center rounded-xl p-3 cursor-pointer transition-all duration-300 shadow-sm hover:shadow-md hover:scale-[1.02] border ${isActive
-                      ? "bg-green-50 border-green-500 ring-2 ring-green-400"
-                      : "bg-gray-50 border-gray-200 hover:border-green-300"
+        <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-5">
+          {/* Subcategories Sidebar / Top Strip on mobile */}
+          <aside className="md:col-span-2 lg:col-span-3 bg-white rounded-card shadow-subtle border border-surface-border p-3.5 min-h-0 md:min-h-[75vh] max-h-56 md:max-h-[80vh] overflow-y-auto">
+            <h2 className="text-xs font-bold uppercase tracking-wider text-surface-muted mb-3 px-1">
+              Subcategories
+            </h2>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-2 sm:gap-2.5">
+              {DisplaySubCategory.map((s, index) => {
+                const isActive = subCategoryId === s._id;
+                const catObj = s?.category?.[0];
+                const catName = typeof catObj === "object" ? catObj?.name : categoryName;
+                const catId = typeof catObj === "object" ? catObj?._id : categoryId;
+                const link = `/${validURLConvert(catName || "cat")}-${catId}/${validURLConvert(s.name || "sub")}-${s._id}`;
+
+                return (
+                  <Link
+                    to={link}
+                    key={s._id || index}
+                    aria-label={`View ${s.name} subcategory`}
+                    className={`flex flex-col md:flex-row items-center gap-2.5 rounded-control p-2 sm:p-2.5 transition-all text-xs sm:text-sm font-medium border ${
+                      isActive
+                        ? "bg-brand-50/80 border-brand-500 ring-2 ring-brand-500/20 text-brand-700 shadow-xs font-semibold"
+                        : "bg-surface-50 border-surface-border/70 text-surface-title hover:border-brand-300 hover:bg-white"
                     }`}
-                >
-                  <img
-                    src={s.image}
-                    alt="SubCategory"
-                    className={`w-20 h-20 sm:w-24 sm:h-24 object-contain rounded-lg transition-transform duration-300 ${isActive ? "scale-110" : "hover:scale-105"
-                      }`}
-                  />
-                  <p
-                    className={`mt-2 text-sm font-medium text-center ${isActive ? "text-green-600" : "text-gray-700"
-                      }`}
                   >
-                    {s.name}
-                  </p>
-                </Link>
-              );
-            })}
-          </div>
-        </aside>
-
-        {/* Product Section */}
-        <main className="md:col-span-4 lg:col-span-9">
-          {/* Header */}
-          <div className="bg-white rounded-2xl shadow-md p-4 mb-4 border border-gray-100 flex items-center justify-between flex-wrap gap-2">
-            <h3 className="font-semibold text-lg sm:text-xl capitalize text-gray-800">
-              {subCategoryName}
-            </h3>
-            <span className="text-sm text-gray-500">{data.length} Products</span>
-          </div>
-
-          {/* Product Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-            {data.map((p, index) => (
-              <CardProduct
-                key={p._id + "productSubCategory" + index}
-                data={p}
-              />
-            ))}
-          </div>
-
-          {/* Loading Spinner */}
-          {loading && (
-            <div className="flex justify-center mt-6">
-              <Loading />
+                    <div className="w-12 h-12 md:w-10 md:h-10 flex items-center justify-center bg-white rounded-lg p-1 shrink-0 overflow-hidden border border-surface-border/50">
+                      <img
+                        src={s.image || "/placeholder.png"}
+                        alt={s.name || "SubCategory"}
+                        loading="lazy"
+                        onError={(e) => {
+                          if (e.target.src !== "/placeholder.png") {
+                            e.target.src = "/placeholder.png";
+                          }
+                        }}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <span className="text-center md:text-left line-clamp-2 leading-tight">
+                      {s.name}
+                    </span>
+                  </Link>
+                );
+              })}
             </div>
-          )}
+          </aside>
 
-          {/* No Products */}
-          {!loading && data.length === 0 && (
-            <div className="text-center text-gray-500 mt-10 text-sm sm:text-base">
-              No products found in this subcategory.
+          {/* Product Catalog Grid */}
+          <main className="md:col-span-4 lg:col-span-9 flex flex-col">
+            {/* Section Header */}
+            <div className="bg-white rounded-card shadow-subtle p-3.5 sm:p-4 mb-3 border border-surface-border flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <h1 className="font-bold text-base sm:text-xl capitalize text-surface-title">
+                  {subCategoryName}
+                </h1>
+                <p className="text-xs text-surface-muted hidden sm:block">
+                  Showing available items in {subCategoryName}
+                </p>
+              </div>
+              <span className="badge-neutral text-xs font-semibold px-2.5 py-1">
+                {totalCount} {totalCount === 1 ? "Product" : "Products"}
+              </span>
             </div>
-          )}
-        </main>
+
+            {/* Filter and Sort Control Bar */}
+            <ProductSortFilter
+              sort={sort}
+              inStock={inStock}
+              onSortChange={handleSortChange}
+              onInStockChange={handleInStockChange}
+              onReset={handleReset}
+              totalCount={totalCount}
+            />
+
+            {/* Skeleton Loading State */}
+            {loading && (
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+                {new Array(8).fill(null).map((_, index) => (
+                  <CardLoading key={"CatalogLoading" + index} />
+                ))}
+              </div>
+            )}
+
+            {/* Product Grid */}
+            {!loading && data.length > 0 && (
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+                {data.map((p, index) => (
+                  <CardProduct
+                    key={p._id + "productSubCategory" + index}
+                    data={p}
+                  />
+                ))}
+              </div>
+            )}
+
+            {/* Empty State */}
+            {!loading && data.length === 0 && (
+              <div className="py-12 bg-white rounded-card border border-surface-border my-auto">
+                <NoData
+                  title={isFiltered ? `No matching products in ${subCategoryName}` : `No products in ${subCategoryName}`}
+                  description={
+                    isFiltered
+                      ? "Try clearing your filters or selecting a different sort option to view all available products."
+                      : "We are regularly restocking our catalog. Try browsing other popular categories!"
+                  }
+                  actionText={isFiltered ? "Clear Filters" : "Explore Categories"}
+                  actionHref={isFiltered ? undefined : "/#categories"}
+                  onAction={isFiltered ? handleReset : undefined}
+                />
+              </div>
+            )}
+          </main>
+        </div>
       </div>
     </section>
   );

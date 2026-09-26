@@ -1,11 +1,10 @@
 import React from 'react'
 
-const Divider = () => {
+const Divider = ({ className = "my-2" }) => {
   return (
-    <div className='p-[0.5px] bg-slate-200 my-2'>
-      
-    </div>
+    <div className={`h-[1px] bg-slate-200 w-full ${className}`} role="separator" aria-hidden="true" />
   )
 }
 
 export default Divider
+

@@ -42,6 +42,7 @@ export const createProductController = async (req, res) => {
     });
 
     const savedProduct = await product.save();
+    listCache.clear();
 
     return res.json({
       message: "Product created successfully",
@@ -58,17 +59,17 @@ export const createProductController = async (req, res) => {
   }
 };
 
-/** GET ALL PRODUCTS (FAST + CACHED) */
+/** GET ALL PRODUCTS (FAST + CACHED + SORT & FILTER) */
 export const getProductController = async (req, res) => {
   console.time("getProductController_total");
   try {
     // read from query params
-    let { page = 1, limit = 20, search = "" } = req.query;
-    page = Number(page) || 1;
-    limit = Number(limit) || 20;
-    search = (search || "").trim();
+    let { page = 1, limit = 20, search = "", sort = "", inStock = "" } = req.query;
+    page = Math.max(Number(page) || 1, 1);
+    limit = Math.min(Math.max(Number(limit) || 20, 1), 100);
+    search = (search || "").trim().slice(0, 100);
 
-    const cacheKey = `${page}:${limit}:${search}`;
+    const cacheKey = `${page}:${limit}:${search}:${sort}:${inStock}`;
     if (listCache.has(cacheKey)) {
       console.log("getProductController: cache hit", cacheKey);
       console.timeEnd("getProductController_total");
@@ -77,22 +78,36 @@ export const getProductController = async (req, res) => {
 
     const skip = (page - 1) * limit;
 
-    const query = search
+    const sanitizedSearch = search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const query = sanitizedSearch
       ? {
         $or: [
-          { name: { $regex: search, $options: "i" } },
-          { description: { $regex: search, $options: "i" } },
+          { name: { $regex: sanitizedSearch, $options: "i" } },
+          { description: { $regex: sanitizedSearch, $options: "i" } },
         ],
       }
       : {};
 
+    if (inStock === 'true' || inStock === true) {
+      query.stock = { $gt: 0 };
+    }
+
+    let sortOption = { createdAt: -1 };
+    if (sort === "price_asc") {
+      sortOption = { price: 1, _id: 1 };
+    } else if (sort === "price_desc") {
+      sortOption = { price: -1, _id: 1 };
+    } else if (sort === "discount_desc") {
+      sortOption = { discount: -1, _id: 1 };
+    }
+
     console.time("MongoQuery");
     const [data, totalCount] = await Promise.all([
       ProductModel.find(query)
-        .sort({ createdAt: -1 })
+        .sort(sortOption)
         .skip(skip)
         .limit(limit)
-        .select("name price image stock unit brand createdAt") // small payload
+        .select("name price discount image stock unit brand createdAt")
         .lean(),
       ProductModel.countDocuments(query),
     ]);
@@ -123,7 +138,7 @@ export const getProductController = async (req, res) => {
   }
 };
 
-/** GET PRODUCT BY CATEGORY */
+/** GET PRODUCT BY CATEGORY (CACHED) */
 export const getProductByCategory = async (req, res) => {
   try {
     const { id } = req.body;
@@ -135,17 +150,27 @@ export const getProductByCategory = async (req, res) => {
       });
     }
 
+    const cacheKey = `category_${id}`;
+    if (listCache.has(cacheKey)) {
+      return res.json(listCache.get(cacheKey));
+    }
+
     const products = await ProductModel.find({ category: { $in: id } })
       .limit(15)
-      .select("name price image stock unit brand")
+      .select("name price discount image stock unit brand")
       .lean();
 
-    return res.json({
+    const responsePayload = {
       message: "Category product list fetched successfully",
       data: products,
       success: true,
       error: false,
-    });
+    };
+
+    listCache.set(cacheKey, responsePayload);
+    setTimeout(() => listCache.delete(cacheKey), CACHE_TTL_MS);
+
+    return res.json(responsePayload);
   } catch (error) {
     return res.status(500).json({
       message: error.message || error,
@@ -155,10 +180,10 @@ export const getProductByCategory = async (req, res) => {
   }
 };
 
-/** GET PRODUCT BY CATEGORY + SUBCATEGORY */
+/** GET PRODUCT BY CATEGORY + SUBCATEGORY (WITH SORT & FILTER) */
 export const getProductByCategoryAndSubCategory = async (req, res) => {
   try {
-    let { categoryId, subCategoryId, page = 1, limit = 10 } = req.body;
+    let { categoryId, subCategoryId, page = 1, limit = 10, sort = "", inStock = "" } = req.body;
     if (!categoryId || !subCategoryId) {
       return res.status(400).json({
         message: "Provide categoryId and subCategoryId",
@@ -176,12 +201,25 @@ export const getProductByCategoryAndSubCategory = async (req, res) => {
       subCategory: { $in: subCategoryId },
     };
 
+    if (inStock === 'true' || inStock === true) {
+      query.stock = { $gt: 0 };
+    }
+
+    let sortOption = { createdAt: -1 };
+    if (sort === "price_asc") {
+      sortOption = { price: 1, _id: 1 };
+    } else if (sort === "price_desc") {
+      sortOption = { price: -1, _id: 1 };
+    } else if (sort === "discount_desc") {
+      sortOption = { discount: -1, _id: 1 };
+    }
+
     const [data, totalCount] = await Promise.all([
       ProductModel.find(query)
-        .sort({ createdAt: -1 })
+        .sort(sortOption)
         .skip(skip)
         .limit(Number(limit))
-        .select("name price image stock unit brand createdAt")
+        .select("name price discount image stock unit brand createdAt")
         .lean(),
       ProductModel.countDocuments(query),
     ]);
@@ -254,6 +292,7 @@ export const updateProductDetails = async (request, response) => {
     const updateProduct = await ProductModel.updateOne({ _id: _id }, {
       ...request.body
     })
+    listCache.clear();
 
     return response.json({
       message: "Updated Successfully",
@@ -337,6 +376,8 @@ export async function deleteProductDetails(req, res) {
         success: false,
       });
     }
+
+    listCache.clear();
 
     return res.json({
       message: "Product deleted successfully",

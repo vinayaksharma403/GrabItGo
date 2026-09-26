@@ -4,6 +4,14 @@ const uploadImageController = async(request,response)=>{
     try {
         const file = request.file
 
+        if (!file) {
+            return response.status(400).json({
+                message: "No image file provided",
+                error: true,
+                success: false
+            });
+        }
+
         const uploadImage = await uploadImageCloudinary(file)
 
         return response.json({

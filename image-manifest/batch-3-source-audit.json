@@ -1,0 +1,339 @@
+{
+  "$schemaDescription": "GrabItGo Phase 9G.10 — Batch 3 Source Asset Verification Audit",
+  "generatedAt": "2026-09-26T11:08:30.000Z",
+  "status": "VERIFICATION_AUDIT_ONLY — Zero database mutations or uploads performed",
+  "summary": {
+    "totalBatchItems": 12,
+    "approvedCount": 12,
+    "needsReviewCount": 0,
+    "needsAuthenticImageCount": 0,
+    "allFilesExist": true,
+    "allFilesReadable": true,
+    "standardDimensionCount": 12,
+    "normalizedCopiesCreated": [
+      "image-manifest/incoming-catalog/subcategories/Dairy, Bread & Eggs/Poha, Daliya & Other Grains.png",
+      "image-manifest/incoming-catalog/subcategories/Chicken, Meat & Fish/Fish & Seafood.png"
+    ],
+    "totalActiveCatalogProducts": 36,
+    "databaseMutations": 0,
+    "cloudinaryUploads": 0
+  },
+  "items": [
+    {
+      "id": "690b49b12377ad754feb97c5",
+      "name": "Besan, Sooji & Maida",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Fortune Maida",
+        "Rajdhani Besan",
+        "Samrat MP SoojiRava"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Besan, Sooji & Maida.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 28246,
+      "sha256": "e4b09e708f939100d15e536685770f92ee2795ceb4ee4931bc227fa6773364cf",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Rajdhani Select Sooji packaging bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Accurately represents Sooji / coarse granules staple in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690cd086e317bd6dbcecab64",
+      "name": "Moong & Masoor",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Whole Farm Premium Moong Dal (Dhuli)",
+        "Tata Sampann Unpolished Masoor Dal (Whole)",
+        "24 Mantra Organic Unpolished Moong Dal"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Moong & Masoor.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 32174,
+      "sha256": "6cf46b669440e62929a2df1f0784ae8094b4b04062265cd92e39a65cda10b949",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Yellow Moong Dal clear-window packaging bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic lentil packaging image at standard 288x480 dimensions. Accurately represents Moong & Masoor pulse category.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e150bbb3427cd33190b68",
+      "name": "Toor, Urad & Chana",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Tata Sampann 100% Chana Dal Fine BesanGram Flour",
+        "Tata Sampann Unpolished Toor Dal (Arhar Dal)",
+        "24 Mantra Organic Unpolished Urad Dal (Black Grains)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Toor, Urad & Chana.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 33590,
+      "sha256": "333614a562929908d9ca8242b9f1ef0d07384b18c3b28ec6027b72f2e20c8a8a",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Tata Sampann Unpolished Toor Dal (Arhar Dal) packaging bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Directly matches Tata Sampann Toor Dal product in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e142bbb3427cd33190b60",
+      "name": "Rajma, Chhole & Others",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Nutrela Soya Granules",
+        "Whole Farm Premium Kashmiri Red Rajma",
+        "Whole Farm Grocery Kabuli Chana (Medium Size)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Rajma, Chhole & Others.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 111592,
+      "sha256": "8a4c315fc414d895830c0786da61caa0acb9a349070d6264f81da38b319be159",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Tata Sampann Unpolished Rajma packaging bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Directly matches Kashmiri Rajma products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690c3bfc00c5b0f7df354468",
+      "name": "Millet & Other Flours",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "True Elements Super Grains Oat Flour",
+        "Rajdhani Chana Sattu",
+        "K-Pra Thalipeeth Bhajani Flour Mix"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Millet & Other Flours.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 30780,
+      "sha256": "c18e9999e8d2d4eac5f4e8a51fa9cf95ed14230f95b4732dfe772b5fc820d915",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "GM Foods Bhatura Mix flour bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic specialty flour mix image at standard 288x480 dimensions. Representative of specialty flour category.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e1463bb3427cd33190b64",
+      "name": "Rice",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Daawat Pulav Basmati Rice (Slender Grains)",
+        "Daawat Rozana Super Basmati Rice",
+        "India Gate Kolam Rice"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Rice.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 39196,
+      "sha256": "c5eeb26d20c296ee6f5dccebc0ddf342964a6a32e123d9f9a476b2add237ceba",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Daawat Pulav Basmati Rice bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Directly matches Daawat Basmati Rice products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e16e7bb3427cd33190bb8",
+      "name": "Healthy & Digestive",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Britannia NutriChoice Digestive Zero Biscuit",
+        "Britannia NutriChoice Sugar Free Healthy & Digestive Cracker",
+        "Britannia NutriChoice Seeds Biscuit"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Bakery  Biscuits/Healthy & Digestive.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 76590,
+      "sha256": "75a290d305d134b20e174f91425c2a1ba9d69c80f95f096623d00af055569af8",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "McVities Digestive biscuit super value pack",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Accurately represents high-fiber digestive biscuits category.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e16d4bb3427cd33190bb4",
+      "name": "Glucose & Marie",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Britannia Marie Gold Marie Biscuits",
+        "Parle-G Glucose Biscuit - Pack of 2",
+        "Parle-G Gold Biscuit - Pack of 2"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Bakery  Biscuits/Glucose & Marie.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 49352,
+      "sha256": "9f343c01697a4952c6f1489aa1f38603beee1dbb78e3c9168ffe7ffe942e2ce6",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Parle-G Original Gluco Biscuits wrapper packaging",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Directly matches Parle-G Glucose biscuits in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e170ebb3427cd33190bc0",
+      "name": "Sweet & Salty",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Britannia Little Hearts Classic Biscuit",
+        "Britannia 5050 Maska Chaska Sweet & Salty Biscuits",
+        "Patanjali Whole Wheat Nariyal Biscuit"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Bakery  Biscuits/Sweet & Salty.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 43118,
+      "sha256": "ecbc00bd93f40c2bf8d921a8b211f9debf60614a28aa660f8a17f5c589a95b29",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Britannia Little Hearts Classic Sweet & Salty biscuit bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Directly matches Britannia Little Hearts product in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e1bfbbb3427cd33190ca4",
+      "name": "Poha, Daliya & Other Grains",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Millets & More Cheese Millet Bhel",
+        "24 Mantra Organic White Poha",
+        "Fortune Indori Thick Poha",
+        "MP'S BEST Lokwan Wheat"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Dairy, Bread & Eggs/Poha, Daliya & Other Grains.png",
+      "originalSourcePath": "image-manifest/incoming-catalog/subcategories/Dairy, Bread & Eggs/Poha, Daliya & Other Grains.jpg",
+      "format": "png",
+      "extension": ".png",
+      "formatNote": "Original .jpg file contains valid PNG byte stream; created truthful normalized copy Poha, Daliya & Other Grains.png with matching SHA256",
+      "dimensions": "288x480",
+      "fileSize": 36215,
+      "sha256": "cb7c3937d208ea354e8d02b20ed5c1b28a3607e5fab2a5b8876b7646b32624d7",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Rajdhani Poha Mota packaging bag",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Directly matches Fortune and 24 Mantra Poha products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e1c0cbb3427cd33190ca8",
+      "name": "Sausage, Salami & Ham",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Zorabian Spicy Chicken Sausage",
+        "Godrej Yummiez Pepper & Herb Chicken Sausage (Frozen)",
+        "Godrej Yummiez Breakfast Chicken Sausage (Frozen)"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Dairy, Bread & Eggs/Sausage, Salami & Ham.webp",
+      "format": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 31712,
+      "sha256": "770bdcaf9c6bb4367e6600839f4c2282cd68799c2536fde718e6673d836f6ad4",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Godrej Yummiez Chicken Pepper & Herb Sausages packaging pouch",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic packaging image at standard 288x480 dimensions. Directly matches Godrej Yummiez chicken sausage products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    },
+    {
+      "id": "690e181fbb3427cd33190bec",
+      "name": "Fish & Seafood",
+      "parentCategory": {
+        "id": "690a1c7a9dae4dbb7e20c0fb",
+        "name": "Chicken, Meat & Fish"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "Sumeru Five Senses Prawns Medium",
+        "Gadre Seafood Seafood Snack"
+      ],
+      "sourcePath": "image-manifest/incoming-catalog/subcategories/Chicken, Meat & Fish/Fish & Seafood.png",
+      "originalSourcePath": "image-manifest/incoming-catalog/subcategories/Chicken, Meat & Fish/Fish & Seafood.jpg",
+      "format": "png",
+      "extension": ".png",
+      "formatNote": "Original .jpg file contains valid PNG byte stream; created truthful normalized copy Fish & Seafood.png with matching SHA256",
+      "dimensions": "288x480",
+      "fileSize": 37230,
+      "sha256": "8a9d94e711c61eb08f0453a2853de63fc729693646e66a63e6a368d3655c7f6b",
+      "mappingConfidence": "HIGH",
+      "authenticityStatus": "AUTHENTIC_VERIFIED",
+      "visualDescription": "Fresh raw fish fillets on round wooden board with lemon and herbs",
+      "classification": "APPROVED_FOR_IMPORT",
+      "reason": "Authentic fresh seafood culinary presentation at standard 288x480 dimensions. Representative of fresh and frozen seafood products in catalog.",
+      "recommendedAction": "INCLUDE_IN_BATCH_3_MANIFEST"
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "$schemaDescription": "GrabItGo Scoped Import Manifest — Batch 5 Approved 12 Subcategories",
+  "generatedAt": "2026-09-26T11:35:00.000Z",
+  "status": "IMPORT_READY_SCOPED_MANIFEST — Zero database mutations or uploads performed in current phase",
+  "scope": {
+    "categories": 0,
+    "products": 0,
+    "subcategories": 12,
+    "alreadyMigratedExcluded": 37,
+    "flaggedRecordsExcluded": 3,
+    "protectionsExcluded": 1,
+    "lowResNoodlesExcluded": 1,
+    "dualScopeOralHealthEyeCareExcluded": 1
+  },
+  "categories": [],
+  "products": [],
+  "subcategories": [
+    {
+      "id": "690e1727bb3427cd33190bc4",
+      "name": "Dessert & Cake Mixes",
+      "categoryId": "690a1c509dae4dbb7e20c0f8",
+      "categoryName": "Breakfast & Instant Food",
+      "sourceImage": "incoming-catalog/subcategories/Breakfast & Instant Food/Dessert & Cake Mixes.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 85330,
+      "sha256": "e8776d7164bca383fe2bd8855868486b2a6dea8e22b14a72ed3fee6bbf439586",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1756bb3427cd33190bc8",
+      "name": "Herbs & Seasoning",
+      "categoryId": "690a1c509dae4dbb7e20c0f8",
+      "categoryName": "Breakfast & Instant Food",
+      "sourceImage": "incoming-catalog/subcategories/Breakfast & Instant Food/Herbs & Seasoning.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 28190,
+      "sha256": "b8243cf60bcc018431bcc42654ba433c5139e940719cfa6334f61c5fdd787fad",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e176abb3427cd33190bcc",
+      "name": "Imported Noodles & Pasta",
+      "categoryId": "690a1c509dae4dbb7e20c0f8",
+      "categoryName": "Breakfast & Instant Food",
+      "sourceImage": "incoming-catalog/subcategories/Breakfast & Instant Food/Imported Noodles & Pasta.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 100646,
+      "sha256": "fbba327c4300e825afb08731b6aaddef3dfe27a6e50b297219a0e5a688fd0c3d",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e177cbb3427cd33190bd0",
+      "name": "Instant Mixes",
+      "categoryId": "690a1c509dae4dbb7e20c0f8",
+      "categoryName": "Breakfast & Instant Food",
+      "sourceImage": "incoming-catalog/subcategories/Breakfast & Instant Food/Instant Mixes.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 100438,
+      "sha256": "c0a512c4efdfe4a46f32a50cde96b3f4715e951ffca0dc3bfefca673d9e288e3",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e17aebb3427cd33190bd8",
+      "name": "Pasta",
+      "categoryId": "690a1c509dae4dbb7e20c0f8",
+      "categoryName": "Breakfast & Instant Food",
+      "sourceImage": "incoming-catalog/subcategories/Breakfast & Instant Food/Pasta.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 128726,
+      "sha256": "1618406eaaadcc2ded82b8fa73775fe469ca937fc9de388c4a5a1766d5870990",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e17c0bb3427cd33190bdc",
+      "name": "Ready to Cook & Eat",
+      "categoryId": "690a1c509dae4dbb7e20c0f8",
+      "categoryName": "Breakfast & Instant Food",
+      "sourceImage": "incoming-catalog/subcategories/Breakfast & Instant Food/Ready to Cook & Eat.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 80404,
+      "sha256": "418aec793187495dc9adfb03894622b29233eaf759ce95e611d1afb9740b7eec",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e17ddbb3427cd33190be0",
+      "name": "Soup",
+      "categoryId": "690a1c509dae4dbb7e20c0f8",
+      "categoryName": "Breakfast & Instant Food",
+      "sourceImage": "incoming-catalog/subcategories/Breakfast & Instant Food/Soup.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 89036,
+      "sha256": "7c757f2d2945ee4cae17dcebd3d949cdcbcbb36c6525f3ed260574e891815e77",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1948bb3427cd33190c20",
+      "name": "Beverages Gift Packs",
+      "categoryId": "690a1cc19dae4dbb7e20c101",
+      "categoryName": "Cold Drinks & Juices",
+      "sourceImage": "incoming-catalog/subcategories/Cold Drinks & Juices/Beverages Gift Packs.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 59990,
+      "sha256": "795cb3834fae74f6e4e935da1e8d425917e68e6f4f98b5acf713625389be8368",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e19a2bb3427cd33190c34",
+      "name": "Concentrates & Syrups",
+      "categoryId": "690a1cc19dae4dbb7e20c101",
+      "categoryName": "Cold Drinks & Juices",
+      "sourceImage": "incoming-catalog/subcategories/Cold Drinks & Juices/Concentrates & Syrups.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 66768,
+      "sha256": "1b25435a774f69216287f47a732b91e9203a9131b422d9055bd75801e0e6a90e",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e20b8bb3427cd33190d7a",
+      "name": "Cookies & Wafers",
+      "categoryId": "690a1d6c9dae4dbb7e20c110",
+      "categoryName": "Organic & Healthy Living",
+      "sourceImage": "incoming-catalog/subcategories/Organic & Healthy Living/Cookies & Wafers.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 64690,
+      "sha256": "c5d422eb69491ae8e839e4ea29cbb107c92a2dc995590d4860b2754850bc29aa",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e280dbb3427cd33190ed4",
+      "name": "Energy Drinks",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Energy Drinks.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 84320,
+      "sha256": "3d34844d2cd7813457573878e87443c506dd6aefe6365d87a224b37e5637834b",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e281bbb3427cd33190ed8",
+      "name": "Fruit Juices",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Fruit Juices.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 32600,
+      "sha256": "836abac4f7d8de90b7a0de052ce353ab7672c08df131822b24e7fc960bdd5c14",
+      "currentImageState": "Base64"
+    }
+  ]
+}

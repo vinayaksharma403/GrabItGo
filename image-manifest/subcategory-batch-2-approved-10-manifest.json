@@ -1,0 +1,138 @@
+{
+  "$schemaDescription": "GrabItGo Scoped Import Manifest — Batch 2 Approved 10 Subcategories",
+  "generatedAt": "2026-09-26T10:57:30.000Z",
+  "status": "IMPORT_READY_SCOPED_MANIFEST — Zero database mutations or uploads performed in current phase",
+  "scope": {
+    "categories": 0,
+    "products": 0,
+    "subcategories": 10,
+    "alreadyMigratedBabyCareExcluded": 4,
+    "protectionsExcluded": 1,
+    "lowResNoodlesExcluded": 1,
+    "dualScopeOralHealthEyeCareExcluded": 1
+  },
+  "categories": [],
+  "products": [],
+  "subcategories": [
+    {
+      "id": "690b44e8d2141ae10ae1fb3f",
+      "name": "Atta",
+      "categoryId": "69076e6a4b6d776262c05137",
+      "categoryName": "Atta , Rice & Dal",
+      "sourceImage": "incoming-catalog/subcategories/Atta, Rice & Dal/Atta.png",
+      "expectedFormat": "image/png",
+      "expectedDimensions": "288x480",
+      "fileSize": 35573,
+      "sha256": "715a8a22a9e59e517b16e20c8b6d4da55e8dba9e34126629790c2d57e2beb69f",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1a9fbb3427cd33190c64",
+      "name": "Bread & Pav",
+      "categoryId": "690a1cd89dae4dbb7e20c104",
+      "categoryName": "Dairy, Bread & Eggs",
+      "sourceImage": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Bread & Pav.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 52052,
+      "sha256": "1ae6861fcfbb235b3a7efdaca940e737042fd66d26bf812053297e4766130a8a",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e16b8bb3427cd33190bb0",
+      "name": "Cream Biscuits",
+      "categoryId": "690a1c319dae4dbb7e20c0f5",
+      "categoryName": "Bakery & Biscuits",
+      "sourceImage": "incoming-catalog/subcategories/Bakery  Biscuits/Cream Biscuits.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 113026,
+      "sha256": "e8f1b65f575546683be7192539a4916fde983c01d9997fe9d78a682e589414bc",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e18aabb3427cd33190c04",
+      "name": "Dishwashing Gels & Powder",
+      "categoryId": "690a1c969dae4dbb7e20c0fe",
+      "categoryName": "Cleaning Essentials",
+      "sourceImage": "incoming-catalog/subcategories/Cleaning Essentials/Dishwashing Gels & Powder.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 26322,
+      "sha256": "8677171fdf263d2790c22e59f601764343a1eaccccc93b64493724a2cf44df7d",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1958bb3427cd33190c24",
+      "name": "Coconut Water",
+      "categoryId": "690a1cc19dae4dbb7e20c101",
+      "categoryName": "Cold Drinks & Juices",
+      "sourceImage": "incoming-catalog/subcategories/Cold Drinks & Juices/Coconut Water.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 82828,
+      "sha256": "2f16f8c4db1bb352535c451bd990a35666d842dacd4603d64b77dbaafce3a513",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1e1ebb3427cd33190d0c",
+      "name": "Fresheners",
+      "categoryId": "690a1d369dae4dbb7e20c10a",
+      "categoryName": "Home & Office",
+      "sourceImage": "incoming-catalog/subcategories/Home & Office/Fresheners.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 14292,
+      "sha256": "86c7c34e717fe5fcef0a1fabce2882ac6c7fb0f494b90a26a282fd4377859b5e",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e209abb3427cd33190d72",
+      "name": "Baby Food",
+      "categoryId": "690a1d6c9dae4dbb7e20c110",
+      "categoryName": "Organic & Healthy Living",
+      "sourceImage": "incoming-catalog/subcategories/Organic & Healthy Living/Baby Food.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 39720,
+      "sha256": "18fc846ee4199920e34a3635efab26b9665757efd48de7a8eae00b294f9ab9e0",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2801bb3427cd33190ed0",
+      "name": "Cold Coffee & Ice Tea",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Cold Coffee & Ice Tea.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 64702,
+      "sha256": "f92525c1e668e2fd1a284827b7a930cb88a3130fae434844312d1150206d989f",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e17f5bb3427cd33190be4",
+      "name": "Chicken",
+      "categoryId": "690a1c7a9dae4dbb7e20c0fb",
+      "categoryName": "Chicken, Meat & Fish",
+      "sourceImage": "incoming-catalog/subcategories/Chicken, Meat & Fish/Chicken.png",
+      "expectedFormat": "image/png",
+      "expectedDimensions": "288x480",
+      "fileSize": 26271,
+      "sha256": "ccb3b564e9d92d3fe52382ef4110256764ee82cc6c15344e06136c61821ae26a",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e266cbb3427cd33190e6d",
+      "name": "Chips & Crisps",
+      "categoryId": "690a1e489dae4dbb7e20c122",
+      "categoryName": "Snacks & Munchies",
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Chips & Crisps.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 30650,
+      "sha256": "b25a4f3783d4869772f1d2e9857c5bd90808ef418c9211b8cbde82279e6254bf",
+      "currentImageState": "Base64"
+    }
+  ]
+}

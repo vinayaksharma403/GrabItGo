@@ -1,48 +1,46 @@
-import { createContext, useContext, useState } from 'react'
-import Axios from '../utils/Axios'
-import SummaryApi from '../common/SummaryApi'
-import AxiosToastError from '../utils/AxiosToastError'
-import { useDispatch } from 'react-redux'
-import { setAddressList } from '../store/addressSlice'
-
-const GlobalContext = createContext()
-
-export const useGlobalContext = () => {
-  return useContext(GlobalContext)
-}
+import { useState, useCallback, useMemo } from 'react';
+import Axios from '../utils/axios';
+import SummaryApi from '../common/SummaryApi';
+import AxiosToastError from '../utils/AxiosToastError';
+import { useDispatch } from 'react-redux';
+import { setAddressList } from '../store/addressSlice';
+import { GlobalContext } from './GlobalContext';
 
 const GlobalProvider = ({ children }) => {
-  const [isLoading, setIsLoading] = useState(false)
-  const [error, setError] = useState(null)
-  const dispatch = useDispatch()
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const dispatch = useDispatch();
 
-  const fetchAddress = async () => {
+  const fetchAddress = useCallback(async () => {
     try {
       const response = await Axios({
-        ...SummaryApi.getAddress
-      })
-      const { data: responseData } = response
+        ...SummaryApi.getAddress,
+      });
+      const { data: responseData } = response;
       if (responseData.success) {
-        dispatch(setAddressList(responseData.data))
+        dispatch(setAddressList(responseData.data));
       }
-    } catch (error) {
-      AxiosToastError(error)
+    } catch (err) {
+      AxiosToastError(err);
     }
-  }
+  }, [dispatch]);
 
-  const value = {
-    isLoading,
-    setIsLoading,
-    error,
-    setError,
-    fetchAddress
-  }
+  const value = useMemo(
+    () => ({
+      isLoading,
+      setIsLoading,
+      error,
+      setError,
+      fetchAddress,
+    }),
+    [isLoading, error, fetchAddress]
+  );
 
   return (
     <GlobalContext.Provider value={value}>
       {children}
     </GlobalContext.Provider>
-  )
-}
+  );
+};
 
-export default GlobalProvider
+export default GlobalProvider;

@@ -1,0 +1,127 @@
+{
+  "$schemaDescription": "GrabItGo Scoped Import Manifest — Batch 7 Approved 9 Subcategories (Sweet Tooth)",
+  "generatedAt": "2026-09-26T14:08:00.000Z",
+  "status": "IMPORT_READY_SCOPED_MANIFEST — Zero database mutations or uploads performed in current phase",
+  "scope": {
+    "categories": 0,
+    "products": 0,
+    "subcategories": 9,
+    "alreadyMigratedExcluded": 60,
+    "flaggedRecordsExcluded": 3,
+    "protectionsExcluded": 1,
+    "lowResNoodlesExcluded": 1,
+    "dualScopeOralHealthEyeCareExcluded": 1
+  },
+  "categories": [],
+  "products": [],
+  "subcategories": [
+    {
+      "id": "690e2769bb3427cd33190ea8",
+      "name": "Cakes & Rolls",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Cakes & Rolls.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 77476,
+      "sha256": "d6b37b86d3b9f0832bffbd196c599956495670bd37875dae8aaa111bddb5c88e",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2776bb3427cd33190eac",
+      "name": "Candies & Gum",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Candies & Gum.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 28046,
+      "sha256": "fc1f52ccf97a6cd21d02d5eae5ec3abd5590c76a282ac325115d699d1909cfcb",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2782bb3427cd33190eb0",
+      "name": "Chocolates",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Chocolates.png",
+      "expectedFormat": "image/png",
+      "expectedDimensions": "288x480",
+      "fileSize": 39781,
+      "sha256": "8f106ddd624700df92f54aa696de856b8c3896bf299ff5921e64c0d265346d2f",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2794bb3427cd33190eb4",
+      "name": "Energy Bars",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Energy Bars.png",
+      "expectedFormat": "image/png",
+      "expectedDimensions": "288x480",
+      "fileSize": 29658,
+      "sha256": "e6d468d8b65ea12ff6118f2a0fbed12a0cce88645821190b4b6a984c597ee0e8",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e27a3bb3427cd33190eb8",
+      "name": "Flavoured Yougurts",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Flavoured Yougurts.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 18496,
+      "sha256": "524a2f8b61ff74bfce6d5302cc83ed477809d1fde71faecc63156402c9aec9d8",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e27b1bb3427cd33190ebc",
+      "name": "Ice Cream & Frozen Dessert",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Ice Cream & Frozen Dessert.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 15370,
+      "sha256": "5e33ac82831f908b1352363323aa43ff84c7d873938821cbd4021b45783f9094",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e27bdbb3427cd33190ec0",
+      "name": "Indian Sweets",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Indian Sweets.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 23256,
+      "sha256": "de32abc57e81b32ec2df4181366b49f8bb2a9cd419058b83b2e286d8ba531fe4",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e27cdbb3427cd33190ec4",
+      "name": "Mouth Fresheners",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Mouth Fresheners.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 21086,
+      "sha256": "5f460dff8153c6d398e3014a585dc0964be929ee9e9761a14c28b40353a21c89",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e27e1bb3427cd33190ec8",
+      "name": "Syrups",
+      "categoryId": "690a1e639dae4dbb7e20c125",
+      "categoryName": "Sweet Tooth",
+      "sourceImage": "incoming-catalog/subcategories/Sweet Tooth/Syrups.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 34640,
+      "sha256": "51229af777d0a12e64be468c02ba9e09e62ec756b5d3d879162dac32ecec43cd",
+      "currentImageState": "Base64"
+    }
+  ]
+}

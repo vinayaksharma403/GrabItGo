@@ -1,44 +1,36 @@
-import React from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 import SummaryApi from '../common/SummaryApi'
-import { useState } from 'react'
 import AxiosToastError from '../utils/AxiosToastError'
 import Axios from '../utils/axios'
-import { useEffect } from 'react'
 
 const Product = () => {
-    const [productData,setProductData] = useState([])
-    const [page,setPage] = useState(1)
+    const [productData, setProductData] = useState([])
+    const [page] = useState(1)
 
-    const fetchProductData = async()=>{
+    const fetchProductData = useCallback(async () => {
         try {
             const response = await Axios({
                 ...SummaryApi.getProduct,
-                data : {
-                    page : page,
-
-                }
-
+                params: { page }
             })
-
-            const {data : responseData} = response
-
-            console.log("product page",responseData)
-            if(responseData.success){
-                setProductData(responseData.data)
+            const { data: responseData } = response
+            if (responseData.success) {
+                setProductData(responseData.data || [])
             }
         } catch (error) {
             AxiosToastError(error)
         }
-    }
+    }, [page])
 
-    useEffect(()=>{
+    useEffect(() => {
         fetchProductData()
-    },[])
-  return (
-    <div>
-      Product
-    </div>
-  )
+    }, [fetchProductData])
+
+    return (
+        <div className='p-4'>
+            <h2 className='font-semibold text-lg'>Product Catalog ({productData.length} items)</h2>
+        </div>
+    )
 }
 
 export default Product

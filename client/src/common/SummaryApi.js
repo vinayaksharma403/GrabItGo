@@ -1,8 +1,10 @@
-export const baseURL = "http://localhost:8050";
+export const baseURL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8050";
+
 
 const SummaryApi = {
   // USER
   register: { url: "/api/user/register", method: "post" },
+  verifyEmail: { url: "/api/user/verify-email", method: "post" },
   login: { url: "/api/user/login", method: "post" },
   forgot_password: { url: "/api/user/forgot-password", method: "put" },
   forgot_password_otp_verification: {
@@ -58,6 +60,7 @@ const SummaryApi = {
   // ORDER
   createOrder: { url: "/api/order/create", method: "post" },
   getOrders: { url: "/api/order/get", method: "get" },
+  getAllOrdersAdmin: { url: "/api/order/admin/all", method: "get" },
   updateOrderStatus: { url: "/api/order/update-status", method: "put" },
 
   // ADDRESS

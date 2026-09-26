@@ -1,0 +1,2714 @@
+{
+  "metadata": {
+    "generatedAt": "2026-09-24T08:38:54.067Z",
+    "totalProducts": 159,
+    "totalCategories": 20,
+    "totalSubcategories": 219,
+    "imageStorageType": "Historical Base64 Data URIs (Pending Authentic Replacement)"
+  },
+  "products": [
+    {
+      "itemNumber": 1,
+      "productId": "6910a218103c0bf39ffe72c0",
+      "productName": "24 Mantra Organic White Poha",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Poha, Daliya & Other Grains"
+      ],
+      "unit": "1 Kg",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 2,
+      "productId": "690edd48c9b8cdb75b3905d5",
+      "productName": "Aashirvaad Superior MP Atta",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Atta"
+      ],
+      "unit": "5",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 3,
+      "productId": "6915a03caae89cd547adaa47",
+      "productName": "Ambi Pur Mood Therapy Collection Room Freshener (Rose)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Fresheners"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 4,
+      "productId": "691acf2aebb882a9fa93ad01",
+      "productName": "B Natural Orange Juice - Pack of 2",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Fruit Juices"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 5,
+      "productId": "6915759ab8ebf60a0d946d93",
+      "productName": "Barilla Lasagne Egg Pasta",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Imported Noodles & Pasta"
+      ],
+      "unit": "1",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 6,
+      "productId": "6910a139103c0bf39ffe72ba",
+      "productName": "Basic Moong Dal (Dhuli)",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Moong & Masoor"
+      ],
+      "unit": "1 Kg",
+      "price": 60,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 7,
+      "productId": "691576c8b8ebf60a0d946d97",
+      "productName": "Betty Crocker Original Pancake Mix",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Instant Mixes"
+      ],
+      "unit": "1",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 8,
+      "productId": "69137aead2e87ae4de6fb37a",
+      "productName": "Britannia 5050 Maska Chaska Sweet & Salty Biscuits",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Sweet & Salty"
+      ],
+      "unit": "1",
+      "price": 35,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 9,
+      "productId": "69137b22d2e87ae4de6fb37c",
+      "productName": "Britannia Little Hearts Classic Biscuit",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Sweet & Salty"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 10,
+      "productId": "6913795ed2e87ae4de6fb36e",
+      "productName": "Britannia Marie Gold Marie Biscuits",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Glucose & Marie"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 11,
+      "productId": "69137a22d2e87ae4de6fb374",
+      "productName": "Britannia NutriChoice Digestive Zero Biscuit",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Healthy & Digestive"
+      ],
+      "unit": "1",
+      "price": 25,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 12,
+      "productId": "69137a76d2e87ae4de6fb376",
+      "productName": "Britannia NutriChoice Seeds Biscuit",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Healthy & Digestive"
+      ],
+      "unit": "1",
+      "price": 25,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 13,
+      "productId": "69137ab1d2e87ae4de6fb378",
+      "productName": "Britannia NutriChoice Sugar Free Healthy & Digestive Cracker",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Healthy & Digestive"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 14,
+      "productId": "691accd3ebb882a9fa93acef",
+      "productName": "Bru Cold Coffee (Caramel)",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Cold Coffee & Ice Tea"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 15,
+      "productId": "6913778cd2e87ae4de6fb360",
+      "productName": "Cadbury Chocobakes Choco Chip Cookies",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Cookies & Wafers"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 16,
+      "productId": "6913789cd2e87ae4de6fb368",
+      "productName": "Cadbury Oreo Original Vanilla Sandwich Cream Biscuits 481.25 g - Jumbo Pack",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Cream Biscuits"
+      ],
+      "unit": "1",
+      "price": 10,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 17,
+      "productId": "6915a1c4aae89cd547adaa49",
+      "productName": "CamPure Sandalwood Camphor  Kapur Cone",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Fresheners"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 18,
+      "productId": "691578b9b8ebf60a0d946da3",
+      "productName": "Chef's Basket Durum Wheat Penne Domestic Pasta",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Pasta"
+      ],
+      "unit": "1",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 19,
+      "productId": "69137340d2e87ae4de6fb344",
+      "productName": "Chicco Fresh Spring Baby Laundry Detergent",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Hygiene"
+      ],
+      "unit": "1 Kg",
+      "price": 150,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 20,
+      "productId": "691211f290633218b30f093b",
+      "productName": "Chicco Gentle Body Baby Wash & Shampoo",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Bathing Needs"
+      ],
+      "unit": "1",
+      "price": 150,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 21,
+      "productId": "691375c1d2e87ae4de6fb354",
+      "productName": "Chicco Kids Toothbrush (Blue)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Oral Health & Eye Care"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 22,
+      "productId": "691375f2d2e87ae4de6fb356",
+      "productName": "Chicco Toothpaste (Strawberry Flavor, 12M+)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Oral Health & Eye Care"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 23,
+      "productId": "69157709b8ebf60a0d946d99",
+      "productName": "Ching's Secret Schezwan Fried Rice Masala - Pack of 5",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Instant Mixes"
+      ],
+      "unit": "1",
+      "price": 25,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 24,
+      "productId": "69137633d2e87ae4de6fb358",
+      "productName": "Colgate Batman Bubble Fruit Flavour Kids Toothpaste (6+ Years)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Oral Health & Eye Care"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 25,
+      "productId": "69159f65aae89cd547adaa41",
+      "productName": "Colin Glass Cleaner (500 ml)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Floor Cleaners & More"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 26,
+      "productId": "6910a54d103c0bf39ffe72ce",
+      "productName": "Daawat Pulav Basmati Rice (Slender Grains)",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Rice"
+      ],
+      "unit": "1 Kg",
+      "price": 100,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 27,
+      "productId": "6910a58a103c0bf39ffe72d0",
+      "productName": "Daawat Rozana Super Basmati Rice",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Rice"
+      ],
+      "unit": "1 Kg",
+      "price": 95,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 28,
+      "productId": "69159e6faae89cd547adaa39",
+      "productName": "Dettol Liquid Disinfectant (Menthol Cool)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Disinfectant & More"
+      ],
+      "unit": "1",
+      "price": 25,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 29,
+      "productId": "69159eadaae89cd547adaa3b",
+      "productName": "Dettol Original Multi-Use Skin & Surface Wet Wipes",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Disinfectant & More"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 30,
+      "productId": "691584a5b8ebf60a0d946dea",
+      "productName": "Exo Anti Bacterial Ginger Twist Dishwash Bar",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Gels & Powder"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 31,
+      "productId": "690ede68c9b8cdb75b3905d7",
+      "productName": "Fortune Chakki Fresh (100% Atta, 0% Maida) Atta",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Atta"
+      ],
+      "unit": "5",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 32,
+      "productId": "6910a283103c0bf39ffe72c2",
+      "productName": "Fortune Indori Thick Poha",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Poha, Daliya & Other Grains"
+      ],
+      "unit": "1 Kg",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 33,
+      "productId": "690f7ddf018466f795b3875d",
+      "productName": "Fortune Maida",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Besan, Sooji & Maida"
+      ],
+      "unit": "5",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 34,
+      "productId": "69157ed5b8ebf60a0d946dd2",
+      "productName": "Gadre Seafood Seafood Snack",
+      "categories": [
+        "Chicken, Meat & Fish"
+      ],
+      "subcategories": [
+        "Fish & Seafood"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 35,
+      "productId": "6915817ab8ebf60a0d946ddc",
+      "productName": "Gala Broom  Jhadu (Plastic Sticks)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Cleaning Tools"
+      ],
+      "unit": "1",
+      "price": 35,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 36,
+      "productId": "691581e8b8ebf60a0d946dde",
+      "productName": "Gala No Dust 90 cm Broom  Jhadu (Plastic, Blue & Brown)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Cleaning Tools"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 37,
+      "productId": "691582f4b8ebf60a0d946de0",
+      "productName": "Gala Wiper with Replaceable Handle",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Cleaning Tools"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 38,
+      "productId": "6915a207aae89cd547adaa4b",
+      "productName": "Godrej Aer Matic Air Freshener - Cool Surf Blue",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Fresheners"
+      ],
+      "unit": "1",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 39,
+      "productId": "6919ffb974e2ea450fcc83eb",
+      "productName": "Godrej Aer Matic Air Freshener - Cool Surf Blue",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Fresheners"
+      ],
+      "unit": "1",
+      "price": 25,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 40,
+      "productId": "6919ff6d74e2ea450fcc83e9",
+      "productName": "Godrej Aer Power Pocket Floral Delight Air Freshener",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Fresheners"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 41,
+      "productId": "6915a24faae89cd547adaa4d",
+      "productName": "Godrej Aer Power Pocket Floral Delight Air Freshener",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Fresheners"
+      ],
+      "unit": "1",
+      "price": 60,
+      "discount": 1,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 42,
+      "productId": "69157d61b8ebf60a0d946dcc",
+      "productName": "Godrej Real Good Chicken Curry Cut",
+      "categories": [
+        "Chicken, Meat & Fish"
+      ],
+      "subcategories": [
+        "Chicken"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 43,
+      "productId": "69157f5ab8ebf60a0d946dd6",
+      "productName": "Godrej Yummiez Breakfast Chicken Sausage (Frozen)",
+      "categories": [
+        "Chicken, Meat & Fish"
+      ],
+      "subcategories": [
+        "Sausage, Salami & Ham"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 44,
+      "productId": "69157fb4b8ebf60a0d946dd8",
+      "productName": "Godrej Yummiez Pepper & Herb Chicken Sausage (Frozen)",
+      "categories": [
+        "Chicken, Meat & Fish"
+      ],
+      "subcategories": [
+        "Sausage, Salami & Ham"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 45,
+      "productId": "691acdd7ebb882a9fa93acf7",
+      "productName": "Guruji Kesaria Thandai",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Concentrates & Syrups"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 46,
+      "productId": "691579a2b8ebf60a0d946da9",
+      "productName": "Haldiram's Minute Khana Pav Bhaji",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Ready to Cook & Eat"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 47,
+      "productId": "691ace17ebb882a9fa93acf9",
+      "productName": "Hamdard Rooh Afza Rose Sharbat",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Concentrates & Syrups"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 48,
+      "productId": "691208ce90633218b30f092f",
+      "productName": "Himalaya Babycare Baby Gift Set (Set of 7)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Gifting & Toys"
+      ],
+      "unit": "1",
+      "price": 450,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 49,
+      "productId": "6913721bd2e87ae4de6fb33e",
+      "productName": "Himalaya Diaper Rash Cream",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Health & Safety"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 50,
+      "productId": "691212e290633218b30f093d",
+      "productName": "Himalaya Gentle Baby Wash",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Bathing Needs"
+      ],
+      "unit": "1",
+      "price": 60,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 51,
+      "productId": "6912091d90633218b30f0931",
+      "productName": "Himalaya Happy Baby Gift Set",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Gifting & Toys"
+      ],
+      "unit": "1",
+      "price": 250,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 52,
+      "productId": "69136f7fd2e87ae4de6fb332",
+      "productName": "Huggies Wonder Diaper (Pants, XXL, 15-25 kg)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Diapers & More"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 53,
+      "productId": "6910a5e6103c0bf39ffe72d2",
+      "productName": "India Gate Kolam Rice",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Rice"
+      ],
+      "unit": "10Kg",
+      "price": 150,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 54,
+      "productId": "69157dbdb8ebf60a0d946dce",
+      "productName": "ITC Master Chef Desi Style Chicken Burger Patty (Frozen)",
+      "categories": [
+        "Chicken, Meat & Fish"
+      ],
+      "subcategories": [
+        "Chicken"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 55,
+      "productId": "6910a01f103c0bf39ffe72b4",
+      "productName": "K-Pra Thalipeeth Bhajani Flour Mix",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Millet & Other Flours"
+      ],
+      "unit": "1 Kg",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 56,
+      "productId": "69157752b8ebf60a0d946d9b",
+      "productName": "Knorr Chinese Manchurian Instant Mix",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Instant Mixes"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 57,
+      "productId": "69157ac3b8ebf60a0d946daf",
+      "productName": "Knorr Hot & Sour Vegetable Soup",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Soup"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 58,
+      "productId": "69157b6cb8ebf60a0d946db1",
+      "productName": "Knorr International Italian Mushroom Soup",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Soup"
+      ],
+      "unit": "1",
+      "price": 35,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 59,
+      "productId": "691577a5b8ebf60a0d946d9d",
+      "productName": "Knorr Mast Masala Soupy Noodles",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Noodles"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 60,
+      "productId": "69157c24b8ebf60a0d946db3",
+      "productName": "Knorr Thick Tomato Soup",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Soup"
+      ],
+      "unit": "1",
+      "price": 25,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 61,
+      "productId": "691585bcb8ebf60a0d946df0",
+      "productName": "Koparo Clean Large Kitchen Sponge Wipe (18 x 20.5 cm)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Accessories"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 62,
+      "productId": "691376aed2e87ae4de6fb35a",
+      "productName": "Kwality Kreamy Magic Cream Bread Roll",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Bread & Pav"
+      ],
+      "unit": "50g",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 63,
+      "productId": "691376f2d2e87ae4de6fb35c",
+      "productName": "Kwality Whole Wheat Bread",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Bread & Pav"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 64,
+      "productId": "691acb6eebb882a9fa93ace5",
+      "productName": "Lazy Cocktails & Co. Variety Pack",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Beverages Gift Packs"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 65,
+      "productId": "691377d0d2e87ae4de6fb362",
+      "productName": "Let's Try Ragi Kaju Pista Cookies",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Cookies & Wafers"
+      ],
+      "unit": "1",
+      "price": 24,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 66,
+      "productId": "69120bbd90633218b30f0935",
+      "productName": "Little's Baby Wipes",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Wipes"
+      ],
+      "unit": "1",
+      "price": 80,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 67,
+      "productId": "69159f98aae89cd547adaa43",
+      "productName": "Lizol Disinfectant Surface & Floor Cleaner",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Floor Cleaners & More"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 68,
+      "productId": "69159ffcaae89cd547adaa45",
+      "productName": "Lizol Disinfectant Surface & Floor Cleaner (Citrus) 500 ml",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Floor Cleaners & More"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 69,
+      "productId": "6911f9e490633218b30f0918",
+      "productName": "LuvLap 3 in 1 Baby Bed, Sleeping Bag & Carry Nest (Blue, New Born)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Accessories & Apparel"
+      ],
+      "unit": "1",
+      "price": 550,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 70,
+      "productId": "6913737ed2e87ae4de6fb346",
+      "productName": "LuvLap Baby Laundry Detergent",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Hygiene"
+      ],
+      "unit": "1Kg",
+      "price": 200,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 71,
+      "productId": "691370a2d2e87ae4de6fb338",
+      "productName": "LuvLap Blue Feeding Bottle (with Silicone Nipple, 250 ml)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Feeding"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 72,
+      "productId": "6911fa5590633218b30f091a",
+      "productName": "LuvLap Comfy Baby Walker & Rocker (Pink, 6 - 18 months)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Accessories & Apparel"
+      ],
+      "unit": "1",
+      "price": 550,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 73,
+      "productId": "6913742ad2e87ae4de6fb34a",
+      "productName": "LuvLap Manual Breast Pump",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Mom Care Needs"
+      ],
+      "unit": "1",
+      "price": 25,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 74,
+      "productId": "69120e3290633218b30f0937",
+      "productName": "LuvLap Moisturising Baby Wipes with Aloe Vera",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Wipes"
+      ],
+      "unit": "1",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 75,
+      "productId": "691370f7d2e87ae4de6fb33a",
+      "productName": "LuvLap Natura Flo Wide Neck Feeding Bottle (3 Months+)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Feeding"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 76,
+      "productId": "691371b2d2e87ae4de6fb33c",
+      "productName": "LuvLap Washable Breast Pad",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Feeding"
+      ],
+      "unit": "1",
+      "price": 25,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 77,
+      "productId": "6911fab890633218b30f091c",
+      "productName": "Maate Baby Travel Bag (Brown)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Accessories & Apparel"
+      ],
+      "unit": "1",
+      "price": 500,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 78,
+      "productId": "69157813b8ebf60a0d946d9f",
+      "productName": "Maggi Masala - 2 Minutes Instant Noodles",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Noodles"
+      ],
+      "unit": "1",
+      "price": 10,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 79,
+      "productId": "69137285d2e87ae4de6fb340",
+      "productName": "Mamaearth Digestion & Colic Relief Tummy Roll On",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Health & Safety"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 80,
+      "productId": "6912133a90633218b30f093f",
+      "productName": "Mamaearth Gentle Cleansing Baby Shampoo",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Bathing Needs"
+      ],
+      "unit": "1",
+      "price": 65,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 81,
+      "productId": "69136fddd2e87ae4de6fb334",
+      "productName": "MamyPoko Pants Standard Diaper (M, 7-12 kg)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Diapers & More"
+      ],
+      "unit": "1",
+      "price": 35,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 82,
+      "productId": "691373d9d2e87ae4de6fb348",
+      "productName": "Mee Mee Anti-Bacterial Baby Liquid Cleanser (Refill)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Hygiene"
+      ],
+      "unit": "1 Kg",
+      "price": 175,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 83,
+      "productId": "6910a2e9103c0bf39ffe72c4",
+      "productName": "Millets & More Cheese Millet Bhel",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Poha, Daliya & Other Grains"
+      ],
+      "unit": "1 Kg",
+      "price": 48,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 84,
+      "productId": "691ace52ebb882a9fa93acfb",
+      "productName": "Monster Energy Drink",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Energy Drinks"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 85,
+      "productId": "6912108990633218b30f0939",
+      "productName": "Mother Sparsh 98 % Pure Water Baby Wipes",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Wipes"
+      ],
+      "unit": "1",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 86,
+      "productId": "691372ddd2e87ae4de6fb342",
+      "productName": "Mother Sparsh Tummy Roll On",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Health & Safety"
+      ],
+      "unit": "1",
+      "price": 35,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 87,
+      "productId": "6910a341103c0bf39ffe72c6",
+      "productName": "MP'S BEST Lokwan Wheat",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Poha, Daliya & Other Grains"
+      ],
+      "unit": "1 Kg",
+      "price": 48,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 88,
+      "productId": "691573afb8ebf60a0d946d87",
+      "productName": "MTR Gulab Jamun Dessert Mix",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Dessert & Cake Mixes"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 89,
+      "productId": "690f991cad2e4eea5105700a",
+      "productName": "Natureland Chana Organic Besan",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Besan, Sooji & Maida"
+      ],
+      "unit": "500g",
+      "price": 60,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 90,
+      "productId": "691acd22ebb882a9fa93acf1",
+      "productName": "Nescafe Choco Mocha Cold Coffee",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Cold Coffee & Ice Tea"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 91,
+      "productId": "691acd5aebb882a9fa93acf3",
+      "productName": "Nescafe Iced Latte Cold Coffee - Pack of 2",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Cold Coffee & Ice Tea"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 92,
+      "productId": "6912058190633218b30f0927",
+      "productName": "Nestle Lactogen Pro 2 Follow up Formula (After 6 Months Up to 12 Months)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Food"
+      ],
+      "unit": "500g",
+      "price": 180,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 93,
+      "productId": "691205e290633218b30f0929",
+      "productName": "Nestle NAN PRO Powder Infant Formula (Upto 6 months - Stage 1)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Food"
+      ],
+      "unit": "500g",
+      "price": 150,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 94,
+      "productId": "691575f0b8ebf60a0d946d95",
+      "productName": "Nongshim Kimchi Ramyun Noodle Soup",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Imported Noodles & Pasta"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 95,
+      "productId": "691374c2d2e87ae4de6fb34e",
+      "productName": "Nuluv Burp Cloth (0 to 6 Months)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Nursing"
+      ],
+      "unit": "1",
+      "price": 120,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 96,
+      "productId": "6910a3af103c0bf39ffe72c8",
+      "productName": "Nutrela Soya Granules",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Rajma, Chhole & Others"
+      ],
+      "unit": "1 Kg",
+      "price": 39,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 97,
+      "productId": "6910a63f103c0bf39ffe72d4",
+      "productName": "Organic Tattva Organic Urad Dal (Dhuli)",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Toor, Urad & Chana"
+      ],
+      "unit": "1 Kg",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 98,
+      "productId": "6913750ad2e87ae4de6fb350",
+      "productName": "Oyo Baby Bed Protector Sheet",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Nursing"
+      ],
+      "unit": "1",
+      "price": 150,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 99,
+      "productId": "69137547d2e87ae4de6fb352",
+      "productName": "Oyo Baby Blanket (Star Blue)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Nursing"
+      ],
+      "unit": "1",
+      "price": 200,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 100,
+      "productId": "6912096290633218b30f0933",
+      "productName": "Oyo Baby Care Gift Set",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Gifting & Toys"
+      ],
+      "unit": "1",
+      "price": 250,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 101,
+      "productId": "69137045d2e87ae4de6fb336",
+      "productName": "Pampers All Round Protection Diaper (Pants, XXL, 15-25 kg)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Diapers & More"
+      ],
+      "unit": "1",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 102,
+      "productId": "691acbb1ebb882a9fa93ace7",
+      "productName": "Paper boat Coconut Water - Pack of 6",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Coconut Water"
+      ],
+      "unit": "1",
+      "price": 200,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 103,
+      "productId": "69137811d2e87ae4de6fb364",
+      "productName": "Parle Milano Chocolate Chip Biscuit",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Cookies & Wafers"
+      ],
+      "unit": "1",
+      "price": 15,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 104,
+      "productId": "69137994d2e87ae4de6fb370",
+      "productName": "Parle-G Glucose Biscuit - Pack of 2",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Glucose & Marie"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 105,
+      "productId": "691379c6d2e87ae4de6fb372",
+      "productName": "Parle-G Gold Biscuit - Pack of 2",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Glucose & Marie"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 106,
+      "productId": "69137b5cd2e87ae4de6fb37e",
+      "productName": "Patanjali Whole Wheat Nariyal Biscuit",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Sweet & Salty"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 107,
+      "productId": "69159ee8aae89cd547adaa3d",
+      "productName": "Pee Safe Toilet Seat Disinfectant Spray (Mint)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Disinfectant & More"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 108,
+      "productId": "691573fab8ebf60a0d946d89",
+      "productName": "Pillsbury Chocolate Cooker Cake Mix",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Dessert & Cake Mixes"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 109,
+      "productId": "69157e1bb8ebf60a0d946dd0",
+      "productName": "Prasuma Original Chicken Momos (Frozen)",
+      "categories": [
+        "Chicken, Meat & Fish"
+      ],
+      "subcategories": [
+        "Chicken"
+      ],
+      "unit": "1",
+      "price": 150,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 110,
+      "productId": "691586aab8ebf60a0d946df6",
+      "productName": "Pril Lime Grease Fighter Dishwash Gel",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Gels & Powder"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 111,
+      "productId": "690edfb7c9b8cdb75b3905d9",
+      "productName": "Pro Nature Whole Wheat Organic Atta",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Atta"
+      ],
+      "unit": "5",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 112,
+      "productId": "690f9af6ad2e4eea51057014",
+      "productName": "Rajdhani Besan",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Besan, Sooji & Maida"
+      ],
+      "unit": "1 Kg",
+      "price": 65,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 113,
+      "productId": "6910a06c103c0bf39ffe72b6",
+      "productName": "Rajdhani Chana Sattu",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Millet & Other Flours"
+      ],
+      "unit": "1 Kg",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 114,
+      "productId": "691acbf1ebb882a9fa93ace9",
+      "productName": "Raw Pressery Coconut Water - Pack of 6",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Coconut Water"
+      ],
+      "unit": "1",
+      "price": 200,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 115,
+      "productId": "691acd90ebb882a9fa93acf5",
+      "productName": "Raw Pressery Iced Green Tea (Peach)",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Cold Coffee & Ice Tea"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 116,
+      "productId": "691acc31ebb882a9fa93aceb",
+      "productName": "Real Activ 100% Tender Coconut Water - Pack of 4",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Coconut Water"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 117,
+      "productId": "691ace82ebb882a9fa93acfd",
+      "productName": "Red Bull Energy Drink (250 ml)",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Energy Drinks"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 118,
+      "productId": "6913784cd2e87ae4de6fb366",
+      "productName": "RiteBite Max Protein Choco Chips Cookie",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Cookies & Wafers"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 119,
+      "productId": "690f9baaad2e4eea5105701b",
+      "productName": "Samrat MP SoojiRava",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Atta"
+      ],
+      "unit": "500g",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 120,
+      "productId": "69158528b8ebf60a0d946dec",
+      "productName": "SaveMore Dishwashing Tub + Heavy Duty Scrub Pad Combo",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Gels & Powder"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 121,
+      "productId": "69158712b8ebf60a0d946df8",
+      "productName": "SaveMore Lemon Dishwash Gel (500 ml) + Dishwashing Tub Combo",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Gels & Powder"
+      ],
+      "unit": "500g",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 122,
+      "productId": "69159f22aae89cd547adaa3f",
+      "productName": "Savlon Surface Disinfectant Spray - Pack of 2",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Disinfectant & More"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 123,
+      "productId": "69158342b8ebf60a0d946de2",
+      "productName": "Scotch Brite - Broom  Jhadu",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Cleaning Tools"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 124,
+      "productId": "691585fdb8ebf60a0d946df2",
+      "productName": "Scotch Brite Silver Sparks Scrub Pad",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Accessories"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 125,
+      "productId": "69158639b8ebf60a0d946df4",
+      "productName": "Scotch Brite Stainless Steel Scrubber with 1 Scrub Pad",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Accessories"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 126,
+      "productId": "69157436b8ebf60a0d946d8b",
+      "productName": "Slurrp Farm Banana Chocochip Pancake Mix",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Dessert & Cake Mixes"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 127,
+      "productId": "6912082b90633218b30f092b",
+      "productName": "Slurrp Farm Beetroot Dosa Mix",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Food"
+      ],
+      "unit": "500g",
+      "price": 200,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 128,
+      "productId": "6912087690633218b30f092d",
+      "productName": "Slurrp Farm Spinach Dosa Mix",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Food"
+      ],
+      "unit": "500g",
+      "price": 200,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 129,
+      "productId": "6915749ab8ebf60a0d946d8d",
+      "productName": "Snapin Chilli Flakes",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Herbs & Seasoning"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 130,
+      "productId": "691574e4b8ebf60a0d946d8f",
+      "productName": "Snapin Oregano",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Herbs & Seasoning"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 131,
+      "productId": "69157543b8ebf60a0d946d91",
+      "productName": "Snapin Red Chilli Flakes Seasoning",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Herbs & Seasoning"
+      ],
+      "unit": "1",
+      "price": 35,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 132,
+      "productId": "691acebaebb882a9fa93acff",
+      "productName": "Sting Energy Drink (250 ml)",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Energy Drinks"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 133,
+      "productId": "69157f17b8ebf60a0d946dd4",
+      "productName": "Sumeru Five Senses Prawns Medium",
+      "categories": [
+        "Chicken, Meat & Fish"
+      ],
+      "subcategories": [
+        "Fish & Seafood"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 134,
+      "productId": "691378ddd2e87ae4de6fb36a",
+      "productName": "Sunfeast Dark Fantasy Choco Creme Center Filled Biscuits (3 x 83 g)",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Cream Biscuits"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 135,
+      "productId": "69137914d2e87ae4de6fb36c",
+      "productName": "Sunfeast Dark Fantasy Desserts Choco Chunks Cookies",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Cream Biscuits"
+      ],
+      "unit": "1",
+      "price": 20,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 136,
+      "productId": "691578f4b8ebf60a0d946da5",
+      "productName": "Sunfeast Yipee Instant Pasta Treat - Masala",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Pasta"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 137,
+      "productId": "6912051a90633218b30f0925",
+      "productName": "SuperBottoms Basic Newborn Baby Gift Set (Multicolour, 0-3 Months)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Baby Accessories & Apparel"
+      ],
+      "unit": "1",
+      "price": 400,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 138,
+      "productId": "691583b2b8ebf60a0d946de4",
+      "productName": "Surf Excel Easy Wash Detergent Powder (1 kg)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Cleaning Tools"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 139,
+      "productId": "690f9c72ad2e4eea51057027",
+      "productName": "Tata Sampann 100% Chana Dal Fine BesanGram Flour",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Atta"
+      ],
+      "unit": "1 Kg",
+      "price": 65,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 140,
+      "productId": "6910a17e103c0bf39ffe72bc",
+      "productName": "Tata Sampann Unpolished Green Moong (Sabut) Whole Dal",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Moong & Masoor"
+      ],
+      "unit": "1 Kg",
+      "price": 65,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 141,
+      "productId": "6910a67f103c0bf39ffe72d6",
+      "productName": "Tata Sampann Unpolished Kali Urad (Sabut)",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Toor, Urad & Chana"
+      ],
+      "unit": "1 Kg",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 142,
+      "productId": "6910a1c9103c0bf39ffe72be",
+      "productName": "Tata Sampann Unpolished Yellow Moong Dal (Dhuli) Split",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Moong & Masoor"
+      ],
+      "unit": "1 Kg",
+      "price": 49,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 143,
+      "productId": "691579ecb8ebf60a0d946dab",
+      "productName": "Tata Sampann Yumside Cheesy Pasta With Black Olives - Ready to Eat",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Ready to Cook & Eat"
+      ],
+      "unit": "1",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 144,
+      "productId": "69157a42b8ebf60a0d946dad",
+      "productName": "Tata Sampann Yumside Classic Chicken Seekh Kebab",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Ready to Cook & Eat"
+      ],
+      "unit": "1",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 145,
+      "productId": "69137733d2e87ae4de6fb35e",
+      "productName": "The Baker's Dozen 100% Butter Croissant",
+      "categories": [
+        "Bakery & Biscuits"
+      ],
+      "subcategories": [
+        "Bread & Pav"
+      ],
+      "unit": "1",
+      "price": 15,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 146,
+      "productId": "69137478d2e87ae4de6fb34c",
+      "productName": "The Moms Co. Natural Butter Nipple Cream (With Mono Cartons)",
+      "categories": [
+        "Baby Care"
+      ],
+      "subcategories": [
+        "Mom Care Needs"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 147,
+      "productId": "691583eeb8ebf60a0d946de6",
+      "productName": "Tide Double Power Jasmine & Rose Detergent Powder - Get 1 kg Free",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Detergent Powder & Bars"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 148,
+      "productId": "6910a0cc103c0bf39ffe72b8",
+      "productName": "True Elements Super Grains Oat Flour",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Millet & Other Flours"
+      ],
+      "unit": "1 Kg",
+      "price": 60,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 149,
+      "productId": "69158771b8ebf60a0d946dfa",
+      "productName": "Vim Anti Smell Dishwash Gel With Pudina",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Gels & Powder"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 150,
+      "productId": "69158573b8ebf60a0d946dee",
+      "productName": "Vim Lemon Dishwash Bar (Pack of 4)",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Gels & Powder"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 151,
+      "productId": "691587c3b8ebf60a0d946dfc",
+      "productName": "Vim Lemon Dishwash Gel",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Dishwashing Gels & Powder"
+      ],
+      "unit": "500 ml ",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 152,
+      "productId": "69158452b8ebf60a0d946de8",
+      "productName": "Wheel 2 in 1 Clean & Fresh Detergent Powder",
+      "categories": [
+        "Cleaning Essentials"
+      ],
+      "subcategories": [
+        "Detergent Powder & Bars"
+      ],
+      "unit": "1",
+      "price": 30,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 153,
+      "productId": "6910a6dc103c0bf39ffe72d8",
+      "productName": "Whole Farm Grocery Gram  Chana Dal",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Toor, Urad & Chana"
+      ],
+      "unit": "1 Kg",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 154,
+      "productId": "6910a40c103c0bf39ffe72ca",
+      "productName": "Whole Farm Grocery Kabuli Chana (Medium Size)",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Rajma, Chhole & Others"
+      ],
+      "unit": "500g",
+      "price": 49,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 155,
+      "productId": "6910a44b103c0bf39ffe72cc",
+      "productName": "Whole Farm Premium Kashmiri Red Rajma",
+      "categories": [
+        "Atta , Rice & Dal"
+      ],
+      "subcategories": [
+        "Rajma, Chhole & Others"
+      ],
+      "unit": "500g",
+      "price": 55,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 156,
+      "productId": "691acc7cebb882a9fa93aced",
+      "productName": "Wow! Coco Charge 100% Organic Tender Coconut Water",
+      "categories": [
+        "Cold Drinks & Juices"
+      ],
+      "subcategories": [
+        "Coconut Water"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 157,
+      "productId": "69157859b8ebf60a0d946da1",
+      "productName": "Yu Chilli Manchurian Instant Cup Noodles",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Noodles"
+      ],
+      "unit": "1",
+      "price": 40,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 158,
+      "productId": "6915795cb8ebf60a0d946da7",
+      "productName": "Yu Pink Sauce Instant Wheat Pasta (Penne) - Buy 1 Get 1 Free",
+      "categories": [
+        "Breakfast & Instant Food"
+      ],
+      "subcategories": [
+        "Pasta"
+      ],
+      "unit": "1",
+      "price": 45,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    },
+    {
+      "itemNumber": 159,
+      "productId": "69157ff4b8ebf60a0d946dda",
+      "productName": "Zorabian Spicy Chicken Sausage",
+      "categories": [
+        "Chicken, Meat & Fish"
+      ],
+      "subcategories": [
+        "Sausage, Salami & Ham"
+      ],
+      "unit": "1",
+      "price": 50,
+      "discount": 0,
+      "published": true,
+      "currentImageCount": 1,
+      "imageStorageType": "BASE64"
+    }
+  ]
+}

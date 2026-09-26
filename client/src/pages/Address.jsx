@@ -1,33 +1,43 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { MdEdit, MdDelete } from "react-icons/md";
-import { FaPlus } from "react-icons/fa";
-import AddAddress from '../components/AddAddress';
-import SummaryApi from '../common/SummaryApi';
-import Axios from '../utils/Axios';
-import AxiosToastError from '../utils/AxiosToastError';
-import toast from 'react-hot-toast';
-import { useGlobalContext } from '../provider/GlobalProvider';
+import { FiMapPin, FiPlus, FiEdit2, FiTrash2, FiPhone } from 'react-icons/fi'
+import AddAddress from '../components/AddAddress'
+import ConfirmBox from '../components/ConfirmBox'
+import NoData from '../components/NoData'
+import SummaryApi from '../common/SummaryApi'
+import Axios from '../utils/axios'
+import AxiosToastError from '../utils/AxiosToastError'
+import toast from 'react-hot-toast'
+import { useGlobalContext } from '../provider/GlobalContext'
 
 const Address = () => {
-  const addressList = useSelector(state => state.addresses.addressList)
+  const addressList = useSelector((state) => state.addresses.addressList) || []
   const [openAddress, setOpenAddress] = useState(false)
   const [selectedAddress, setSelectedAddress] = useState(null)
+  const [deleteAddressId, setDeleteAddressId] = useState(null)
+  const { fetchAddress } = useGlobalContext()
 
-  const handleDisableAddress = async (addressId) => {
+  useEffect(() => {
+    fetchAddress()
+  }, [fetchAddress])
+
+  const handleConfirmDelete = async () => {
+    if (!deleteAddressId) return
     try {
       const response = await Axios({
         ...SummaryApi.deleteAddress,
         data: {
-          _id: addressId
+          _id: deleteAddressId
         }
       })
       if (response.data.success) {
-        toast.success("Address removed")
+        toast.success(response.data.message || 'Address removed successfully')
         fetchAddress()
       }
     } catch (error) {
       AxiosToastError(error)
+    } finally {
+      setDeleteAddressId(null)
     }
   }
 
@@ -42,69 +52,106 @@ const Address = () => {
   }
 
   return (
-    <div className='bg-blue-50 min-h-[77vh]'>
-      <div className='container mx-auto p-4'>
-        <div className='bg-white shadow-lg rounded-lg p-6'>
-          <div className='flex items-center justify-between mb-4'>
-            <h2 className='text-xl font-semibold text-gray-800'>Your Addresses</h2>
-            <button
-              onClick={handleAddAddress}
-              className='flex items-center gap-2 bg-amber-500 text-white px-4 py-2 rounded-lg hover:bg-amber-600 transition-colors'
-            >
-              <FaPlus size={16} />
-              Add Address
-            </button>
-          </div>
-
-          {addressList.length === 0 ? (
-            <div className='flex flex-col items-center justify-center py-12'>
-              <p className='text-gray-500 text-lg'>No addresses added yet</p>
-              <p className='text-gray-400 text-sm'>Add your first address to get started</p>
-            </div>
-          ) : (
-            <div className='grid gap-4'>
-              {addressList.map((address) => (
-                <div
-                  key={address._id}
-                  className='border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow'
-                >
-                  <div className='flex justify-between items-start'>
-                    <div className='flex-1'>
-                      <p className='font-medium text-gray-800'>{address.address_line}</p>
-                      <p className='text-gray-600 text-sm'>
-                        {address.city}, {address.state} - {address.pincode}
-                      </p>
-                      <p className='text-gray-600 text-sm'>{address.country}</p>
-                      <p className='text-gray-600 text-sm'>Mobile: {address.mobile}</p>
-                    </div>
-                    <div className='flex gap-2'>
-                      <button
-                        onClick={() => handleEditAddress(address)}
-                        className='p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors'
-                        title="Edit address"
-                      >
-                        <MdEdit size={18} />
-                      </button>
-                      <button
-                        onClick={() => handleDisableAddress(address._id)}
-                        className='p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors'
-                        title="Delete address"
-                      >
-                        <MdDelete size={18} />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
+    <div className='space-y-6 animate-fadeIn'>
+      {/* Page Header */}
+      <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
+        <div>
+          <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+            Saved Addresses
+          </h1>
+          <p className='text-sm text-slate-500 mt-1'>
+            Manage your delivery locations for fast 10-minute drop-offs
+          </p>
         </div>
+        <button
+          type='button'
+          onClick={handleAddAddress}
+          className='btn-primary inline-flex items-center gap-2 self-start sm:self-auto font-semibold text-sm shadow-subtle'
+        >
+          <FiPlus size={16} />
+          <span>Add New Address</span>
+        </button>
       </div>
 
+      {/* Address List or Empty State */}
+      {addressList.length === 0 ? (
+        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-12'>
+          <NoData
+            icon={FiMapPin}
+            title='No Saved Addresses'
+            description='You have not added any delivery addresses yet. Add an address to enable fast, seamless checkout.'
+            actionText='Add Your First Address'
+            onAction={handleAddAddress}
+          />
+        </div>
+      ) : (
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5'>
+          {addressList.map((address, index) => (
+            <div
+              key={address._id || index}
+              className='bg-white rounded-2xl border border-slate-200/80 shadow-card hover:border-slate-300 transition-all p-5 flex flex-col justify-between group'
+            >
+              <div>
+                <div className='flex items-center justify-between mb-3'>
+                  <div className='inline-flex items-center gap-2 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full'>
+                    <FiMapPin size={13} />
+                    <span>Address #{index + 1}</span>
+                  </div>
+                  <div className='flex items-center gap-1 opacity-90 group-hover:opacity-100 transition-opacity'>
+                    <button
+                      type='button'
+                      onClick={() => handleEditAddress(address)}
+                      aria-label={`Edit address at ${address.city}`}
+                      className='p-1.5 text-slate-500 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors cursor-pointer'
+                      title='Edit Address'
+                    >
+                      <FiEdit2 size={15} />
+                    </button>
+                    <button
+                      type='button'
+                      onClick={() => setDeleteAddressId(address._id)}
+                      aria-label={`Delete address at ${address.city}`}
+                      className='p-1.5 text-slate-500 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors cursor-pointer'
+                      title='Delete Address'
+                    >
+                      <FiTrash2 size={15} />
+                    </button>
+                  </div>
+                </div>
+
+                <h3 className='font-bold text-slate-900 text-sm leading-snug mb-1'>
+                  {address.address_line}
+                </h3>
+                <p className='text-xs text-slate-600 leading-relaxed'>
+                  {address.city}, {address.state} —{' '}
+                  <span className='font-semibold'>{address.pincode}</span>
+                </p>
+                <p className='text-xs text-slate-500 mt-0.5'>{address.country}</p>
+              </div>
+
+              <div className='pt-4 mt-3 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-600 font-medium'>
+                <FiPhone size={13} className='text-slate-400' />
+                <span>Mobile: {address.mobile}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* Add / Edit Address Dialog */}
       {openAddress && (
         <AddAddress
           close={() => setOpenAddress(false)}
           selectedAddress={selectedAddress}
+        />
+      )}
+
+      {/* Delete Confirmation Dialog */}
+      {deleteAddressId && (
+        <ConfirmBox
+          cancel={() => setDeleteAddressId(null)}
+          confirm={handleConfirmDelete}
+          close={() => setDeleteAddressId(null)}
         />
       )}
     </div>

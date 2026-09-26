@@ -1,0 +1,37 @@
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+!client/.env.example
+!server/.env.example
+
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production builds
+dist/
+client/dist/
+dist-ssr/
+client/dist-ssr/
+
+# Local databases, binaries & logs
+*.log
+mongodb.log
+mongodb-macos-*
+*.tgz
+data/
+
+# OS & Editor files
+.DS_Store
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

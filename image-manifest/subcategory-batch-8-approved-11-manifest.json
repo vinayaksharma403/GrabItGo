@@ -1,0 +1,151 @@
+{
+  "$schemaDescription": "GrabItGo Scoped Import Manifest — Batch 8 Approved 11 Subcategories (Pantry & Beverages)",
+  "generatedAt": "2026-09-26T14:18:53.572Z",
+  "status": "IMPORT_READY_SCOPED_MANIFEST — Zero database mutations or uploads performed in current phase",
+  "scope": {
+    "categories": 0,
+    "products": 0,
+    "subcategories": 11,
+    "alreadyMigratedExcluded": 69,
+    "flaggedRecordsExcluded": 3,
+    "protectionsExcluded": 1,
+    "lowResNoodlesExcluded": 1,
+    "dualScopeOralHealthEyeCareExcluded": 1
+  },
+  "categories": [],
+  "products": [],
+  "subcategories": [
+    {
+      "id": "690e27f5bb3427cd33190ecc",
+      "name": "Coffee",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Coffee.jpg",
+      "expectedFormat": "image/jpeg",
+      "expectedDimensions": "288x480",
+      "fileSize": 32845,
+      "sha256": "c9273addcb7ddf39fae3aeff64c273328e6e9f94e961d982eb1cb539b0a9e08b",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e285fbb3427cd33190eec",
+      "name": "Tea",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Tea.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 19602,
+      "sha256": "4cfc66b739f2122691e1857076d1b8c0bfd1e7452bd3a08953cc44d115c4d78e",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2829bb3427cd33190edc",
+      "name": "Green & Flavoured Tea",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Green & Flavoured Tea.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 102230,
+      "sha256": "7e8b5a14c642a0dc32fd3ace460aedea3ad88949a2caaa195465bd4c00262fe5",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2834bb3427cd33190ee0",
+      "name": "Herbal Drinks",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Herbal Drinks.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 26644,
+      "sha256": "5abea4775414f2237aab763d56336c13970173f200296ad1f6ceea563d57d8a5",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2841bb3427cd33190ee4",
+      "name": "Hot Chocolate",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Hot Chocolate.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 55774,
+      "sha256": "d16450bc4bf30ac9f200c59686f36ae019ed299ccbf288339bd5a9395a539d16",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e284fbb3427cd33190ee8",
+      "name": "Imported Tea & Coffee",
+      "categoryId": "690a1e879dae4dbb7e20c128",
+      "categoryName": "Tea, Coffee & Health Drink",
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Imported Tea & Coffee.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 98232,
+      "sha256": "5f5550f403a7a76fee4b86f6cbcad4d97b8d5f99d853ed32cb9948ccbbd3935b",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e2612bb3427cd33190e55",
+      "name": "Asian Sauces",
+      "categoryId": "690a1e169dae4dbb7e20c11f",
+      "categoryName": "Sauces & Spreads",
+      "sourceImage": "incoming-catalog/subcategories/Sauces & Spreads/Asian Sauces.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 93982,
+      "sha256": "269f4f016ed9ff8046a7cd630b65d01b9440fdcbbbf72d898bf14baa1cddaf66",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e264abb3427cd33190e65",
+      "name": "Tomato & Chilli Ketchup",
+      "categoryId": "690a1e169dae4dbb7e20c11f",
+      "categoryName": "Sauces & Spreads",
+      "sourceImage": "incoming-catalog/subcategories/Sauces & Spreads/Tomato & Chilli Ketchup.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 142286,
+      "sha256": "facc7a1e972c27f4a1d8cb9085d6aaaa4f1107764200f99d27af0631cd32dcbc",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e262cbb3427cd33190e5d",
+      "name": "Indian Chutney & Pickle",
+      "categoryId": "690a1e169dae4dbb7e20c11f",
+      "categoryName": "Sauces & Spreads",
+      "sourceImage": "incoming-catalog/subcategories/Sauces & Spreads/Indian Chutney & Pickle.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 37182,
+      "sha256": "4bb30d8fb4de1d8e2f0ca183e3ae57a7fd11cb30f060e56586aba8b3fe4d2532",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e263bbb3427cd33190e61",
+      "name": "Jam & Spreads",
+      "categoryId": "690a1e169dae4dbb7e20c11f",
+      "categoryName": "Sauces & Spreads",
+      "sourceImage": "incoming-catalog/subcategories/Sauces & Spreads/Jam & Spreads.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 66514,
+      "sha256": "9aa0d2ae391e99144c1fd4bf1db29b1a3905d8a7faa935cfdd24e1905abe604d",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e261ebb3427cd33190e59",
+      "name": "Cooking Sauces & Vinegar",
+      "categoryId": "690a1e169dae4dbb7e20c11f",
+      "categoryName": "Sauces & Spreads",
+      "sourceImage": "incoming-catalog/subcategories/Sauces & Spreads/Cooking Sauces & Vinegar.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 86022,
+      "sha256": "812bf126bf16c55517557c468bca4dd4ca243dfbd8e4f3b13b1444da5dfac634",
+      "currentImageState": "Base64"
+    }
+  ]
+}

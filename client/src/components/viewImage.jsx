@@ -5,21 +5,35 @@ const ViewImage = ({ url, close }) => {
   if (!url) return null
 
   return (
-    <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+    <div
+      role='dialog'
+      aria-modal='true'
+      aria-label='Image Preview'
+      onKeyDown={(e) => {
+        if (e.key === 'Escape') close?.()
+      }}
+      className='fixed inset-0 bg-slate-900/80 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fadeIn'
+      onClick={close}
+    >
       {/* Close Button */}
       <button
+        type='button'
         onClick={close}
-        className="absolute top-5 right-5 text-white text-3xl hover:text-amber-400 transition cursor-pointer"
+        aria-label='Close image preview'
+        className='absolute top-4 right-4 text-white/80 hover:text-white transition-colors cursor-pointer p-2 rounded-full bg-black/40 hover:bg-black/60 z-10'
       >
-        <IoClose />
+        <IoClose size={24} />
       </button>
 
-      {/* Image */}
-      <div className="max-w-5xl max-h-[90vh]">
+      {/* Image Container */}
+      <div
+        className='max-w-4xl max-h-[85vh] p-2 flex items-center justify-center'
+        onClick={(e) => e.stopPropagation()}
+      >
         <img
           src={url}
-          alt="Full View"
-          className="w-full h-full object-contain rounded-lg shadow-lg"
+          alt='Full view preview'
+          className='max-w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl border border-white/10'
         />
       </div>
     </div>

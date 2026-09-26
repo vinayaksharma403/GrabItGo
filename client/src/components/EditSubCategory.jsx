@@ -1,8 +1,3 @@
-
-
-
-
-
 import React, { useState, useRef, useEffect } from 'react'
 import { IoClose, IoChevronDown } from 'react-icons/io5'
 import { useSelector } from 'react-redux'
@@ -10,20 +5,22 @@ import Axios from '../utils/axios'
 import SummaryApi from '../common/SummaryApi'
 import toast from 'react-hot-toast'
 import AxiosToastError from '../utils/AxiosToastError'
+import { FiUploadCloud, FiX, FiCheck } from 'react-icons/fi'
 
-const EditSubCategory = ({ close, onSuccess,data }) => {
+const EditSubCategory = ({ close, onSuccess, data }) => {
   const [subCategoryData, setSubCategoryData] = useState({
-    _id : data._id,
+    _id: data._id,
     name: data.name,
     image: data.image,
     category: data.category || []
   })
 
-  const allCategory = useSelector(state => state.product.allCategory)
+  const [loading, setLoading] = useState(false)
+  const allCategory = useSelector((state) => state.product.allCategory)
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const dropdownRef = useRef(null)
 
-  const toggleDropdown = () => setDropdownOpen(prev => !prev)
+  const toggleDropdown = () => setDropdownOpen((prev) => !prev)
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -31,16 +28,15 @@ const EditSubCategory = ({ close, onSuccess,data }) => {
         setDropdownOpen(false)
       }
     }
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
   }, [])
 
-  // ✅ Handle category selection (keeps full object)
   const handleCategoryToggle = (catObj) => {
-    setSubCategoryData(prev => {
-      const exists = prev.category.some(c => c._id === catObj._id)
+    setSubCategoryData((prev) => {
+      const exists = prev.category.some((c) => c._id === catObj._id)
       const updatedCategories = exists
-        ? prev.category.filter(c => c._id !== catObj._id)
+        ? prev.category.filter((c) => c._id !== catObj._id)
         : [...prev.category, catObj]
       return { ...prev, category: updatedCategories }
     })
@@ -48,30 +44,33 @@ const EditSubCategory = ({ close, onSuccess,data }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setSubCategoryData(prev => ({ ...prev, [name]: value }))
+    setSubCategoryData((prev) => ({ ...prev, [name]: value }))
   }
 
   const handleImageChange = (e) => {
-    const file = e.target.files[0]
+    const file = e.target.files?.[0]
     if (file) {
       const reader = new FileReader()
       reader.onloadend = () => {
-        setSubCategoryData(prev => ({ ...prev, image: reader.result }))
+        setSubCategoryData((prev) => ({ ...prev, image: reader.result }))
       }
       reader.readAsDataURL(file)
     }
   }
 
   const handleImageRemove = () => {
-    setSubCategoryData(prev => ({ ...prev, image: "" }))
+    setSubCategoryData((prev) => ({ ...prev, image: '' }))
   }
 
-  // ✅ Backend submission logic
   const handleSubmitSubCategory = async (e) => {
     e.preventDefault()
-    try {
-      
+    if (!subCategoryData.name || !subCategoryData.category.length) {
+      toast.error('Please provide name and select at least one parent category!')
+      return
+    }
 
+    try {
+      setLoading(true)
       const response = await Axios({
         ...SummaryApi.updateSubCategory,
         data: subCategoryData
@@ -79,142 +78,183 @@ const EditSubCategory = ({ close, onSuccess,data }) => {
 
       const { data: responseData } = response
       if (responseData.success) {
-        toast.success(responseData.message)
-        
-        // ✅ Trigger refresh in parent (SubCategoryPage)
+        toast.success(responseData.message || 'Subcategory updated successfully')
         if (onSuccess) onSuccess()
-
-        // ✅ Close modal
         if (close) close()
       } else {
-        toast.error(responseData.message || "Failed to add subcategory")
+        toast.error(responseData.message || 'Failed to update subcategory')
       }
     } catch (error) {
       AxiosToastError(error)
+    } finally {
+      setLoading(false)
     }
   }
 
   return (
-    <section className="fixed inset-0 bg-neutral-900/60 backdrop-blur-sm flex justify-center items-center z-50 p-4">
-      <div className="w-full max-w-md bg-white rounded-2xl shadow-lg p-6 relative animate-fadeIn">
-
+    <section
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='edit-subcategory-title'
+      onKeyDown={(e) => {
+        if (e.key === 'Escape') close?.()
+      }}
+      className='fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex justify-center items-center z-50 p-4 overflow-y-auto animate-fadeIn'
+      onClick={close}
+    >
+      <div
+        className='w-full max-w-md bg-white rounded-2xl shadow-xl border border-slate-200/80 p-6 relative my-auto max-h-[90vh] overflow-y-auto'
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Header */}
-        <div className="flex items-center justify-between border-b pb-3 mb-4">
-          <h1 className="text-lg font-semibold text-gray-800">Edit Sub Category</h1>
+        <div className='flex items-center justify-between pb-3 mb-4 border-b border-slate-100'>
+          <h2 id='edit-subcategory-title' className='text-base font-bold text-slate-900'>
+            Edit Subcategory
+          </h2>
           <button
+            type='button'
             onClick={close}
-            className="text-gray-500 hover:text-red-500 transition-colors duration-200 cursor-pointer"
+            aria-label='Close dialog'
+            className='text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer'
           >
-            <IoClose size={24} />
+            <IoClose size={20} />
           </button>
         </div>
 
         {/* Form */}
-        <form className="space-y-5" onSubmit={handleSubmitSubCategory}>
-          {/* Name Input */}
-          <div className="grid gap-2">
-            <label htmlFor="name" className="text-sm font-medium text-gray-700">Name</label>
+        <form className='space-y-4' onSubmit={handleSubmitSubCategory}>
+          <div>
+            <label htmlFor='editSubCatName' className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'>
+              Subcategory Name *
+            </label>
             <input
-              id="name"
-              name="name"
+              id='editSubCatName'
+              name='name'
               value={subCategoryData.name}
               onChange={handleChange}
-              type="text"
-              placeholder="Enter subcategory name"
-              className="border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500 bg-amber-50"
+              type='text'
+              required
+              placeholder='Enter subcategory name'
+              className='input-field'
             />
           </div>
 
-          {/* Image Upload */}
-          <div className="space-y-2">
-            <p className="text-sm font-medium text-gray-700">Add Image</p>
+          <div>
+            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'>
+              Subcategory Image
+            </label>
             <label
-              htmlFor="uploadImage"
-              className="cursor-pointer flex flex-col items-center justify-center border-2 border-dashed border-amber-400 rounded-lg py-6 bg-amber-50 hover:bg-amber-100 transition duration-200"
+              htmlFor='uploadEditSubCategoryImage'
+              className='cursor-pointer flex flex-col items-center justify-center border-2 border-dashed border-slate-300 hover:border-emerald-500 rounded-xl py-5 bg-slate-50 hover:bg-emerald-50/40 transition-colors'
             >
               {!subCategoryData.image ? (
-                <>
-                  <p className="text-gray-600 text-sm">Click to upload or drag & drop</p>
+                <div className='flex flex-col items-center gap-1.5 text-center'>
+                  <FiUploadCloud size={22} className='text-slate-400' />
+                  <span className='text-xs font-semibold text-slate-600'>Click to choose image</span>
                   <input
-                    type="file"
-                    id="uploadImage"
-                    accept="image/*"
-                    className="hidden"
+                    type='file'
+                    id='uploadEditSubCategoryImage'
+                    accept='image/*'
+                    className='hidden'
                     onChange={handleImageChange}
                   />
-                </>
+                </div>
               ) : (
-                <div className="relative w-32 h-32">
+                <div className='relative w-28 h-28 p-1'>
                   <img
                     src={subCategoryData.image}
-                    alt="Preview"
-                    className="w-full h-full object-cover rounded-lg shadow"
+                    alt='Preview'
+                    className='w-full h-full object-contain rounded-lg'
                   />
                   <button
-                    type="button"
-                    onClick={handleImageRemove}
-                    className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600"
+                    type='button'
+                    onClick={(e) => {
+                      e.preventDefault()
+                      handleImageRemove()
+                    }}
+                    aria-label='Remove image'
+                    className='absolute -top-1 -right-1 bg-black/70 hover:bg-rose-600 text-white rounded-full p-1 transition-colors'
                   >
-                    <IoClose size={16} />
+                    <FiX size={12} />
                   </button>
                 </div>
               )}
             </label>
           </div>
 
-          {/* Multi-Select Dropdown */}
-          <div className="grid gap-2 relative" ref={dropdownRef}>
-            <label className="text-sm font-medium text-gray-700">Select Category</label>
+          {/* Category Dropdown */}
+          <div className='relative' ref={dropdownRef}>
+            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'>
+              Parent Categories *
+            </label>
             <div
+              role='button'
+              tabIndex={0}
+              aria-haspopup='listbox'
+              aria-expanded={dropdownOpen}
               onClick={toggleDropdown}
-              className="flex justify-between items-center border border-gray-300 rounded-lg px-3 py-2 bg-amber-50 cursor-pointer hover:bg-amber-100 transition"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault()
+                  toggleDropdown()
+                }
+              }}
+              className='flex justify-between items-center input-field bg-white cursor-pointer select-none'
             >
-              <span className="text-gray-700 text-sm">
+              <span className='text-slate-700 text-xs truncate'>
                 {subCategoryData.category.length > 0
-                  ? subCategoryData.category.map(c => c.name).join(", ")
-                  : "Select category"}
+                  ? subCategoryData.category.map((c) => c.name).join(', ')
+                  : 'Select parent category'}
               </span>
-              <IoChevronDown className={`transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
+              <IoChevronDown className={`transition-transform duration-200 text-slate-400 ${dropdownOpen ? 'rotate-180' : ''}`} />
             </div>
 
             {dropdownOpen && (
-              <div className="absolute top-full left-0 right-0 bg-white border border-gray-200 rounded-lg shadow-md mt-1 z-50 max-h-48 overflow-y-auto">
+              <div className='absolute top-full left-0 right-0 bg-white border border-slate-200 rounded-xl shadow-lg mt-1 z-50 max-h-48 overflow-y-auto p-1 animate-fadeIn divide-y divide-slate-50'>
                 {allCategory && allCategory.length > 0 ? (
-                  allCategory.map(cat => (
+                  allCategory.map((cat) => (
                     <label
                       key={cat._id}
-                      className="flex items-center gap-2 px-3 py-2 hover:bg-amber-50 cursor-pointer"
+                      className='flex items-center gap-2.5 px-3 py-2 hover:bg-slate-50 rounded-lg cursor-pointer transition-colors'
                     >
                       <input
-                        type="checkbox"
-                        checked={subCategoryData.category.some(c => c._id === cat._id)}
+                        type='checkbox'
+                        checked={subCategoryData.category.some((c) => c._id === cat._id)}
                         onChange={() => handleCategoryToggle(cat)}
-                        className="accent-amber-500"
+                        className='accent-emerald-600 rounded'
                       />
-                      <span className="text-gray-700 text-sm">{cat.name}</span>
+                      <span className='text-slate-800 text-xs font-medium'>{cat.name}</span>
                     </label>
                   ))
                 ) : (
-                  <p className="text-gray-500 text-sm px-3 py-2">No categories available</p>
+                  <p className='text-slate-400 text-xs px-3 py-2'>No categories available</p>
                 )}
               </div>
             )}
           </div>
 
-          {/* Buttons */}
-          <div className="flex justify-end gap-3 pt-3">
+          {/* Actions */}
+          <div className='flex items-center justify-end gap-3 pt-3 border-t border-slate-100'>
             <button
-              type="button"
+              type='button'
               onClick={close}
-              className="px-4 py-2 text-sm font-medium border border-gray-300 rounded-lg hover:bg-gray-100"
+              className='btn-secondary py-2 px-4 text-xs font-semibold'
             >
               Cancel
             </button>
             <button
-              type="submit"
-              className="px-4 py-2 text-sm font-medium bg-amber-500 text-white rounded-lg hover:bg-amber-600 shadow"
+              type='submit'
+              disabled={loading || !subCategoryData.name || !subCategoryData.category.length}
+              className='btn-primary py-2 px-5 text-xs font-semibold inline-flex items-center gap-2'
             >
-              Save
+              {loading ? (
+                <span>Saving...</span>
+              ) : (
+                <>
+                  <FiCheck size={15} />
+                  <span>Update Subcategory</span>
+                </>
+              )}
             </button>
           </div>
         </form>
@@ -224,4 +264,3 @@ const EditSubCategory = ({ close, onSuccess,data }) => {
 }
 
 export default EditSubCategory
-

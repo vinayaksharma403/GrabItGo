@@ -1,149 +1,191 @@
 import React, { useState } from 'react'
-import { IoClose } from "react-icons/io5";
-import uploadImage from '../utils/uploadImage';
-import Axios from '../utils/axios';
-import SummaryApi from '../common/SummaryApi';
-import AxiosToastError from '../utils/AxiosToastError';
-import {toast} from 'react-hot-toast'
+import { IoClose } from 'react-icons/io5'
+import uploadImage from '../utils/uploadImage'
+import Axios from '../utils/axios'
+import SummaryApi from '../common/SummaryApi'
+import AxiosToastError from '../utils/AxiosToastError'
+import { toast } from 'react-hot-toast'
+import { FiUploadCloud, FiCheck } from 'react-icons/fi'
 
-const EditCategory = ({ close , fetchData , data : CategoryData}) => {
+const EditCategory = ({ close, fetchData, data: CategoryData }) => {
+  const [data, setData] = useState({
+    _id: CategoryData?._id || '',
+    name: CategoryData?.name || '',
+    image: CategoryData?.image || ''
+  })
 
-    const [data, setData] = useState({
-            _id : CategoryData._id,
-            name: CategoryData.name,
-            image: CategoryData.image
-        })
-    
-        const [loading,setLoading] = useState(false)
-    
-        const handleOnChange = (e) => {
-            const {name, value} = e.target
-    
-            setData((prev) => {
-                return {
-                    ...prev,
-                    [name]: value
-                }
-            })
-    
-        }
+  const [loading, setLoading] = useState(false)
+  const [imageUploading, setImageUploading] = useState(false)
 
-    const handleSubmit = async(e)=>{
-        e.preventDefault()
+  const handleOnChange = (e) => {
+    const { name, value } = e.target
+    setData((prev) => ({
+      ...prev,
+      [name]: value
+    }))
+  }
 
-        try {
-            setLoading(true)
-            const response = await Axios({
-                ...SummaryApi.updateCategory,
-                data : data
-            })
-            const {data : responseData} = response
-
-            if(responseData.success){
-                toast.success(responseData.message)
-                close()
-                fetchData()
-            }
-        } catch (error) {
-            AxiosToastError(error)
-        }finally{
-            setLoading(false)
-        }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    if (!data.name || !data.image) {
+      toast.error('Please provide category name and image!')
+      return
     }
 
-    const handleUploadCategoryImage = async(e)=>{
-        const file = e.target.files[0]
+    try {
+      setLoading(true)
+      const response = await Axios({
+        ...SummaryApi.updateCategory,
+        data: data
+      })
+      const { data: responseData } = response
 
-        if(!file){
-            return
-        }
-        
-        setLoading(true)
-
-        const response = await uploadImage(file)
-        const {data : ImageResponse} = response
-
-        setLoading(false)
-
-        setData((prev)=>{
-            return {
-                ...prev,
-                image : ImageResponse.data.url
-            }
-        })
-
-        
+      if (responseData.success) {
+        toast.success(responseData.message || 'Category updated successfully')
+        close()
+        fetchData()
+      }
+    } catch (error) {
+      AxiosToastError(error)
+    } finally {
+      setLoading(false)
     }
+  }
+
+  const handleUploadCategoryImage = async (e) => {
+    const file = e.target.files?.[0]
+    if (!file) return
+
+    try {
+      setImageUploading(true)
+      const response = await uploadImage(file)
+      const { data: ImageResponse } = response
+      setData((prev) => ({
+        ...prev,
+        image: ImageResponse.data.url
+      }))
+      toast.success('Image updated successfully')
+    } catch (error) {
+      AxiosToastError(error)
+    } finally {
+      setImageUploading(false)
+    }
+  }
+
   return (
-    <section className='fixed top-0 bottom-0 left-0 right-0 p-4 bg-neutral-800/60 flex items-center justify-center'>
-                <div className='bg-white max-w-3xl w-full p-4 rounded '>
-                    <div className='flex items-center justify-center'>
-                        <h1 className='font-semibold'>Update Category</h1>
-                        <button onClick={close} className='w-fit block ml-auto cursor-pointer'>
-                            <IoClose size={25} />
-                        </button>
-                    </div>
-                    <form className='my-3 grid gap-2' onSubmit={handleSubmit}>
-                        <div className='grid gap-1'>
-                            <label id='categoryName'>Name</label>
-                            <input
-                                type="text"
-                                id='categoryName'
-                                placeholder='Enter category name'
-                                value={data.name}
-                                name='name'
-                                onChange={handleOnChange}
-                                className='bg-blue-50 p-2 border border-blue-100 focus-within:border-amber-500 outline-none rounded'
-                            />
-                        </div>
-                        <div className='grid gap-1'>
-                            <p>Image</p>
-                            <div className='flex gap-4 flex-col lg:flex-row items-center'>
-                                <div className="border bg-blue-50 h-36 w-full lg:w-36 flex items-center justify-center rounded">
-                                    {
-                                        data.image ? (
-                                            <img
-                                                alt='category'
-                                                src={data.image}
-                                                className='w-full h-full object-scale-down'
-                                            />
-                                        ) : (
-    
-                                            <p className='text-sm text-neutral-500'>No Image</p>
-                                        )
-                                    }
-    
-                                </div>
-                                <label htmlFor="uploadCategoryImage">
-                                    <div className={`
-                                  ${!data.name ? "bg-gray-300" : "border-amber-500 cursor-pointer hover:bg-amber-300 "} 
-                                  px-4 py-2 rounded  border font-medium
-                                    `}>
-                                        {
-                                            loading ? "Loading..." : "Upload Image"
-                                        }
-                                        
-                                    </div>
-                                    <input disabled={!data.name} onChange={handleUploadCategoryImage } type='file' id='uploadCategoryImage' className='hidden'/>
-                                </label>
-                                
-                            </div>
-    
-                        </div>
-    
-                        <button 
-                            className={
-                                `
-                                   ${data.name && data.image ? "bg-amber-500 hover:bg-amber-300 cursor-pointer" : "bg-gray-300"}
-                                   py-2
-                                   font-semibold 
-                                `}
-                        >Update Category</button>
-                    </form>
-    
+    <section
+      role='dialog'
+      aria-modal='true'
+      aria-labelledby='edit-category-title'
+      onKeyDown={(e) => {
+        if (e.key === 'Escape') close?.()
+      }}
+      className='fixed inset-0 p-4 bg-slate-900/60 backdrop-blur-xs z-50 flex items-center justify-center overflow-y-auto animate-fadeIn'
+      onClick={close}
+    >
+      <div
+        className='bg-white max-w-md w-full p-6 rounded-2xl shadow-xl border border-slate-200/80 my-auto max-h-[90vh] overflow-y-auto'
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Header */}
+        <div className='flex items-center justify-between pb-3 mb-4 border-b border-slate-100'>
+          <h2 id='edit-category-title' className='text-base font-bold text-slate-900'>
+            Update Category
+          </h2>
+          <button
+            type='button'
+            onClick={close}
+            aria-label='Close dialog'
+            className='text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer'
+          >
+            <IoClose size={20} />
+          </button>
+        </div>
+
+        {/* Form */}
+        <form className='space-y-4' onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor='editCategoryName' className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'>
+              Category Name *
+            </label>
+            <input
+              type='text'
+              id='editCategoryName'
+              placeholder='Enter category name'
+              value={data.name}
+              name='name'
+              onChange={handleOnChange}
+              required
+              className='input-field'
+            />
+          </div>
+
+          <div>
+            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'>
+              Category Icon / Image *
+            </label>
+            <div className='flex items-center gap-4'>
+              <div className='border-2 border-dashed border-slate-300 bg-slate-50 h-24 w-24 flex items-center justify-center rounded-xl overflow-hidden shrink-0 p-1'>
+                {data.image ? (
+                  <img
+                    alt={data.name || 'Category'}
+                    src={data.image}
+                    className='w-full h-full object-contain'
+                  />
+                ) : (
+                  <span className='text-[10px] text-slate-400'>No Image</span>
+                )}
+              </div>
+
+              <label htmlFor='uploadEditCategoryImage' className='flex-1'>
+                <div
+                  className={`py-2 px-3 text-xs font-semibold rounded-xl border border-dashed text-center transition-colors cursor-pointer flex items-center justify-center gap-2 ${
+                    imageUploading
+                      ? 'bg-slate-100 text-slate-400 border-slate-300'
+                      : 'border-emerald-300 hover:border-emerald-500 bg-emerald-50/50 hover:bg-emerald-50 text-emerald-700'
+                  }`}
+                >
+                  <FiUploadCloud size={16} />
+                  <span>{imageUploading ? 'Uploading...' : 'Change Image'}</span>
                 </div>
-    
-            </section>
+                <input
+                  onChange={handleUploadCategoryImage}
+                  type='file'
+                  id='uploadEditCategoryImage'
+                  accept='image/*'
+                  className='hidden'
+                />
+              </label>
+            </div>
+          </div>
+
+          {/* Actions */}
+          <div className='flex items-center justify-end gap-3 pt-3 border-t border-slate-100'>
+            <button
+              type='button'
+              onClick={close}
+              className='btn-secondary py-2 px-4 text-xs font-semibold'
+            >
+              Cancel
+            </button>
+            <button
+              type='submit'
+              disabled={loading || !data.name || !data.image}
+              className='btn-primary py-2 px-5 text-xs font-semibold inline-flex items-center gap-2'
+            >
+              {loading ? (
+                <span>Saving...</span>
+              ) : (
+                <>
+                  <FiCheck size={15} />
+                  <span>Update Category</span>
+                </>
+              )}
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
   )
 }
 

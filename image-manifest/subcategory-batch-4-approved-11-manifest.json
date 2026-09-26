@@ -1,0 +1,151 @@
+{
+  "$schemaDescription": "GrabItGo Scoped Import Manifest — Batch 4 Approved 11 Subcategories",
+  "generatedAt": "2026-09-26T11:20:00.000Z",
+  "status": "IMPORT_READY_SCOPED_MANIFEST — Zero database mutations or uploads performed in current phase",
+  "scope": {
+    "categories": 0,
+    "products": 0,
+    "subcategories": 11,
+    "alreadyMigratedExcluded": 26,
+    "flaggedRecordsExcluded": 3,
+    "protectionsExcluded": 1,
+    "lowResNoodlesExcluded": 1,
+    "dualScopeOralHealthEyeCareExcluded": 1
+  },
+  "categories": [],
+  "products": [],
+  "subcategories": [
+    {
+      "id": "690e15a6bb3427cd33190b80",
+      "name": "Diapers & More",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "categoryName": "Baby Care",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Dispers & More.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 65976,
+      "sha256": "6bbbe06d69213f5f61e4631d0641a475c722bd4b2c0e19c385c0d49f397e7f83",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e160fbb3427cd33190b94",
+      "name": "Mom Care Needs",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "categoryName": "Baby Care",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Mom Care Needs.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 24486,
+      "sha256": "5310f07f1203ff6cca6f4af81a232aee1810a1cc521ac8e2b13a54fff3b9f0c1",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e15e0bb3427cd33190b8c",
+      "name": "Health & Safety",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "categoryName": "Baby Care",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Health & Safety.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 20902,
+      "sha256": "bc311af7820feaf6d7ddfe5c560c2b07a5bf4e31a03f8023ead2e393946a1532",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e15fdbb3427cd33190b90",
+      "name": "Hygiene",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "categoryName": "Baby Care",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Hygiene.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 28418,
+      "sha256": "758a39e2d205329605984b39eb3d78b76af0721253276b2de55140f11e1a57ee",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e15cbbb3427cd33190b88",
+      "name": "Feeding",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "categoryName": "Baby Care",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Feeding.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 30546,
+      "sha256": "e436b149c106bbff5a5f08eed33195140a6cdeba8e4c03b22d5fdf95646569cc",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1628bb3427cd33190b98",
+      "name": "Nursing",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "categoryName": "Baby Care",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Nursing.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 116142,
+      "sha256": "a0f7813f83e040632f38fa7e27fcac37fb6b0e66fec14a51d4cea65a502c6d05",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e18bebb3427cd33190c08",
+      "name": "Disinfectant & More",
+      "categoryId": "690a1c969dae4dbb7e20c0fe",
+      "categoryName": "Cleaning Essentials",
+      "sourceImage": "incoming-catalog/subcategories/Cleaning Essentials/Disinfectant & More.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 71242,
+      "sha256": "c7cd2517c434aec8e93a7aefae95473f970ec645adbf8ac102f1ff4f554232b8",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e187cbb3427cd33190bfc",
+      "name": "Dishwashing Accessories",
+      "categoryId": "690a1c969dae4dbb7e20c0fe",
+      "categoryName": "Cleaning Essentials",
+      "sourceImage": "incoming-catalog/subcategories/Cleaning Essentials/Dishwashing Accessories.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 26714,
+      "sha256": "36a0a56e6fbd933bb231b01155131cf17c8a7059a45d5f57e01d74b95836a2cb",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e185ebb3427cd33190bf8",
+      "name": "Detergent Powder & Bars",
+      "categoryId": "690a1c969dae4dbb7e20c0fe",
+      "categoryName": "Cleaning Essentials",
+      "sourceImage": "incoming-catalog/subcategories/Cleaning Essentials/Detergent Powder & Bars.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 102246,
+      "sha256": "add3f76ed98db87761843b5d760630661d2a666f926f7d385e129fafb8a4d7e8",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e18dcbb3427cd33190c0c",
+      "name": "Floor Cleaners & More",
+      "categoryId": "690a1c969dae4dbb7e20c0fe",
+      "categoryName": "Cleaning Essentials",
+      "sourceImage": "incoming-catalog/subcategories/Cleaning Essentials/Floor Cleaners & More.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 25708,
+      "sha256": "d7a9f6f05efb20711790fe0d5ffac20ddc91518c8bde930ecb1346a9f5ef39a5",
+      "currentImageState": "Base64"
+    },
+    {
+      "id": "690e1d82bb3427cd33190cec",
+      "name": "Cleaning Tools",
+      "categoryId": "690a1d369dae4dbb7e20c10a",
+      "categoryName": "Home & Office",
+      "sourceImage": "incoming-catalog/subcategories/Home & Office/Cleaning Tools.webp",
+      "expectedFormat": "image/webp",
+      "expectedDimensions": "288x480",
+      "fileSize": 26402,
+      "sha256": "eccf9ff15eaa589402fa533074e56912560662d71eacd45d55305c098562981b",
+      "currentImageState": "Base64"
+    }
+  ]
+}

@@ -4,10 +4,9 @@ dotenv.config()
 
 if (!process.env.RESEND_API) {
     console.log("provide RESEND_API inside .env file")
-
 }
 
-const resend = new Resend(process.env.RESEND_API);
+const resend = new Resend(process.env.RESEND_API || 're_placeholder');
 
 const sendEmail = async ({ sendTo, subject, html })=>{
     try {

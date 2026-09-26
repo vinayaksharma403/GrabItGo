@@ -68,7 +68,7 @@ const userSlice = createSlice({
       state.shopping_cart = action.payload
     },
     
-    logout : (state,action)=>{
+    logout : (state)=>{
       state._id = ""
       state.name = ""
       state.email = ""

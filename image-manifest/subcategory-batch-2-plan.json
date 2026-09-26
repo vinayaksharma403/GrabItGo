@@ -1,0 +1,280 @@
+{
+  "$schemaDescription": "GrabItGo Subcategory Batch 2 Migration Plan (Planning Artifact Only)",
+  "generatedAt": "2026-09-26T10:42:24.365Z",
+  "status": "PLANNING_ONLY — Zero live database mutations or uploads performed",
+  "summary": {
+    "totalSubcategoriesInDb": 219,
+    "alreadyMigratedSubcategories": 4,
+    "remainingUnmigratedSubcategories": 215,
+    "eligibleMappedSubcategories": 214,
+    "batch2SelectedCount": 12,
+    "representedMajorCategories": 12,
+    "totalActiveProductsRepresented": 45
+  },
+  "batchItems": [
+    {
+      "id": "690b44e8d2141ae10ae1fb3f",
+      "name": "Atta",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Atta, Rice & Dal/Atta.jpg",
+      "sourceFileSize": 35573,
+      "currentImageState": "Base64 (34.7 KB)",
+      "activeProductCount": 5,
+      "activeProductNames": [
+        "Aashirvaad Superior MP Atta",
+        "Pro Nature Whole Wheat Organic Atta",
+        "Fortune Chakki Fresh (100% Atta, 0% Maida) Atta",
+        "Tata Sampann 100% Chana Dal Fine BesanGram Flour",
+        "Samrat MP SoojiRava"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 5 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e1a9fbb3427cd33190c64",
+      "name": "Bread & Pav",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Bread & Pav.webp",
+      "sourceFileSize": 52052,
+      "currentImageState": "Base64 (50.8 KB)",
+      "activeProductCount": 3,
+      "activeProductNames": [
+        "Kwality Kreamy Magic Cream Bread Roll",
+        "Kwality Whole Wheat Bread",
+        "The Baker's Dozen 100% Butter Croissant"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 3 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e16b8bb3427cd33190bb0",
+      "name": "Cream Biscuits",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Bakery  Biscuits/Cream Biscuits.webp",
+      "sourceFileSize": 113026,
+      "currentImageState": "Base64 (110.4 KB)",
+      "activeProductCount": 3,
+      "activeProductNames": [
+        "Sunfeast Dark Fantasy Desserts Choco Chunks Cookies",
+        "Cadbury Oreo Original Vanilla Sandwich Cream Biscuits 481.25 g - Jumbo Pack",
+        "Sunfeast Dark Fantasy Choco Creme Center Filled Biscuits (3 x 83 g)"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 3 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e1792bb3427cd33190bd4",
+      "name": "Noodles",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Breakfast & Instant Food/Noodles.webp",
+      "sourceFileSize": 9266,
+      "currentImageState": "Base64 (9.0 KB)",
+      "activeProductCount": 3,
+      "activeProductNames": [
+        "Maggi Masala - 2 Minutes Instant Noodles",
+        "Yu Chilli Manchurian Instant Cup Noodles",
+        "Knorr Mast Masala Soupy Noodles"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 3 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e18aabb3427cd33190c04",
+      "name": "Dishwashing Gels & Powder",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Cleaning Essentials/Dishwashing Gels & Powder.webp",
+      "sourceFileSize": 26322,
+      "currentImageState": "Base64 (25.7 KB)",
+      "activeProductCount": 7,
+      "activeProductNames": [
+        "Pril Lime Grease Fighter Dishwash Gel",
+        "SaveMore Dishwashing Tub + Heavy Duty Scrub Pad Combo",
+        "Vim Lemon Dishwash Bar (Pack of 4)",
+        "Exo Anti Bacterial Ginger Twist Dishwash Bar",
+        "SaveMore Lemon Dishwash Gel (500 ml) + Dishwashing Tub Combo",
+        "Vim Lemon Dishwash Gel",
+        "Vim Anti Smell Dishwash Gel With Pudina"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 7 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e1958bb3427cd33190c24",
+      "name": "Coconut Water",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Cold Drinks & Juices/Coconut Water.webp",
+      "sourceFileSize": 82828,
+      "currentImageState": "Base64 (80.9 KB)",
+      "activeProductCount": 4,
+      "activeProductNames": [
+        "Paper boat Coconut Water - Pack of 6",
+        "Real Activ 100% Tender Coconut Water - Pack of 4",
+        "Wow! Coco Charge 100% Organic Tender Coconut Water",
+        "Raw Pressery Coconut Water - Pack of 6"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 4 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e1e1ebb3427cd33190d0c",
+      "name": "Fresheners",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Home & Office/Fresheners.webp",
+      "sourceFileSize": 14292,
+      "currentImageState": "Base64 (14.0 KB)",
+      "activeProductCount": 6,
+      "activeProductNames": [
+        "Ambi Pur Mood Therapy Collection Room Freshener (Rose)",
+        "CamPure Sandalwood Camphor  Kapur Cone",
+        "Godrej Aer Power Pocket Floral Delight Air Freshener",
+        "Godrej Aer Matic Air Freshener - Cool Surf Blue",
+        "Godrej Aer Power Pocket Floral Delight Air Freshener",
+        "Godrej Aer Matic Air Freshener - Cool Surf Blue"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 6 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e209abb3427cd33190d72",
+      "name": "Baby Food",
+      "parentCategory": {
+        "id": "690a1d6c9dae4dbb7e20c110",
+        "name": "Organic & Healthy Living"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Organic & Healthy Living/Baby Food.webp",
+      "sourceFileSize": 39720,
+      "currentImageState": "Base64 (38.8 KB)",
+      "activeProductCount": 4,
+      "activeProductNames": [
+        "Nestle Lactogen Pro 2 Follow up Formula (After 6 Months Up to 12 Months)",
+        "Nestle NAN PRO Powder Infant Formula (Upto 6 months - Stage 1)",
+        "Slurrp Farm Spinach Dosa Mix",
+        "Slurrp Farm Beetroot Dosa Mix"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 4 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e2801bb3427cd33190ed0",
+      "name": "Cold Coffee & Ice Tea",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Cold Coffee & Ice Tea.webp",
+      "sourceFileSize": 64702,
+      "currentImageState": "Base64 (63.2 KB)",
+      "activeProductCount": 4,
+      "activeProductNames": [
+        "Raw Pressery Iced Green Tea (Peach)",
+        "Nescafe Iced Latte Cold Coffee - Pack of 2",
+        "Nescafe Choco Mocha Cold Coffee",
+        "Bru Cold Coffee (Caramel)"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 4 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e17f5bb3427cd33190be4",
+      "name": "Chicken",
+      "parentCategory": {
+        "id": "690a1c7a9dae4dbb7e20c0fb",
+        "name": "Chicken, Meat & Fish"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Chicken, Meat & Fish/Chicken.jpg",
+      "sourceFileSize": 26271,
+      "currentImageState": "Base64 (25.7 KB)",
+      "activeProductCount": 3,
+      "activeProductNames": [
+        "ITC Master Chef Desi Style Chicken Burger Patty (Frozen)",
+        "Prasuma Original Chicken Momos (Frozen)",
+        "Godrej Real Good Chicken Curry Cut"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 3 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e24debb3427cd33190e2a",
+      "name": "Oral Health & Eye Care",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Pharma & Wellness/Oral Health & Eye Care.webp",
+      "sourceFileSize": 81670,
+      "currentImageState": "Base64 (79.8 KB)",
+      "activeProductCount": 3,
+      "activeProductNames": [
+        "Chicco Kids Toothbrush (Blue)",
+        "Chicco Toothpaste (Strawberry Flavor, 12M+)",
+        "Colgate Batman Bubble Fruit Flavour Kids Toothpaste (6+ Years)"
+      ],
+      "priority": "P1 — High",
+      "reason": "High-visibility category staple with 3 active products in catalog.",
+      "sourceFileExists": true
+    },
+    {
+      "id": "690e266cbb3427cd33190e6d",
+      "name": "Chips & Crisps",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "sourceImage": "incoming-catalog/subcategories/Snacks & Munchies/Chips & Crisps.webp",
+      "sourceFileSize": 30650,
+      "currentImageState": "Base64 (29.9 KB)",
+      "activeProductCount": 0,
+      "activeProductNames": [],
+      "priority": "P1 — High",
+      "reason": "Hero subcategory for major department with verified authentic asset.",
+      "sourceFileExists": true
+    }
+  ],
+  "exclusions": [
+    {
+      "id": "690e2467bb3427cd33190e0e",
+      "name": "Protections",
+      "category": "Pharma & Wellness",
+      "reason": "EXCLUDED — Semantic mapping to Cough & Cold.webp is unresolved. Awaiting authoritative decision."
+    },
+    {
+      "file": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Milk.webp",
+      "reason": "EXCLUDED — Extra unassigned incoming asset (all 20 Dairy subcategories mapped)."
+    },
+    {
+      "file": "incoming-catalog/subcategories/Personal Care/Hair Styling.png",
+      "reason": "EXCLUDED — Extra unassigned incoming asset (all 18 Personal Care subcategories mapped)."
+    }
+  ]
+}

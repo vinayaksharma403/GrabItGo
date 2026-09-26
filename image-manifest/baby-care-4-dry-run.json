@@ -1,0 +1,32 @@
+{
+  "$schemaDescription": "GrabItGo Scoped Import Manifest — 4 New Baby Care Subcategories",
+  "generatedAt": "2026-09-26T10:32:26.875Z",
+  "categories": [],
+  "products": [],
+  "subcategories": [
+    {
+      "id": "690e152bbb3427cd33190b6c",
+      "name": "Baby Accessories & Apparel",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Baby Accessories & Apparel.png"
+    },
+    {
+      "id": "690e1555bb3427cd33190b74",
+      "name": "Baby Gifting & Toys",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Baby Gifting & Toys.png"
+    },
+    {
+      "id": "690e157abb3427cd33190b78",
+      "name": "Baby Wipes",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Baby Wipes.webp"
+    },
+    {
+      "id": "690e158fbb3427cd33190b7c",
+      "name": "Bathing Needs",
+      "categoryId": "690a1b386b1c8ac7b9b33061",
+      "sourceImage": "incoming-catalog/subcategories/Baby Care/Bathing Needs.webp"
+    }
+  ]
+}

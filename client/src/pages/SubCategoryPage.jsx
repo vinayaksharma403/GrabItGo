@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import UploadSubCategoryModel from '../components/UploadSubCategoryModel'
 import AxiosToastError from '../utils/AxiosToastError'
 import Axios from '../utils/axios'
@@ -9,44 +9,44 @@ import ViewImage from '../components/viewImage'
 import EditSubCategory from '../components/EditSubCategory'
 import toast from 'react-hot-toast'
 import ConfirmBox from '../components/ConfirmBox'
-import Loading from '../components/Loading'
+import NoData from '../components/NoData'
+import { FiPlus, FiLayers } from 'react-icons/fi'
 
 const SubCategoryPage = () => {
   const [openAddSubCategory, setOpenAddSubCategory] = useState(false)
   const [data, setData] = useState([])
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const columnHelper = createColumnHelper()
-  const [ImageURL, setImageURL] = useState("")
+  const [imageURL, setImageURL] = useState('')
   const [openEdit, setOpenEdit] = useState(false)
-  const [editData, setEditData] = useState({ _id: "" })
+  const [editData, setEditData] = useState({ _id: '' })
   const [deleteSubCategory, setDeleteSubCategory] = useState(null)
   const [openDeleteConfirmBox, setOpenDeleteConfirmBox] = useState(false)
 
-  // ✅ Fetch all subcategories
-  const fetchSubCategory = async () => {
+  const fetchSubCategory = useCallback(async () => {
     try {
       setLoading(true)
       const response = await Axios({ ...SummaryApi.getSubCategory, data: {} })
       const { data: responseData } = response
-      if (responseData.success) setData(responseData.data)
+      if (responseData.success) {
+        setData(responseData.data || [])
+      }
     } catch (error) {
       AxiosToastError(error)
     } finally {
       setLoading(false)
     }
-  }
+  }, [])
 
   useEffect(() => {
     fetchSubCategory()
-  }, [])
+  }, [fetchSubCategory])
 
-  // ✅ Trigger delete confirm modal
   const handleDelete = (row) => {
     setDeleteSubCategory(row)
     setOpenDeleteConfirmBox(true)
   }
 
-  // ✅ Actual delete after confirmation
   const handleDeleteSubCategory = async () => {
     if (!deleteSubCategory) return
     try {
@@ -56,80 +56,122 @@ const SubCategoryPage = () => {
         data: { _id: deleteSubCategory._id }
       })
 
-      
-
       if (response.data.success) {
-        // ✅ show toast first
-        toast.success(response.data.message || "Subcategory deleted successfully")
-
-        // ✅ close confirm box and clear selected subcategory
+        toast.success(response.data.message || 'Subcategory deleted successfully')
         setOpenDeleteConfirmBox(false)
         setDeleteSubCategory(null)
-
-        // ✅ refresh data after short delay
-        setTimeout(() => {
-          fetchSubCategory()
-        }, 300)
+        fetchSubCategory()
       } else {
-        toast.error(response.data.message || "Failed to delete")
+        toast.error(response.data.message || 'Failed to delete')
       }
     } catch (error) {
       AxiosToastError(error)
     }
   }
 
-  // ✅ Handle edit click
   const handleEdit = (row) => {
     setEditData(row)
     setOpenEdit(true)
   }
 
-  // ✅ Table columns
   const columns = [
     columnHelper.accessor('name', {
-      header: 'Name',
-      cell: (info) => <span>{info.getValue()}</span>,
+      header: 'Subcategory Name',
+      cell: (info) => (
+        <span className='font-bold text-slate-900'>{info.getValue()}</span>
+      )
     }),
     columnHelper.accessor('image', {
-      header: 'Image',
+      header: 'Thumbnail',
       cell: (info) => (
-        <img
-          src={info.getValue()}
-          alt="Subcategory"
-          className="w-20 h-20 object-cover rounded-md border cursor-pointer"
-          onClick={() => setImageURL(info.getValue())}
-        />
-      ),
+        <div className='w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 overflow-hidden flex items-center justify-center p-1 cursor-pointer group hover:border-emerald-500 transition-colors'>
+          <img
+            src={info.getValue() || '/placeholder.png'}
+            alt='Subcategory preview'
+            loading='lazy'
+            onError={(e) => {
+              if (e.target.src !== '/placeholder.png') {
+                e.target.src = '/placeholder.png'
+              }
+            }}
+            className='w-full h-full object-contain group-hover:scale-105 transition-transform'
+            onClick={() => setImageURL(info.getValue())}
+          />
+        </div>
+      )
     }),
     columnHelper.accessor('category', {
-      header: 'Category',
+      header: 'Parent Categories',
       cell: (info) => {
         const catArray = info.getValue()
-        if (!catArray || catArray.length === 0) return <span>—</span>
-        return <span>{catArray[0]?.name || '—'}</span>
-      },
-    }),
+        if (!catArray || catArray.length === 0) {
+          return <span className='text-slate-400'>—</span>
+        }
+        return (
+          <div className='flex flex-wrap gap-1'>
+            {catArray.map((cat, idx) => (
+              <span
+                key={cat?._id || idx}
+                className='badge-neutral text-[11px] px-2 py-0.5'
+              >
+                {cat?.name || 'Category'}
+              </span>
+            ))}
+          </div>
+        )
+      }
+    })
   ]
 
   return (
-    <section>
+    <div className='space-y-6 animate-fadeIn'>
       {/* Header */}
-      <div className="p-4 bg-white shadow flex items-center justify-between sticky top-0 z-10">
-        <h2 className="font-semibold text-lg text-gray-800">Sub Category</h2>
+      <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
+        <div>
+          <div className='flex items-center gap-2'>
+            <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+              Subcategory Management
+            </h1>
+            {!loading && data.length > 0 && (
+              <span className='badge-brand text-xs font-semibold px-2.5 py-0.5'>
+                {data.length} Subcategories
+              </span>
+            )}
+          </div>
+          <p className='text-sm text-slate-500 mt-1'>
+            Organize secondary groupings mapped to parent categories
+          </p>
+        </div>
+
         <button
+          type='button'
           onClick={() => setOpenAddSubCategory(true)}
-          className="border-2 border-amber-500 text-amber-500 px-4 py-1.5 rounded-lg font-medium transition-all duration-300 hover:bg-amber-500 hover:text-white hover:shadow-md"
+          className='btn-primary self-start sm:self-auto inline-flex items-center gap-2 font-semibold text-sm shadow-subtle'
         >
-          Add Sub Category
+          <FiPlus size={16} />
+          <span>Add Subcategory</span>
         </button>
       </div>
 
-      {loading && (
-        <Loading/>
-      )}
-
-      {/* Table */}
-      <div>
+      {/* Content */}
+      {loading ? (
+        <div className='bg-white rounded-2xl border border-slate-200/80 p-6 shadow-card space-y-3 animate-pulse'>
+          <div className='h-8 bg-slate-200 rounded-lg w-full mb-4' />
+          {[...Array(5)].map((_, idx) => (
+            <div key={idx} className='h-12 bg-slate-100 rounded-lg w-full' />
+          ))}
+        </div>
+      ) : data.length === 0 ? (
+        <div className='bg-white rounded-2xl border border-slate-200/80 p-8 sm:p-12 shadow-card'>
+          <NoData
+            icon={FiLayers}
+            title='No Subcategories Found'
+            description='Add subcategories to help shoppers navigate detailed product lines.'
+            actionText='Add Subcategory'
+            onAction={() => setOpenAddSubCategory(true)}
+          />
+        </div>
+      ) : (
         <DisplayTable
           data={data}
           columns={columns}
@@ -137,9 +179,9 @@ const SubCategoryPage = () => {
           onEdit={handleEdit}
           onDelete={handleDelete}
         />
-      </div>
+      )}
 
-      {/* Add Subcategory Modal */}
+      {/* Add Modal */}
       {openAddSubCategory && (
         <UploadSubCategoryModel
           close={() => setOpenAddSubCategory(false)}
@@ -147,10 +189,10 @@ const SubCategoryPage = () => {
         />
       )}
 
-      {/* View Image Modal */}
-      {ImageURL && <ViewImage url={ImageURL} close={() => setImageURL("")} />}
+      {/* Image Preview Modal */}
+      {imageURL && <ViewImage url={imageURL} close={() => setImageURL('')} />}
 
-      {/* Edit Subcategory Modal */}
+      {/* Edit Modal */}
       {openEdit && (
         <EditSubCategory
           data={editData}
@@ -162,12 +204,14 @@ const SubCategoryPage = () => {
       {/* Delete Confirmation Modal */}
       {openDeleteConfirmBox && (
         <ConfirmBox
+          title='Delete Subcategory'
+          message={`Are you sure you want to permanently delete subcategory "${deleteSubCategory?.name || 'this item'}"?`}
           cancel={() => setOpenDeleteConfirmBox(false)}
           close={() => setOpenDeleteConfirmBox(false)}
           confirm={handleDeleteSubCategory}
         />
       )}
-    </section>
+    </div>
   )
 }
 

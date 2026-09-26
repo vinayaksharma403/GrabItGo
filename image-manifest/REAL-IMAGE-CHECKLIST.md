@@ -1,0 +1,2182 @@
+# GrabItGo — Authentic Product Imagery Checklist (159 Products)
+
+This checklist contains all **159 products** currently in the catalog. Use this document to plan and organize the authentic photography for each product.
+
+### Naming Convention Standard
+Save images in `image-manifest/products/` using the product's MongoDB `_id`:
+- Primary (Front): `<productId>-1.webp` (or `<productId>-front.webp`)
+- Secondary (Back / Details): `<productId>-2.webp` (or `<productId>-back.webp`)
+- Nutrition / Ingredients: `<productId>-3.webp` (or `<productId>-details.webp`)
+
+### Summary Metrics
+- **Total Products**: 159
+- **Categories Represented**: 7
+- **Recommended Image Count Per Product**: 2 to 4 photos for staples/packaged goods; 1 to 2 photos for basic/cleaning utilities.
+
+---
+
+## Atta , Rice & Dal (27 Products)
+
+- [ ] **24 Mantra Organic White Poha**
+  - **Product ID**: `6910a218103c0bf39ffe72c0`
+  - **Subcategory**: Poha, Daliya & Other Grains
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a218103c0bf39ffe72c0-1.webp`
+    - `image-manifest/products/6910a218103c0bf39ffe72c0-2.webp`
+
+- [ ] **Aashirvaad Superior MP Atta**
+  - **Product ID**: `690edd48c9b8cdb75b3905d5`
+  - **Subcategory**: Atta
+  - **Unit**: 5
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/690edd48c9b8cdb75b3905d5-1.webp`
+    - `image-manifest/products/690edd48c9b8cdb75b3905d5-2.webp`
+
+- [ ] **Basic Moong Dal (Dhuli)**
+  - **Product ID**: `6910a139103c0bf39ffe72ba`
+  - **Subcategory**: Moong & Masoor
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a139103c0bf39ffe72ba-1.webp`
+    - `image-manifest/products/6910a139103c0bf39ffe72ba-2.webp`
+
+- [ ] **Daawat Pulav Basmati Rice (Slender Grains)**
+  - **Product ID**: `6910a54d103c0bf39ffe72ce`
+  - **Subcategory**: Rice
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a54d103c0bf39ffe72ce-1.webp`
+    - `image-manifest/products/6910a54d103c0bf39ffe72ce-2.webp`
+
+- [ ] **Daawat Rozana Super Basmati Rice**
+  - **Product ID**: `6910a58a103c0bf39ffe72d0`
+  - **Subcategory**: Rice
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a58a103c0bf39ffe72d0-1.webp`
+    - `image-manifest/products/6910a58a103c0bf39ffe72d0-2.webp`
+
+- [ ] **Fortune Chakki Fresh (100% Atta, 0% Maida) Atta**
+  - **Product ID**: `690ede68c9b8cdb75b3905d7`
+  - **Subcategory**: Atta
+  - **Unit**: 5
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/690ede68c9b8cdb75b3905d7-1.webp`
+    - `image-manifest/products/690ede68c9b8cdb75b3905d7-2.webp`
+
+- [ ] **Fortune Indori Thick Poha**
+  - **Product ID**: `6910a283103c0bf39ffe72c2`
+  - **Subcategory**: Poha, Daliya & Other Grains
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a283103c0bf39ffe72c2-1.webp`
+    - `image-manifest/products/6910a283103c0bf39ffe72c2-2.webp`
+
+- [ ] **Fortune Maida**
+  - **Product ID**: `690f7ddf018466f795b3875d`
+  - **Subcategory**: Besan, Sooji & Maida
+  - **Unit**: 5
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/690f7ddf018466f795b3875d-1.webp`
+    - `image-manifest/products/690f7ddf018466f795b3875d-2.webp`
+
+- [ ] **India Gate Kolam Rice**
+  - **Product ID**: `6910a5e6103c0bf39ffe72d2`
+  - **Subcategory**: Rice
+  - **Unit**: 10Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a5e6103c0bf39ffe72d2-1.webp`
+    - `image-manifest/products/6910a5e6103c0bf39ffe72d2-2.webp`
+
+- [ ] **K-Pra Thalipeeth Bhajani Flour Mix**
+  - **Product ID**: `6910a01f103c0bf39ffe72b4`
+  - **Subcategory**: Millet & Other Flours
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a01f103c0bf39ffe72b4-1.webp`
+    - `image-manifest/products/6910a01f103c0bf39ffe72b4-2.webp`
+
+- [ ] **Millets & More Cheese Millet Bhel**
+  - **Product ID**: `6910a2e9103c0bf39ffe72c4`
+  - **Subcategory**: Poha, Daliya & Other Grains
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a2e9103c0bf39ffe72c4-1.webp`
+    - `image-manifest/products/6910a2e9103c0bf39ffe72c4-2.webp`
+
+- [ ] **MP'S BEST Lokwan Wheat**
+  - **Product ID**: `6910a341103c0bf39ffe72c6`
+  - **Subcategory**: Poha, Daliya & Other Grains
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a341103c0bf39ffe72c6-1.webp`
+    - `image-manifest/products/6910a341103c0bf39ffe72c6-2.webp`
+
+- [ ] **Natureland Chana Organic Besan**
+  - **Product ID**: `690f991cad2e4eea5105700a`
+  - **Subcategory**: Besan, Sooji & Maida
+  - **Unit**: 500g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/690f991cad2e4eea5105700a-1.webp`
+    - `image-manifest/products/690f991cad2e4eea5105700a-2.webp`
+
+- [ ] **Nutrela Soya Granules**
+  - **Product ID**: `6910a3af103c0bf39ffe72c8`
+  - **Subcategory**: Rajma, Chhole & Others
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a3af103c0bf39ffe72c8-1.webp`
+    - `image-manifest/products/6910a3af103c0bf39ffe72c8-2.webp`
+
+- [ ] **Organic Tattva Organic Urad Dal (Dhuli)**
+  - **Product ID**: `6910a63f103c0bf39ffe72d4`
+  - **Subcategory**: Toor, Urad & Chana
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a63f103c0bf39ffe72d4-1.webp`
+    - `image-manifest/products/6910a63f103c0bf39ffe72d4-2.webp`
+
+- [ ] **Pro Nature Whole Wheat Organic Atta**
+  - **Product ID**: `690edfb7c9b8cdb75b3905d9`
+  - **Subcategory**: Atta
+  - **Unit**: 5
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/690edfb7c9b8cdb75b3905d9-1.webp`
+    - `image-manifest/products/690edfb7c9b8cdb75b3905d9-2.webp`
+
+- [ ] **Rajdhani Besan**
+  - **Product ID**: `690f9af6ad2e4eea51057014`
+  - **Subcategory**: Besan, Sooji & Maida
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/690f9af6ad2e4eea51057014-1.webp`
+    - `image-manifest/products/690f9af6ad2e4eea51057014-2.webp`
+
+- [ ] **Rajdhani Chana Sattu**
+  - **Product ID**: `6910a06c103c0bf39ffe72b6`
+  - **Subcategory**: Millet & Other Flours
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a06c103c0bf39ffe72b6-1.webp`
+    - `image-manifest/products/6910a06c103c0bf39ffe72b6-2.webp`
+
+- [ ] **Samrat MP SoojiRava**
+  - **Product ID**: `690f9baaad2e4eea5105701b`
+  - **Subcategory**: Atta
+  - **Unit**: 500g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/690f9baaad2e4eea5105701b-1.webp`
+    - `image-manifest/products/690f9baaad2e4eea5105701b-2.webp`
+
+- [ ] **Tata Sampann 100% Chana Dal Fine BesanGram Flour**
+  - **Product ID**: `690f9c72ad2e4eea51057027`
+  - **Subcategory**: Atta
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/690f9c72ad2e4eea51057027-1.webp`
+    - `image-manifest/products/690f9c72ad2e4eea51057027-2.webp`
+
+- [ ] **Tata Sampann Unpolished Green Moong (Sabut) Whole Dal**
+  - **Product ID**: `6910a17e103c0bf39ffe72bc`
+  - **Subcategory**: Moong & Masoor
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a17e103c0bf39ffe72bc-1.webp`
+    - `image-manifest/products/6910a17e103c0bf39ffe72bc-2.webp`
+
+- [ ] **Tata Sampann Unpolished Kali Urad (Sabut)**
+  - **Product ID**: `6910a67f103c0bf39ffe72d6`
+  - **Subcategory**: Toor, Urad & Chana
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a67f103c0bf39ffe72d6-1.webp`
+    - `image-manifest/products/6910a67f103c0bf39ffe72d6-2.webp`
+
+- [ ] **Tata Sampann Unpolished Yellow Moong Dal (Dhuli) Split**
+  - **Product ID**: `6910a1c9103c0bf39ffe72be`
+  - **Subcategory**: Moong & Masoor
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a1c9103c0bf39ffe72be-1.webp`
+    - `image-manifest/products/6910a1c9103c0bf39ffe72be-2.webp`
+
+- [ ] **True Elements Super Grains Oat Flour**
+  - **Product ID**: `6910a0cc103c0bf39ffe72b8`
+  - **Subcategory**: Millet & Other Flours
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a0cc103c0bf39ffe72b8-1.webp`
+    - `image-manifest/products/6910a0cc103c0bf39ffe72b8-2.webp`
+
+- [ ] **Whole Farm Grocery Gram  Chana Dal**
+  - **Product ID**: `6910a6dc103c0bf39ffe72d8`
+  - **Subcategory**: Toor, Urad & Chana
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a6dc103c0bf39ffe72d8-1.webp`
+    - `image-manifest/products/6910a6dc103c0bf39ffe72d8-2.webp`
+
+- [ ] **Whole Farm Grocery Kabuli Chana (Medium Size)**
+  - **Product ID**: `6910a40c103c0bf39ffe72ca`
+  - **Subcategory**: Rajma, Chhole & Others
+  - **Unit**: 500g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a40c103c0bf39ffe72ca-1.webp`
+    - `image-manifest/products/6910a40c103c0bf39ffe72ca-2.webp`
+
+- [ ] **Whole Farm Premium Kashmiri Red Rajma**
+  - **Product ID**: `6910a44b103c0bf39ffe72cc`
+  - **Subcategory**: Rajma, Chhole & Others
+  - **Unit**: 500g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6910a44b103c0bf39ffe72cc-1.webp`
+    - `image-manifest/products/6910a44b103c0bf39ffe72cc-2.webp`
+
+---
+
+## Baby Care (37 Products)
+
+- [ ] **Chicco Fresh Spring Baby Laundry Detergent**
+  - **Product ID**: `69137340d2e87ae4de6fb344`
+  - **Subcategory**: Hygiene
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137340d2e87ae4de6fb344-1.webp`
+    - `image-manifest/products/69137340d2e87ae4de6fb344-2.webp`
+
+- [ ] **Chicco Gentle Body Baby Wash & Shampoo**
+  - **Product ID**: `691211f290633218b30f093b`
+  - **Subcategory**: Bathing Needs
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691211f290633218b30f093b-1.webp`
+    - `image-manifest/products/691211f290633218b30f093b-2.webp`
+
+- [ ] **Chicco Kids Toothbrush (Blue)**
+  - **Product ID**: `691375c1d2e87ae4de6fb354`
+  - **Subcategory**: Oral Health & Eye Care
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691375c1d2e87ae4de6fb354-1.webp`
+    - `image-manifest/products/691375c1d2e87ae4de6fb354-2.webp`
+
+- [ ] **Chicco Toothpaste (Strawberry Flavor, 12M+)**
+  - **Product ID**: `691375f2d2e87ae4de6fb356`
+  - **Subcategory**: Oral Health & Eye Care
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691375f2d2e87ae4de6fb356-1.webp`
+    - `image-manifest/products/691375f2d2e87ae4de6fb356-2.webp`
+
+- [ ] **Colgate Batman Bubble Fruit Flavour Kids Toothpaste (6+ Years)**
+  - **Product ID**: `69137633d2e87ae4de6fb358`
+  - **Subcategory**: Oral Health & Eye Care
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137633d2e87ae4de6fb358-1.webp`
+    - `image-manifest/products/69137633d2e87ae4de6fb358-2.webp`
+
+- [ ] **Himalaya Babycare Baby Gift Set (Set of 7)**
+  - **Product ID**: `691208ce90633218b30f092f`
+  - **Subcategory**: Baby Gifting & Toys
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691208ce90633218b30f092f-1.webp`
+    - `image-manifest/products/691208ce90633218b30f092f-2.webp`
+
+- [ ] **Himalaya Diaper Rash Cream**
+  - **Product ID**: `6913721bd2e87ae4de6fb33e`
+  - **Subcategory**: Health & Safety
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6913721bd2e87ae4de6fb33e-1.webp`
+    - `image-manifest/products/6913721bd2e87ae4de6fb33e-2.webp`
+
+- [ ] **Himalaya Gentle Baby Wash**
+  - **Product ID**: `691212e290633218b30f093d`
+  - **Subcategory**: Bathing Needs
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691212e290633218b30f093d-1.webp`
+    - `image-manifest/products/691212e290633218b30f093d-2.webp`
+
+- [ ] **Himalaya Happy Baby Gift Set**
+  - **Product ID**: `6912091d90633218b30f0931`
+  - **Subcategory**: Baby Gifting & Toys
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6912091d90633218b30f0931-1.webp`
+    - `image-manifest/products/6912091d90633218b30f0931-2.webp`
+
+- [ ] **Huggies Wonder Diaper (Pants, XXL, 15-25 kg)**
+  - **Product ID**: `69136f7fd2e87ae4de6fb332`
+  - **Subcategory**: Diapers & More
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69136f7fd2e87ae4de6fb332-1.webp`
+    - `image-manifest/products/69136f7fd2e87ae4de6fb332-2.webp`
+
+- [ ] **Little's Baby Wipes**
+  - **Product ID**: `69120bbd90633218b30f0935`
+  - **Subcategory**: Baby Wipes
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69120bbd90633218b30f0935-1.webp`
+    - `image-manifest/products/69120bbd90633218b30f0935-2.webp`
+
+- [ ] **LuvLap 3 in 1 Baby Bed, Sleeping Bag & Carry Nest (Blue, New Born)**
+  - **Product ID**: `6911f9e490633218b30f0918`
+  - **Subcategory**: Baby Accessories & Apparel
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6911f9e490633218b30f0918-1.webp`
+    - `image-manifest/products/6911f9e490633218b30f0918-2.webp`
+
+- [ ] **LuvLap Baby Laundry Detergent**
+  - **Product ID**: `6913737ed2e87ae4de6fb346`
+  - **Subcategory**: Hygiene
+  - **Unit**: 1Kg
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6913737ed2e87ae4de6fb346-1.webp`
+    - `image-manifest/products/6913737ed2e87ae4de6fb346-2.webp`
+
+- [ ] **LuvLap Blue Feeding Bottle (with Silicone Nipple, 250 ml)**
+  - **Product ID**: `691370a2d2e87ae4de6fb338`
+  - **Subcategory**: Feeding
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691370a2d2e87ae4de6fb338-1.webp`
+    - `image-manifest/products/691370a2d2e87ae4de6fb338-2.webp`
+
+- [ ] **LuvLap Comfy Baby Walker & Rocker (Pink, 6 - 18 months)**
+  - **Product ID**: `6911fa5590633218b30f091a`
+  - **Subcategory**: Baby Accessories & Apparel
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6911fa5590633218b30f091a-1.webp`
+    - `image-manifest/products/6911fa5590633218b30f091a-2.webp`
+
+- [ ] **LuvLap Manual Breast Pump**
+  - **Product ID**: `6913742ad2e87ae4de6fb34a`
+  - **Subcategory**: Mom Care Needs
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6913742ad2e87ae4de6fb34a-1.webp`
+    - `image-manifest/products/6913742ad2e87ae4de6fb34a-2.webp`
+
+- [ ] **LuvLap Moisturising Baby Wipes with Aloe Vera**
+  - **Product ID**: `69120e3290633218b30f0937`
+  - **Subcategory**: Baby Wipes
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69120e3290633218b30f0937-1.webp`
+    - `image-manifest/products/69120e3290633218b30f0937-2.webp`
+
+- [ ] **LuvLap Natura Flo Wide Neck Feeding Bottle (3 Months+)**
+  - **Product ID**: `691370f7d2e87ae4de6fb33a`
+  - **Subcategory**: Feeding
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691370f7d2e87ae4de6fb33a-1.webp`
+    - `image-manifest/products/691370f7d2e87ae4de6fb33a-2.webp`
+
+- [ ] **LuvLap Washable Breast Pad**
+  - **Product ID**: `691371b2d2e87ae4de6fb33c`
+  - **Subcategory**: Feeding
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691371b2d2e87ae4de6fb33c-1.webp`
+    - `image-manifest/products/691371b2d2e87ae4de6fb33c-2.webp`
+
+- [ ] **Maate Baby Travel Bag (Brown)**
+  - **Product ID**: `6911fab890633218b30f091c`
+  - **Subcategory**: Baby Accessories & Apparel
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6911fab890633218b30f091c-1.webp`
+    - `image-manifest/products/6911fab890633218b30f091c-2.webp`
+
+- [ ] **Mamaearth Digestion & Colic Relief Tummy Roll On**
+  - **Product ID**: `69137285d2e87ae4de6fb340`
+  - **Subcategory**: Health & Safety
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137285d2e87ae4de6fb340-1.webp`
+    - `image-manifest/products/69137285d2e87ae4de6fb340-2.webp`
+
+- [ ] **Mamaearth Gentle Cleansing Baby Shampoo**
+  - **Product ID**: `6912133a90633218b30f093f`
+  - **Subcategory**: Bathing Needs
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6912133a90633218b30f093f-1.webp`
+    - `image-manifest/products/6912133a90633218b30f093f-2.webp`
+
+- [ ] **MamyPoko Pants Standard Diaper (M, 7-12 kg)**
+  - **Product ID**: `69136fddd2e87ae4de6fb334`
+  - **Subcategory**: Diapers & More
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69136fddd2e87ae4de6fb334-1.webp`
+    - `image-manifest/products/69136fddd2e87ae4de6fb334-2.webp`
+
+- [ ] **Mee Mee Anti-Bacterial Baby Liquid Cleanser (Refill)**
+  - **Product ID**: `691373d9d2e87ae4de6fb348`
+  - **Subcategory**: Hygiene
+  - **Unit**: 1 Kg
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691373d9d2e87ae4de6fb348-1.webp`
+    - `image-manifest/products/691373d9d2e87ae4de6fb348-2.webp`
+
+- [ ] **Mother Sparsh 98 % Pure Water Baby Wipes**
+  - **Product ID**: `6912108990633218b30f0939`
+  - **Subcategory**: Baby Wipes
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6912108990633218b30f0939-1.webp`
+    - `image-manifest/products/6912108990633218b30f0939-2.webp`
+
+- [ ] **Mother Sparsh Tummy Roll On**
+  - **Product ID**: `691372ddd2e87ae4de6fb342`
+  - **Subcategory**: Health & Safety
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691372ddd2e87ae4de6fb342-1.webp`
+    - `image-manifest/products/691372ddd2e87ae4de6fb342-2.webp`
+
+- [ ] **Nestle Lactogen Pro 2 Follow up Formula (After 6 Months Up to 12 Months)**
+  - **Product ID**: `6912058190633218b30f0927`
+  - **Subcategory**: Baby Food
+  - **Unit**: 500g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6912058190633218b30f0927-1.webp`
+    - `image-manifest/products/6912058190633218b30f0927-2.webp`
+
+- [ ] **Nestle NAN PRO Powder Infant Formula (Upto 6 months - Stage 1)**
+  - **Product ID**: `691205e290633218b30f0929`
+  - **Subcategory**: Baby Food
+  - **Unit**: 500g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691205e290633218b30f0929-1.webp`
+    - `image-manifest/products/691205e290633218b30f0929-2.webp`
+
+- [ ] **Nuluv Burp Cloth (0 to 6 Months)**
+  - **Product ID**: `691374c2d2e87ae4de6fb34e`
+  - **Subcategory**: Nursing
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691374c2d2e87ae4de6fb34e-1.webp`
+    - `image-manifest/products/691374c2d2e87ae4de6fb34e-2.webp`
+
+- [ ] **Oyo Baby Bed Protector Sheet**
+  - **Product ID**: `6913750ad2e87ae4de6fb350`
+  - **Subcategory**: Nursing
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6913750ad2e87ae4de6fb350-1.webp`
+    - `image-manifest/products/6913750ad2e87ae4de6fb350-2.webp`
+
+- [ ] **Oyo Baby Blanket (Star Blue)**
+  - **Product ID**: `69137547d2e87ae4de6fb352`
+  - **Subcategory**: Nursing
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137547d2e87ae4de6fb352-1.webp`
+    - `image-manifest/products/69137547d2e87ae4de6fb352-2.webp`
+
+- [ ] **Oyo Baby Care Gift Set**
+  - **Product ID**: `6912096290633218b30f0933`
+  - **Subcategory**: Baby Gifting & Toys
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6912096290633218b30f0933-1.webp`
+    - `image-manifest/products/6912096290633218b30f0933-2.webp`
+
+- [ ] **Pampers All Round Protection Diaper (Pants, XXL, 15-25 kg)**
+  - **Product ID**: `69137045d2e87ae4de6fb336`
+  - **Subcategory**: Diapers & More
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137045d2e87ae4de6fb336-1.webp`
+    - `image-manifest/products/69137045d2e87ae4de6fb336-2.webp`
+
+- [ ] **Slurrp Farm Beetroot Dosa Mix**
+  - **Product ID**: `6912082b90633218b30f092b`
+  - **Subcategory**: Baby Food
+  - **Unit**: 500g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6912082b90633218b30f092b-1.webp`
+    - `image-manifest/products/6912082b90633218b30f092b-2.webp`
+
+- [ ] **Slurrp Farm Spinach Dosa Mix**
+  - **Product ID**: `6912087690633218b30f092d`
+  - **Subcategory**: Baby Food
+  - **Unit**: 500g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6912087690633218b30f092d-1.webp`
+    - `image-manifest/products/6912087690633218b30f092d-2.webp`
+
+- [ ] **SuperBottoms Basic Newborn Baby Gift Set (Multicolour, 0-3 Months)**
+  - **Product ID**: `6912051a90633218b30f0925`
+  - **Subcategory**: Baby Accessories & Apparel
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6912051a90633218b30f0925-1.webp`
+    - `image-manifest/products/6912051a90633218b30f0925-2.webp`
+
+- [ ] **The Moms Co. Natural Butter Nipple Cream (With Mono Cartons)**
+  - **Product ID**: `69137478d2e87ae4de6fb34c`
+  - **Subcategory**: Mom Care Needs
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137478d2e87ae4de6fb34c-1.webp`
+    - `image-manifest/products/69137478d2e87ae4de6fb34c-2.webp`
+
+---
+
+## Bakery & Biscuits (19 Products)
+
+- [ ] **Britannia 5050 Maska Chaska Sweet & Salty Biscuits**
+  - **Product ID**: `69137aead2e87ae4de6fb37a`
+  - **Subcategory**: Sweet & Salty
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137aead2e87ae4de6fb37a-1.webp`
+    - `image-manifest/products/69137aead2e87ae4de6fb37a-2.webp`
+
+- [ ] **Britannia Little Hearts Classic Biscuit**
+  - **Product ID**: `69137b22d2e87ae4de6fb37c`
+  - **Subcategory**: Sweet & Salty
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137b22d2e87ae4de6fb37c-1.webp`
+    - `image-manifest/products/69137b22d2e87ae4de6fb37c-2.webp`
+
+- [ ] **Britannia Marie Gold Marie Biscuits**
+  - **Product ID**: `6913795ed2e87ae4de6fb36e`
+  - **Subcategory**: Glucose & Marie
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6913795ed2e87ae4de6fb36e-1.webp`
+    - `image-manifest/products/6913795ed2e87ae4de6fb36e-2.webp`
+
+- [ ] **Britannia NutriChoice Digestive Zero Biscuit**
+  - **Product ID**: `69137a22d2e87ae4de6fb374`
+  - **Subcategory**: Healthy & Digestive
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137a22d2e87ae4de6fb374-1.webp`
+    - `image-manifest/products/69137a22d2e87ae4de6fb374-2.webp`
+
+- [ ] **Britannia NutriChoice Seeds Biscuit**
+  - **Product ID**: `69137a76d2e87ae4de6fb376`
+  - **Subcategory**: Healthy & Digestive
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137a76d2e87ae4de6fb376-1.webp`
+    - `image-manifest/products/69137a76d2e87ae4de6fb376-2.webp`
+
+- [ ] **Britannia NutriChoice Sugar Free Healthy & Digestive Cracker**
+  - **Product ID**: `69137ab1d2e87ae4de6fb378`
+  - **Subcategory**: Healthy & Digestive
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137ab1d2e87ae4de6fb378-1.webp`
+    - `image-manifest/products/69137ab1d2e87ae4de6fb378-2.webp`
+
+- [ ] **Cadbury Chocobakes Choco Chip Cookies**
+  - **Product ID**: `6913778cd2e87ae4de6fb360`
+  - **Subcategory**: Cookies & Wafers
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6913778cd2e87ae4de6fb360-1.webp`
+    - `image-manifest/products/6913778cd2e87ae4de6fb360-2.webp`
+
+- [ ] **Cadbury Oreo Original Vanilla Sandwich Cream Biscuits 481.25 g - Jumbo Pack**
+  - **Product ID**: `6913789cd2e87ae4de6fb368`
+  - **Subcategory**: Cream Biscuits
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6913789cd2e87ae4de6fb368-1.webp`
+    - `image-manifest/products/6913789cd2e87ae4de6fb368-2.webp`
+
+- [ ] **Kwality Kreamy Magic Cream Bread Roll**
+  - **Product ID**: `691376aed2e87ae4de6fb35a`
+  - **Subcategory**: Bread & Pav
+  - **Unit**: 50g
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product packaging view
+    - 2. Key features / safety / usage instructions
+    - 3. Age group & ingredients specification
+    - 4. In-use or lifestyle view (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691376aed2e87ae4de6fb35a-1.webp`
+    - `image-manifest/products/691376aed2e87ae4de6fb35a-2.webp`
+
+- [ ] **Kwality Whole Wheat Bread**
+  - **Product ID**: `691376f2d2e87ae4de6fb35c`
+  - **Subcategory**: Bread & Pav
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691376f2d2e87ae4de6fb35c-1.webp`
+    - `image-manifest/products/691376f2d2e87ae4de6fb35c-2.webp`
+
+- [ ] **Let's Try Ragi Kaju Pista Cookies**
+  - **Product ID**: `691377d0d2e87ae4de6fb362`
+  - **Subcategory**: Cookies & Wafers
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691377d0d2e87ae4de6fb362-1.webp`
+    - `image-manifest/products/691377d0d2e87ae4de6fb362-2.webp`
+
+- [ ] **Parle Milano Chocolate Chip Biscuit**
+  - **Product ID**: `69137811d2e87ae4de6fb364`
+  - **Subcategory**: Cookies & Wafers
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137811d2e87ae4de6fb364-1.webp`
+    - `image-manifest/products/69137811d2e87ae4de6fb364-2.webp`
+
+- [ ] **Parle-G Glucose Biscuit - Pack of 2**
+  - **Product ID**: `69137994d2e87ae4de6fb370`
+  - **Subcategory**: Glucose & Marie
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137994d2e87ae4de6fb370-1.webp`
+    - `image-manifest/products/69137994d2e87ae4de6fb370-2.webp`
+
+- [ ] **Parle-G Gold Biscuit - Pack of 2**
+  - **Product ID**: `691379c6d2e87ae4de6fb372`
+  - **Subcategory**: Glucose & Marie
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691379c6d2e87ae4de6fb372-1.webp`
+    - `image-manifest/products/691379c6d2e87ae4de6fb372-2.webp`
+
+- [ ] **Patanjali Whole Wheat Nariyal Biscuit**
+  - **Product ID**: `69137b5cd2e87ae4de6fb37e`
+  - **Subcategory**: Sweet & Salty
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137b5cd2e87ae4de6fb37e-1.webp`
+    - `image-manifest/products/69137b5cd2e87ae4de6fb37e-2.webp`
+
+- [ ] **RiteBite Max Protein Choco Chips Cookie**
+  - **Product ID**: `6913784cd2e87ae4de6fb366`
+  - **Subcategory**: Cookies & Wafers
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6913784cd2e87ae4de6fb366-1.webp`
+    - `image-manifest/products/6913784cd2e87ae4de6fb366-2.webp`
+
+- [ ] **Sunfeast Dark Fantasy Choco Creme Center Filled Biscuits (3 x 83 g)**
+  - **Product ID**: `691378ddd2e87ae4de6fb36a`
+  - **Subcategory**: Cream Biscuits
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691378ddd2e87ae4de6fb36a-1.webp`
+    - `image-manifest/products/691378ddd2e87ae4de6fb36a-2.webp`
+
+- [ ] **Sunfeast Dark Fantasy Desserts Choco Chunks Cookies**
+  - **Product ID**: `69137914d2e87ae4de6fb36c`
+  - **Subcategory**: Cream Biscuits
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137914d2e87ae4de6fb36c-1.webp`
+    - `image-manifest/products/69137914d2e87ae4de6fb36c-2.webp`
+
+- [ ] **The Baker's Dozen 100% Butter Croissant**
+  - **Product ID**: `69137733d2e87ae4de6fb35e`
+  - **Subcategory**: Bread & Pav
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69137733d2e87ae4de6fb35e-1.webp`
+    - `image-manifest/products/69137733d2e87ae4de6fb35e-2.webp`
+
+---
+
+## Breakfast & Instant Food (23 Products)
+
+- [ ] **Barilla Lasagne Egg Pasta**
+  - **Product ID**: `6915759ab8ebf60a0d946d93`
+  - **Subcategory**: Imported Noodles & Pasta
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6915759ab8ebf60a0d946d93-1.webp`
+    - `image-manifest/products/6915759ab8ebf60a0d946d93-2.webp`
+
+- [ ] **Betty Crocker Original Pancake Mix**
+  - **Product ID**: `691576c8b8ebf60a0d946d97`
+  - **Subcategory**: Instant Mixes
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691576c8b8ebf60a0d946d97-1.webp`
+    - `image-manifest/products/691576c8b8ebf60a0d946d97-2.webp`
+
+- [ ] **Chef's Basket Durum Wheat Penne Domestic Pasta**
+  - **Product ID**: `691578b9b8ebf60a0d946da3`
+  - **Subcategory**: Pasta
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691578b9b8ebf60a0d946da3-1.webp`
+    - `image-manifest/products/691578b9b8ebf60a0d946da3-2.webp`
+
+- [ ] **Ching's Secret Schezwan Fried Rice Masala - Pack of 5**
+  - **Product ID**: `69157709b8ebf60a0d946d99`
+  - **Subcategory**: Instant Mixes
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157709b8ebf60a0d946d99-1.webp`
+    - `image-manifest/products/69157709b8ebf60a0d946d99-2.webp`
+
+- [ ] **Haldiram's Minute Khana Pav Bhaji**
+  - **Product ID**: `691579a2b8ebf60a0d946da9`
+  - **Subcategory**: Ready to Cook & Eat
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691579a2b8ebf60a0d946da9-1.webp`
+    - `image-manifest/products/691579a2b8ebf60a0d946da9-2.webp`
+
+- [ ] **Knorr Chinese Manchurian Instant Mix**
+  - **Product ID**: `69157752b8ebf60a0d946d9b`
+  - **Subcategory**: Instant Mixes
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157752b8ebf60a0d946d9b-1.webp`
+    - `image-manifest/products/69157752b8ebf60a0d946d9b-2.webp`
+
+- [ ] **Knorr Hot & Sour Vegetable Soup**
+  - **Product ID**: `69157ac3b8ebf60a0d946daf`
+  - **Subcategory**: Soup
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157ac3b8ebf60a0d946daf-1.webp`
+    - `image-manifest/products/69157ac3b8ebf60a0d946daf-2.webp`
+
+- [ ] **Knorr International Italian Mushroom Soup**
+  - **Product ID**: `69157b6cb8ebf60a0d946db1`
+  - **Subcategory**: Soup
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157b6cb8ebf60a0d946db1-1.webp`
+    - `image-manifest/products/69157b6cb8ebf60a0d946db1-2.webp`
+
+- [ ] **Knorr Mast Masala Soupy Noodles**
+  - **Product ID**: `691577a5b8ebf60a0d946d9d`
+  - **Subcategory**: Noodles
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691577a5b8ebf60a0d946d9d-1.webp`
+    - `image-manifest/products/691577a5b8ebf60a0d946d9d-2.webp`
+
+- [ ] **Knorr Thick Tomato Soup**
+  - **Product ID**: `69157c24b8ebf60a0d946db3`
+  - **Subcategory**: Soup
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157c24b8ebf60a0d946db3-1.webp`
+    - `image-manifest/products/69157c24b8ebf60a0d946db3-2.webp`
+
+- [ ] **Maggi Masala - 2 Minutes Instant Noodles**
+  - **Product ID**: `69157813b8ebf60a0d946d9f`
+  - **Subcategory**: Noodles
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157813b8ebf60a0d946d9f-1.webp`
+    - `image-manifest/products/69157813b8ebf60a0d946d9f-2.webp`
+
+- [ ] **MTR Gulab Jamun Dessert Mix**
+  - **Product ID**: `691573afb8ebf60a0d946d87`
+  - **Subcategory**: Dessert & Cake Mixes
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691573afb8ebf60a0d946d87-1.webp`
+    - `image-manifest/products/691573afb8ebf60a0d946d87-2.webp`
+
+- [ ] **Nongshim Kimchi Ramyun Noodle Soup**
+  - **Product ID**: `691575f0b8ebf60a0d946d95`
+  - **Subcategory**: Imported Noodles & Pasta
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691575f0b8ebf60a0d946d95-1.webp`
+    - `image-manifest/products/691575f0b8ebf60a0d946d95-2.webp`
+
+- [ ] **Pillsbury Chocolate Cooker Cake Mix**
+  - **Product ID**: `691573fab8ebf60a0d946d89`
+  - **Subcategory**: Dessert & Cake Mixes
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691573fab8ebf60a0d946d89-1.webp`
+    - `image-manifest/products/691573fab8ebf60a0d946d89-2.webp`
+
+- [ ] **Slurrp Farm Banana Chocochip Pancake Mix**
+  - **Product ID**: `69157436b8ebf60a0d946d8b`
+  - **Subcategory**: Dessert & Cake Mixes
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157436b8ebf60a0d946d8b-1.webp`
+    - `image-manifest/products/69157436b8ebf60a0d946d8b-2.webp`
+
+- [ ] **Snapin Chilli Flakes**
+  - **Product ID**: `6915749ab8ebf60a0d946d8d`
+  - **Subcategory**: Herbs & Seasoning
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6915749ab8ebf60a0d946d8d-1.webp`
+    - `image-manifest/products/6915749ab8ebf60a0d946d8d-2.webp`
+
+- [ ] **Snapin Oregano**
+  - **Product ID**: `691574e4b8ebf60a0d946d8f`
+  - **Subcategory**: Herbs & Seasoning
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691574e4b8ebf60a0d946d8f-1.webp`
+    - `image-manifest/products/691574e4b8ebf60a0d946d8f-2.webp`
+
+- [ ] **Snapin Red Chilli Flakes Seasoning**
+  - **Product ID**: `69157543b8ebf60a0d946d91`
+  - **Subcategory**: Herbs & Seasoning
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157543b8ebf60a0d946d91-1.webp`
+    - `image-manifest/products/69157543b8ebf60a0d946d91-2.webp`
+
+- [ ] **Sunfeast Yipee Instant Pasta Treat - Masala**
+  - **Product ID**: `691578f4b8ebf60a0d946da5`
+  - **Subcategory**: Pasta
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691578f4b8ebf60a0d946da5-1.webp`
+    - `image-manifest/products/691578f4b8ebf60a0d946da5-2.webp`
+
+- [ ] **Tata Sampann Yumside Cheesy Pasta With Black Olives - Ready to Eat**
+  - **Product ID**: `691579ecb8ebf60a0d946dab`
+  - **Subcategory**: Ready to Cook & Eat
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691579ecb8ebf60a0d946dab-1.webp`
+    - `image-manifest/products/691579ecb8ebf60a0d946dab-2.webp`
+
+- [ ] **Tata Sampann Yumside Classic Chicken Seekh Kebab**
+  - **Product ID**: `69157a42b8ebf60a0d946dad`
+  - **Subcategory**: Ready to Cook & Eat
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157a42b8ebf60a0d946dad-1.webp`
+    - `image-manifest/products/69157a42b8ebf60a0d946dad-2.webp`
+
+- [ ] **Yu Chilli Manchurian Instant Cup Noodles**
+  - **Product ID**: `69157859b8ebf60a0d946da1`
+  - **Subcategory**: Noodles
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157859b8ebf60a0d946da1-1.webp`
+    - `image-manifest/products/69157859b8ebf60a0d946da1-2.webp`
+
+- [ ] **Yu Pink Sauce Instant Wheat Pasta (Penne) - Buy 1 Get 1 Free**
+  - **Product ID**: `6915795cb8ebf60a0d946da7`
+  - **Subcategory**: Pasta
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6915795cb8ebf60a0d946da7-1.webp`
+    - `image-manifest/products/6915795cb8ebf60a0d946da7-2.webp`
+
+---
+
+## Chicken, Meat & Fish (8 Products)
+
+- [ ] **Gadre Seafood Seafood Snack**
+  - **Product ID**: `69157ed5b8ebf60a0d946dd2`
+  - **Subcategory**: Fish & Seafood
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157ed5b8ebf60a0d946dd2-1.webp`
+    - `image-manifest/products/69157ed5b8ebf60a0d946dd2-2.webp`
+
+- [ ] **Godrej Real Good Chicken Curry Cut**
+  - **Product ID**: `69157d61b8ebf60a0d946dcc`
+  - **Subcategory**: Chicken
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157d61b8ebf60a0d946dcc-1.webp`
+    - `image-manifest/products/69157d61b8ebf60a0d946dcc-2.webp`
+
+- [ ] **Godrej Yummiez Breakfast Chicken Sausage (Frozen)**
+  - **Product ID**: `69157f5ab8ebf60a0d946dd6`
+  - **Subcategory**: Sausage, Salami & Ham
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157f5ab8ebf60a0d946dd6-1.webp`
+    - `image-manifest/products/69157f5ab8ebf60a0d946dd6-2.webp`
+
+- [ ] **Godrej Yummiez Pepper & Herb Chicken Sausage (Frozen)**
+  - **Product ID**: `69157fb4b8ebf60a0d946dd8`
+  - **Subcategory**: Sausage, Salami & Ham
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157fb4b8ebf60a0d946dd8-1.webp`
+    - `image-manifest/products/69157fb4b8ebf60a0d946dd8-2.webp`
+
+- [ ] **ITC Master Chef Desi Style Chicken Burger Patty (Frozen)**
+  - **Product ID**: `69157dbdb8ebf60a0d946dce`
+  - **Subcategory**: Chicken
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157dbdb8ebf60a0d946dce-1.webp`
+    - `image-manifest/products/69157dbdb8ebf60a0d946dce-2.webp`
+
+- [ ] **Prasuma Original Chicken Momos (Frozen)**
+  - **Product ID**: `69157e1bb8ebf60a0d946dd0`
+  - **Subcategory**: Chicken
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157e1bb8ebf60a0d946dd0-1.webp`
+    - `image-manifest/products/69157e1bb8ebf60a0d946dd0-2.webp`
+
+- [ ] **Sumeru Five Senses Prawns Medium**
+  - **Product ID**: `69157f17b8ebf60a0d946dd4`
+  - **Subcategory**: Fish & Seafood
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157f17b8ebf60a0d946dd4-1.webp`
+    - `image-manifest/products/69157f17b8ebf60a0d946dd4-2.webp`
+
+- [ ] **Zorabian Spicy Chicken Sausage**
+  - **Product ID**: `69157ff4b8ebf60a0d946dda`
+  - **Subcategory**: Sausage, Salami & Ham
+  - **Unit**: 1
+  - **Recommended Images**: 2–3
+  - **Suggested Gallery**:
+    - 1. Front package / hero view (clear branding & product type)
+    - 2. Back package / nutrition facts & ingredients
+    - 3. Alternate perspective or packaging details (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69157ff4b8ebf60a0d946dda-1.webp`
+    - `image-manifest/products/69157ff4b8ebf60a0d946dda-2.webp`
+
+---
+
+## Cleaning Essentials (30 Products)
+
+- [ ] **Ambi Pur Mood Therapy Collection Room Freshener (Rose)**
+  - **Product ID**: `6915a03caae89cd547adaa47`
+  - **Subcategory**: Fresheners
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6915a03caae89cd547adaa47-1.webp`
+    - `image-manifest/products/6915a03caae89cd547adaa47-2.webp`
+
+- [ ] **CamPure Sandalwood Camphor  Kapur Cone**
+  - **Product ID**: `6915a1c4aae89cd547adaa49`
+  - **Subcategory**: Fresheners
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6915a1c4aae89cd547adaa49-1.webp`
+    - `image-manifest/products/6915a1c4aae89cd547adaa49-2.webp`
+
+- [ ] **Colin Glass Cleaner (500 ml)**
+  - **Product ID**: `69159f65aae89cd547adaa41`
+  - **Subcategory**: Floor Cleaners & More
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69159f65aae89cd547adaa41-1.webp`
+    - `image-manifest/products/69159f65aae89cd547adaa41-2.webp`
+
+- [ ] **Dettol Liquid Disinfectant (Menthol Cool)**
+  - **Product ID**: `69159e6faae89cd547adaa39`
+  - **Subcategory**: Disinfectant & More
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69159e6faae89cd547adaa39-1.webp`
+    - `image-manifest/products/69159e6faae89cd547adaa39-2.webp`
+
+- [ ] **Dettol Original Multi-Use Skin & Surface Wet Wipes**
+  - **Product ID**: `69159eadaae89cd547adaa3b`
+  - **Subcategory**: Disinfectant & More
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69159eadaae89cd547adaa3b-1.webp`
+    - `image-manifest/products/69159eadaae89cd547adaa3b-2.webp`
+
+- [ ] **Exo Anti Bacterial Ginger Twist Dishwash Bar**
+  - **Product ID**: `691584a5b8ebf60a0d946dea`
+  - **Subcategory**: Dishwashing Gels & Powder
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691584a5b8ebf60a0d946dea-1.webp`
+    - `image-manifest/products/691584a5b8ebf60a0d946dea-2.webp`
+
+- [ ] **Gala Broom  Jhadu (Plastic Sticks)**
+  - **Product ID**: `6915817ab8ebf60a0d946ddc`
+  - **Subcategory**: Cleaning Tools
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6915817ab8ebf60a0d946ddc-1.webp`
+    - `image-manifest/products/6915817ab8ebf60a0d946ddc-2.webp`
+
+- [ ] **Gala No Dust 90 cm Broom  Jhadu (Plastic, Blue & Brown)**
+  - **Product ID**: `691581e8b8ebf60a0d946dde`
+  - **Subcategory**: Cleaning Tools
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691581e8b8ebf60a0d946dde-1.webp`
+    - `image-manifest/products/691581e8b8ebf60a0d946dde-2.webp`
+
+- [ ] **Gala Wiper with Replaceable Handle**
+  - **Product ID**: `691582f4b8ebf60a0d946de0`
+  - **Subcategory**: Cleaning Tools
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691582f4b8ebf60a0d946de0-1.webp`
+    - `image-manifest/products/691582f4b8ebf60a0d946de0-2.webp`
+
+- [ ] **Godrej Aer Matic Air Freshener - Cool Surf Blue**
+  - **Product ID**: `6915a207aae89cd547adaa4b`
+  - **Subcategory**: Fresheners
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6915a207aae89cd547adaa4b-1.webp`
+    - `image-manifest/products/6915a207aae89cd547adaa4b-2.webp`
+
+- [ ] **Godrej Aer Matic Air Freshener - Cool Surf Blue**
+  - **Product ID**: `6919ffb974e2ea450fcc83eb`
+  - **Subcategory**: Fresheners
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6919ffb974e2ea450fcc83eb-1.webp`
+    - `image-manifest/products/6919ffb974e2ea450fcc83eb-2.webp`
+
+- [ ] **Godrej Aer Power Pocket Floral Delight Air Freshener**
+  - **Product ID**: `6919ff6d74e2ea450fcc83e9`
+  - **Subcategory**: Fresheners
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6919ff6d74e2ea450fcc83e9-1.webp`
+    - `image-manifest/products/6919ff6d74e2ea450fcc83e9-2.webp`
+
+- [ ] **Godrej Aer Power Pocket Floral Delight Air Freshener**
+  - **Product ID**: `6915a24faae89cd547adaa4d`
+  - **Subcategory**: Fresheners
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/6915a24faae89cd547adaa4d-1.webp`
+    - `image-manifest/products/6915a24faae89cd547adaa4d-2.webp`
+
+- [ ] **Koparo Clean Large Kitchen Sponge Wipe (18 x 20.5 cm)**
+  - **Product ID**: `691585bcb8ebf60a0d946df0`
+  - **Subcategory**: Dishwashing Accessories
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691585bcb8ebf60a0d946df0-1.webp`
+    - `image-manifest/products/691585bcb8ebf60a0d946df0-2.webp`
+
+- [ ] **Lizol Disinfectant Surface & Floor Cleaner**
+  - **Product ID**: `69159f98aae89cd547adaa43`
+  - **Subcategory**: Floor Cleaners & More
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69159f98aae89cd547adaa43-1.webp`
+    - `image-manifest/products/69159f98aae89cd547adaa43-2.webp`
+
+- [ ] **Lizol Disinfectant Surface & Floor Cleaner (Citrus) 500 ml**
+  - **Product ID**: `69159ffcaae89cd547adaa45`
+  - **Subcategory**: Floor Cleaners & More
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69159ffcaae89cd547adaa45-1.webp`
+    - `image-manifest/products/69159ffcaae89cd547adaa45-2.webp`
+
+- [ ] **Pee Safe Toilet Seat Disinfectant Spray (Mint)**
+  - **Product ID**: `69159ee8aae89cd547adaa3d`
+  - **Subcategory**: Disinfectant & More
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69159ee8aae89cd547adaa3d-1.webp`
+    - `image-manifest/products/69159ee8aae89cd547adaa3d-2.webp`
+
+- [ ] **Pril Lime Grease Fighter Dishwash Gel**
+  - **Product ID**: `691586aab8ebf60a0d946df6`
+  - **Subcategory**: Dishwashing Gels & Powder
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691586aab8ebf60a0d946df6-1.webp`
+    - `image-manifest/products/691586aab8ebf60a0d946df6-2.webp`
+
+- [ ] **SaveMore Dishwashing Tub + Heavy Duty Scrub Pad Combo**
+  - **Product ID**: `69158528b8ebf60a0d946dec`
+  - **Subcategory**: Dishwashing Gels & Powder
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69158528b8ebf60a0d946dec-1.webp`
+    - `image-manifest/products/69158528b8ebf60a0d946dec-2.webp`
+
+- [ ] **SaveMore Lemon Dishwash Gel (500 ml) + Dishwashing Tub Combo**
+  - **Product ID**: `69158712b8ebf60a0d946df8`
+  - **Subcategory**: Dishwashing Gels & Powder
+  - **Unit**: 500g
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69158712b8ebf60a0d946df8-1.webp`
+    - `image-manifest/products/69158712b8ebf60a0d946df8-2.webp`
+
+- [ ] **Savlon Surface Disinfectant Spray - Pack of 2**
+  - **Product ID**: `69159f22aae89cd547adaa3f`
+  - **Subcategory**: Disinfectant & More
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69159f22aae89cd547adaa3f-1.webp`
+    - `image-manifest/products/69159f22aae89cd547adaa3f-2.webp`
+
+- [ ] **Scotch Brite - Broom  Jhadu**
+  - **Product ID**: `69158342b8ebf60a0d946de2`
+  - **Subcategory**: Cleaning Tools
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69158342b8ebf60a0d946de2-1.webp`
+    - `image-manifest/products/69158342b8ebf60a0d946de2-2.webp`
+
+- [ ] **Scotch Brite Silver Sparks Scrub Pad**
+  - **Product ID**: `691585fdb8ebf60a0d946df2`
+  - **Subcategory**: Dishwashing Accessories
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691585fdb8ebf60a0d946df2-1.webp`
+    - `image-manifest/products/691585fdb8ebf60a0d946df2-2.webp`
+
+- [ ] **Scotch Brite Stainless Steel Scrubber with 1 Scrub Pad**
+  - **Product ID**: `69158639b8ebf60a0d946df4`
+  - **Subcategory**: Dishwashing Accessories
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69158639b8ebf60a0d946df4-1.webp`
+    - `image-manifest/products/69158639b8ebf60a0d946df4-2.webp`
+
+- [ ] **Surf Excel Easy Wash Detergent Powder (1 kg)**
+  - **Product ID**: `691583b2b8ebf60a0d946de4`
+  - **Subcategory**: Cleaning Tools
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691583b2b8ebf60a0d946de4-1.webp`
+    - `image-manifest/products/691583b2b8ebf60a0d946de4-2.webp`
+
+- [ ] **Tide Double Power Jasmine & Rose Detergent Powder - Get 1 kg Free**
+  - **Product ID**: `691583eeb8ebf60a0d946de6`
+  - **Subcategory**: Detergent Powder & Bars
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691583eeb8ebf60a0d946de6-1.webp`
+    - `image-manifest/products/691583eeb8ebf60a0d946de6-2.webp`
+
+- [ ] **Vim Anti Smell Dishwash Gel With Pudina**
+  - **Product ID**: `69158771b8ebf60a0d946dfa`
+  - **Subcategory**: Dishwashing Gels & Powder
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69158771b8ebf60a0d946dfa-1.webp`
+    - `image-manifest/products/69158771b8ebf60a0d946dfa-2.webp`
+
+- [ ] **Vim Lemon Dishwash Bar (Pack of 4)**
+  - **Product ID**: `69158573b8ebf60a0d946dee`
+  - **Subcategory**: Dishwashing Gels & Powder
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69158573b8ebf60a0d946dee-1.webp`
+    - `image-manifest/products/69158573b8ebf60a0d946dee-2.webp`
+
+- [ ] **Vim Lemon Dishwash Gel**
+  - **Product ID**: `691587c3b8ebf60a0d946dfc`
+  - **Subcategory**: Dishwashing Gels & Powder
+  - **Unit**: 500 ml 
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691587c3b8ebf60a0d946dfc-1.webp`
+    - `image-manifest/products/691587c3b8ebf60a0d946dfc-2.webp`
+
+- [ ] **Wheel 2 in 1 Clean & Fresh Detergent Powder**
+  - **Product ID**: `69158452b8ebf60a0d946de8`
+  - **Subcategory**: Detergent Powder & Bars
+  - **Unit**: 1
+  - **Recommended Images**: 1–2
+  - **Suggested Gallery**:
+    - 1. Full product hero view (clear item perspective)
+    - 2. Packaging details or functional feature closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/69158452b8ebf60a0d946de8-1.webp`
+    - `image-manifest/products/69158452b8ebf60a0d946de8-2.webp`
+
+---
+
+## Cold Drinks & Juices (15 Products)
+
+- [ ] **B Natural Orange Juice - Pack of 2**
+  - **Product ID**: `691acf2aebb882a9fa93ad01`
+  - **Subcategory**: Fruit Juices
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acf2aebb882a9fa93ad01-1.webp`
+    - `image-manifest/products/691acf2aebb882a9fa93ad01-2.webp`
+
+- [ ] **Bru Cold Coffee (Caramel)**
+  - **Product ID**: `691accd3ebb882a9fa93acef`
+  - **Subcategory**: Cold Coffee & Ice Tea
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691accd3ebb882a9fa93acef-1.webp`
+    - `image-manifest/products/691accd3ebb882a9fa93acef-2.webp`
+
+- [ ] **Guruji Kesaria Thandai**
+  - **Product ID**: `691acdd7ebb882a9fa93acf7`
+  - **Subcategory**: Concentrates & Syrups
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acdd7ebb882a9fa93acf7-1.webp`
+    - `image-manifest/products/691acdd7ebb882a9fa93acf7-2.webp`
+
+- [ ] **Hamdard Rooh Afza Rose Sharbat**
+  - **Product ID**: `691ace17ebb882a9fa93acf9`
+  - **Subcategory**: Concentrates & Syrups
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691ace17ebb882a9fa93acf9-1.webp`
+    - `image-manifest/products/691ace17ebb882a9fa93acf9-2.webp`
+
+- [ ] **Lazy Cocktails & Co. Variety Pack**
+  - **Product ID**: `691acb6eebb882a9fa93ace5`
+  - **Subcategory**: Beverages Gift Packs
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acb6eebb882a9fa93ace5-1.webp`
+    - `image-manifest/products/691acb6eebb882a9fa93ace5-2.webp`
+
+- [ ] **Monster Energy Drink**
+  - **Product ID**: `691ace52ebb882a9fa93acfb`
+  - **Subcategory**: Energy Drinks
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691ace52ebb882a9fa93acfb-1.webp`
+    - `image-manifest/products/691ace52ebb882a9fa93acfb-2.webp`
+
+- [ ] **Nescafe Choco Mocha Cold Coffee**
+  - **Product ID**: `691acd22ebb882a9fa93acf1`
+  - **Subcategory**: Cold Coffee & Ice Tea
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acd22ebb882a9fa93acf1-1.webp`
+    - `image-manifest/products/691acd22ebb882a9fa93acf1-2.webp`
+
+- [ ] **Nescafe Iced Latte Cold Coffee - Pack of 2**
+  - **Product ID**: `691acd5aebb882a9fa93acf3`
+  - **Subcategory**: Cold Coffee & Ice Tea
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acd5aebb882a9fa93acf3-1.webp`
+    - `image-manifest/products/691acd5aebb882a9fa93acf3-2.webp`
+
+- [ ] **Paper boat Coconut Water - Pack of 6**
+  - **Product ID**: `691acbb1ebb882a9fa93ace7`
+  - **Subcategory**: Coconut Water
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acbb1ebb882a9fa93ace7-1.webp`
+    - `image-manifest/products/691acbb1ebb882a9fa93ace7-2.webp`
+
+- [ ] **Raw Pressery Coconut Water - Pack of 6**
+  - **Product ID**: `691acbf1ebb882a9fa93ace9`
+  - **Subcategory**: Coconut Water
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acbf1ebb882a9fa93ace9-1.webp`
+    - `image-manifest/products/691acbf1ebb882a9fa93ace9-2.webp`
+
+- [ ] **Raw Pressery Iced Green Tea (Peach)**
+  - **Product ID**: `691acd90ebb882a9fa93acf5`
+  - **Subcategory**: Cold Coffee & Ice Tea
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acd90ebb882a9fa93acf5-1.webp`
+    - `image-manifest/products/691acd90ebb882a9fa93acf5-2.webp`
+
+- [ ] **Real Activ 100% Tender Coconut Water - Pack of 4**
+  - **Product ID**: `691acc31ebb882a9fa93aceb`
+  - **Subcategory**: Coconut Water
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acc31ebb882a9fa93aceb-1.webp`
+    - `image-manifest/products/691acc31ebb882a9fa93aceb-2.webp`
+
+- [ ] **Red Bull Energy Drink (250 ml)**
+  - **Product ID**: `691ace82ebb882a9fa93acfd`
+  - **Subcategory**: Energy Drinks
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691ace82ebb882a9fa93acfd-1.webp`
+    - `image-manifest/products/691ace82ebb882a9fa93acfd-2.webp`
+
+- [ ] **Sting Energy Drink (250 ml)**
+  - **Product ID**: `691acebaebb882a9fa93acff`
+  - **Subcategory**: Energy Drinks
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acebaebb882a9fa93acff-1.webp`
+    - `image-manifest/products/691acebaebb882a9fa93acff-2.webp`
+
+- [ ] **Wow! Coco Charge 100% Organic Tender Coconut Water**
+  - **Product ID**: `691acc7cebb882a9fa93aced`
+  - **Subcategory**: Coconut Water
+  - **Unit**: 1
+  - **Recommended Images**: 2–4
+  - **Suggested Gallery**:
+    - 1. Front product pack view
+    - 2. Back pack with ingredients & FSSAI nutritional table
+    - 3. Side pack / serving suggestion view
+    - 4. Unwrapped product closeup (optional)
+  - **Target Filenames**:
+    - `image-manifest/products/691acc7cebb882a9fa93aced-1.webp`
+    - `image-manifest/products/691acc7cebb882a9fa93aced-2.webp`
+
+---
+

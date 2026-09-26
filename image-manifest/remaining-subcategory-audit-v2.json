@@ -1,0 +1,4390 @@
+{
+  "$schemaDescription": "GrabItGo Phase 9G.16 — Remaining Subcategory Comprehensive Re-Audit & Classification (v2)",
+  "generatedAt": "2026-09-26T11:28:30.528Z",
+  "baseline": {
+    "totalProducts": 159,
+    "totalCategories": 20,
+    "totalSubcategories": 219,
+    "cloudinarySubcategories": 37,
+    "base64Subcategories": 182
+  },
+  "summary": {
+    "alreadyMigratedCount": 37,
+    "readyForBatchCount": 12,
+    "needsReviewCount": 2,
+    "needsAuthenticImageCount": 3,
+    "noActiveProductsCount": 165
+  },
+  "subcategories": [
+    {
+      "id": "690b49b12377ad754feb97c5",
+      "name": "Besan, Sooji & Maida",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Natureland Chana Organic Besan",
+        "Rajdhani Besan",
+        "Fortune Maida"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421210/GrabItGo/subcategories/uu5iyahnabgjyxustlsp.webp",
+      "sourcePath": "incoming-catalog/subcategories/Atta, Rice & Dal/Besan, Sooji & Maida.webp",
+      "fileSize": 36916,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "e4b09e708f939100d15e536685770f92ee2795ceb4ee4931bc227fa6773364cf",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690cd086e317bd6dbcecab64",
+      "name": "Moong & Masoor",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Tata Sampann Unpolished Green Moong (Sabut) Whole Dal",
+        "Tata Sampann Unpolished Yellow Moong Dal (Dhuli) Split",
+        "Basic Moong Dal (Dhuli)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421211/GrabItGo/subcategories/kdgopdg3ajjszezwarez.webp",
+      "sourcePath": "incoming-catalog/subcategories/Atta, Rice & Dal/Moong & Masoor.webp",
+      "fileSize": 85876,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "6cf46b669440e62929a2df1f0784ae8094b4b04062265cd92e39a65cda10b949",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e150bbb3427cd33190b68",
+      "name": "Toor, Urad & Chana",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Tata Sampann Unpolished Kali Urad (Sabut)",
+        "Organic Tattva Organic Urad Dal (Dhuli)",
+        "Whole Farm Grocery Gram  Chana Dal"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421213/GrabItGo/subcategories/vynbubhurwea6utvilwl.webp",
+      "sourcePath": "incoming-catalog/subcategories/Atta, Rice & Dal/Toor, Urad & Chana.webp",
+      "fileSize": 33590,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "333614a562929908d9ca8242b9f1ef0d07384b18c3b28ec6027b72f2e20c8a8a",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1544bb3427cd33190b70",
+      "name": "Baby Food",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Organic & Healthy Living/Baby Food.webp",
+      "fileSize": 39720,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "18fc846ee4199920e34a3635efab26b9665757efd48de7a8eae00b294f9ab9e0",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690b44e8d2141ae10ae1fb3f",
+      "name": "Atta",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 5,
+      "activeProducts": [
+        "Aashirvaad Superior MP Atta",
+        "Pro Nature Whole Wheat Organic Atta",
+        "Fortune Chakki Fresh (100% Atta, 0% Maida) Atta",
+        "Tata Sampann 100% Chana Dal Fine BesanGram Flour",
+        "Samrat MP SoojiRava"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420426/GrabItGo/subcategories/fzmidee9jqjqei38rrfu.png",
+      "sourcePath": "incoming-catalog/subcategories/Atta, Rice & Dal/Atta.jpg",
+      "fileSize": 35573,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "715a8a22a9e59e517b16e20c8b6d4da55e8dba9e34126629790c2d57e2beb69f",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e157abb3427cd33190b78",
+      "name": "Baby Wipes",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Little's Baby Wipes",
+        "Mother Sparsh 98 % Pure Water Baby Wipes",
+        "LuvLap Moisturising Baby Wipes with Aloe Vera"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790418932/GrabItGo/subcategories/wsyf2e0vswngtootkfjg.webp",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Baby Wipes.webp",
+      "fileSize": 62796,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4eb35d4e016f016c9e4bafbf55bdd0ddd431461a870b54061ab3fb103229c149",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e142bbb3427cd33190b60",
+      "name": "Rajma, Chhole & Others",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Nutrela Soya Granules",
+        "Whole Farm Premium Kashmiri Red Rajma",
+        "Whole Farm Grocery Kabuli Chana (Medium Size)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421214/GrabItGo/subcategories/zhncbq2y4i2g1zesi1pf.webp",
+      "sourcePath": "incoming-catalog/subcategories/Atta, Rice & Dal/Rajma, Chhole & Others.webp",
+      "fileSize": 111592,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "8a4c315fc414d895830c0786da61caa0acb9a349070d6264f81da38b319be159",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690cd1d9e0a6c58c3f29b8df",
+      "name": "Poha, Daliya & Other Grains",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Atta, Rice & Dal/Poha, Daliya & Other Grains.jpg",
+      "fileSize": 36215,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "cb7c3937d208ea354e8d02b20ed5c1b28a3607e5fab2a5b8876b7646b32624d7",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1792bb3427cd33190bd4",
+      "name": "Noodles",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Maggi Masala - 2 Minutes Instant Noodles",
+        "Yu Chilli Manchurian Instant Cup Noodles",
+        "Knorr Mast Masala Soupy Noodles"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Breakfast & Instant Food/Noodles.webp",
+      "fileSize": 9266,
+      "dimensions": "144x240",
+      "format": "webp (VP8L)",
+      "sha256": "88e51cbd60a1915623334fe7a128a8b274e78fbcded713f05b4f4d423b1c72e8",
+      "classification": "NEEDS_REVIEW",
+      "reason": "Source image resolution is 144x240 (sub-standard, needs >=288x480 authentic asset)"
+    },
+    {
+      "id": "690e1905bb3427cd33190c14",
+      "name": "Garbage Bags",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Garbage Bags.webp",
+      "fileSize": 95256,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1d012cd0196b38a5f92607ef1802fda46529d8e48048aa1e4f47781d832d862d",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1555bb3427cd33190b74",
+      "name": "Baby Gifting & Toys",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Himalaya Happy Baby Gift Set",
+        "Himalaya Babycare Baby Gift Set (Set of 7)",
+        "Oyo Baby Care Gift Set"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790418930/GrabItGo/subcategories/cmirzrj9m3fpjdinarkl.png",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Baby Gifting & Toys.png",
+      "fileSize": 82493,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "a6554e7c8a404167b2783249c6be49a82c741928cb89c01a42767c631e856b22",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e15a6bb3427cd33190b80",
+      "name": "Diapers & More",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "MamyPoko Pants Standard Diaper (M, 7-12 kg)",
+        "Pampers All Round Protection Diaper (Pants, XXL, 15-25 kg)",
+        "Huggies Wonder Diaper (Pants, XXL, 15-25 kg)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421865/GrabItGo/subcategories/gp31zhzq8z3eb9awzqon.webp",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Dispers & More.webp",
+      "fileSize": 65976,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "6bbbe06d69213f5f61e4631d0641a475c722bd4b2c0e19c385c0d49f397e7f83",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1655bb3427cd33190ba0",
+      "name": "Skin & Hair Care",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Skin & Hair Care.webp",
+      "fileSize": 19438,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5b32870ccb1a014cfc1bc9a7caddcb74fc5b8c889afa39012b959bfda6bb9b45",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690c3bfc00c5b0f7df354468",
+      "name": "Millet & Other Flours",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "True Elements Super Grains Oat Flour",
+        "Rajdhani Chana Sattu",
+        "K-Pra Thalipeeth Bhajani Flour Mix"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421215/GrabItGo/subcategories/flzl1cq8jgluo9j0jaxr.webp",
+      "sourcePath": "incoming-catalog/subcategories/Atta, Rice & Dal/Millet & Other Flours.webp",
+      "fileSize": 30780,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "c18e9999e8d2d4eac5f4e8a51fa9cf95ed14230f95b4732dfe772b5fc820d915",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e168fbb3427cd33190ba8",
+      "name": "Cakes & Rolls",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Bakery  Biscuits/Cakes & Rolls.webp",
+      "fileSize": 77476,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d6b37b86d3b9f0832bffbd196c599956495670bd37875dae8aaa111bddb5c88e",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e160fbb3427cd33190b94",
+      "name": "Mom Care Needs",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "LuvLap Manual Breast Pump",
+        "The Moms Co. Natural Butter Nipple Cream (With Mono Cartons)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421866/GrabItGo/subcategories/e6foghnkovy34bnug4ki.webp",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Mom Care Needs.webp",
+      "fileSize": 24486,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5310f07f1203ff6cca6f4af81a232aee1810a1cc521ac8e2b13a54fff3b9f0c1",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1727bb3427cd33190bc4",
+      "name": "Dessert & Cake Mixes",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "MTR Gulab Jamun Dessert Mix",
+        "Pillsbury Chocolate Cooker Cake Mix",
+        "Slurrp Farm Banana Chocochip Pancake Mix"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Breakfast & Instant Food/Dessert & Cake Mixes.webp",
+      "fileSize": 85330,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "e8776d7164bca383fe2bd8855868486b2a6dea8e22b14a72ed3fee6bbf439586",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 3 active catalog product(s)"
+    },
+    {
+      "id": "690e19a2bb3427cd33190c34",
+      "name": "Concentrates & Syrups",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "Guruji Kesaria Thandai",
+        "Hamdard Rooh Afza Rose Sharbat"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Concentrates & Syrups.webp",
+      "fileSize": 66768,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1b25435a774f69216287f47a732b91e9203a9131b422d9055bd75801e0e6a90e",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 2 active catalog product(s)"
+    },
+    {
+      "id": "690e1463bb3427cd33190b64",
+      "name": "Rice",
+      "parentCategory": {
+        "id": "69076e6a4b6d776262c05137",
+        "name": "Atta , Rice & Dal"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Daawat Pulav Basmati Rice (Slender Grains)",
+        "Daawat Rozana Super Basmati Rice",
+        "India Gate Kolam Rice"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421216/GrabItGo/subcategories/c6uefklgetvhz42g1mnm.webp",
+      "sourcePath": "incoming-catalog/subcategories/Atta, Rice & Dal/Rice.webp",
+      "fileSize": 39196,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "c5eeb26d20c296ee6f5dccebc0ddf342964a6a32e123d9f9a476b2add237ceba",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e152bbb3427cd33190b6c",
+      "name": "Baby Accessories & Apparel",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "LuvLap 3 in 1 Baby Bed, Sleeping Bag & Carry Nest (Blue, New Born)",
+        "LuvLap Comfy Baby Walker & Rocker (Pink, 6 - 18 months)",
+        "Maate Baby Travel Bag (Brown)",
+        "SuperBottoms Basic Newborn Baby Gift Set (Multicolour, 0-3 Months)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790418929/GrabItGo/subcategories/xyswgbzorxbqgoegtjqe.png",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Baby Accessories & Apparel.png",
+      "fileSize": 141995,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "d4187605d3fa9b1c83bb1767c0a6968137aca068720b7a01c6f85cebe9c8e91c",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e15e0bb3427cd33190b8c",
+      "name": "Health & Safety",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Himalaya Diaper Rash Cream",
+        "Mamaearth Digestion & Colic Relief Tummy Roll On",
+        "Mother Sparsh Tummy Roll On"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421867/GrabItGo/subcategories/yn4dkuwqgn12wlx9ils9.webp",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Health & Safety.webp",
+      "fileSize": 20902,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "bc311af7820feaf6d7ddfe5c560c2b07a5bf4e31a03f8023ead2e393946a1532",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e15fdbb3427cd33190b90",
+      "name": "Hygiene",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Chicco Fresh Spring Baby Laundry Detergent",
+        "LuvLap Baby Laundry Detergent",
+        "Mee Mee Anti-Bacterial Baby Liquid Cleanser (Refill)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421869/GrabItGo/subcategories/jmddvwbs6u1pzp0jkdi8.webp",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Hygiene.webp",
+      "fileSize": 28418,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "758a39e2d205329605984b39eb3d78b76af0721253276b2de55140f11e1a57ee",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e17f5bb3427cd33190be4",
+      "name": "Chicken",
+      "parentCategory": {
+        "id": "690a1c7a9dae4dbb7e20c0fb",
+        "name": "Chicken, Meat & Fish"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "ITC Master Chef Desi Style Chicken Burger Patty (Frozen)",
+        "Prasuma Original Chicken Momos (Frozen)",
+        "Godrej Real Good Chicken Curry Cut"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420436/GrabItGo/subcategories/ftuwkrdroy9kupy7d7th.png",
+      "sourcePath": "incoming-catalog/subcategories/Chicken, Meat & Fish/Chicken.jpg",
+      "fileSize": 26271,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "ccb3b564e9d92d3fe52382ef4110256764ee82cc6c15344e06136c61821ae26a",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e19debb3427cd33190c3c",
+      "name": "Fruit Juices",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Fruit Juices.webp",
+      "fileSize": 32600,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "836abac4f7d8de90b7a0de052ce353ab7672c08df131822b24e7fc960bdd5c14",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e16fcbb3427cd33190bbc",
+      "name": "Rusks & Wafers",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Bakery  Biscuits/Rusks & Wafers.jpg",
+      "fileSize": 24870,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "2150185b4e8ddee2ac63d8d699136b4aa2973773778b087acd3d6cdb43ecf421",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e18aabb3427cd33190c04",
+      "name": "Dishwashing Gels & Powder",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 7,
+      "activeProducts": [
+        "Pril Lime Grease Fighter Dishwash Gel",
+        "SaveMore Dishwashing Tub + Heavy Duty Scrub Pad Combo",
+        "Vim Lemon Dishwash Bar (Pack of 4)",
+        "Exo Anti Bacterial Ginger Twist Dishwash Bar",
+        "SaveMore Lemon Dishwash Gel (500 ml) + Dishwashing Tub Combo",
+        "Vim Lemon Dishwash Gel",
+        "Vim Anti Smell Dishwash Gel With Pudina"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420430/GrabItGo/subcategories/svcc4qdphzuu3gumaila.webp",
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Dishwashing Gels & Powder.webp",
+      "fileSize": 26322,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "8677171fdf263d2790c22e59f601764343a1eaccccc93b64493724a2cf44df7d",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e16a7bb3427cd33190bac",
+      "name": "Cookies",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Bakery  Biscuits/Cookies.webp",
+      "fileSize": 28518,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4226db22457ced828c77d774d7ff6765a76214e93b38950d6546e31542debb83",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e158fbb3427cd33190b7c",
+      "name": "Bathing Needs",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Mamaearth Gentle Cleansing Baby Shampoo",
+        "Chicco Gentle Body Baby Wash & Shampoo",
+        "Himalaya Gentle Baby Wash"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790418933/GrabItGo/subcategories/i8d3ymtxbnu1nwvxk2eu.webp",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Bathing Needs.webp",
+      "fileSize": 18446,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "ab86b66501407dd1ac97903ac6cf7ab170e714674493b16c480bbb7f9594e53d",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e15cbbb3427cd33190b88",
+      "name": "Feeding",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "LuvLap Blue Feeding Bottle (with Silicone Nipple, 250 ml)",
+        "LuvLap Washable Breast Pad",
+        "LuvLap Natura Flo Wide Neck Feeding Bottle (3 Months+)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421870/GrabItGo/subcategories/jjhmhtqdcazu2awu4xmt.webp",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Feeding.webp",
+      "fileSize": 30546,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "e436b149c106bbff5a5f08eed33195140a6cdeba8e4c03b22d5fdf95646569cc",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e176abb3427cd33190bcc",
+      "name": "Imported Noodles & Pasta",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "Barilla Lasagne Egg Pasta",
+        "Nongshim Kimchi Ramyun Noodle Soup"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Breakfast & Instant Food/Imported Noodles & Pasta.webp",
+      "fileSize": 100646,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "fbba327c4300e825afb08731b6aaddef3dfe27a6e50b297219a0e5a688fd0c3d",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 2 active catalog product(s)"
+    },
+    {
+      "id": "690e19bebb3427cd33190c38",
+      "name": "Energy Drinks",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Energy Drinks.webp",
+      "fileSize": 84320,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "3d34844d2cd7813457573878e87443c506dd6aefe6365d87a224b37e5637834b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1628bb3427cd33190b98",
+      "name": "Nursing",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Nuluv Burp Cloth (0 to 6 Months)",
+        "Oyo Baby Bed Protector Sheet",
+        "Oyo Baby Blanket (Star Blue)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421871/GrabItGo/subcategories/jvfxctkrfryimry2ywpf.webp",
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Nursing.webp",
+      "fileSize": 116142,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "a0f7813f83e040632f38fa7e27fcac37fb6b0e66fec14a51d4cea65a502c6d05",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1756bb3427cd33190bc8",
+      "name": "Herbs & Seasoning",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Snapin Red Chilli Flakes Seasoning",
+        "Snapin Oregano",
+        "Snapin Chilli Flakes"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Breakfast & Instant Food/Herbs & Seasoning.webp",
+      "fileSize": 28190,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "b8243cf60bcc018431bcc42654ba433c5139e940719cfa6334f61c5fdd787fad",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 3 active catalog product(s)"
+    },
+    {
+      "id": "690e163fbb3427cd33190b9c",
+      "name": "Oral & Nasal Care",
+      "parentCategory": {
+        "id": "690a1b386b1c8ac7b9b33061",
+        "name": "Baby Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Baby Care/Oral & Nasal Care.webp",
+      "fileSize": 34906,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1aa94486a3dbf5434b0eee315389d5c6a69fbfabef44610efa26ac44b9ade07c",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1679bb3427cd33190ba4",
+      "name": "Bread & Pav",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Bakery  Biscuits/Bread & Pav.webp",
+      "fileSize": 52052,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1ae6861fcfbb235b3a7efdaca940e737042fd66d26bf812053297e4766130a8a",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e16e7bb3427cd33190bb8",
+      "name": "Healthy & Digestive",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Britannia NutriChoice Digestive Zero Biscuit",
+        "Britannia NutriChoice Sugar Free Healthy & Digestive Cracker",
+        "Britannia NutriChoice Seeds Biscuit"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421218/GrabItGo/subcategories/u3ae9xjjbbvmiugjj0an.webp",
+      "sourcePath": "incoming-catalog/subcategories/Bakery  Biscuits/Healthy & Digestive.webp",
+      "fileSize": 76590,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "75a290d305d134b20e174f91425c2a1ba9d69c80f95f096623d00af055569af8",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e16d4bb3427cd33190bb4",
+      "name": "Glucose & Marie",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Britannia Marie Gold Marie Biscuits",
+        "Parle-G Glucose Biscuit - Pack of 2",
+        "Parle-G Gold Biscuit - Pack of 2"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421219/GrabItGo/subcategories/eqdalozy2sdxuifzj9db.webp",
+      "sourcePath": "incoming-catalog/subcategories/Bakery  Biscuits/Glucose & Marie.webp",
+      "fileSize": 49352,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "9f343c01697a4952c6f1489aa1f38603beee1dbb78e3c9168ffe7ffe942e2ce6",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e17aebb3427cd33190bd8",
+      "name": "Pasta",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Sunfeast Yipee Instant Pasta Treat - Masala",
+        "Chef's Basket Durum Wheat Penne Domestic Pasta",
+        "Yu Pink Sauce Instant Wheat Pasta (Penne) - Buy 1 Get 1 Free"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Breakfast & Instant Food/Pasta.webp",
+      "fileSize": 128726,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1618406eaaadcc2ded82b8fa73775fe469ca937fc9de388c4a5a1766d5870990",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 3 active catalog product(s)"
+    },
+    {
+      "id": "690e16b8bb3427cd33190bb0",
+      "name": "Cream Biscuits",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Sunfeast Dark Fantasy Desserts Choco Chunks Cookies",
+        "Cadbury Oreo Original Vanilla Sandwich Cream Biscuits 481.25 g - Jumbo Pack",
+        "Sunfeast Dark Fantasy Choco Creme Center Filled Biscuits (3 x 83 g)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420429/GrabItGo/subcategories/jfcszu0ftikvvnty3w1u.webp",
+      "sourcePath": "incoming-catalog/subcategories/Bakery  Biscuits/Cream Biscuits.webp",
+      "fileSize": 113026,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "e8f1b65f575546683be7192539a4916fde983c01d9997fe9d78a682e589414bc",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e170ebb3427cd33190bc0",
+      "name": "Sweet & Salty",
+      "parentCategory": {
+        "id": "690a1c319dae4dbb7e20c0f5",
+        "name": "Bakery & Biscuits"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Britannia Little Hearts Classic Biscuit",
+        "Britannia 5050 Maska Chaska Sweet & Salty Biscuits",
+        "Patanjali Whole Wheat Nariyal Biscuit"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421220/GrabItGo/subcategories/vtf4lyqqxpzshsylokbj.webp",
+      "sourcePath": "incoming-catalog/subcategories/Bakery  Biscuits/Sweet & Salty.webp",
+      "fileSize": 43118,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "ecbc00bd93f40c2bf8d921a8b211f9debf60614a28aa660f8a17f5c589a95b29",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e188dbb3427cd33190c00",
+      "name": "Dishwashing Bars",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Dishwashing Bars.webp",
+      "fileSize": 32500,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "ec462caa7cebca19c0545d480ba0150204af1d800222898b971109f5ca494d35",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e18f0bb3427cd33190c10",
+      "name": "Fresheners",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Fresheners.webp",
+      "fileSize": 14292,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "86c7c34e717fe5fcef0a1fabce2882ac6c7fb0f494b90a26a282fd4377859b5e",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e18bebb3427cd33190c08",
+      "name": "Disinfectant & More",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Dettol Liquid Disinfectant (Menthol Cool)",
+        "Pee Safe Toilet Seat Disinfectant Spray (Mint)",
+        "Savlon Surface Disinfectant Spray - Pack of 2",
+        "Dettol Original Multi-Use Skin & Surface Wet Wipes"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421872/GrabItGo/subcategories/ucluqazin080gom7nero.webp",
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Disinfectant & More.webp",
+      "fileSize": 71242,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "c7cd2517c434aec8e93a7aefae95473f970ec645adbf8ac102f1ff4f554232b8",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e181fbb3427cd33190bec",
+      "name": "Fish & Seafood",
+      "parentCategory": {
+        "id": "690a1c7a9dae4dbb7e20c0fb",
+        "name": "Chicken, Meat & Fish"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "Sumeru Five Senses Prawns Medium",
+        "Gadre Seafood Seafood Snack"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421224/GrabItGo/subcategories/fe3g408n4xzdyvej3095.png",
+      "sourcePath": "incoming-catalog/subcategories/Chicken, Meat & Fish/Fish & Seafood.jpg",
+      "fileSize": 37230,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "8a9d94e711c61eb08f0453a2853de63fc729693646e66a63e6a368d3655c7f6b",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e177cbb3427cd33190bd0",
+      "name": "Instant Mixes",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Knorr Chinese Manchurian Instant Mix",
+        "Betty Crocker Original Pancake Mix",
+        "Ching's Secret Schezwan Fried Rice Masala - Pack of 5"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Breakfast & Instant Food/Instant Mixes.webp",
+      "fileSize": 100438,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "c0a512c4efdfe4a46f32a50cde96b3f4715e951ffca0dc3bfefca673d9e288e3",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 3 active catalog product(s)"
+    },
+    {
+      "id": "690e19f1bb3427cd33190c40",
+      "name": "Herbal Drinks",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Herbal Drinks.webp",
+      "fileSize": 26644,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5abea4775414f2237aab763d56336c13970173f200296ad1f6ceea563d57d8a5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e187cbb3427cd33190bfc",
+      "name": "Dishwashing Accessories",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Koparo Clean Large Kitchen Sponge Wipe (18 x 20.5 cm)",
+        "Scotch Brite Stainless Steel Scrubber with 1 Scrub Pad",
+        "Scotch Brite Silver Sparks Scrub Pad"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421873/GrabItGo/subcategories/bcroo4drjr8zwzcemle5.webp",
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Dishwashing Accessories.webp",
+      "fileSize": 26714,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "36a0a56e6fbd933bb231b01155131cf17c8a7059a45d5f57e01d74b95836a2cb",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1809bb3427cd33190be8",
+      "name": "Eggs",
+      "parentCategory": {
+        "id": "690a1c7a9dae4dbb7e20c0fb",
+        "name": "Chicken, Meat & Fish"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Chicken, Meat & Fish/Eggs.webp",
+      "fileSize": 97168,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "069e76b73ea039124203fd3b6fca5ff7fa8e1d987c505a7e897496c917f766b4",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e182dbb3427cd33190bf0",
+      "name": "Sausage, Salami & Ham",
+      "parentCategory": {
+        "id": "690a1c7a9dae4dbb7e20c0fb",
+        "name": "Chicken, Meat & Fish"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Chicken, Meat & Fish/Sausage, Salami & Ham.webp",
+      "fileSize": 31712,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "770bdcaf9c6bb4367e6600839f4c2282cd68799c2536fde718e6673d836f6ad4",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1847bb3427cd33190bf4",
+      "name": "Cleaning Tools",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Cleaning Tools.webp",
+      "fileSize": 26402,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "eccf9ff15eaa589402fa533074e56912560662d71eacd45d55305c098562981b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e185ebb3427cd33190bf8",
+      "name": "Detergent Powder & Bars",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 2,
+      "activeProducts": [
+        "Tide Double Power Jasmine & Rose Detergent Powder - Get 1 kg Free",
+        "Wheel 2 in 1 Clean & Fresh Detergent Powder"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421875/GrabItGo/subcategories/lvp94y2riizt3b0gdw16.webp",
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Detergent Powder & Bars.webp",
+      "fileSize": 102246,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "add3f76ed98db87761843b5d760630661d2a666f926f7d385e129fafb8a4d7e8",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1967bb3427cd33190c28",
+      "name": "Cold Coffe & Ice Tea",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Cold Coffe & Ice Tea.webp",
+      "fileSize": 64702,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "f92525c1e668e2fd1a284827b7a930cb88a3130fae434844312d1150206d989f",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1a2fbb3427cd33190c4c",
+      "name": "Mongo Drinks",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Mongo Drinks.webp",
+      "fileSize": 71226,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "ed6a3d4ea909de90b0f04c4bac9224ceac64dcdcf7c1292651887d115396132c",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e17c0bb3427cd33190bdc",
+      "name": "Ready to Cook & Eat",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Tata Sampann Yumside Cheesy Pasta With Black Olives - Ready to Eat",
+        "Tata Sampann Yumside Classic Chicken Seekh Kebab",
+        "Haldiram's Minute Khana Pav Bhaji"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Breakfast & Instant Food/Ready to Cook & Eat.webp",
+      "fileSize": 80404,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "418aec793187495dc9adfb03894622b29233eaf759ce95e611d1afb9740b7eec",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 3 active catalog product(s)"
+    },
+    {
+      "id": "690e192fbb3427cd33190c1c",
+      "name": "LIquid Detergents",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/LIquid Detergents.webp",
+      "fileSize": 21454,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "08d41c62c45e1334592527ccde45d09f8d56bd01a69dd7eb7df199a62c2880e5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e18dcbb3427cd33190c0c",
+      "name": "Floor Cleaners & More",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Lizol Disinfectant Surface & Floor Cleaner",
+        "Colin Glass Cleaner (500 ml)",
+        "Lizol Disinfectant Surface & Floor Cleaner (Citrus) 500 ml"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421876/GrabItGo/subcategories/rnopr9hkswlwxphnlddu.webp",
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Floor Cleaners & More.webp",
+      "fileSize": 25708,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d7a9f6f05efb20711790fe0d5ffac20ddc91518c8bde930ecb1346a9f5ef39a5",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1948bb3427cd33190c20",
+      "name": "Beverages Gift Packs",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 1,
+      "activeProducts": [
+        "Lazy Cocktails & Co. Variety Pack"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Beverages Gift Packs.webp",
+      "fileSize": 59990,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "795cb3834fae74f6e4e935da1e8d425917e68e6f4f98b5acf713625389be8368",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 1 active catalog product(s)"
+    },
+    {
+      "id": "690e1918bb3427cd33190c18",
+      "name": "Laundry Additives",
+      "parentCategory": {
+        "id": "690a1c969dae4dbb7e20c0fe",
+        "name": "Cleaning Essentials"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cleaning Essentials/Laundry Additives.webp",
+      "fileSize": 32676,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "c17d0d04820eeddab6d39a4d97da427220d799a962cc4afdf6ca4a7b764bd4ee",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1958bb3427cd33190c24",
+      "name": "Coconut Water",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Paper boat Coconut Water - Pack of 6",
+        "Real Activ 100% Tender Coconut Water - Pack of 4",
+        "Wow! Coco Charge 100% Organic Tender Coconut Water",
+        "Raw Pressery Coconut Water - Pack of 6"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420431/GrabItGo/subcategories/fgsdw1qydw23fh6cvnrf.webp",
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Coconut Water.webp",
+      "fileSize": 82828,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "2f16f8c4db1bb352535c451bd990a35666d842dacd4603d64b77dbaafce3a513",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1a09bb3427cd33190c44",
+      "name": "Imported Beverages",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Imported Beverages.webp",
+      "fileSize": 81732,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5cf8b5cbe891b188946f29d41ca1316b68218320fecafd6c16065a0e54160a7d",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1a50bb3427cd33190c54",
+      "name": "Soda & Mixers",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Soda & Mixers.jpg",
+      "fileSize": 28385,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "7fb2165c2ddfec4501515e340ccad037f6e570786b97e79deb8def22d1abb0a2",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1a63bb3427cd33190c58",
+      "name": "Soft Drinks",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Soft Drinks.webp",
+      "fileSize": 63922,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "c86d3d5a51ee26f6dabd9df385b26b28c168db783f094aa2130ffaa2e81dca0a",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e17ddbb3427cd33190be0",
+      "name": "Soup",
+      "parentCategory": {
+        "id": "690a1c509dae4dbb7e20c0f8",
+        "name": "Breakfast & Instant Food"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Knorr Thick Tomato Soup",
+        "Knorr Hot & Sour Vegetable Soup",
+        "Knorr International Italian Mushroom Soup"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Breakfast & Instant Food/Soup.webp",
+      "fileSize": 89036,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "7c757f2d2945ee4cae17dcebd3d949cdcbcbb36c6525f3ed260574e891815e77",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 3 active catalog product(s)"
+    },
+    {
+      "id": "690e1a40bb3427cd33190c50",
+      "name": "Pure Juices",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Pure Juices.webp",
+      "fileSize": 51982,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "03e5219429748bc06bbc01cfc3b4747614460029480350310a6fbb91494b25ed",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1a1ebb3427cd33190c48",
+      "name": "Milk Drinks",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Milk Drinks.webp",
+      "fileSize": 122940,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "dbb82a91e9cc984aba128a9c0f117d1e09cd765edc87cbd4751fb41772afe472",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1ac6bb3427cd33190c6c",
+      "name": "Butter & More",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Butter & More.webp",
+      "fileSize": 94932,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "da71968b4a8f4fe470a144b4c53718cd4c614113b77e53dbe0c605072e256d09",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1bfbbb3427cd33190ca4",
+      "name": "Poha, Daliya & Other Grains",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Millets & More Cheese Millet Bhel",
+        "24 Mantra Organic White Poha",
+        "Fortune Indori Thick Poha",
+        "MP'S BEST Lokwan Wheat"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421221/GrabItGo/subcategories/gnv75usu0hkpdtwgvjes.png",
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Poha, Daliya & Other Grains.jpg",
+      "fileSize": 36215,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "cb7c3937d208ea354e8d02b20ed5c1b28a3607e5fab2a5b8876b7646b32624d7",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1b9ebb3427cd33190c94",
+      "name": "Muesli & Granola",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Muesli & Granola.webp",
+      "fileSize": 131754,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "38d16b3b1b861aca27481bfc76fd647b01aa7f2acd2496a6d3dda1b4b713d31a",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1c1abb3427cd33190cac",
+      "name": "Vermicelli",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Vermicelli.jpg",
+      "fileSize": 10642,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "f17dc78f0721c34a1ed8d962970e7b33204b3d5c76343da9b5a55d581230fd02",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1d11bb3427cd33190cd4",
+      "name": "Leafies & Herbs",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Leafies & Herbs.png",
+      "fileSize": 101331,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "1229e30c8e1044a708a17e354784ec53839ad802ecf6f95e0995add50d28b367",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1ab0bb3427cd33190c68",
+      "name": "Breakfast Mixes",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Breakfast Mixes.webp",
+      "fileSize": 89572,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "2d5f1383d8fb2ed27e46af1c4640be37680cfc9b5e52f0543be74ad944734568",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1c9abb3427cd33190cc0",
+      "name": "Fresh Juice & Dips",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Fresh Juice & Dips.webp",
+      "fileSize": 113224,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "b10960bf4fdc3877f4c80b5a02360ef3eda195ad4cc54965eff9134366c768f9",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1c48bb3427cd33190cb4",
+      "name": "Combo & Recipes",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Combo & Recipes.webp",
+      "fileSize": 66306,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "36a9c3c39eecf16ff15eb8abd740518d5b8186a1b34716c54efaa463b796817b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1b58bb3427cd33190c8c",
+      "name": "Honey & Chyawnprash",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Honey & Chyawnprash.webp",
+      "fileSize": 108080,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "2b531b936e54a5cf1e9d1e288a58e0e8cf559f55315975f8db49b2b83c2dd6e8",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1d02bb3427cd33190cd0",
+      "name": "Hydroponic",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Hydroponic.webp",
+      "fileSize": 61314,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "a41f469f4c2fb59d15377be88a0b046e35b038da54a59960cad0584ad1d033eb",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1c34bb3427cd33190cb0",
+      "name": "Certified Organic",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Certified Organic.webp",
+      "fileSize": 45868,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "072fcad57df7d50bd7afd2ba424f05b1612c6a45741727744d10ccda1147effc",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1cebbb3427cd33190ccc",
+      "name": "Frozen Veg",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Frozen Veg.webp",
+      "fileSize": 26780,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "b313c3589e69472fa0d6fac7332983505bacb52cc031d38d75d27e7cb33744f2",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1b0bbb3427cd33190c7c",
+      "name": "Curd & Yogurt",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Curd & Yogurt.jpg",
+      "fileSize": 10025,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "347c733f410d0ce90d1e60d82856af955fbbf6dcd3f69e49e06a221e38cb47b2",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1cabbb3427cd33190cc4",
+      "name": "Fresh Vegetables",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Fresh Vegetables.png",
+      "fileSize": 114230,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "242d5aad2497eb3a01db088d8549cd03f7f3e0f884c9dcf370bae5ed6686a8f5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1a9fbb3427cd33190c64",
+      "name": "Bread & Pav",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Kwality Kreamy Magic Cream Bread Roll",
+        "Kwality Whole Wheat Bread",
+        "The Baker's Dozen 100% Butter Croissant"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420428/GrabItGo/subcategories/wmfndunjoriefd5mwgrv.webp",
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Bread & Pav.webp",
+      "fileSize": 52052,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1ae6861fcfbb235b3a7efdaca940e737042fd66d26bf812053297e4766130a8a",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1b40bb3427cd33190c88",
+      "name": "Flakes & Kids Cereals",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Flakes & Kids Cereals.webp",
+      "fileSize": 48766,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "fb5bb802ccd38362eccea6a2540fd2c908d871152d6b790dbc2313ed224b3d57",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1ad8bb3427cd33190c70",
+      "name": "Cheese",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Cheese.webp",
+      "fileSize": 67502,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "3584d46c7ed35d07801da8b523a91852dfdcbbf16190117758b0afe2930daeed",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1bd3bb3427cd33190c9c",
+      "name": "Paneer & Tofu",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Paneer & Tofu.webp",
+      "fileSize": 11076,
+      "dimensions": "144x240",
+      "format": "webp (VP8L)",
+      "sha256": "34a20b949f33a11deb2976c78cb365dbf7b9153ef20233f44881e2f0073cb630",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1a87bb3427cd33190c60",
+      "name": "Batter",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Batter.jpg",
+      "fileSize": 31178,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "9d86290959847084fbf2708bf65300e0d6ab9e205858b06d76b5fe03ddba9ce9",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1b2cbb3427cd33190c84",
+      "name": "Energy Bars",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Energy Bars.png",
+      "fileSize": 29658,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "e6d468d8b65ea12ff6118f2a0fbed12a0cce88645821190b4b6a984c597ee0e8",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1aebbb3427cd33190c74",
+      "name": "Condensed Milk",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Condensed Milk.jpg",
+      "fileSize": 9483,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "7ec5bb34bc80513762c59df0fea6b50486569286b05f674e419084df47f3a236",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1b71bb3427cd33190c90",
+      "name": "Milk Drinks",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Milk Drinks.webp",
+      "fileSize": 122940,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "dbb82a91e9cc984aba128a9c0f117d1e09cd765edc87cbd4751fb41772afe472",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1d55bb3427cd33190ce0",
+      "name": "Bags",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Bags.webp",
+      "fileSize": 88158,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d24c4c7fe6f72aa665159bb6475fbc60011d24f785379b8838b05fd638f75533",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1a72bb3427cd33190c5c",
+      "name": "Water & Ice Cubes",
+      "parentCategory": {
+        "id": "690a1cc19dae4dbb7e20c101",
+        "name": "Cold Drinks & Juices"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Cold Drinks & Juices/Water & Ice Cubes.webp",
+      "fileSize": 26694,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "12837b5bf3d241127371ed8a72b3bb7c89607802971489f8a089fbd997d70e3c",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1bbdbb3427cd33190c98",
+      "name": "Oats",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Oats.webp",
+      "fileSize": 47460,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "8a7479ec0552457cb27295069e241d0080df3b114a33ac3b0ffa0bc8e4d5db52",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1b1cbb3427cd33190c80",
+      "name": "Eggs",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Eggs.webp",
+      "fileSize": 97168,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "069e76b73ea039124203fd3b6fca5ff7fa8e1d987c505a7e897496c917f766b4",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1c0cbb3427cd33190ca8",
+      "name": "Sausage, Salami & Ham",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Zorabian Spicy Chicken Sausage",
+        "Godrej Yummiez Pepper & Herb Chicken Sausage (Frozen)",
+        "Godrej Yummiez Breakfast Chicken Sausage (Frozen)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421222/GrabItGo/subcategories/ljnnnqufgdpdce7lcauy.webp",
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Sausage, Salami & Ham.webp",
+      "fileSize": 31712,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "770bdcaf9c6bb4367e6600839f4c2282cd68799c2536fde718e6673d836f6ad4",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1d37bb3427cd33190cd8",
+      "name": "Appliances",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Appliances.webp",
+      "fileSize": 25854,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4110b87a1a81b3bd027eab017a3f83e7f3af077920898f577f494897771d5784",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1ccebb3427cd33190cc8",
+      "name": "Freshly Cut Sprouts",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Freshly Cut Sprouts.webp",
+      "fileSize": 132234,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "13934f4639ebd2b853b0a8aa216ef32702ac41df56944e7ee4eb554ca26c9c0c",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1afcbb3427cd33190c78",
+      "name": "Cream & Whitener",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Cream & Whitener.webp",
+      "fileSize": 9836,
+      "dimensions": "144x240",
+      "format": "webp (VP8L)",
+      "sha256": "32f8a807cacd938ad08addd99d4e49f5ec0cec86b0b24d47bdbe3a36fdc259e4",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1c89bb3427cd33190cbc",
+      "name": "Fresh Fruits",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Fresh Fruits.png",
+      "fileSize": 77432,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "c868c5f67c0f719380a7b8432f15f98319afe83593131730256da30f4c370df7",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1db0bb3427cd33190cf8",
+      "name": "Electrical Accessories",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Electrical Accessories.webp",
+      "fileSize": 72096,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "456bb8a5961a8fc8cb0e0cb29f7b5a29a7826a4c7e6856ac82fa72947583132b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1d91bb3427cd33190cf0",
+      "name": "Clothing, Footwear & Accessories",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Clothing, Footwear & Accessories.webp",
+      "fileSize": 36640,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4d160e663202335afb643120c10f35e9a09e0ac22e1592e4ad1d2356d5965cb5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1c64bb3427cd33190cb8",
+      "name": "Flowers & Leaves",
+      "parentCategory": {
+        "id": "690a1d019dae4dbb7e20c107",
+        "name": "Fruits & Vegetables"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Fruits & Vegetables/Flowers & Leaves.webp",
+      "fileSize": 22626,
+      "dimensions": "256x256",
+      "format": "webp (VP8L)",
+      "sha256": "65701532acac5aaa1914a360897325492358093606f783fb8fe513062059a990",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1d82bb3427cd33190cec",
+      "name": "Cleaning Tools",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 5,
+      "activeProducts": [
+        "Gala Broom  Jhadu (Plastic Sticks)",
+        "Scotch Brite - Broom  Jhadu",
+        "Gala Wiper with Replaceable Handle",
+        "Surf Excel Easy Wash Detergent Powder (1 kg)",
+        "Gala No Dust 90 cm Broom  Jhadu (Plastic, Blue & Brown)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790421877/GrabItGo/subcategories/tsvbf65ti9epimsvvhvr.webp",
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Cleaning Tools.webp",
+      "fileSize": 26402,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "eccf9ff15eaa589402fa533074e56912560662d71eacd45d55305c098562981b",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1be6bb3427cd33190ca0",
+      "name": "Peanut Butter",
+      "parentCategory": {
+        "id": "690a1cd89dae4dbb7e20c104",
+        "name": "Dairy, Bread & Eggs"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Peanut Butter.webp",
+      "fileSize": 79336,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "c48bfefd94cefd933c298a4cb67e7a83102f33da3857ae8665882e201cd73ae5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1d64bb3427cd33190ce4",
+      "name": "Bouquets",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Bouquets.webp",
+      "fileSize": 85772,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4657a466dca5e68ed5b29a7af80689d3a32f59118895227ce79787499a0f32e3",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1d72bb3427cd33190ce8",
+      "name": "Candles & Diyas",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Candles & Diyas.webp",
+      "fileSize": 84226,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "b88af3f33f92f31fccf2724d9c96a5ad1ec8acbb4866a509b1bb95d8c8a37d0e",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1d46bb3427cd33190cdc",
+      "name": "Audio & Accessories",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Audio & Accessories.webp",
+      "fileSize": 33166,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "7ef4455f227e1210211327540dbb4aab30d4079b06a09ee08580708250e7fac9",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1df4bb3427cd33190d04",
+      "name": "Festive & Occasion Needs",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Festive & Occasion Needs.webp",
+      "fileSize": 88656,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "9383541c08f9f1c5847a0b1a158a0a970b7cf7fdf7ae55e68f2a6bab3147d2f2",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1da1bb3427cd33190cf4",
+      "name": "Decorative Lights",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Decorative Lights.png",
+      "fileSize": 96307,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "b187a291d22c1d0a6ec511de4a4f0df95ad289622cbc6d666b5ca0f85c43f270",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1ddabb3427cd33190d00",
+      "name": "Electronic Gifting",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Electronic Gifting.webp",
+      "fileSize": 39504,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "95cdabe2834f138d25f0f68e1c7c75547a1b9ab2a6e5ba2795fe11022ff8a590",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1e50bb3427cd33190d18",
+      "name": "Home Furnishing",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Home Furnishing.png",
+      "fileSize": 69533,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "b32899580c5f6162662b08bdb2c0b5ea7dd82b46ff56ea85998e8ee945908987",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1e3dbb3427cd33190d14",
+      "name": "Home Decor",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Home Decor.webp",
+      "fileSize": 77132,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "f5061dcc87913b15a8d6eadf72b7b57e94f22ee30c2cc03b0b8668644a5a87d9",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1e60bb3427cd33190d1c",
+      "name": "Kitchen & Dining Needs",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Kitchen & Dining Needs.webp",
+      "fileSize": 122448,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "52d1aaa4727ab1e487f74c6b40434a0a621ac9261f76880feaaa9164548a5803",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1e2dbb3427cd33190d10",
+      "name": "Garbage Bags",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Garbage Bags.webp",
+      "fileSize": 95256,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1d012cd0196b38a5f92607ef1802fda46529d8e48048aa1e4f47781d832d862d",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1dc1bb3427cd33190cfc",
+      "name": "Electronic Accessories",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Electronic Accessories.webp",
+      "fileSize": 14886,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "530fa14fd84e492b1b2800926a6f701962cfa74fd36dd8025b4adb400948b38c",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1e87bb3427cd33190d24",
+      "name": "Party Essentials",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Party Essentials.webp",
+      "fileSize": 128678,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "6da7cc60790bb2dfe34ccbed413b51f6878dc6f1e2538638e7d2e32edbf05f2b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1e1ebb3427cd33190d0c",
+      "name": "Fresheners",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 6,
+      "activeProducts": [
+        "Ambi Pur Mood Therapy Collection Room Freshener (Rose)",
+        "CamPure Sandalwood Camphor  Kapur Cone",
+        "Godrej Aer Power Pocket Floral Delight Air Freshener",
+        "Godrej Aer Matic Air Freshener - Cool Surf Blue",
+        "Godrej Aer Power Pocket Floral Delight Air Freshener",
+        "Godrej Aer Matic Air Freshener - Cool Surf Blue"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420433/GrabItGo/subcategories/ypsk2fyf5kcjovnjpz7f.webp",
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Fresheners.webp",
+      "fileSize": 14292,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "86c7c34e717fe5fcef0a1fabce2882ac6c7fb0f494b90a26a282fd4377859b5e",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1e07bb3427cd33190d08",
+      "name": "Festive Gifting",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Festive Gifting.webp",
+      "fileSize": 133952,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "073d37758603fd402d4d5d09913be686bc6ebe39b5e6590a112ce92c78ba4648",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1e73bb3427cd33190d20",
+      "name": "Machine & Care Care",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Machine & Care Care.webp",
+      "fileSize": 66974,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "e337ee96c7b9ad04cd61490b4a0e4b0621ec57ee9b5a6ce65b4e09931a7bb62f",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e209abb3427cd33190d72",
+      "name": "Baby Food",
+      "parentCategory": {
+        "id": "690a1d6c9dae4dbb7e20c110",
+        "name": "Organic & Healthy Living"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Nestle Lactogen Pro 2 Follow up Formula (After 6 Months Up to 12 Months)",
+        "Nestle NAN PRO Powder Infant Formula (Upto 6 months - Stage 1)",
+        "Slurrp Farm Spinach Dosa Mix",
+        "Slurrp Farm Beetroot Dosa Mix"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420434/GrabItGo/subcategories/k7aqe17e5abw4lfw7ms2.webp",
+      "sourcePath": "incoming-catalog/subcategories/Organic & Healthy Living/Baby Food.webp",
+      "fileSize": 39720,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "18fc846ee4199920e34a3635efab26b9665757efd48de7a8eae00b294f9ab9e0",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e1e9bbb3427cd33190d28",
+      "name": "Plants",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Plants.webp",
+      "fileSize": 106578,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "61d3efbe07d4938e7f5cb50df3ea138a751466ca9f067bc7bf106e245edab262",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1f02bb3427cd33190d40",
+      "name": "Tissues & Disposables",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Tissues & Disposables.webp",
+      "fileSize": 57446,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "8a7662ec887bf32ac21c92d9223904e4e4d6ea831d3729401950e6cbf22d2ce8",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e207cbb3427cd33190d6e",
+      "name": "Whole Spices",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Whole Spices.webp",
+      "fileSize": 38364,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "477a00f96aaf5b0c252fb5cadb003b18d0b51bd12e0ee201cd4b6b02ec22ef49",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1fe4bb3427cd33190d4e",
+      "name": "Dates & Seeds",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Dates & Seeds.webp",
+      "fileSize": 20964,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d03e74265ae1fd351154ce23b08102833fb982f1d393fce3de88f886f1049421",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1f16bb3427cd33190d44",
+      "name": "Winter Wear",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Winter Wear.png",
+      "fileSize": 120300,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "b6809f4f7b3d78c0c9181dc8e73f9f395056ed019c8918fc0bf653429fdd15f1",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1eedbb3427cd33190d3c",
+      "name": "Stationery Needs",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Stationery Needs.webp",
+      "fileSize": 40370,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "6b6db40f5f1a56d915160c998d3ee7deb7a878407247f5a6f6bef138b20b135c",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1eabbb3427cd33190d2c",
+      "name": "Pooja Needs",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Pooja Needs.webp",
+      "fileSize": 53484,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "0e68d996cb794f760a2a57ec1be24621de9bb730096a4b3853620aba016b41d6",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2023bb3427cd33190d5a",
+      "name": "Ghee & Vanaspati",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Ghee & Vanaspati.webp",
+      "fileSize": 116460,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "3ecdb99f6187907c641cebe73eaf4846b3f00f45b29c5164fe6d18b70b88f265",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2000bb3427cd33190d52",
+      "name": "Dry Fruits Gift Packs",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Dry Fruits Gift Packs.webp",
+      "fileSize": 69814,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1873afb4d6aa4581b4e46dbd1c5cde730874ecfdb7ebf6e9648ca5facb59b4b0",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1ebbbb3427cd33190d30",
+      "name": "Precious Coins & Jewellery",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Precious Coins & Jewellery.webp",
+      "fileSize": 71670,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "31a77ddd06d8f5c18550e34fd8644cc119d916b324c8bc88003b37da0b654315",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e205bbb3427cd33190d66",
+      "name": "Powdered Spices",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Powdered Spices.webp",
+      "fileSize": 29860,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "7bc3f85504cbf1550dd8a7af6582bd096f3c482412f9446693179648876f8543",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1ed9bb3427cd33190d38",
+      "name": "Shoe Care",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Shoe Care.webp",
+      "fileSize": 20936,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "72cba5587d3621af33607f78834490a5be584d94acf7dd87456f4a079dd8f663",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e206cbb3427cd33190d6a",
+      "name": "Salt, Sugar & Jaggery",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Salt, Sugar & Jaggery.webp",
+      "fileSize": 24828,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "fda4c1196b8ab7b16664430ad5e9b4aec8c6eeb0a8d1502e5b311556596b6cad",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2035bb3427cd33190d5e",
+      "name": "Oil",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Oil.webp",
+      "fileSize": 28880,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "77a44775af7e5767dcdd42c69b3b914fa56931f9d20189b377fcd0f0b3f6fe15",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2048bb3427cd33190d62",
+      "name": "Papad & Fryums",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Papad & Fryums.webp",
+      "fileSize": 29892,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "e39682e16be20e7d51e763b67facf0937ae01b57c5497a925ca6e02337a1417b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e20a9bb3427cd33190d76",
+      "name": "Breakfast & More",
+      "parentCategory": {
+        "id": "690a1d6c9dae4dbb7e20c110",
+        "name": "Organic & Healthy Living"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Organic & Healthy Living/Breakfast & More.webp",
+      "fileSize": 35332,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "7b8e0624df0aaa53d232fddd0377f6687a411630511800970d7ac1c42fe58c26",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e1ec9bb3427cd33190d34",
+      "name": "Repellents",
+      "parentCategory": {
+        "id": "690a1d369dae4dbb7e20c10a",
+        "name": "Home & Office"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Home & Office/Repellents.webp",
+      "fileSize": 94886,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "22ece5f784d3883723a5d0fc451f21f9124c1701a316c5d504ad550075a35e54",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2010bb3427cd33190d56",
+      "name": "Dry Fruits",
+      "parentCategory": {
+        "id": "690a1d519dae4dbb7e20c10d",
+        "name": "Masala, Oil & More"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Masala, Oil & More/Dry Fruits.webp",
+      "fileSize": 79178,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "f1865479cf8caf5cd22f6911539ec12210325b3179b2259b83650864e7e17e23",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e22aabb3427cd33190dbe",
+      "name": "Hand & FootCare",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Hand & FootCare.webp",
+      "fileSize": 20282,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "1986e5943bc224c666e6f1a96204f1588fb014e00c0f5d30265afee77a17e196",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e20debb3427cd33190d82",
+      "name": "Dry Fruits, Nuts & Seeds",
+      "parentCategory": {
+        "id": "690a1d6c9dae4dbb7e20c110",
+        "name": "Organic & Healthy Living"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Organic & Healthy Living/Dry Fruits, Nuts & Seeds.jpg",
+      "fileSize": 28855,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "dc822e3b1f8956e004775333e3543378df9563368fb1d35845d882c2db36efb8",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e20f5bb3427cd33190d86",
+      "name": "Healthy Proteins",
+      "parentCategory": {
+        "id": "690a1d6c9dae4dbb7e20c110",
+        "name": "Organic & Healthy Living"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Organic & Healthy Living/Healthy Proteins.webp",
+      "fileSize": 42224,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4e6725c6140fd67579b58bfd2e41b85a2bf95edb692cd09d067840623de2169f",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e20c8bb3427cd33190d7e",
+      "name": "Cooking Essentials",
+      "parentCategory": {
+        "id": "690a1d6c9dae4dbb7e20c110",
+        "name": "Organic & Healthy Living"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Organic & Healthy Living/Cooking Essentials.jpg",
+      "fileSize": 21933,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "cc7fbe779390b757d54afa2d505e3d3e07058faa0d41350394a2cca773cee242",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e213bbb3427cd33190d96",
+      "name": "Smoking Cessation",
+      "parentCategory": {
+        "id": "690a1d999dae4dbb7e20c113",
+        "name": "paan corner"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/paan corner/Smoking Cessation.webp",
+      "fileSize": 21324,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "8c1965996e5aa804afdf52ebcdac27d903289049aa6e8d7f7e4fa6d547fc5be3",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2179bb3427cd33190d9a",
+      "name": "Bath & Beauty Gifts",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Bath & Beauty Gifts.webp",
+      "fileSize": 52746,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "f756349ec8b97cd201fb6bce341f974307dbe2959f1b60bd1454694060a5a8a0",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e212dbb3427cd33190d92",
+      "name": "Paan",
+      "parentCategory": {
+        "id": "690a1d999dae4dbb7e20c113",
+        "name": "paan corner"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/paan corner/Paan.webp",
+      "fileSize": 62338,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "789a735c5581aa5926a2577a338166ec268b1ab4e188ac3d3a7ac8ca59b9ae14",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e20b8bb3427cd33190d7a",
+      "name": "Cookies & Wafers",
+      "parentCategory": {
+        "id": "690a1d6c9dae4dbb7e20c110",
+        "name": "Organic & Healthy Living"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Cadbury Chocobakes Choco Chip Cookies",
+        "Let's Try Ragi Kaju Pista Cookies",
+        "RiteBite Max Protein Choco Chips Cookie",
+        "Parle Milano Chocolate Chip Biscuit"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Organic & Healthy Living/Cookies & Wafers.webp",
+      "fileSize": 64690,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "c5d422eb69491ae8e839e4ea29cbb107c92a2dc995590d4860b2754850bc29aa",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 4 active catalog product(s)"
+    },
+    {
+      "id": "690e2193bb3427cd33190d9e",
+      "name": "Bathing Soaps",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Bathing Soaps.webp",
+      "fileSize": 40892,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "daa3ff15470e708adce7abd919da5b63a01edb523353cf3abe0dbae2bb3df30f",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2319bb3427cd33190dd2",
+      "name": "Shower Gels & Scrubs",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Shower Gels & Scrubs.webp",
+      "fileSize": 88338,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "b1cfcf31e4573ee320b4180f3520dba5ec0721dbbc2228e520a708a509b0bf78",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2328bb3427cd33190dd6",
+      "name": "Skin & Hair Care",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Skin & Hair Care.webp",
+      "fileSize": 19438,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5b32870ccb1a014cfc1bc9a7caddcb74fc5b8c889afa39012b959bfda6bb9b45",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2396bb3427cd33190dea",
+      "name": "Diverse Pet Food",
+      "parentCategory": {
+        "id": "690a1ddf9dae4dbb7e20c119",
+        "name": "Pet Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pet Care/Diverse Pet Food.png",
+      "fileSize": 73969,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "6ec6f00daa52ae2f5a7fd4ac4f8bc886fdd9d5daf84544f31e5e32b550a89726",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2110bb3427cd33190d8a",
+      "name": "Lighters & Accessories",
+      "parentCategory": {
+        "id": "690a1d999dae4dbb7e20c113",
+        "name": "paan corner"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/paan corner/Lighters & Accessories.webp",
+      "fileSize": 39288,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "2399d3e4383a8cb5822e1872c0ab572f952a7deba9d40aed5f9ee86cb321e5c2",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e21f6bb3427cd33190daa",
+      "name": "Face Cream & Lotion",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Face Cream & Lotion.webp",
+      "fileSize": 64858,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d4e498a1c20d819b97ccd13802952ca02766b72501c13e5ee9a4bbb8fff71497",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e211ebb3427cd33190d8e",
+      "name": "Mouth Fresheners",
+      "parentCategory": {
+        "id": "690a1d999dae4dbb7e20c113",
+        "name": "paan corner"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/paan corner/Mouth Fresheners.webp",
+      "fileSize": 21086,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5f460dff8153c6d398e3014a585dc0964be929ee9e9761a14c28b40353a21c89",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2497bb3427cd33190e1a",
+      "name": "Healthcare Devices",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Healthcare Devices.webp",
+      "fileSize": 83844,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "68c3a68ce976b2304cdba0977ec6a1ce0a9372d8e27528f2f89e20dd1b51cb84",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e22dfbb3427cd33190dc6",
+      "name": "Makeup",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Makeup.webp",
+      "fileSize": 44720,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d3ebfa18c4e2e74fd1ecd05a60c30d56037166739d8834f0111035dfee637d83",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e24a5bb3427cd33190e1e",
+      "name": "Herbal Drinks",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Herbal Drinks.webp",
+      "fileSize": 26644,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5abea4775414f2237aab763d56336c13970173f200296ad1f6ceea563d57d8a5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2263bb3427cd33190db6",
+      "name": "Fragrance & Talc",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Fragrance & Talc.webp",
+      "fileSize": 47286,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "89136283d6380ff7212ca017bea15fc68957c6cfedd667b041f196c96044d08e",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2432bb3427cd33190e0a",
+      "name": "Chyawanprash",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Chyawanprash.webp",
+      "fileSize": 31654,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "0e3dcb5983284bf7256029deb7d40737db94cbf88eb1537b7d90cd2f107e2daa",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e23e6bb3427cd33190dfe",
+      "name": "Beauty Supplements",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Beauty Supplements.webp",
+      "fileSize": 123972,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "a1aacc6178445dc6dad950db6b034c23735bb91ae2f00380cdfb50f3b16ab467",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2344bb3427cd33190dda",
+      "name": "Sunscreen",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Sunscreen.webp",
+      "fileSize": 67108,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d5da3046ea07050c69e9d9e4eb4410e131b6c6464d1c2ce9d606a1c4eef103ab",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2215bb3427cd33190dae",
+      "name": "Face Wash & Scrub",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Face Wash & Scrub.webp",
+      "fileSize": 51492,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "81feb800b9643847ddd83692b4522b9c17bfda64bf46d3502cd7c11cf688a1b0",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e21b2bb3427cd33190da2",
+      "name": "Body Moisturizers & More",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Body Moisturizers & More.png",
+      "fileSize": 112080,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "a1a6b772a087c5566a136c202bfb276c93534606de91354290ca5da679621fea",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e22bbbb3427cd33190dc2",
+      "name": "Handwash",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Handwash.webp",
+      "fileSize": 84914,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "2484addc483f5be03a304eb62d0d40e10fd610057a03f048993bc225c5907c54",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2308bb3427cd33190dce",
+      "name": "shampoo & Conditioner",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/shampoo & Conditioner.webp",
+      "fileSize": 46846,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "a80bef1936634634b11cd5bca19de1b4e55d7aee12516bf8c7938212cecd6752",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e24b3bb3427cd33190e22",
+      "name": "Marks & Sanitizers",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Marks & Sanitizers.webp",
+      "fileSize": 43940,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "f0c48e6533a3e8d96fcc0e8033ab3d4b14c53343ba1b6be5c6f2f7c958f5d388",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2228bb3427cd33190db2",
+      "name": "Feminine Care",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Feminine Care.png",
+      "fileSize": 157326,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "a9097edaf9e12d188dd97b7f852c13d32982fc79bc4dd419cbbfc6756e86d151",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2389bb3427cd33190de6",
+      "name": "Cat Needs",
+      "parentCategory": {
+        "id": "690a1ddf9dae4dbb7e20c119",
+        "name": "Pet Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pet Care/Cat Needs.png",
+      "fileSize": 94953,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "58922bda58c04fbe4a125d4094975badfa93cb436fa80076e5e6aac59e6dfeb4",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e23d0bb3427cd33190df6",
+      "name": "Adult Diapers",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Adult Diapers.webp",
+      "fileSize": 20474,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "0ea4da7dcc294550a6a99d8b1e54eaf0b42ae1127d8d889a18d5ffaf806ec66b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e248bbb3427cd33190e16",
+      "name": "Everyday Medicines",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Everyday Medicines.webp",
+      "fileSize": 58758,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "ca7d65deac26e94b4dd02236c2f0d524be92c4f96313e659ed2360271285ed61",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e22f8bb3427cd33190dca",
+      "name": "Men_s Grooming",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Men_s Grooming.png",
+      "fileSize": 78628,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "b0ad57c1342c3ee4f5c4760aead7282a6d3d98bd64f04ebf5fb5c3e5df2d9d33",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e23b0bb3427cd33190df2",
+      "name": "Pet Grooming",
+      "parentCategory": {
+        "id": "690a1ddf9dae4dbb7e20c119",
+        "name": "Pet Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pet Care/Pet Grooming.png",
+      "fileSize": 50720,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "907030fa16766e84bff2de9c09e369d31282f4ce0fb76a51b3c1b7d5d48d964e",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e23dbbb3427cd33190dfa",
+      "name": "Antiseptic Liquid",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Antiseptic Liquid.webp",
+      "fileSize": 25296,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "b4aeef84ab36b612da9ead11bd636377f634fe223450f1953c93434124714413",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e21debb3427cd33190da6",
+      "name": "Face Care",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Face Care.png",
+      "fileSize": 52629,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "06707492c905afba3ad6b120ba2d5c5ca9eee9db1e3c8ef621fb7433868ff837",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2297bb3427cd33190dba",
+      "name": "Hair Oil & Serum",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Hair Oil & Serum.webp",
+      "fileSize": 50980,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4106fd644bd8390a575dfad27f09f27fb05fef00a1d1c3efb9abde96b6183e2e",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2467bb3427cd33190e0e",
+      "name": "Protections",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": null,
+      "fileSize": null,
+      "dimensions": "N/A",
+      "format": "N/A",
+      "sha256": null,
+      "classification": "NEEDS_AUTHENTIC_IMAGE",
+      "reason": "No authorized authentic source asset available on disk"
+    },
+    {
+      "id": "690e24eebb3427cd33190e2e",
+      "name": "Pre & Post Workout",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Pre & Post Workout.webp",
+      "fileSize": 65140,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "a81fb62d40c9d09da99b5b31c563ea91801db231b579c3962001bae99576eaa5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2355bb3427cd33190dde",
+      "name": "Women_s Grooming",
+      "parentCategory": {
+        "id": "690a1dbd9dae4dbb7e20c116",
+        "name": "Personal Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Personal Care/Women_s Grooming.webp",
+      "fileSize": 68442,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "ef4d1f4c2d5b2ccc2b4f48eeaff2528a9849a674206a2bff4467a6ec22b4841f",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2531bb3427cd33190e3a",
+      "name": "Smoking Cessation",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Smoking Cessation.webp",
+      "fileSize": 21324,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "8c1965996e5aa804afdf52ebcdac27d903289049aa6e8d7f7e4fa6d547fc5be3",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e24debb3427cd33190e2a",
+      "name": "Oral Health & Eye Care",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Chicco Kids Toothbrush (Blue)",
+        "Chicco Toothpaste (Strawberry Flavor, 12M+)",
+        "Colgate Batman Bubble Fruit Flavour Kids Toothpaste (6+ Years)"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Oral Health & Eye Care.webp",
+      "fileSize": 81670,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "68a7db3600a06405f8b6bd020532f5c9189e81c0d8d847013af1c5d8ad954c7a",
+      "classification": "NEEDS_REVIEW",
+      "reason": "Dual-scope category mismatch: image only portrays Oral Care, omitting Eye Care"
+    },
+    {
+      "id": "690e2373bb3427cd33190de2",
+      "name": "Accessories & Other Supplies",
+      "parentCategory": {
+        "id": "690a1ddf9dae4dbb7e20c119",
+        "name": "Pet Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pet Care/Accessories & Other Supplies.png",
+      "fileSize": 65096,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "db1d36e8c899fd5e42b538949d4994d7e8dc6a0b7488f19448429e1c50790add",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e24c1bb3427cd33190e26",
+      "name": "Milk Drinks",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Milk Drinks.webp",
+      "fileSize": 103860,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "a1e45e73b112376aa645f5df6a02724f7ecdff5ddc8936c1bc4ed3a084be952d",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e251ebb3427cd33190e36",
+      "name": "Skin Treatment",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Skin Treatment.webp",
+      "fileSize": 40080,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "7dcac57099d7864bbc35d937bc346efb95e376a2cbf77199aaffbd1cfdd111bd",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e23a4bb3427cd33190dee",
+      "name": "Dog Needs",
+      "parentCategory": {
+        "id": "690a1ddf9dae4dbb7e20c119",
+        "name": "Pet Care"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pet Care/Dog Needs.png",
+      "fileSize": 66807,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "ef8051418726f4a7ef760327c2e5e033ec0c0f33e2dee98a6696be60569b35a1",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2612bb3427cd33190e55",
+      "name": "Asian Sauces",
+      "parentCategory": {
+        "id": "690a1e169dae4dbb7e20c11f",
+        "name": "Sauces & Spreads"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sauces & Spreads/Asian Sauces.webp",
+      "fileSize": 93982,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "269f4f016ed9ff8046a7cd630b65d01b9440fdcbbbf72d898bf14baa1cddaf66",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e264abb3427cd33190e65",
+      "name": "Tomato & Chilli Ketchup",
+      "parentCategory": {
+        "id": "690a1e169dae4dbb7e20c11f",
+        "name": "Sauces & Spreads"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sauces & Spreads/Tomato & Chilli Ketchup.webp",
+      "fileSize": 142286,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "facc7a1e972c27f4a1d8cb9085d6aaaa4f1107764200f99d27af0631cd32dcbc",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2594bb3427cd33190e4a",
+      "name": "Wound , Care & Pain Relief",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": null,
+      "fileSize": null,
+      "dimensions": "N/A",
+      "format": "N/A",
+      "sha256": null,
+      "classification": "NEEDS_AUTHENTIC_IMAGE",
+      "reason": "No source image on disk and 0 active products"
+    },
+    {
+      "id": "690e247abb3427cd33190e12",
+      "name": "Digestive Care",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Digestive Care.webp",
+      "fileSize": 116234,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "a561b17cfab3d26767354bee2f6556dd1fb942c97e42c7e9788d5683e0ddbeba",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2547bb3427cd33190e3e",
+      "name": "Vitamins & Daily Nutrition",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Pharma & Wellness/Vitamins & Daily Nutrition.webp",
+      "fileSize": 67132,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "a21b50a1ca82a6519546e7388503ddd8559acd6006ddd1dc594057886b4af993",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2507bb3427cd33190e32",
+      "name": "Protein & Sports supplements",
+      "parentCategory": {
+        "id": "690a1df69dae4dbb7e20c11c",
+        "name": "Pharma & Wellness"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": null,
+      "fileSize": null,
+      "dimensions": "N/A",
+      "format": "N/A",
+      "sha256": null,
+      "classification": "NEEDS_AUTHENTIC_IMAGE",
+      "reason": "No source image on disk and 0 active products"
+    },
+    {
+      "id": "690e262cbb3427cd33190e5d",
+      "name": "Indian Chutney & Pickle",
+      "parentCategory": {
+        "id": "690a1e169dae4dbb7e20c11f",
+        "name": "Sauces & Spreads"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sauces & Spreads/Indian Chutney & Pickle.webp",
+      "fileSize": 37182,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4bb30d8fb4de1d8e2f0ca183e3ae57a7fd11cb30f060e56586aba8b3fe4d2532",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e263bbb3427cd33190e61",
+      "name": "Jam & Spreads",
+      "parentCategory": {
+        "id": "690a1e169dae4dbb7e20c11f",
+        "name": "Sauces & Spreads"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sauces & Spreads/Jam & Spreads.webp",
+      "fileSize": 66514,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "9aa0d2ae391e99144c1fd4bf1db29b1a3905d8a7faa935cfdd24e1905abe604d",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e261ebb3427cd33190e59",
+      "name": "Cooking Sauces & Vinegar",
+      "parentCategory": {
+        "id": "690a1e169dae4dbb7e20c11f",
+        "name": "Sauces & Spreads"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sauces & Spreads/Cooking Sauces & Vinegar.webp",
+      "fileSize": 86022,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "812bf126bf16c55517557c468bca4dd4ca243dfbd8e4f3b13b1444da5dfac634",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e266cbb3427cd33190e6d",
+      "name": "Chips & Crisps",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420438/GrabItGo/subcategories/tgjuqzufugaio6mx0hxw.webp",
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Chips & Crisps.webp",
+      "fileSize": 30650,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "b25a4f3783d4869772f1d2e9857c5bd90808ef418c9211b8cbde82279e6254bf",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e265cbb3427cd33190e69",
+      "name": "Bhujia & Mixtures",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Bhujia & Mixtures.webp",
+      "fileSize": 41318,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4c9a3af827a00a9ea2429d4b75b0e5bd200e176190453068b0d1c0864ba2a310",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e267abb3427cd33190e71",
+      "name": "Energy Bars",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Energy Bars.png",
+      "fileSize": 29658,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "e6d468d8b65ea12ff6118f2a0fbed12a0cce88645821190b4b6a984c597ee0e8",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2686bb3427cd33190e75",
+      "name": "Granola",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Granola.webp",
+      "fileSize": 126844,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "f00a7874960bed8b3abe02f4c83d44cb93a49110a67c3d0f5069aeaa3e541a40",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e26c2bb3427cd33190e84",
+      "name": "Makhana & More",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Makhana & More.jpg",
+      "fileSize": 31483,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "b7202f3644c8e9788847142e5aa606c624e99635867212770df76fbf805e2a88",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e26f7bb3427cd33190e94",
+      "name": "Namkeen Snacks",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Namkeen Snacks.webp",
+      "fileSize": 99018,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "9334f119da10ade7f367e1bd222b76ea9990d665388096cf591af1e9ec15d0f2",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e26b1bb3427cd33190e80",
+      "name": "Imported Snacks",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Imported Snacks.webp",
+      "fileSize": 126884,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "578d5f87d6c30c46671566c6f24a86e7ac5031333375e5dab37ed203f9f49588",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e27f5bb3427cd33190ecc",
+      "name": "Coffee",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Coffee.jpg",
+      "fileSize": 32845,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "c9273addcb7ddf39fae3aeff64c273328e6e9f94e961d982eb1cb539b0a9e08b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e26eabb3427cd33190e90",
+      "name": "Nachos",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Nachos.webp",
+      "fileSize": 23310,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "7decdd5381f922d2873be52c4d2aff54e4f9452d56c45122a61e83c7d4a3f7df",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e275abb3427cd33190ea4",
+      "name": "Rusks & Wafers",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Rusks & Wafers.jpg",
+      "fileSize": 24870,
+      "dimensions": "N/A",
+      "format": ".jpg",
+      "sha256": "2150185b4e8ddee2ac63d8d699136b4aa2973773778b087acd3d6cdb43ecf421",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e26ddbb3427cd33190e8c",
+      "name": "Munchies Gift Packs",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Munchies Gift Packs.png",
+      "fileSize": 142503,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "39f5df2a916c8bc9c21a546a85ca004f42ff732520626c2f29ef51af10889229",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e27b1bb3427cd33190ebc",
+      "name": "Ice Cream & Frozen Dessert",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Ice Cream & Frozen Dessert.webp",
+      "fileSize": 15370,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5e33ac82831f908b1352363323aa43ff84c7d873938821cbd4021b45783f9094",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e27cdbb3427cd33190ec4",
+      "name": "Mouth Fresheners",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Mouth Fresheners.webp",
+      "fileSize": 21086,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5f460dff8153c6d398e3014a585dc0964be929ee9e9761a14c28b40353a21c89",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e274dbb3427cd33190ea0",
+      "name": "Popcorn",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Popcorn.webp",
+      "fileSize": 22798,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "36f71142bfbb9010725496a0601f5bc6a97aedbdd8ab724fc7c8100ff314388b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e27a3bb3427cd33190eb8",
+      "name": "Flavoured Yougurts",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Flavoured Yougurts.webp",
+      "fileSize": 18496,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "524a2f8b61ff74bfce6d5302cc83ed477809d1fde71faecc63156402c9aec9d8",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2794bb3427cd33190eb4",
+      "name": "Energy Bars",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Energy Bars.png",
+      "fileSize": 29658,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "e6d468d8b65ea12ff6118f2a0fbed12a0cce88645821190b4b6a984c597ee0e8",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e27bdbb3427cd33190ec0",
+      "name": "Indian Sweets",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Indian Sweets.webp",
+      "fileSize": 23256,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "de32abc57e81b32ec2df4181366b49f8bb2a9cd419058b83b2e286d8ba531fe4",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e27e1bb3427cd33190ec8",
+      "name": "Syrups",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Syrups.webp",
+      "fileSize": 34640,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "51229af777d0a12e64be468c02ba9e09e62ec756b5d3d879162dac32ecec43cd",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2776bb3427cd33190eac",
+      "name": "Candies & Gum",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Candies & Gum.webp",
+      "fileSize": 28046,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "fc1f52ccf97a6cd21d02d5eae5ec3abd5590c76a282ac325115d699d1909cfcb",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2705bb3427cd33190e98",
+      "name": "Papad & Fryums",
+      "parentCategory": {
+        "id": "690a1e489dae4dbb7e20c122",
+        "name": "Snacks & Munchies"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Snacks & Munchies/Papad & Fryums.webp",
+      "fileSize": 29892,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "e39682e16be20e7d51e763b67facf0937ae01b57c5497a925ca6e02337a1417b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2769bb3427cd33190ea8",
+      "name": "Cakes & Rolls",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Cakes & Rolls.webp",
+      "fileSize": 77476,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d6b37b86d3b9f0832bffbd196c599956495670bd37875dae8aaa111bddb5c88e",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2782bb3427cd33190eb0",
+      "name": "Chocolates",
+      "parentCategory": {
+        "id": "690a1e639dae4dbb7e20c125",
+        "name": "Sweet Tooth"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Sweet Tooth/Chocolates.png",
+      "fileSize": 39781,
+      "dimensions": "N/A",
+      "format": ".png",
+      "sha256": "8f106ddd624700df92f54aa696de856b8c3896bf299ff5921e64c0d265346d2f",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2801bb3427cd33190ed0",
+      "name": "Cold Coffee & Ice Tea",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 4,
+      "activeProducts": [
+        "Raw Pressery Iced Green Tea (Peach)",
+        "Nescafe Iced Latte Cold Coffee - Pack of 2",
+        "Nescafe Choco Mocha Cold Coffee",
+        "Bru Cold Coffee (Caramel)"
+      ],
+      "currentStorage": "CLOUDINARY",
+      "cloudinaryUrl": "https://res.cloudinary.com/dwokzn5an/image/upload/v1790420435/GrabItGo/subcategories/qpltgd5runqwsnw19gta.webp",
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Cold Coffee & Ice Tea.webp",
+      "fileSize": 64702,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "f92525c1e668e2fd1a284827b7a930cb88a3130fae434844312d1150206d989f",
+      "classification": "ALREADY_MIGRATED",
+      "reason": "Successfully migrated to Cloudinary in Batch 1, 2, 3, or 4"
+    },
+    {
+      "id": "690e285fbb3427cd33190eec",
+      "name": "Tea",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Tea.webp",
+      "fileSize": 19602,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "4cfc66b739f2122691e1857076d1b8c0bfd1e7452bd3a08953cc44d115c4d78e",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2829bb3427cd33190edc",
+      "name": "Green & Flavoured Tea",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Green & Flavoured Tea.webp",
+      "fileSize": 102230,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "7e8b5a14c642a0dc32fd3ace460aedea3ad88949a2caaa195465bd4c00262fe5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e2834bb3427cd33190ee0",
+      "name": "Herbal Drinks",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Herbal Drinks.webp",
+      "fileSize": 26644,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5abea4775414f2237aab763d56336c13970173f200296ad1f6ceea563d57d8a5",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e280dbb3427cd33190ed4",
+      "name": "Energy Drinks",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 3,
+      "activeProducts": [
+        "Monster Energy Drink",
+        "Red Bull Energy Drink (250 ml)",
+        "Sting Energy Drink (250 ml)"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Energy Drinks.webp",
+      "fileSize": 84320,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "3d34844d2cd7813457573878e87443c506dd6aefe6365d87a224b37e5637834b",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 3 active catalog product(s)"
+    },
+    {
+      "id": "690e281bbb3427cd33190ed8",
+      "name": "Fruit Juices",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 1,
+      "activeProducts": [
+        "B Natural Orange Juice - Pack of 2"
+      ],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Fruit Juices.webp",
+      "fileSize": 32600,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "836abac4f7d8de90b7a0de052ce353ab7672c08df131822b24e7fc960bdd5c14",
+      "classification": "READY_FOR_BATCH",
+      "reason": "Approved candidate for Batch 5: verified authentic 288x480 asset representing 1 active catalog product(s)"
+    },
+    {
+      "id": "690e2841bb3427cd33190ee4",
+      "name": "Hot Chocolate",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Hot Chocolate.webp",
+      "fileSize": 55774,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "d16450bc4bf30ac9f200c59686f36ae019ed299ccbf288339bd5a9395a539d16",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    },
+    {
+      "id": "690e284fbb3427cd33190ee8",
+      "name": "Imported Tea & Coffee",
+      "parentCategory": {
+        "id": "690a1e879dae4dbb7e20c128",
+        "name": "Tea, Coffee & Health Drink"
+      },
+      "activeProductCount": 0,
+      "activeProducts": [],
+      "currentStorage": "BASE64",
+      "cloudinaryUrl": null,
+      "sourcePath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Imported Tea & Coffee.webp",
+      "fileSize": 98232,
+      "dimensions": "288x480",
+      "format": "webp (VP8L)",
+      "sha256": "5f5550f403a7a76fee4b86f6cbcad4d97b8d5f99d853ed32cb9948ccbbd3935b",
+      "classification": "NO_ACTIVE_PRODUCTS",
+      "reason": "Source asset present on disk but 0 active products currently in catalog (deferred to future catalog expansion batch)"
+    }
+  ]
+}

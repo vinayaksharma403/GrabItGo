@@ -1,301 +1,417 @@
-// ✅ Final Updated Code
-import React, { useState, useEffect } from "react";
-import toast from "react-hot-toast";
-import Axios from "../utils/axios";
-import SummaryApi from "../common/SummaryApi";
-import AxiosToastError from "../utils/AxiosToastError";
-import Loading from "../components/Loading";
-import { useSelector } from "react-redux";
-import successAlert from "../utils/SuccessAlert";
+import React, { useState, useEffect } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import Axios from '../utils/axios'
+import SummaryApi from '../common/SummaryApi'
+import AxiosToastError from '../utils/AxiosToastError'
+import toast from 'react-hot-toast'
+import {
+  FiPackage,
+  FiUploadCloud,
+  FiX,
+  FiArrowLeft,
+  FiCheck
+} from 'react-icons/fi'
 
 const UploadProduct = () => {
-  const [loading, setLoading] = useState(false);
-  const [categoryList, setCategoryList] = useState([]);
-  const [subCategoryList, setSubCategoryList] = useState([]);
-
-  const allSubCategory = useSelector((state) => state.product.allSubCategory);
+  const [loading, setLoading] = useState(false)
+  const [categoryList, setCategoryList] = useState([])
+  const [subCategoryList, setSubCategoryList] = useState([])
+  const navigate = useNavigate()
 
   const [data, setData] = useState({
-    name: "",
+    name: '',
     image: [],
-    category: "",
-    subCategory: "",
-    unit: "",
-    stock: "",
-    price: "",
-    discount: "",
-    description: "",
-    more_details: {},
-  });
+    category: '',
+    subCategory: '',
+    unit: '',
+    stock: '',
+    price: '',
+    discount: '',
+    description: '',
+    more_details: {}
+  })
 
-  // 🟡 Handle form input
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setData((prev) => ({ ...prev, [name]: value }));
-  };
+    const { name, value } = e.target
+    setData((prev) => ({ ...prev, [name]: value }))
+  }
 
-  // 🟡 Handle multiple image uploads (append instead of replace)
   const handleImageUpload = async (e) => {
-    const files = Array.from(e.target.files);
+    const files = Array.from(e.target.files)
+    if (!files.length) return
 
-    // Convert to Base64
     const base64Images = await Promise.all(
       files.map(
         (file) =>
           new Promise((resolve, reject) => {
-            const reader = new FileReader();
-            reader.onload = () => resolve(reader.result);
-            reader.onerror = (err) => reject(err);
-            reader.readAsDataURL(file);
+            const reader = new FileReader()
+            reader.onload = () => resolve(reader.result)
+            reader.onerror = (err) => reject(err)
+            reader.readAsDataURL(file)
           })
       )
-    );
+    )
 
-    // Append new images instead of replacing
     setData((prev) => ({
       ...prev,
-      image: [...prev.image, ...base64Images],
-    }));
+      image: [...prev.image, ...base64Images]
+    }))
 
-    // Reset input field
-    e.target.value = "";
-  };
-
-  // 🟡 Fetch categories/subcategories async
-  const fetchCategoryAndSubCategory = async () => {
-  try {
-    const [catRes, subCatRes] = await Promise.allSettled([
-      Axios({ ...SummaryApi.getCategory }),
-      Axios({ ...SummaryApi.getSubCategory, data: {} }), // 👈 even if it's GET, send data:{} to test
-    ]);
-
-    console.log("Category API Response:", catRes);
-    console.log("SubCategory API Response:", subCatRes);
-
-    if (catRes.status === "fulfilled") {
-      console.log("Category data ->", catRes.value.data);
-    }
-    if (subCatRes.status === "fulfilled") {
-      console.log("SubCategory data ->", subCatRes.value.data);
-    }
-
-    if (catRes.status === "fulfilled" && catRes.value.data.success)
-      setCategoryList(catRes.value.data.data || catRes.value.data.category || []);
-    if (subCatRes.status === "fulfilled" && subCatRes.value.data.success)
-      setSubCategoryList(subCatRes.value.data.data || subCatRes.value.data.subcategory || []);
-  } catch (error) {
-    AxiosToastError(error);
+    e.target.value = ''
   }
-};
 
+  const handleRemoveImage = (idx) => {
+    setData((prev) => ({
+      ...prev,
+      image: prev.image.filter((_, i) => i !== idx)
+    }))
+  }
 
-  useEffect(() => {
-    fetchCategoryAndSubCategory();
-  }, []);
-
-  // 🟡 Handle product upload
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const fetchCategoryAndSubCategory = async () => {
     try {
-      setLoading(true);
-      const response = await Axios({
-        ...SummaryApi.createProduct,
-        data,
-      });
-      const { data: resData } = response;
+      const [catRes, subCatRes] = await Promise.allSettled([
+        Axios({ ...SummaryApi.getCategory }),
+        Axios({ ...SummaryApi.getSubCategory, data: {} })
+      ])
 
-      if (resData.success) {
-        successAlert(resData.message || "Product uploaded successfully");
-        setData({
-          name: "",
-          image: [],
-          category: "",
-          subCategory: "",
-          unit: "",
-          stock: "",
-          price: "",
-          discount: "",
-          description: "",
-          more_details: {},
-        });
+      if (catRes.status === 'fulfilled' && catRes.value.data.success) {
+        setCategoryList(catRes.value.data.data || catRes.value.data.category || [])
+      }
+      if (subCatRes.status === 'fulfilled' && subCatRes.value.data.success) {
+        setSubCategoryList(subCatRes.value.data.data || subCatRes.value.data.subcategory || [])
       }
     } catch (error) {
-      AxiosToastError(error);
-    } finally {
-      setLoading(false);
+      AxiosToastError(error)
     }
-  };
+  }
+
+  useEffect(() => {
+    fetchCategoryAndSubCategory()
+  }, [])
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    if (!data.name || !data.category || !data.subCategory) {
+      toast.error('Please select both category and subcategory!')
+      return
+    }
+
+    try {
+      setLoading(true)
+      const response = await Axios({
+        ...SummaryApi.createProduct,
+        data
+      })
+      const { data: resData } = response
+
+      if (resData.success) {
+        toast.success(resData.message || 'Product created successfully')
+        setData({
+          name: '',
+          image: [],
+          category: '',
+          subCategory: '',
+          unit: '',
+          stock: '',
+          price: '',
+          discount: '',
+          description: '',
+          more_details: {}
+        })
+        navigate('/dashboard/product')
+      }
+    } catch (error) {
+      AxiosToastError(error)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   return (
-    <section className="min-h-screen bg-gray-50">
-      <div className="p-4 bg-white shadow flex items-center justify-between sticky top-0 z-10">
-        <h2 className="font-semibold text-lg text-gray-800">
-          Upload Product
-        </h2>
+    <div className='space-y-6 animate-fadeIn max-w-4xl'>
+      {/* Header */}
+      <div className='flex items-center justify-between'>
+        <div>
+          <div className='flex items-center gap-2'>
+            <Link
+              to='/dashboard/product'
+              className='p-1.5 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors'
+              title='Back to Products'
+            >
+              <FiArrowLeft size={18} />
+            </Link>
+            <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+              Upload Product
+            </h1>
+          </div>
+          <p className='text-sm text-slate-500 mt-1 pl-8'>
+            Add a new product item to your grocery catalog
+          </p>
+        </div>
       </div>
 
-      <div className="p-6">
-        <form
-          onSubmit={handleSubmit}
-          className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6 border border-gray-200 space-y-6 transition-all duration-200"
-        >
-          {/* Product Name */}
+      {/* Main Form */}
+      <form onSubmit={handleSubmit} className='space-y-6'>
+        {/* Section 1: Basic Information */}
+        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-7 space-y-4'>
+          <div className='flex items-center gap-2 pb-3 border-b border-slate-100'>
+            <FiPackage size={17} className='text-emerald-600' />
+            <h2 className='font-bold text-sm text-slate-900'>General Information</h2>
+          </div>
+
           <div>
-            <label className="block font-medium text-gray-700 mb-1">Name</label>
+            <label
+              htmlFor='product_name'
+              className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+            >
+              Product Name *
+            </label>
             <input
-              type="text"
-              placeholder="Enter product name"
-              name="name"
+              type='text'
+              id='product_name'
+              name='name'
+              placeholder='e.g. Fresh Organic Bananas'
               value={data.name}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-amber-400"
+              className='input-field'
             />
           </div>
 
-          {/* Category */}
           <div>
-            <label className="block font-medium text-gray-700 mb-1">
-              Category
-            </label>
-            <select
-              name="category"
-              value={data.category}
-              onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-amber-400"
+            <label
+              htmlFor='product_desc'
+              className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
             >
-              <option value="">Select Category</option>
-              {categoryList.map((cat) => (
-                <option key={cat._id} value={cat._id}>
-                  {cat.name}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Subcategory */}
-          <div>
-            <label className="block font-medium text-gray-700 mb-1">
-              Subcategory
+              Description
             </label>
-            <select
-              name="subCategory"
-              value={data.subCategory}
+            <textarea
+              id='product_desc'
+              name='description'
+              placeholder='Describe product features, origin, or dietary specifications...'
+              value={data.description}
               onChange={handleChange}
-              required
-              className="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-amber-400"
-            >
-              <option value="">Select Subcategory</option>
-              {subCategoryList.map((sub) => (
-                <option key={sub._id} value={sub._id}>
-                  {sub.name}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          {/* Unit, Stock, Price */}
-          <div className="grid grid-cols-3 gap-4">
-            <input
-              type="text"
-              name="unit"
-              placeholder="Unit (e.g. 1kg)"
-              value={data.unit}
-              onChange={handleChange}
-              className="border border-gray-300 rounded-lg p-2 focus:ring-amber-400"
-            />
-            <input
-              type="number"
-              name="stock"
-              placeholder="Stock"
-              value={data.stock}
-              onChange={handleChange}
-              className="border border-gray-300 rounded-lg p-2 focus:ring-amber-400"
-            />
-            <input
-              type="number"
-              name="price"
-              placeholder="Price (₹)"
-              value={data.price}
-              onChange={handleChange}
-              className="border border-gray-300 rounded-lg p-2 focus:ring-amber-400"
+              rows={3}
+              className='input-field'
             />
           </div>
+        </div>
 
-          {/* Discount */}
-          <input
-            type="number"
-            name="discount"
-            placeholder="Discount (%)"
-            value={data.discount}
-            onChange={handleChange}
-            className="w-full border border-gray-300 rounded-lg p-2 focus:ring-amber-400"
-          />
+        {/* Section 2: Categorization */}
+        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-7 space-y-4'>
+          <h2 className='font-bold text-sm text-slate-900 pb-3 border-b border-slate-100'>
+            Categorization
+          </h2>
 
-          {/* Description */}
-          <textarea
-            name="description"
-            placeholder="Enter product description"
-            value={data.description}
-            onChange={handleChange}
-            rows="3"
-            className="w-full border border-gray-300 rounded-lg p-2 focus:ring-amber-400"
-          />
-
-          {/* Image Upload */}
-          <div>
-            <label className="block font-medium text-gray-700 mb-1">
-              Product Images
-            </label>
-            <input
-              type="file"
-              multiple
-              accept="image/*"
-              onChange={handleImageUpload}
-              className="block w-full text-sm text-gray-600 border border-gray-300 rounded-lg p-2 cursor-pointer"
-            />
-            {data.image.length > 0 && (
-              <div className="flex flex-wrap gap-3 mt-3">
-                {data.image.map((img, idx) => (
-                  <div key={idx} className="relative group">
-                    <img
-                      src={img}
-                      alt="preview"
-                      className="w-24 h-24 object-cover border rounded-lg"
-                    />
-                    <button
-                      type="button"
-                      onClick={() =>
-                        setData((prev) => ({
-                          ...prev,
-                          image: prev.image.filter((_, i) => i !== idx),
-                        }))
-                      }
-                      className="absolute top-1 right-1 bg-black/70 text-white text-xs rounded-full px-1 opacity-0 group-hover:opacity-100 transition"
-                    >
-                      ✕
-                    </button>
-                  </div>
+          <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
+            <div>
+              <label
+                htmlFor='product_category'
+                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              >
+                Category *
+              </label>
+              <select
+                id='product_category'
+                name='category'
+                value={data.category}
+                onChange={handleChange}
+                required
+                className='input-field bg-white'
+              >
+                <option value=''>Select Parent Category</option>
+                {categoryList.map((cat) => (
+                  <option key={cat._id} value={cat._id}>
+                    {cat.name}
+                  </option>
                 ))}
-              </div>
-            )}
+              </select>
+            </div>
+
+            <div>
+              <label
+                htmlFor='product_subcategory'
+                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              >
+                Subcategory *
+              </label>
+              <select
+                id='product_subcategory'
+                name='subCategory'
+                value={data.subCategory}
+                onChange={handleChange}
+                required
+                className='input-field bg-white'
+              >
+                <option value=''>Select Subcategory</option>
+                {subCategoryList.map((sub) => (
+                  <option key={sub._id} value={sub._id}>
+                    {sub.name}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
+        </div>
 
-          {/* Submit */}
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 rounded-lg transition-all duration-300 disabled:opacity-60"
+        {/* Section 3: Pricing & Inventory */}
+        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-7 space-y-4'>
+          <h2 className='font-bold text-sm text-slate-900 pb-3 border-b border-slate-100'>
+            Pricing & Inventory
+          </h2>
+
+          <div className='grid grid-cols-1 sm:grid-cols-4 gap-4'>
+            <div>
+              <label
+                htmlFor='product_unit'
+                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              >
+                Unit / Size
+              </label>
+              <input
+                type='text'
+                id='product_unit'
+                name='unit'
+                placeholder='e.g. 500g / 1kg'
+                value={data.unit}
+                onChange={handleChange}
+                className='input-field'
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor='product_stock'
+                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              >
+                Stock Units
+              </label>
+              <input
+                type='number'
+                id='product_stock'
+                name='stock'
+                placeholder='Available quantity'
+                value={data.stock}
+                onChange={handleChange}
+                className='input-field'
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor='product_price'
+                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              >
+                Price (₹) *
+              </label>
+              <input
+                type='number'
+                id='product_price'
+                name='price'
+                placeholder='₹ Price'
+                value={data.price}
+                onChange={handleChange}
+                required
+                className='input-field'
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor='product_discount'
+                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              >
+                Discount (%)
+              </label>
+              <input
+                type='number'
+                id='product_discount'
+                name='discount'
+                placeholder='e.g. 10%'
+                value={data.discount}
+                onChange={handleChange}
+                className='input-field'
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Section 4: Product Images */}
+        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-7 space-y-4'>
+          <h2 className='font-bold text-sm text-slate-900 pb-3 border-b border-slate-100'>
+            Product Images
+          </h2>
+
+          <label
+            htmlFor='upload_prod_images'
+            className='flex flex-col items-center justify-center p-6 border-2 border-dashed border-slate-300 hover:border-emerald-500 rounded-2xl bg-slate-50 hover:bg-emerald-50/40 cursor-pointer transition-colors text-center'
           >
-            {loading ? "Uploading..." : "Upload Product"}
+            <FiUploadCloud size={28} className='text-slate-400 mb-2' />
+            <span className='text-xs font-semibold text-slate-700'>
+              Click or drag photos to upload
+            </span>
+            <span className='text-[11px] text-slate-400 mt-0.5'>
+              PNG, JPG, WEBP formats accepted
+            </span>
+            <input
+              type='file'
+              id='upload_prod_images'
+              multiple
+              accept='image/*'
+              onChange={handleImageUpload}
+              className='hidden'
+            />
+          </label>
+
+          {data.image.length > 0 && (
+            <div className='flex flex-wrap gap-3 pt-2'>
+              {data.image.map((img, idx) => (
+                <div key={idx} className='relative w-24 h-24 rounded-xl overflow-hidden border border-slate-200 shadow-subtle group'>
+                  <img
+                    src={img}
+                    alt={`Preview ${idx + 1}`}
+                    className='w-full h-full object-contain bg-white p-1'
+                  />
+                  <button
+                    type='button'
+                    onClick={() => handleRemoveImage(idx)}
+                    aria-label={`Remove image ${idx + 1}`}
+                    className='absolute top-1 right-1 p-1 bg-black/70 hover:bg-rose-600 text-white rounded-full transition-colors'
+                  >
+                    <FiX size={12} />
+                  </button>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {/* Form Actions */}
+        <div className='flex items-center justify-end gap-3 pt-2'>
+          <Link
+            to='/dashboard/product'
+            className='btn-secondary py-2.5 px-5 text-sm font-semibold'
+          >
+            Cancel
+          </Link>
+          <button
+            type='submit'
+            disabled={loading}
+            className='btn-primary py-2.5 px-6 text-sm font-semibold inline-flex items-center gap-2 shadow-subtle'
+          >
+            {loading ? (
+              <span>Uploading SKU...</span>
+            ) : (
+              <>
+                <FiCheck size={16} />
+                <span>Upload Product</span>
+              </>
+            )}
           </button>
-        </form>
-      </div>
+        </div>
+      </form>
+    </div>
+  )
+}
 
-      {loading && <Loading />}
-    </section>
-  );
-};
-
-export default UploadProduct;
+export default UploadProduct

@@ -4,76 +4,86 @@ import {
   getCoreRowModel,
   flexRender
 } from '@tanstack/react-table'
-import { FiEdit, FiTrash2 } from 'react-icons/fi'
+import { FiEdit2, FiTrash2 } from 'react-icons/fi'
 
 const DisplayTable = ({ columns = [], data = [], onEdit, onDelete }) => {
-  // ✅ Safe handling
   const safeColumns = Array.isArray(columns) ? columns : []
   const safeData = Array.isArray(data) ? data : []
 
-  // ✅ Add Sr. No + Action columns dynamically
+  // Add Sr. No + Action columns dynamically
   const extendedColumns = [
     {
-      header: 'Sr. No',
-      cell: (info) => info.row.index + 1, // starts from 1
+      header: 'Sr.',
+      cell: (info) => (
+        <span className='text-xs font-semibold text-slate-400'>
+          {info.row.index + 1}
+        </span>
+      )
     },
     ...safeColumns,
     {
-      header: 'Action',
+      header: 'Actions',
       cell: ({ row }) => (
-        <div className="flex gap-3">
+        <div className='flex items-center gap-1.5'>
           <button
+            type='button'
             onClick={() => onEdit?.(row.original)}
-            className=  "text-green-600 hover:text-green-800 transition cursor-pointer "
-            title="Edit"
+            className='p-1.5 text-slate-500 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors cursor-pointer'
+            title='Edit'
+            aria-label='Edit item'
           >
-            <FiEdit size={18} />
+            <FiEdit2 size={15} />
           </button>
           <button
+            type='button'
             onClick={() => onDelete?.(row.original)}
-            className="text-red-600 hover:text-red-800 transition cursor-pointer "
-            title="Delete"
+            className='p-1.5 text-slate-500 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors cursor-pointer'
+            title='Delete'
+            aria-label='Delete item'
           >
-            <FiTrash2 size={18} />
+            <FiTrash2 size={15} />
           </button>
         </div>
-      ),
-    },
+      )
+    }
   ]
 
   const table = useReactTable({
     columns: extendedColumns,
     data: safeData,
-    getCoreRowModel: getCoreRowModel(),
+    getCoreRowModel: getCoreRowModel()
   })
 
   if (!safeData.length) {
     return (
-      <div className="text-center text-gray-500 py-4">
-        No data available
+      <div className='text-center text-slate-500 py-8 bg-white rounded-2xl border border-slate-200/80 p-6'>
+        <p className='text-sm'>No records available</p>
       </div>
     )
   }
 
   return (
-    <div className="overflow-x-auto mt-4">
-      <table className="min-w-full border border-gray-300 bg-white rounded-lg shadow">
-        <thead className="bg-amber-100">
-          {table.getHeaderGroups().map(headerGroup => (
+    <div className='overflow-x-auto bg-white rounded-2xl border border-slate-200/80 shadow-card'>
+      <table className='min-w-full divide-y divide-slate-100 text-left'>
+        <thead className='bg-slate-50/80'>
+          {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
-              {headerGroup.headers.map(header => (
-                <th key={header.id} className="text-left py-2 px-3 border-b font-semibold">
+              {headerGroup.headers.map((header) => (
+                <th
+                  key={header.id}
+                  className='py-3.5 px-4 text-xs font-semibold uppercase tracking-wider text-slate-600'
+                >
                   {flexRender(header.column.columnDef.header, header.getContext())}
                 </th>
               ))}
             </tr>
           ))}
         </thead>
-        <tbody>
-          {table.getRowModel().rows.map(row => (
-            <tr key={row.id} className="hover:bg-amber-50">
-              {row.getVisibleCells().map(cell => (
-                <td key={cell.id} className="py-2 px-3 border-b">
+        <tbody className='divide-y divide-slate-100 text-xs sm:text-sm text-slate-700'>
+          {table.getRowModel().rows.map((row) => (
+            <tr key={row.id} className='hover:bg-slate-50/70 transition-colors'>
+              {row.getVisibleCells().map((cell) => (
+                <td key={cell.id} className='py-3 px-4 align-middle'>
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </td>
               ))}

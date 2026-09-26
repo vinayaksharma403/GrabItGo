@@ -1,14 +1,25 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link, useNavigate } from 'react-router-dom'
+import { NavLink, Link, useNavigate } from 'react-router-dom'
 import Divider from './Divider'
 import Axios from '../utils/axios'
 import SummaryApi from '../common/SummaryApi'
 import { logout } from '../store/userSlice'
 import toast from 'react-hot-toast'
 import AxiosToastError from '../utils/AxiosToastError'
-import { FiExternalLink, FiLogOut } from "react-icons/fi";
-import { FaUserCircle } from "react-icons/fa";
+import {
+  FiExternalLink,
+  FiLogOut,
+  FiPackage,
+  FiMapPin,
+  FiGrid,
+  FiLayers,
+  FiUploadCloud,
+  FiBox,
+  FiShoppingBag,
+  FiUser
+} from 'react-icons/fi'
+import { FaUserCircle } from 'react-icons/fa'
 import isAdmin from '../utils/isAdmin'
 
 const UserMenu = ({ close }) => {
@@ -25,7 +36,7 @@ const UserMenu = ({ close }) => {
         dispatch(logout())
         localStorage.clear()
         toast.success(response.data.message)
-        navigate("/")
+        navigate('/')
       }
     } catch (error) {
       AxiosToastError(error)
@@ -36,55 +47,127 @@ const UserMenu = ({ close }) => {
     if (close) close()
   }
 
+  const navLinkClass = ({ isActive }) =>
+    `flex items-center gap-3 px-3 py-2.5 rounded-xl font-medium text-xs sm:text-sm transition-all duration-150 ${
+      isActive
+        ? 'bg-emerald-50 text-emerald-700 font-semibold shadow-subtle'
+        : 'text-slate-700 hover:bg-slate-100/80 hover:text-slate-900'
+    }`
+
+  const adminNavLinkClass = ({ isActive }) =>
+    `flex items-center gap-3 px-3 py-2.5 rounded-xl font-medium text-xs sm:text-sm transition-all duration-150 ${
+      isActive
+        ? 'bg-amber-50 text-amber-800 font-semibold shadow-subtle'
+        : 'text-slate-700 hover:bg-amber-50/60 hover:text-amber-900'
+    }`
+
   return (
-    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 transition-all duration-300 hover:shadow-md">
-      
+    <div className='w-full text-slate-900'>
       {/* Profile Header */}
-      <div className="flex items-center gap-3 mb-4">
-        <div className="w-10 h-10 flex items-center justify-center bg-amber-100 text-amber-600 rounded-full">
-          <FaUserCircle size={28} />
+      <div className='flex items-center gap-3 pb-4'>
+        <div className='w-11 h-11 flex items-center justify-center bg-emerald-50 text-emerald-600 rounded-full shrink-0 overflow-hidden ring-2 ring-emerald-500/20'>
+          {user?.avatar ? (
+            <img
+              src={user.avatar}
+              alt={user.name || 'User avatar'}
+              className='w-full h-full rounded-full object-cover'
+              onError={(e) => {
+                e.target.style.display = 'none'
+              }}
+            />
+          ) : (
+            <FaUserCircle size={32} />
+          )}
         </div>
-        <div className="flex-1">
-          <h2 className="font-semibold text-gray-800 text-sm">My Account</h2>
-          <div className="flex items-center text-xs text-gray-600 gap-2">
-            <span className="truncate max-w-[120px]">
-              {user.name || user.mobile}{" "}
-              {user.role === 'ADMIN' && <span className="text-amber-600 font-medium">(Admin)</span>}
-            </span>
-            <Link
-              onClick={handleClose}
-              to="/dashboard/profile"
-              className="hover:text-amber-500 transition-colors"
-            >
-              <FiExternalLink size={13} />
-            </Link>
+        <div className='flex-1 min-w-0'>
+          <div className='flex items-center gap-1.5'>
+            <h3 className='font-bold text-sm text-slate-900 truncate'>
+              {user.name || 'My Account'}
+            </h3>
+            {isAdmin(user.role) && (
+              <span className='badge-accent text-[10px] px-1.5 py-0.5'>Admin</span>
+            )}
           </div>
+          <p className='text-xs text-slate-500 truncate'>
+            {user.email || user.mobile || 'GrabItGo Customer'}
+          </p>
         </div>
+        <Link
+          onClick={handleClose}
+          to='/dashboard/profile'
+          aria-label='View complete user profile'
+          className='text-slate-400 hover:text-emerald-600 hover:bg-emerald-50 p-1.5 rounded-lg transition-colors shrink-0'
+        >
+          <FiExternalLink size={15} />
+        </Link>
       </div>
 
       <Divider />
 
-      {/* Menu List */}
-      <nav className="mt-2 text-sm text-gray-700 grid gap-1">
-        {isAdmin(user.role) && (
-          <>
-            <Link onClick={handleClose} to="/dashboard/category" className="px-3 py-2 rounded-md hover:bg-amber-100 font-medium transition-all">Category</Link>
-            <Link onClick={handleClose} to="/dashboard/subcategory" className="px-3 py-2 rounded-md hover:bg-amber-100 font-medium transition-all">Sub Category</Link>
-            <Link onClick={handleClose} to="/dashboard/upload-product" className="px-3 py-2 rounded-md hover:bg-amber-100 font-medium transition-all">Upload Product</Link>
-          </>
-        )}
+      {/* Shopping Account Navigation Links */}
+      <div className='py-3 space-y-1'>
+        <div className='px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-slate-400'>
+          Shopping & Account
+        </div>
+        <NavLink onClick={handleClose} to='/dashboard/myorders' className={navLinkClass}>
+          <FiPackage size={17} className='shrink-0' />
+          <span>My Orders</span>
+        </NavLink>
+        <NavLink onClick={handleClose} to='/dashboard/address' className={navLinkClass}>
+          <FiMapPin size={17} className='shrink-0' />
+          <span>Saved Addresses</span>
+        </NavLink>
+        <NavLink onClick={handleClose} to='/dashboard/profile' className={navLinkClass}>
+          <FiUser size={17} className='shrink-0' />
+          <span>Profile Settings</span>
+        </NavLink>
+      </div>
 
-        <Link onClick={handleClose} to="/dashboard/product" className="px-3 py-2 rounded-md hover:bg-amber-100 font-medium transition-all">Product</Link>
-        <Link onClick={handleClose} to="/dashboard/myorders" className="px-3 py-2 rounded-md hover:bg-amber-100 font-medium transition-all">My Orders</Link>
-        <Link onClick={handleClose} to="/dashboard/address" className="px-3 py-2 rounded-md hover:bg-amber-100 font-medium transition-all">Saved Address</Link>
+      {/* Admin Management Section */}
+      {isAdmin(user.role) && (
+        <>
+          <Divider />
+          <div className='py-3 space-y-1'>
+            <div className='px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-amber-600'>
+              Admin Panel
+            </div>
+            <NavLink onClick={handleClose} to='/dashboard/category' className={adminNavLinkClass}>
+              <FiGrid size={17} className='shrink-0 text-amber-600' />
+              <span>Category List</span>
+            </NavLink>
+            <NavLink onClick={handleClose} to='/dashboard/subcategory' className={adminNavLinkClass}>
+              <FiLayers size={17} className='shrink-0 text-amber-600' />
+              <span>Subcategories</span>
+            </NavLink>
+            <NavLink onClick={handleClose} to='/dashboard/upload-product' className={adminNavLinkClass}>
+              <FiUploadCloud size={17} className='shrink-0 text-amber-600' />
+              <span>Upload Product</span>
+            </NavLink>
+            <NavLink onClick={handleClose} to='/dashboard/product' className={adminNavLinkClass}>
+              <FiBox size={17} className='shrink-0 text-amber-600' />
+              <span>All Products</span>
+            </NavLink>
+            <NavLink onClick={handleClose} to='/dashboard/orders' className={adminNavLinkClass}>
+              <FiShoppingBag size={17} className='shrink-0 text-amber-600' />
+              <span>Customer Orders</span>
+            </NavLink>
+          </div>
+        </>
+      )}
 
+      <Divider />
+
+      {/* Logout Button */}
+      <div className='pt-3'>
         <button
+          type='button'
           onClick={handleLogout}
-          className="mt-2 flex items-center gap-2 text-red-600 px-3 py-2 rounded-md hover:bg-red-100 font-medium transition-all"
+          className='w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-rose-600 hover:bg-rose-50 hover:text-rose-700 font-semibold text-xs sm:text-sm transition-colors cursor-pointer'
         >
-          <FiLogOut size={16} /> Log Out
+          <FiLogOut size={17} />
+          <span>Log Out</span>
         </button>
-      </nav>
+      </div>
     </div>
   )
 }

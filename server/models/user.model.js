@@ -39,7 +39,7 @@ const userSchema = new mongoose.Schema({
 
     last_login_date : {
         type : Date,
-        default : ""
+        default : null
     },
 
     status : {
@@ -50,7 +50,7 @@ const userSchema = new mongoose.Schema({
     address_details : [
         {
             type : mongoose.Schema.ObjectId,
-            ref : 'addresss'
+            ref : 'address'
         }
     ],
     shopping_cart : [
@@ -74,7 +74,7 @@ const userSchema = new mongoose.Schema({
     },
     forgot_password_expiry : {
         type : Date,
-        default : ""
+        default : null
     },
     role : {
         type : String,

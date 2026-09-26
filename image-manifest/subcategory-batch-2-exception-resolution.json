@@ -1,0 +1,92 @@
+{
+  "$schemaDescription": "GrabItGo Phase 9G.6 — Batch 2 Image Exception Resolution Artifact",
+  "generatedAt": "2026-09-26T10:53:00.000Z",
+  "phase": "PHASE_9G_6",
+  "status": "PLANNING_AUDIT_ONLY — Zero database mutations or uploads performed",
+  "summary": {
+    "totalExceptionsInspected": 4,
+    "approvedCount": 2,
+    "requireReplacementOrReviewCount": 2,
+    "normalizedFilesCreated": [
+      "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Atta.png",
+      "image-manifest/incoming-catalog/subcategories/Chicken, Meat & Fish/Chicken.png"
+    ],
+    "databaseMutations": 0,
+    "cloudinaryUploads": 0
+  },
+  "exceptions": [
+    {
+      "id": "690e1792bb3427cd33190bd4",
+      "name": "Noodles",
+      "parentCategory": "Breakfast & Instant Food",
+      "originalSourcePath": "image-manifest/incoming-catalog/subcategories/Breakfast & Instant Food/Noodles.webp",
+      "detectedFormat": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "144x240",
+      "fileSize": 9266,
+      "sha256": "88e51cbd60a1915623334fe7a128a8b274e78fbcded713f05b4f4d423b1c72e8",
+      "resolutionStatus": "SUB_STANDARD_LOW_RESOLUTION",
+      "mappingAuthenticityStatus": "AUTHENTIC_BUT_LOW_RES",
+      "recommendedAction": "PROVIDE_AUTHENTIC_IMAGE",
+      "normalizedPath": null,
+      "reason": "Candidate asset is only 144x240 (50% scale of the standard 288x480 catalog dimensions). No higher-resolution authentic Noodles asset exists in the incoming collection. User must provide authentic replacement image at >= 288x480 without fabrication or scraping.",
+      "databaseMutation": false,
+      "cloudinaryUpload": false
+    },
+    {
+      "id": "690e24debb3427cd33190e2a",
+      "name": "Oral Health & Eye Care",
+      "parentCategory": "Pharma & Wellness",
+      "originalSourcePath": "image-manifest/incoming-catalog/subcategories/Pharma & Wellness/Oral Health & Eye Care.webp",
+      "detectedFormat": "webp (VP8L)",
+      "extension": ".webp",
+      "dimensions": "288x480",
+      "fileSize": 81670,
+      "sha256": "68a7db3600a06405f8b6bd020532f5c9189e81c0d8d847013af1c5d8ad954c7a",
+      "resolutionStatus": "STANDARD_RESOLUTION_OK",
+      "mappingAuthenticityStatus": "DUAL_SCOPE_MISMATCH",
+      "recommendedAction": "PROVIDE_AUTHENTIC_IMAGE",
+      "reviewStatus": "REVIEW_REQUIRED",
+      "normalizedPath": null,
+      "reason": "Subcategory is dual-scope ('Oral Health & Eye Care') but contains 3 active products that are exclusively oral health (Chicco & Colgate kids toothbrushes/toothpastes). Candidate image depicts Bausch & Lomb contact lens solution (eye care only), which does not represent the catalog products. User should provide authentic oral health or balanced dual-scope imagery.",
+      "databaseMutation": false,
+      "cloudinaryUpload": false
+    },
+    {
+      "id": "690b44e8d2141ae10ae1fb3f",
+      "name": "Atta",
+      "parentCategory": "Atta , Rice & Dal",
+      "originalSourcePath": "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Atta.jpg",
+      "detectedFormat": "png",
+      "extension": ".jpg",
+      "dimensions": "288x480",
+      "fileSize": 35573,
+      "sha256": "715a8a22a9e59e517b16e20c8b6d4da55e8dba9e34126629790c2d57e2beb69f",
+      "resolutionStatus": "STANDARD_RESOLUTION_OK",
+      "mappingAuthenticityStatus": "APPROVED_FOR_IMPORT",
+      "recommendedAction": "APPROVED_FOR_IMPORT",
+      "normalizedPath": "image-manifest/incoming-catalog/subcategories/Atta, Rice & Dal/Atta.png",
+      "reason": "Authentic Aashirvaad Atta packaging image at standard 288x480 resolution. File is a valid PNG byte stream (magic bytes 0x89504E47) previously misnamed with .jpg extension. Created normalized byte-for-byte copy Atta.png with truthful extension while preserving original source asset.",
+      "databaseMutation": false,
+      "cloudinaryUpload": false
+    },
+    {
+      "id": "690e17f5bb3427cd33190be4",
+      "name": "Chicken",
+      "parentCategory": "Chicken, Meat & Fish",
+      "originalSourcePath": "image-manifest/incoming-catalog/subcategories/Chicken, Meat & Fish/Chicken.jpg",
+      "detectedFormat": "png",
+      "extension": ".jpg",
+      "dimensions": "288x480",
+      "fileSize": 26271,
+      "sha256": "ccb3b564e9d92d3fe52382ef4110256764ee82cc6c15344e06136c61821ae26a",
+      "resolutionStatus": "STANDARD_RESOLUTION_OK",
+      "mappingAuthenticityStatus": "APPROVED_FOR_IMPORT",
+      "recommendedAction": "APPROVED_FOR_IMPORT",
+      "normalizedPath": "image-manifest/incoming-catalog/subcategories/Chicken, Meat & Fish/Chicken.png",
+      "reason": "Authentic raw whole dressed chicken presentation image at standard 288x480 resolution. File is a valid PNG byte stream (magic bytes 0x89504E47) previously misnamed with .jpg extension. Created normalized byte-for-byte copy Chicken.png with truthful extension while preserving original source asset.",
+      "databaseMutation": false,
+      "cloudinaryUpload": false
+    }
+  ]
+}

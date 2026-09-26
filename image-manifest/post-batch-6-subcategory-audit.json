@@ -1,0 +1,1603 @@
+{
+  "generatedAt": "2026-09-26T14:04:05.399Z",
+  "catalogBaseline": {
+    "products": 159,
+    "categories": 20,
+    "subcategories": 219,
+    "cloudinarySubcategories": 60,
+    "base64Subcategories": 159,
+    "missingImageSubcategories": 0
+  },
+  "batchesPreservation": {
+    "totalCloudinaryInDb": 60,
+    "allBatchesIntact": true
+  },
+  "activeProductCoverage": {
+    "totalActiveProducts": 159,
+    "activeProductsWithCloudinarySubcat": 153,
+    "activeProductsWithBase64Subcat": 6,
+    "remainingBase64SubcatsWithProductsCount": 2
+  },
+  "classification": {
+    "READY": [],
+    "NEEDS_REVIEW": [],
+    "NEEDS_AUTHENTIC_IMAGE": [],
+    "NO_ACTIVE_PRODUCTS": [
+      {
+        "id": "690e1544bb3427cd33190b70",
+        "name": "Baby Food",
+        "category": "Baby Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Organic & Healthy Living/Baby Food.webp",
+        "format": ".webp",
+        "fileSize": 39720,
+        "sha256": "18fc846ee4199920e34a3635efab26b9665757efd48de7a8eae00b294f9ab9e0"
+      },
+      {
+        "id": "690cd1d9e0a6c58c3f29b8df",
+        "name": "Poha, Daliya & Other Grains",
+        "category": "Atta , Rice & Dal",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Atta, Rice & Dal/Poha, Daliya & Other Grains.jpg",
+        "format": ".jpg",
+        "fileSize": 36215,
+        "sha256": "cb7c3937d208ea354e8d02b20ed5c1b28a3607e5fab2a5b8876b7646b32624d7"
+      },
+      {
+        "id": "690e1905bb3427cd33190c14",
+        "name": "Garbage Bags",
+        "category": "Cleaning Essentials",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cleaning Essentials/Garbage Bags.webp",
+        "format": ".webp",
+        "fileSize": 95256,
+        "sha256": "1d012cd0196b38a5f92607ef1802fda46529d8e48048aa1e4f47781d832d862d"
+      },
+      {
+        "id": "690e1655bb3427cd33190ba0",
+        "name": "Skin & Hair Care",
+        "category": "Baby Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Baby Care/Skin & Hair Care.webp",
+        "format": ".webp",
+        "fileSize": 19438,
+        "sha256": "5b32870ccb1a014cfc1bc9a7caddcb74fc5b8c889afa39012b959bfda6bb9b45"
+      },
+      {
+        "id": "690e168fbb3427cd33190ba8",
+        "name": "Cakes & Rolls",
+        "category": "Bakery & Biscuits",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Bakery  Biscuits/Cakes & Rolls.webp",
+        "format": ".webp",
+        "fileSize": 77476,
+        "sha256": "d6b37b86d3b9f0832bffbd196c599956495670bd37875dae8aaa111bddb5c88e"
+      },
+      {
+        "id": "690e19debb3427cd33190c3c",
+        "name": "Fruit Juices",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Fruit Juices.webp",
+        "format": ".webp",
+        "fileSize": 32600,
+        "sha256": "836abac4f7d8de90b7a0de052ce353ab7672c08df131822b24e7fc960bdd5c14"
+      },
+      {
+        "id": "690e16fcbb3427cd33190bbc",
+        "name": "Rusks & Wafers",
+        "category": "Bakery & Biscuits",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Bakery  Biscuits/Rusks & Wafers.jpg",
+        "format": ".jpg",
+        "fileSize": 24870,
+        "sha256": "2150185b4e8ddee2ac63d8d699136b4aa2973773778b087acd3d6cdb43ecf421"
+      },
+      {
+        "id": "690e16a7bb3427cd33190bac",
+        "name": "Cookies",
+        "category": "Bakery & Biscuits",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Bakery  Biscuits/Cookies.webp",
+        "format": ".webp",
+        "fileSize": 28518,
+        "sha256": "4226db22457ced828c77d774d7ff6765a76214e93b38950d6546e31542debb83"
+      },
+      {
+        "id": "690e19bebb3427cd33190c38",
+        "name": "Energy Drinks",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Energy Drinks.webp",
+        "format": ".webp",
+        "fileSize": 84320,
+        "sha256": "3d34844d2cd7813457573878e87443c506dd6aefe6365d87a224b37e5637834b"
+      },
+      {
+        "id": "690e163fbb3427cd33190b9c",
+        "name": "Oral & Nasal Care",
+        "category": "Baby Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Baby Care/Oral & Nasal Care.webp",
+        "format": ".webp",
+        "fileSize": 34906,
+        "sha256": "1aa94486a3dbf5434b0eee315389d5c6a69fbfabef44610efa26ac44b9ade07c"
+      },
+      {
+        "id": "690e1679bb3427cd33190ba4",
+        "name": "Bread & Pav",
+        "category": "Bakery & Biscuits",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Bakery  Biscuits/Bread & Pav.webp",
+        "format": ".webp",
+        "fileSize": 52052,
+        "sha256": "1ae6861fcfbb235b3a7efdaca940e737042fd66d26bf812053297e4766130a8a"
+      },
+      {
+        "id": "690e188dbb3427cd33190c00",
+        "name": "Dishwashing Bars",
+        "category": "Cleaning Essentials",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cleaning Essentials/Dishwashing Bars.webp",
+        "format": ".webp",
+        "fileSize": 32500,
+        "sha256": "ec462caa7cebca19c0545d480ba0150204af1d800222898b971109f5ca494d35"
+      },
+      {
+        "id": "690e18f0bb3427cd33190c10",
+        "name": "Fresheners",
+        "category": "Cleaning Essentials",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cleaning Essentials/Fresheners.webp",
+        "format": ".webp",
+        "fileSize": 14292,
+        "sha256": "86c7c34e717fe5fcef0a1fabce2882ac6c7fb0f494b90a26a282fd4377859b5e"
+      },
+      {
+        "id": "690e19f1bb3427cd33190c40",
+        "name": "Herbal Drinks",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Herbal Drinks.webp",
+        "format": ".webp",
+        "fileSize": 26644,
+        "sha256": "5abea4775414f2237aab763d56336c13970173f200296ad1f6ceea563d57d8a5"
+      },
+      {
+        "id": "690e1809bb3427cd33190be8",
+        "name": "Eggs",
+        "category": "Chicken, Meat & Fish",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Chicken, Meat & Fish/Eggs.webp",
+        "format": ".webp",
+        "fileSize": 97168,
+        "sha256": "069e76b73ea039124203fd3b6fca5ff7fa8e1d987c505a7e897496c917f766b4"
+      },
+      {
+        "id": "690e182dbb3427cd33190bf0",
+        "name": "Sausage, Salami & Ham",
+        "category": "Chicken, Meat & Fish",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Chicken, Meat & Fish/Sausage, Salami & Ham.webp",
+        "format": ".webp",
+        "fileSize": 31712,
+        "sha256": "770bdcaf9c6bb4367e6600839f4c2282cd68799c2536fde718e6673d836f6ad4"
+      },
+      {
+        "id": "690e1847bb3427cd33190bf4",
+        "name": "Cleaning Tools",
+        "category": "Cleaning Essentials",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cleaning Essentials/Cleaning Tools.webp",
+        "format": ".webp",
+        "fileSize": 26402,
+        "sha256": "eccf9ff15eaa589402fa533074e56912560662d71eacd45d55305c098562981b"
+      },
+      {
+        "id": "690e1967bb3427cd33190c28",
+        "name": "Cold Coffe & Ice Tea",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Cold Coffe & Ice Tea.webp",
+        "format": ".webp",
+        "fileSize": 64702,
+        "sha256": "f92525c1e668e2fd1a284827b7a930cb88a3130fae434844312d1150206d989f"
+      },
+      {
+        "id": "690e1a2fbb3427cd33190c4c",
+        "name": "Mongo Drinks",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Mongo Drinks.webp",
+        "format": ".webp",
+        "fileSize": 71226,
+        "sha256": "ed6a3d4ea909de90b0f04c4bac9224ceac64dcdcf7c1292651887d115396132c"
+      },
+      {
+        "id": "690e192fbb3427cd33190c1c",
+        "name": "LIquid Detergents",
+        "category": "Cleaning Essentials",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cleaning Essentials/LIquid Detergents.webp",
+        "format": ".webp",
+        "fileSize": 21454,
+        "sha256": "08d41c62c45e1334592527ccde45d09f8d56bd01a69dd7eb7df199a62c2880e5"
+      },
+      {
+        "id": "690e1918bb3427cd33190c18",
+        "name": "Laundry Additives",
+        "category": "Cleaning Essentials",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cleaning Essentials/Laundry Additives.webp",
+        "format": ".webp",
+        "fileSize": 32676,
+        "sha256": "c17d0d04820eeddab6d39a4d97da427220d799a962cc4afdf6ca4a7b764bd4ee"
+      },
+      {
+        "id": "690e1a09bb3427cd33190c44",
+        "name": "Imported Beverages",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Imported Beverages.webp",
+        "format": ".webp",
+        "fileSize": 81732,
+        "sha256": "5cf8b5cbe891b188946f29d41ca1316b68218320fecafd6c16065a0e54160a7d"
+      },
+      {
+        "id": "690e1a50bb3427cd33190c54",
+        "name": "Soda & Mixers",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Soda & Mixers.jpg",
+        "format": ".jpg",
+        "fileSize": 28385,
+        "sha256": "7fb2165c2ddfec4501515e340ccad037f6e570786b97e79deb8def22d1abb0a2"
+      },
+      {
+        "id": "690e1a63bb3427cd33190c58",
+        "name": "Soft Drinks",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Soft Drinks.webp",
+        "format": ".webp",
+        "fileSize": 63922,
+        "sha256": "c86d3d5a51ee26f6dabd9df385b26b28c168db783f094aa2130ffaa2e81dca0a"
+      },
+      {
+        "id": "690e1a40bb3427cd33190c50",
+        "name": "Pure Juices",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Pure Juices.webp",
+        "format": ".webp",
+        "fileSize": 51982,
+        "sha256": "03e5219429748bc06bbc01cfc3b4747614460029480350310a6fbb91494b25ed"
+      },
+      {
+        "id": "690e1a1ebb3427cd33190c48",
+        "name": "Milk Drinks",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Milk Drinks.webp",
+        "format": ".webp",
+        "fileSize": 122940,
+        "sha256": "dbb82a91e9cc984aba128a9c0f117d1e09cd765edc87cbd4751fb41772afe472"
+      },
+      {
+        "id": "690e1ac6bb3427cd33190c6c",
+        "name": "Butter & More",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Butter & More.webp",
+        "format": ".webp",
+        "fileSize": 94932,
+        "sha256": "da71968b4a8f4fe470a144b4c53718cd4c614113b77e53dbe0c605072e256d09"
+      },
+      {
+        "id": "690e1b9ebb3427cd33190c94",
+        "name": "Muesli & Granola",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Muesli & Granola.webp",
+        "format": ".webp",
+        "fileSize": 131754,
+        "sha256": "38d16b3b1b861aca27481bfc76fd647b01aa7f2acd2496a6d3dda1b4b713d31a"
+      },
+      {
+        "id": "690e1c1abb3427cd33190cac",
+        "name": "Vermicelli",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Vermicelli.jpg",
+        "format": ".jpg",
+        "fileSize": 10642,
+        "sha256": "f17dc78f0721c34a1ed8d962970e7b33204b3d5c76343da9b5a55d581230fd02"
+      },
+      {
+        "id": "690e1d11bb3427cd33190cd4",
+        "name": "Leafies & Herbs",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Leafies & Herbs.png",
+        "format": ".png",
+        "fileSize": 101331,
+        "sha256": "1229e30c8e1044a708a17e354784ec53839ad802ecf6f95e0995add50d28b367"
+      },
+      {
+        "id": "690e1ab0bb3427cd33190c68",
+        "name": "Breakfast Mixes",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Breakfast Mixes.webp",
+        "format": ".webp",
+        "fileSize": 89572,
+        "sha256": "2d5f1383d8fb2ed27e46af1c4640be37680cfc9b5e52f0543be74ad944734568"
+      },
+      {
+        "id": "690e1c9abb3427cd33190cc0",
+        "name": "Fresh Juice & Dips",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Fresh Juice & Dips.webp",
+        "format": ".webp",
+        "fileSize": 113224,
+        "sha256": "b10960bf4fdc3877f4c80b5a02360ef3eda195ad4cc54965eff9134366c768f9"
+      },
+      {
+        "id": "690e1c48bb3427cd33190cb4",
+        "name": "Combo & Recipes",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Combo & Recipes.webp",
+        "format": ".webp",
+        "fileSize": 66306,
+        "sha256": "36a9c3c39eecf16ff15eb8abd740518d5b8186a1b34716c54efaa463b796817b"
+      },
+      {
+        "id": "690e1b58bb3427cd33190c8c",
+        "name": "Honey & Chyawnprash",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Honey & Chyawnprash.webp",
+        "format": ".webp",
+        "fileSize": 108080,
+        "sha256": "2b531b936e54a5cf1e9d1e288a58e0e8cf559f55315975f8db49b2b83c2dd6e8"
+      },
+      {
+        "id": "690e1d02bb3427cd33190cd0",
+        "name": "Hydroponic",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Hydroponic.webp",
+        "format": ".webp",
+        "fileSize": 61314,
+        "sha256": "a41f469f4c2fb59d15377be88a0b046e35b038da54a59960cad0584ad1d033eb"
+      },
+      {
+        "id": "690e1c34bb3427cd33190cb0",
+        "name": "Certified Organic",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Certified Organic.webp",
+        "format": ".webp",
+        "fileSize": 45868,
+        "sha256": "072fcad57df7d50bd7afd2ba424f05b1612c6a45741727744d10ccda1147effc"
+      },
+      {
+        "id": "690e1cebbb3427cd33190ccc",
+        "name": "Frozen Veg",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Frozen Veg.webp",
+        "format": ".webp",
+        "fileSize": 26780,
+        "sha256": "b313c3589e69472fa0d6fac7332983505bacb52cc031d38d75d27e7cb33744f2"
+      },
+      {
+        "id": "690e1b0bbb3427cd33190c7c",
+        "name": "Curd & Yogurt",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Curd & Yogurt.jpg",
+        "format": ".jpg",
+        "fileSize": 10025,
+        "sha256": "347c733f410d0ce90d1e60d82856af955fbbf6dcd3f69e49e06a221e38cb47b2"
+      },
+      {
+        "id": "690e1cabbb3427cd33190cc4",
+        "name": "Fresh Vegetables",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Fresh Vegetables.png",
+        "format": ".png",
+        "fileSize": 114230,
+        "sha256": "242d5aad2497eb3a01db088d8549cd03f7f3e0f884c9dcf370bae5ed6686a8f5"
+      },
+      {
+        "id": "690e1b40bb3427cd33190c88",
+        "name": "Flakes & Kids Cereals",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Flakes & Kids Cereals.webp",
+        "format": ".webp",
+        "fileSize": 48766,
+        "sha256": "fb5bb802ccd38362eccea6a2540fd2c908d871152d6b790dbc2313ed224b3d57"
+      },
+      {
+        "id": "690e1ad8bb3427cd33190c70",
+        "name": "Cheese",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Cheese.webp",
+        "format": ".webp",
+        "fileSize": 67502,
+        "sha256": "3584d46c7ed35d07801da8b523a91852dfdcbbf16190117758b0afe2930daeed"
+      },
+      {
+        "id": "690e1bd3bb3427cd33190c9c",
+        "name": "Paneer & Tofu",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Paneer & Tofu.webp",
+        "format": ".webp",
+        "fileSize": 11076,
+        "sha256": "34a20b949f33a11deb2976c78cb365dbf7b9153ef20233f44881e2f0073cb630"
+      },
+      {
+        "id": "690e1a87bb3427cd33190c60",
+        "name": "Batter",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Batter.jpg",
+        "format": ".jpg",
+        "fileSize": 31178,
+        "sha256": "9d86290959847084fbf2708bf65300e0d6ab9e205858b06d76b5fe03ddba9ce9"
+      },
+      {
+        "id": "690e1b2cbb3427cd33190c84",
+        "name": "Energy Bars",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Energy Bars.png",
+        "format": ".png",
+        "fileSize": 29658,
+        "sha256": "e6d468d8b65ea12ff6118f2a0fbed12a0cce88645821190b4b6a984c597ee0e8"
+      },
+      {
+        "id": "690e1aebbb3427cd33190c74",
+        "name": "Condensed Milk",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Condensed Milk.jpg",
+        "format": ".jpg",
+        "fileSize": 9483,
+        "sha256": "7ec5bb34bc80513762c59df0fea6b50486569286b05f674e419084df47f3a236"
+      },
+      {
+        "id": "690e1b71bb3427cd33190c90",
+        "name": "Milk Drinks",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Milk Drinks.webp",
+        "format": ".webp",
+        "fileSize": 122940,
+        "sha256": "dbb82a91e9cc984aba128a9c0f117d1e09cd765edc87cbd4751fb41772afe472"
+      },
+      {
+        "id": "690e1d55bb3427cd33190ce0",
+        "name": "Bags",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Bags.webp",
+        "format": ".webp",
+        "fileSize": 88158,
+        "sha256": "d24c4c7fe6f72aa665159bb6475fbc60011d24f785379b8838b05fd638f75533"
+      },
+      {
+        "id": "690e1a72bb3427cd33190c5c",
+        "name": "Water & Ice Cubes",
+        "category": "Cold Drinks & Juices",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Cold Drinks & Juices/Water & Ice Cubes.webp",
+        "format": ".webp",
+        "fileSize": 26694,
+        "sha256": "12837b5bf3d241127371ed8a72b3bb7c89607802971489f8a089fbd997d70e3c"
+      },
+      {
+        "id": "690e1bbdbb3427cd33190c98",
+        "name": "Oats",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Oats.webp",
+        "format": ".webp",
+        "fileSize": 47460,
+        "sha256": "8a7479ec0552457cb27295069e241d0080df3b114a33ac3b0ffa0bc8e4d5db52"
+      },
+      {
+        "id": "690e1b1cbb3427cd33190c80",
+        "name": "Eggs",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Eggs.webp",
+        "format": ".webp",
+        "fileSize": 97168,
+        "sha256": "069e76b73ea039124203fd3b6fca5ff7fa8e1d987c505a7e897496c917f766b4"
+      },
+      {
+        "id": "690e1d37bb3427cd33190cd8",
+        "name": "Appliances",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Appliances.webp",
+        "format": ".webp",
+        "fileSize": 25854,
+        "sha256": "4110b87a1a81b3bd027eab017a3f83e7f3af077920898f577f494897771d5784"
+      },
+      {
+        "id": "690e1ccebb3427cd33190cc8",
+        "name": "Freshly Cut Sprouts",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Freshly Cut Sprouts.webp",
+        "format": ".webp",
+        "fileSize": 132234,
+        "sha256": "13934f4639ebd2b853b0a8aa216ef32702ac41df56944e7ee4eb554ca26c9c0c"
+      },
+      {
+        "id": "690e1afcbb3427cd33190c78",
+        "name": "Cream & Whitener",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Cream & Whitener.webp",
+        "format": ".webp",
+        "fileSize": 9836,
+        "sha256": "32f8a807cacd938ad08addd99d4e49f5ec0cec86b0b24d47bdbe3a36fdc259e4"
+      },
+      {
+        "id": "690e1c89bb3427cd33190cbc",
+        "name": "Fresh Fruits",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Fresh Fruits.png",
+        "format": ".png",
+        "fileSize": 77432,
+        "sha256": "c868c5f67c0f719380a7b8432f15f98319afe83593131730256da30f4c370df7"
+      },
+      {
+        "id": "690e1db0bb3427cd33190cf8",
+        "name": "Electrical Accessories",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Electrical Accessories.webp",
+        "format": ".webp",
+        "fileSize": 72096,
+        "sha256": "456bb8a5961a8fc8cb0e0cb29f7b5a29a7826a4c7e6856ac82fa72947583132b"
+      },
+      {
+        "id": "690e1d91bb3427cd33190cf0",
+        "name": "Clothing, Footwear & Accessories",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Clothing, Footwear & Accessories.webp",
+        "format": ".webp",
+        "fileSize": 36640,
+        "sha256": "4d160e663202335afb643120c10f35e9a09e0ac22e1592e4ad1d2356d5965cb5"
+      },
+      {
+        "id": "690e1c64bb3427cd33190cb8",
+        "name": "Flowers & Leaves",
+        "category": "Fruits & Vegetables",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Fruits & Vegetables/Flowers & Leaves.webp",
+        "format": ".webp",
+        "fileSize": 22626,
+        "sha256": "65701532acac5aaa1914a360897325492358093606f783fb8fe513062059a990"
+      },
+      {
+        "id": "690e1be6bb3427cd33190ca0",
+        "name": "Peanut Butter",
+        "category": "Dairy, Bread & Eggs",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Dairy, Bread & Eggs/Peanut Butter.webp",
+        "format": ".webp",
+        "fileSize": 79336,
+        "sha256": "c48bfefd94cefd933c298a4cb67e7a83102f33da3857ae8665882e201cd73ae5"
+      },
+      {
+        "id": "690e1d64bb3427cd33190ce4",
+        "name": "Bouquets",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Bouquets.webp",
+        "format": ".webp",
+        "fileSize": 85772,
+        "sha256": "4657a466dca5e68ed5b29a7af80689d3a32f59118895227ce79787499a0f32e3"
+      },
+      {
+        "id": "690e1d72bb3427cd33190ce8",
+        "name": "Candles & Diyas",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Candles & Diyas.webp",
+        "format": ".webp",
+        "fileSize": 84226,
+        "sha256": "b88af3f33f92f31fccf2724d9c96a5ad1ec8acbb4866a509b1bb95d8c8a37d0e"
+      },
+      {
+        "id": "690e1d46bb3427cd33190cdc",
+        "name": "Audio & Accessories",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Audio & Accessories.webp",
+        "format": ".webp",
+        "fileSize": 33166,
+        "sha256": "7ef4455f227e1210211327540dbb4aab30d4079b06a09ee08580708250e7fac9"
+      },
+      {
+        "id": "690e1df4bb3427cd33190d04",
+        "name": "Festive & Occasion Needs",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Festive & Occasion Needs.webp",
+        "format": ".webp",
+        "fileSize": 88656,
+        "sha256": "9383541c08f9f1c5847a0b1a158a0a970b7cf7fdf7ae55e68f2a6bab3147d2f2"
+      },
+      {
+        "id": "690e1da1bb3427cd33190cf4",
+        "name": "Decorative Lights",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Decorative Lights.png",
+        "format": ".png",
+        "fileSize": 96307,
+        "sha256": "b187a291d22c1d0a6ec511de4a4f0df95ad289622cbc6d666b5ca0f85c43f270"
+      },
+      {
+        "id": "690e1ddabb3427cd33190d00",
+        "name": "Electronic Gifting",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Electronic Gifting.webp",
+        "format": ".webp",
+        "fileSize": 39504,
+        "sha256": "95cdabe2834f138d25f0f68e1c7c75547a1b9ab2a6e5ba2795fe11022ff8a590"
+      },
+      {
+        "id": "690e1e50bb3427cd33190d18",
+        "name": "Home Furnishing",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Home Furnishing.png",
+        "format": ".png",
+        "fileSize": 69533,
+        "sha256": "b32899580c5f6162662b08bdb2c0b5ea7dd82b46ff56ea85998e8ee945908987"
+      },
+      {
+        "id": "690e1e3dbb3427cd33190d14",
+        "name": "Home Decor",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Home Decor.webp",
+        "format": ".webp",
+        "fileSize": 77132,
+        "sha256": "f5061dcc87913b15a8d6eadf72b7b57e94f22ee30c2cc03b0b8668644a5a87d9"
+      },
+      {
+        "id": "690e1e60bb3427cd33190d1c",
+        "name": "Kitchen & Dining Needs",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Kitchen & Dining Needs.webp",
+        "format": ".webp",
+        "fileSize": 122448,
+        "sha256": "52d1aaa4727ab1e487f74c6b40434a0a621ac9261f76880feaaa9164548a5803"
+      },
+      {
+        "id": "690e1e2dbb3427cd33190d10",
+        "name": "Garbage Bags",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Garbage Bags.webp",
+        "format": ".webp",
+        "fileSize": 95256,
+        "sha256": "1d012cd0196b38a5f92607ef1802fda46529d8e48048aa1e4f47781d832d862d"
+      },
+      {
+        "id": "690e1dc1bb3427cd33190cfc",
+        "name": "Electronic Accessories",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Electronic Accessories.webp",
+        "format": ".webp",
+        "fileSize": 14886,
+        "sha256": "530fa14fd84e492b1b2800926a6f701962cfa74fd36dd8025b4adb400948b38c"
+      },
+      {
+        "id": "690e1e87bb3427cd33190d24",
+        "name": "Party Essentials",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Party Essentials.webp",
+        "format": ".webp",
+        "fileSize": 128678,
+        "sha256": "6da7cc60790bb2dfe34ccbed413b51f6878dc6f1e2538638e7d2e32edbf05f2b"
+      },
+      {
+        "id": "690e1e07bb3427cd33190d08",
+        "name": "Festive Gifting",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Festive Gifting.webp",
+        "format": ".webp",
+        "fileSize": 133952,
+        "sha256": "073d37758603fd402d4d5d09913be686bc6ebe39b5e6590a112ce92c78ba4648"
+      },
+      {
+        "id": "690e1e73bb3427cd33190d20",
+        "name": "Machine & Care Care",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Machine & Care Care.webp",
+        "format": ".webp",
+        "fileSize": 66974,
+        "sha256": "e337ee96c7b9ad04cd61490b4a0e4b0621ec57ee9b5a6ce65b4e09931a7bb62f"
+      },
+      {
+        "id": "690e1e9bbb3427cd33190d28",
+        "name": "Plants",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Plants.webp",
+        "format": ".webp",
+        "fileSize": 106578,
+        "sha256": "61d3efbe07d4938e7f5cb50df3ea138a751466ca9f067bc7bf106e245edab262"
+      },
+      {
+        "id": "690e1f02bb3427cd33190d40",
+        "name": "Tissues & Disposables",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Tissues & Disposables.webp",
+        "format": ".webp",
+        "fileSize": 57446,
+        "sha256": "8a7662ec887bf32ac21c92d9223904e4e4d6ea831d3729401950e6cbf22d2ce8"
+      },
+      {
+        "id": "690e207cbb3427cd33190d6e",
+        "name": "Whole Spices",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Whole Spices.webp",
+        "format": ".webp",
+        "fileSize": 38364,
+        "sha256": "477a00f96aaf5b0c252fb5cadb003b18d0b51bd12e0ee201cd4b6b02ec22ef49"
+      },
+      {
+        "id": "690e1fe4bb3427cd33190d4e",
+        "name": "Dates & Seeds",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Dates & Seeds.webp",
+        "format": ".webp",
+        "fileSize": 20964,
+        "sha256": "d03e74265ae1fd351154ce23b08102833fb982f1d393fce3de88f886f1049421"
+      },
+      {
+        "id": "690e1f16bb3427cd33190d44",
+        "name": "Winter Wear",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Winter Wear.png",
+        "format": ".png",
+        "fileSize": 120300,
+        "sha256": "b6809f4f7b3d78c0c9181dc8e73f9f395056ed019c8918fc0bf653429fdd15f1"
+      },
+      {
+        "id": "690e1eedbb3427cd33190d3c",
+        "name": "Stationery Needs",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Stationery Needs.webp",
+        "format": ".webp",
+        "fileSize": 40370,
+        "sha256": "6b6db40f5f1a56d915160c998d3ee7deb7a878407247f5a6f6bef138b20b135c"
+      },
+      {
+        "id": "690e1eabbb3427cd33190d2c",
+        "name": "Pooja Needs",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Pooja Needs.webp",
+        "format": ".webp",
+        "fileSize": 53484,
+        "sha256": "0e68d996cb794f760a2a57ec1be24621de9bb730096a4b3853620aba016b41d6"
+      },
+      {
+        "id": "690e2023bb3427cd33190d5a",
+        "name": "Ghee & Vanaspati",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Ghee & Vanaspati.webp",
+        "format": ".webp",
+        "fileSize": 116460,
+        "sha256": "3ecdb99f6187907c641cebe73eaf4846b3f00f45b29c5164fe6d18b70b88f265"
+      },
+      {
+        "id": "690e2000bb3427cd33190d52",
+        "name": "Dry Fruits Gift Packs",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Dry Fruits Gift Packs.webp",
+        "format": ".webp",
+        "fileSize": 69814,
+        "sha256": "1873afb4d6aa4581b4e46dbd1c5cde730874ecfdb7ebf6e9648ca5facb59b4b0"
+      },
+      {
+        "id": "690e1ebbbb3427cd33190d30",
+        "name": "Precious Coins & Jewellery",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Precious Coins & Jewellery.webp",
+        "format": ".webp",
+        "fileSize": 71670,
+        "sha256": "31a77ddd06d8f5c18550e34fd8644cc119d916b324c8bc88003b37da0b654315"
+      },
+      {
+        "id": "690e205bbb3427cd33190d66",
+        "name": "Powdered Spices",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Powdered Spices.webp",
+        "format": ".webp",
+        "fileSize": 29860,
+        "sha256": "7bc3f85504cbf1550dd8a7af6582bd096f3c482412f9446693179648876f8543"
+      },
+      {
+        "id": "690e1ed9bb3427cd33190d38",
+        "name": "Shoe Care",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Shoe Care.webp",
+        "format": ".webp",
+        "fileSize": 20936,
+        "sha256": "72cba5587d3621af33607f78834490a5be584d94acf7dd87456f4a079dd8f663"
+      },
+      {
+        "id": "690e206cbb3427cd33190d6a",
+        "name": "Salt, Sugar & Jaggery",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Salt, Sugar & Jaggery.webp",
+        "format": ".webp",
+        "fileSize": 24828,
+        "sha256": "fda4c1196b8ab7b16664430ad5e9b4aec8c6eeb0a8d1502e5b311556596b6cad"
+      },
+      {
+        "id": "690e2035bb3427cd33190d5e",
+        "name": "Oil",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Oil.webp",
+        "format": ".webp",
+        "fileSize": 28880,
+        "sha256": "77a44775af7e5767dcdd42c69b3b914fa56931f9d20189b377fcd0f0b3f6fe15"
+      },
+      {
+        "id": "690e2048bb3427cd33190d62",
+        "name": "Papad & Fryums",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Papad & Fryums.webp",
+        "format": ".webp",
+        "fileSize": 29892,
+        "sha256": "e39682e16be20e7d51e763b67facf0937ae01b57c5497a925ca6e02337a1417b"
+      },
+      {
+        "id": "690e20a9bb3427cd33190d76",
+        "name": "Breakfast & More",
+        "category": "Organic & Healthy Living",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Organic & Healthy Living/Breakfast & More.webp",
+        "format": ".webp",
+        "fileSize": 35332,
+        "sha256": "7b8e0624df0aaa53d232fddd0377f6687a411630511800970d7ac1c42fe58c26"
+      },
+      {
+        "id": "690e1ec9bb3427cd33190d34",
+        "name": "Repellents",
+        "category": "Home & Office",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Home & Office/Repellents.webp",
+        "format": ".webp",
+        "fileSize": 94886,
+        "sha256": "22ece5f784d3883723a5d0fc451f21f9124c1701a316c5d504ad550075a35e54"
+      },
+      {
+        "id": "690e2010bb3427cd33190d56",
+        "name": "Dry Fruits",
+        "category": "Masala, Oil & More",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Masala, Oil & More/Dry Fruits.webp",
+        "format": ".webp",
+        "fileSize": 79178,
+        "sha256": "f1865479cf8caf5cd22f6911539ec12210325b3179b2259b83650864e7e17e23"
+      },
+      {
+        "id": "690e22aabb3427cd33190dbe",
+        "name": "Hand & FootCare",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Hand & FootCare.webp",
+        "format": ".webp",
+        "fileSize": 20282,
+        "sha256": "1986e5943bc224c666e6f1a96204f1588fb014e00c0f5d30265afee77a17e196"
+      },
+      {
+        "id": "690e20debb3427cd33190d82",
+        "name": "Dry Fruits, Nuts & Seeds",
+        "category": "Organic & Healthy Living",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Organic & Healthy Living/Dry Fruits, Nuts & Seeds.jpg",
+        "format": ".jpg",
+        "fileSize": 28855,
+        "sha256": "dc822e3b1f8956e004775333e3543378df9563368fb1d35845d882c2db36efb8"
+      },
+      {
+        "id": "690e20f5bb3427cd33190d86",
+        "name": "Healthy Proteins",
+        "category": "Organic & Healthy Living",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Organic & Healthy Living/Healthy Proteins.webp",
+        "format": ".webp",
+        "fileSize": 42224,
+        "sha256": "4e6725c6140fd67579b58bfd2e41b85a2bf95edb692cd09d067840623de2169f"
+      },
+      {
+        "id": "690e20c8bb3427cd33190d7e",
+        "name": "Cooking Essentials",
+        "category": "Organic & Healthy Living",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Organic & Healthy Living/Cooking Essentials.jpg",
+        "format": ".jpg",
+        "fileSize": 21933,
+        "sha256": "cc7fbe779390b757d54afa2d505e3d3e07058faa0d41350394a2cca773cee242"
+      },
+      {
+        "id": "690e213bbb3427cd33190d96",
+        "name": "Smoking Cessation",
+        "category": "paan corner",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/paan corner/Smoking Cessation.webp",
+        "format": ".webp",
+        "fileSize": 21324,
+        "sha256": "8c1965996e5aa804afdf52ebcdac27d903289049aa6e8d7f7e4fa6d547fc5be3"
+      },
+      {
+        "id": "690e2179bb3427cd33190d9a",
+        "name": "Bath & Beauty Gifts",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Bath & Beauty Gifts.webp",
+        "format": ".webp",
+        "fileSize": 52746,
+        "sha256": "f756349ec8b97cd201fb6bce341f974307dbe2959f1b60bd1454694060a5a8a0"
+      },
+      {
+        "id": "690e212dbb3427cd33190d92",
+        "name": "Paan",
+        "category": "paan corner",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/paan corner/Paan.webp",
+        "format": ".webp",
+        "fileSize": 62338,
+        "sha256": "789a735c5581aa5926a2577a338166ec268b1ab4e188ac3d3a7ac8ca59b9ae14"
+      },
+      {
+        "id": "690e2193bb3427cd33190d9e",
+        "name": "Bathing Soaps",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Bathing Soaps.webp",
+        "format": ".webp",
+        "fileSize": 40892,
+        "sha256": "daa3ff15470e708adce7abd919da5b63a01edb523353cf3abe0dbae2bb3df30f"
+      },
+      {
+        "id": "690e2319bb3427cd33190dd2",
+        "name": "Shower Gels & Scrubs",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Shower Gels & Scrubs.webp",
+        "format": ".webp",
+        "fileSize": 88338,
+        "sha256": "b1cfcf31e4573ee320b4180f3520dba5ec0721dbbc2228e520a708a509b0bf78"
+      },
+      {
+        "id": "690e2328bb3427cd33190dd6",
+        "name": "Skin & Hair Care",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Skin & Hair Care.webp",
+        "format": ".webp",
+        "fileSize": 19438,
+        "sha256": "5b32870ccb1a014cfc1bc9a7caddcb74fc5b8c889afa39012b959bfda6bb9b45"
+      },
+      {
+        "id": "690e2396bb3427cd33190dea",
+        "name": "Diverse Pet Food",
+        "category": "Pet Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pet Care/Diverse Pet Food.png",
+        "format": ".png",
+        "fileSize": 73969,
+        "sha256": "6ec6f00daa52ae2f5a7fd4ac4f8bc886fdd9d5daf84544f31e5e32b550a89726"
+      },
+      {
+        "id": "690e2110bb3427cd33190d8a",
+        "name": "Lighters & Accessories",
+        "category": "paan corner",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/paan corner/Lighters & Accessories.webp",
+        "format": ".webp",
+        "fileSize": 39288,
+        "sha256": "2399d3e4383a8cb5822e1872c0ab572f952a7deba9d40aed5f9ee86cb321e5c2"
+      },
+      {
+        "id": "690e21f6bb3427cd33190daa",
+        "name": "Face Cream & Lotion",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Face Cream & Lotion.webp",
+        "format": ".webp",
+        "fileSize": 64858,
+        "sha256": "d4e498a1c20d819b97ccd13802952ca02766b72501c13e5ee9a4bbb8fff71497"
+      },
+      {
+        "id": "690e211ebb3427cd33190d8e",
+        "name": "Mouth Fresheners",
+        "category": "paan corner",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/paan corner/Mouth Fresheners.webp",
+        "format": ".webp",
+        "fileSize": 21086,
+        "sha256": "5f460dff8153c6d398e3014a585dc0964be929ee9e9761a14c28b40353a21c89"
+      },
+      {
+        "id": "690e2497bb3427cd33190e1a",
+        "name": "Healthcare Devices",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Healthcare Devices.webp",
+        "format": ".webp",
+        "fileSize": 83844,
+        "sha256": "68c3a68ce976b2304cdba0977ec6a1ce0a9372d8e27528f2f89e20dd1b51cb84"
+      },
+      {
+        "id": "690e22dfbb3427cd33190dc6",
+        "name": "Makeup",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Makeup.webp",
+        "format": ".webp",
+        "fileSize": 44720,
+        "sha256": "d3ebfa18c4e2e74fd1ecd05a60c30d56037166739d8834f0111035dfee637d83"
+      },
+      {
+        "id": "690e24a5bb3427cd33190e1e",
+        "name": "Herbal Drinks",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Herbal Drinks.webp",
+        "format": ".webp",
+        "fileSize": 26644,
+        "sha256": "5abea4775414f2237aab763d56336c13970173f200296ad1f6ceea563d57d8a5"
+      },
+      {
+        "id": "690e2263bb3427cd33190db6",
+        "name": "Fragrance & Talc",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Fragrance & Talc.webp",
+        "format": ".webp",
+        "fileSize": 47286,
+        "sha256": "89136283d6380ff7212ca017bea15fc68957c6cfedd667b041f196c96044d08e"
+      },
+      {
+        "id": "690e2432bb3427cd33190e0a",
+        "name": "Chyawanprash",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Chyawanprash.webp",
+        "format": ".webp",
+        "fileSize": 31654,
+        "sha256": "0e3dcb5983284bf7256029deb7d40737db94cbf88eb1537b7d90cd2f107e2daa"
+      },
+      {
+        "id": "690e23e6bb3427cd33190dfe",
+        "name": "Beauty Supplements",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Beauty Supplements.webp",
+        "format": ".webp",
+        "fileSize": 123972,
+        "sha256": "a1aacc6178445dc6dad950db6b034c23735bb91ae2f00380cdfb50f3b16ab467"
+      },
+      {
+        "id": "690e2344bb3427cd33190dda",
+        "name": "Sunscreen",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Sunscreen.webp",
+        "format": ".webp",
+        "fileSize": 67108,
+        "sha256": "d5da3046ea07050c69e9d9e4eb4410e131b6c6464d1c2ce9d606a1c4eef103ab"
+      },
+      {
+        "id": "690e2215bb3427cd33190dae",
+        "name": "Face Wash & Scrub",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Face Wash & Scrub.webp",
+        "format": ".webp",
+        "fileSize": 51492,
+        "sha256": "81feb800b9643847ddd83692b4522b9c17bfda64bf46d3502cd7c11cf688a1b0"
+      },
+      {
+        "id": "690e21b2bb3427cd33190da2",
+        "name": "Body Moisturizers & More",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Body Moisturizers & More.png",
+        "format": ".png",
+        "fileSize": 112080,
+        "sha256": "a1a6b772a087c5566a136c202bfb276c93534606de91354290ca5da679621fea"
+      },
+      {
+        "id": "690e22bbbb3427cd33190dc2",
+        "name": "Handwash",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Handwash.webp",
+        "format": ".webp",
+        "fileSize": 84914,
+        "sha256": "2484addc483f5be03a304eb62d0d40e10fd610057a03f048993bc225c5907c54"
+      },
+      {
+        "id": "690e2308bb3427cd33190dce",
+        "name": "shampoo & Conditioner",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/shampoo & Conditioner.webp",
+        "format": ".webp",
+        "fileSize": 46846,
+        "sha256": "a80bef1936634634b11cd5bca19de1b4e55d7aee12516bf8c7938212cecd6752"
+      },
+      {
+        "id": "690e24b3bb3427cd33190e22",
+        "name": "Marks & Sanitizers",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Marks & Sanitizers.webp",
+        "format": ".webp",
+        "fileSize": 43940,
+        "sha256": "f0c48e6533a3e8d96fcc0e8033ab3d4b14c53343ba1b6be5c6f2f7c958f5d388"
+      },
+      {
+        "id": "690e2228bb3427cd33190db2",
+        "name": "Feminine Care",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Feminine Care.png",
+        "format": ".png",
+        "fileSize": 157326,
+        "sha256": "a9097edaf9e12d188dd97b7f852c13d32982fc79bc4dd419cbbfc6756e86d151"
+      },
+      {
+        "id": "690e2389bb3427cd33190de6",
+        "name": "Cat Needs",
+        "category": "Pet Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pet Care/Cat Needs.png",
+        "format": ".png",
+        "fileSize": 94953,
+        "sha256": "58922bda58c04fbe4a125d4094975badfa93cb436fa80076e5e6aac59e6dfeb4"
+      },
+      {
+        "id": "690e23d0bb3427cd33190df6",
+        "name": "Adult Diapers",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Adult Diapers.webp",
+        "format": ".webp",
+        "fileSize": 20474,
+        "sha256": "0ea4da7dcc294550a6a99d8b1e54eaf0b42ae1127d8d889a18d5ffaf806ec66b"
+      },
+      {
+        "id": "690e248bbb3427cd33190e16",
+        "name": "Everyday Medicines",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Everyday Medicines.webp",
+        "format": ".webp",
+        "fileSize": 58758,
+        "sha256": "ca7d65deac26e94b4dd02236c2f0d524be92c4f96313e659ed2360271285ed61"
+      },
+      {
+        "id": "690e22f8bb3427cd33190dca",
+        "name": "Men_s Grooming",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Men_s Grooming.png",
+        "format": ".png",
+        "fileSize": 78628,
+        "sha256": "b0ad57c1342c3ee4f5c4760aead7282a6d3d98bd64f04ebf5fb5c3e5df2d9d33"
+      },
+      {
+        "id": "690e23b0bb3427cd33190df2",
+        "name": "Pet Grooming",
+        "category": "Pet Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pet Care/Pet Grooming.png",
+        "format": ".png",
+        "fileSize": 50720,
+        "sha256": "907030fa16766e84bff2de9c09e369d31282f4ce0fb76a51b3c1b7d5d48d964e"
+      },
+      {
+        "id": "690e23dbbb3427cd33190dfa",
+        "name": "Antiseptic Liquid",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Antiseptic Liquid.webp",
+        "format": ".webp",
+        "fileSize": 25296,
+        "sha256": "b4aeef84ab36b612da9ead11bd636377f634fe223450f1953c93434124714413"
+      },
+      {
+        "id": "690e21debb3427cd33190da6",
+        "name": "Face Care",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Face Care.png",
+        "format": ".png",
+        "fileSize": 52629,
+        "sha256": "06707492c905afba3ad6b120ba2d5c5ca9eee9db1e3c8ef621fb7433868ff837"
+      },
+      {
+        "id": "690e2297bb3427cd33190dba",
+        "name": "Hair Oil & Serum",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Hair Oil & Serum.webp",
+        "format": ".webp",
+        "fileSize": 50980,
+        "sha256": "4106fd644bd8390a575dfad27f09f27fb05fef00a1d1c3efb9abde96b6183e2e"
+      },
+      {
+        "id": "690e24eebb3427cd33190e2e",
+        "name": "Pre & Post Workout",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Pre & Post Workout.webp",
+        "format": ".webp",
+        "fileSize": 65140,
+        "sha256": "a81fb62d40c9d09da99b5b31c563ea91801db231b579c3962001bae99576eaa5"
+      },
+      {
+        "id": "690e2355bb3427cd33190dde",
+        "name": "Women_s Grooming",
+        "category": "Personal Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Personal Care/Women_s Grooming.webp",
+        "format": ".webp",
+        "fileSize": 68442,
+        "sha256": "ef4d1f4c2d5b2ccc2b4f48eeaff2528a9849a674206a2bff4467a6ec22b4841f"
+      },
+      {
+        "id": "690e2531bb3427cd33190e3a",
+        "name": "Smoking Cessation",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Smoking Cessation.webp",
+        "format": ".webp",
+        "fileSize": 21324,
+        "sha256": "8c1965996e5aa804afdf52ebcdac27d903289049aa6e8d7f7e4fa6d547fc5be3"
+      },
+      {
+        "id": "690e2373bb3427cd33190de2",
+        "name": "Accessories & Other Supplies",
+        "category": "Pet Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pet Care/Accessories & Other Supplies.png",
+        "format": ".png",
+        "fileSize": 65096,
+        "sha256": "db1d36e8c899fd5e42b538949d4994d7e8dc6a0b7488f19448429e1c50790add"
+      },
+      {
+        "id": "690e24c1bb3427cd33190e26",
+        "name": "Milk Drinks",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Milk Drinks.webp",
+        "format": ".webp",
+        "fileSize": 103860,
+        "sha256": "a1e45e73b112376aa645f5df6a02724f7ecdff5ddc8936c1bc4ed3a084be952d"
+      },
+      {
+        "id": "690e251ebb3427cd33190e36",
+        "name": "Skin Treatment",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Skin Treatment.webp",
+        "format": ".webp",
+        "fileSize": 40080,
+        "sha256": "7dcac57099d7864bbc35d937bc346efb95e376a2cbf77199aaffbd1cfdd111bd"
+      },
+      {
+        "id": "690e23a4bb3427cd33190dee",
+        "name": "Dog Needs",
+        "category": "Pet Care",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pet Care/Dog Needs.png",
+        "format": ".png",
+        "fileSize": 66807,
+        "sha256": "ef8051418726f4a7ef760327c2e5e033ec0c0f33e2dee98a6696be60569b35a1"
+      },
+      {
+        "id": "690e2612bb3427cd33190e55",
+        "name": "Asian Sauces",
+        "category": "Sauces & Spreads",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sauces & Spreads/Asian Sauces.webp",
+        "format": ".webp",
+        "fileSize": 93982,
+        "sha256": "269f4f016ed9ff8046a7cd630b65d01b9440fdcbbbf72d898bf14baa1cddaf66"
+      },
+      {
+        "id": "690e264abb3427cd33190e65",
+        "name": "Tomato & Chilli Ketchup",
+        "category": "Sauces & Spreads",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sauces & Spreads/Tomato & Chilli Ketchup.webp",
+        "format": ".webp",
+        "fileSize": 142286,
+        "sha256": "facc7a1e972c27f4a1d8cb9085d6aaaa4f1107764200f99d27af0631cd32dcbc"
+      },
+      {
+        "id": "690e2594bb3427cd33190e4a",
+        "name": "Wound , Care & Pain Relief",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": false
+      },
+      {
+        "id": "690e247abb3427cd33190e12",
+        "name": "Digestive Care",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Digestive Care.webp",
+        "format": ".webp",
+        "fileSize": 116234,
+        "sha256": "a561b17cfab3d26767354bee2f6556dd1fb942c97e42c7e9788d5683e0ddbeba"
+      },
+      {
+        "id": "690e2547bb3427cd33190e3e",
+        "name": "Vitamins & Daily Nutrition",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Pharma & Wellness/Vitamins & Daily Nutrition.webp",
+        "format": ".webp",
+        "fileSize": 67132,
+        "sha256": "a21b50a1ca82a6519546e7388503ddd8559acd6006ddd1dc594057886b4af993"
+      },
+      {
+        "id": "690e2507bb3427cd33190e32",
+        "name": "Protein & Sports supplements",
+        "category": "Pharma & Wellness",
+        "hasSourceAsset": false
+      },
+      {
+        "id": "690e262cbb3427cd33190e5d",
+        "name": "Indian Chutney & Pickle",
+        "category": "Sauces & Spreads",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sauces & Spreads/Indian Chutney & Pickle.webp",
+        "format": ".webp",
+        "fileSize": 37182,
+        "sha256": "4bb30d8fb4de1d8e2f0ca183e3ae57a7fd11cb30f060e56586aba8b3fe4d2532"
+      },
+      {
+        "id": "690e263bbb3427cd33190e61",
+        "name": "Jam & Spreads",
+        "category": "Sauces & Spreads",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sauces & Spreads/Jam & Spreads.webp",
+        "format": ".webp",
+        "fileSize": 66514,
+        "sha256": "9aa0d2ae391e99144c1fd4bf1db29b1a3905d8a7faa935cfdd24e1905abe604d"
+      },
+      {
+        "id": "690e261ebb3427cd33190e59",
+        "name": "Cooking Sauces & Vinegar",
+        "category": "Sauces & Spreads",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sauces & Spreads/Cooking Sauces & Vinegar.webp",
+        "format": ".webp",
+        "fileSize": 86022,
+        "sha256": "812bf126bf16c55517557c468bca4dd4ca243dfbd8e4f3b13b1444da5dfac634"
+      },
+      {
+        "id": "690e27f5bb3427cd33190ecc",
+        "name": "Coffee",
+        "category": "Tea, Coffee & Health Drink",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Coffee.jpg",
+        "format": ".jpg",
+        "fileSize": 32845,
+        "sha256": "c9273addcb7ddf39fae3aeff64c273328e6e9f94e961d982eb1cb539b0a9e08b"
+      },
+      {
+        "id": "690e27b1bb3427cd33190ebc",
+        "name": "Ice Cream & Frozen Dessert",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Ice Cream & Frozen Dessert.webp",
+        "format": ".webp",
+        "fileSize": 15370,
+        "sha256": "5e33ac82831f908b1352363323aa43ff84c7d873938821cbd4021b45783f9094"
+      },
+      {
+        "id": "690e27cdbb3427cd33190ec4",
+        "name": "Mouth Fresheners",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Mouth Fresheners.webp",
+        "format": ".webp",
+        "fileSize": 21086,
+        "sha256": "5f460dff8153c6d398e3014a585dc0964be929ee9e9761a14c28b40353a21c89"
+      },
+      {
+        "id": "690e27a3bb3427cd33190eb8",
+        "name": "Flavoured Yougurts",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Flavoured Yougurts.webp",
+        "format": ".webp",
+        "fileSize": 18496,
+        "sha256": "524a2f8b61ff74bfce6d5302cc83ed477809d1fde71faecc63156402c9aec9d8"
+      },
+      {
+        "id": "690e2794bb3427cd33190eb4",
+        "name": "Energy Bars",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Energy Bars.png",
+        "format": ".png",
+        "fileSize": 29658,
+        "sha256": "e6d468d8b65ea12ff6118f2a0fbed12a0cce88645821190b4b6a984c597ee0e8"
+      },
+      {
+        "id": "690e27bdbb3427cd33190ec0",
+        "name": "Indian Sweets",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Indian Sweets.webp",
+        "format": ".webp",
+        "fileSize": 23256,
+        "sha256": "de32abc57e81b32ec2df4181366b49f8bb2a9cd419058b83b2e286d8ba531fe4"
+      },
+      {
+        "id": "690e27e1bb3427cd33190ec8",
+        "name": "Syrups",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Syrups.webp",
+        "format": ".webp",
+        "fileSize": 34640,
+        "sha256": "51229af777d0a12e64be468c02ba9e09e62ec756b5d3d879162dac32ecec43cd"
+      },
+      {
+        "id": "690e2776bb3427cd33190eac",
+        "name": "Candies & Gum",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Candies & Gum.webp",
+        "format": ".webp",
+        "fileSize": 28046,
+        "sha256": "fc1f52ccf97a6cd21d02d5eae5ec3abd5590c76a282ac325115d699d1909cfcb"
+      },
+      {
+        "id": "690e2769bb3427cd33190ea8",
+        "name": "Cakes & Rolls",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Cakes & Rolls.webp",
+        "format": ".webp",
+        "fileSize": 77476,
+        "sha256": "d6b37b86d3b9f0832bffbd196c599956495670bd37875dae8aaa111bddb5c88e"
+      },
+      {
+        "id": "690e2782bb3427cd33190eb0",
+        "name": "Chocolates",
+        "category": "Sweet Tooth",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Sweet Tooth/Chocolates.png",
+        "format": ".png",
+        "fileSize": 39781,
+        "sha256": "8f106ddd624700df92f54aa696de856b8c3896bf299ff5921e64c0d265346d2f"
+      },
+      {
+        "id": "690e285fbb3427cd33190eec",
+        "name": "Tea",
+        "category": "Tea, Coffee & Health Drink",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Tea.webp",
+        "format": ".webp",
+        "fileSize": 19602,
+        "sha256": "4cfc66b739f2122691e1857076d1b8c0bfd1e7452bd3a08953cc44d115c4d78e"
+      },
+      {
+        "id": "690e2829bb3427cd33190edc",
+        "name": "Green & Flavoured Tea",
+        "category": "Tea, Coffee & Health Drink",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Green & Flavoured Tea.webp",
+        "format": ".webp",
+        "fileSize": 102230,
+        "sha256": "7e8b5a14c642a0dc32fd3ace460aedea3ad88949a2caaa195465bd4c00262fe5"
+      },
+      {
+        "id": "690e2834bb3427cd33190ee0",
+        "name": "Herbal Drinks",
+        "category": "Tea, Coffee & Health Drink",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Herbal Drinks.webp",
+        "format": ".webp",
+        "fileSize": 26644,
+        "sha256": "5abea4775414f2237aab763d56336c13970173f200296ad1f6ceea563d57d8a5"
+      },
+      {
+        "id": "690e2841bb3427cd33190ee4",
+        "name": "Hot Chocolate",
+        "category": "Tea, Coffee & Health Drink",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Hot Chocolate.webp",
+        "format": ".webp",
+        "fileSize": 55774,
+        "sha256": "d16450bc4bf30ac9f200c59686f36ae019ed299ccbf288339bd5a9395a539d16"
+      },
+      {
+        "id": "690e284fbb3427cd33190ee8",
+        "name": "Imported Tea & Coffee",
+        "category": "Tea, Coffee & Health Drink",
+        "hasSourceAsset": true,
+        "sourceAssetPath": "incoming-catalog/subcategories/Tea, Coffee & Health Drink/Imported Tea & Coffee.webp",
+        "format": ".webp",
+        "fileSize": 98232,
+        "sha256": "5f5550f403a7a76fee4b86f6cbcad4d97b8d5f99d853ed32cb9948ccbbd3935b"
+      }
+    ],
+    "EXCLUDED_PROTECTED": [
+      {
+        "id": "690e1792bb3427cd33190bd4",
+        "name": "Noodles",
+        "category": "Breakfast & Instant Food",
+        "productCount": 3,
+        "reason": "Low-resolution source asset flagged"
+      },
+      {
+        "id": "690e2467bb3427cd33190e0e",
+        "name": "Protections",
+        "category": "Pharma & Wellness",
+        "productCount": 0,
+        "reason": "Protections policy / sensitive scope"
+      },
+      {
+        "id": "690e24debb3427cd33190e2a",
+        "name": "Oral Health & Eye Care",
+        "category": "Pharma & Wellness",
+        "productCount": 3,
+        "reason": "Dual-scope ambiguity (Oral Health vs Eye Care)"
+      }
+    ]
+  }
+}
