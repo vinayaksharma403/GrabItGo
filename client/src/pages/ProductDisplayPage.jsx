@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useCallback } from "react";
-import { useNavigate, useParams, Link } from "react-router-dom";
+import React, { useEffect, useState, useCallback, useRef } from "react";
+import { useNavigate, useParams, Link, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import SummaryApi from "../common/SummaryApi";
 import Axios from "../utils/axios";
@@ -20,12 +20,34 @@ import {
   FiCreditCard
 } from "react-icons/fi";
 import { LuPackage } from "react-icons/lu";
+import { useGlobalContext } from "../provider/GlobalContext";
 
 const ProductDisplayPage = () => {
   const params = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const userId = useSelector((state) => state.user?._id);
-  const productId = params?.product?.split("-")?.slice(-1)[0];
+  const { fetchCart, fetchAddress } = useGlobalContext() || {};
+  const isSubmittingRef = useRef(false);
+
+  // Robust product ID extraction from URL parameter
+  const rawParam = params?.product || "";
+  const extractProductId = (param) => {
+    if (!param) return "";
+    // If param is already a direct 24-character hex ID
+    if (/^[0-9a-fA-F]{24}$/.test(param)) {
+      return param;
+    }
+    // Match 24-char hex ID at the end of the slug
+    const hexMatch = param.match(/([0-9a-fA-F]{24})$/);
+    if (hexMatch) {
+      return hexMatch[1];
+    }
+    // Fallback: take the final segment after the last hyphen
+    const segments = param.split("-");
+    return segments[segments.length - 1] || param;
+  };
+  const productId = extractProductId(rawParam);
 
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -79,9 +101,11 @@ const ProductDisplayPage = () => {
   };
 
   const handleAddToCart = async () => {
+    if (isSubmittingRef.current || btnLoading || buyNowLoading) return;
+
     if (!userId) {
       toast.error("Please login to add items to your cart");
-      navigate("/login");
+      navigate("/login", { state: { from: location.pathname } });
       return;
     }
     if (isOutOfStock) {
@@ -90,6 +114,7 @@ const ProductDisplayPage = () => {
     }
 
     try {
+      isSubmittingRef.current = true;
       setBtnLoading(true);
       const response = await Axios({
         ...SummaryApi.addToCart,
@@ -99,18 +124,24 @@ const ProductDisplayPage = () => {
         toast.success(
           quantity > 1 ? `Added ${quantity} items to cart` : "Added to cart"
         );
+        if (fetchCart) {
+          await fetchCart();
+        }
       }
     } catch (err) {
       AxiosToastError(err);
     } finally {
       setBtnLoading(false);
+      isSubmittingRef.current = false;
     }
   };
 
   const handleBuyNow = async () => {
+    if (isSubmittingRef.current || btnLoading || buyNowLoading) return;
+
     if (!userId) {
       toast.error("Please login to proceed to checkout");
-      navigate("/login");
+      navigate("/login", { state: { from: location.pathname } });
       return;
     }
     if (isOutOfStock) {
@@ -119,20 +150,29 @@ const ProductDisplayPage = () => {
     }
 
     try {
+      isSubmittingRef.current = true;
       setBuyNowLoading(true);
       const response = await Axios({
         ...SummaryApi.addToCart,
         data: { productId: data._id, quantity },
       });
       if (response.data.success) {
-        navigate("/cart");
+        if (fetchCart) {
+          await fetchCart();
+        }
+        if (fetchAddress) {
+          await fetchAddress();
+        }
+        navigate("/cart", { state: { autoCheckout: true } });
       }
     } catch (err) {
       AxiosToastError(err);
     } finally {
       setBuyNowLoading(false);
+      isSubmittingRef.current = false;
     }
   };
+
 
   // Loading Skeleton State
   if (loading) {
@@ -239,7 +279,7 @@ const ProductDisplayPage = () => {
                 {/* Badges Overlay */}
                 <div className="absolute top-3 left-3 flex flex-col gap-1.5 items-start">
                   <span className="badge-brand text-xs font-bold px-2.5 py-1 shadow-subtle flex items-center gap-1">
-                    ⚡ 10 min
+                    ⚡ Fast Delivery
                   </span>
                   {Number(data?.discount) > 0 && (
                     <span className="badge-accent text-xs font-bold px-2.5 py-1 shadow-subtle">
@@ -424,7 +464,7 @@ const ProductDisplayPage = () => {
                   <div className="w-8 h-8 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center mb-1">
                     <FiTruck size={15} />
                   </div>
-                  <span className="text-[11px] font-semibold text-surface-title">10-Min Delivery</span>
+                  <span className="text-[11px] font-semibold text-surface-title">Fast Delivery</span>
                   <span className="text-[10px] text-surface-muted">Direct from local hub</span>
                 </div>
 
@@ -433,7 +473,7 @@ const ProductDisplayPage = () => {
                     <FiCheckCircle size={15} />
                   </div>
                   <span className="text-[11px] font-semibold text-surface-title">Quality Checked</span>
-                  <span className="text-[10px] text-surface-muted">Freshness guaranteed</span>
+                  <span className="text-[10px] text-surface-muted">Handpicked selection</span>
                 </div>
 
                 <div className="flex flex-col items-center">

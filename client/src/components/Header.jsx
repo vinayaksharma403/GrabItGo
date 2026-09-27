@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
-import logo from '../assets/logo.png'
+import Logo from './Logo'
 import Search from './Search'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { FaUser, FaBars } from 'react-icons/fa'
@@ -38,6 +38,18 @@ const Header = () => {
     }
     setOpenDrawer(true)
   }
+
+  // Lock body scroll only when mobile drawer is open
+  useEffect(() => {
+    if (openDrawer) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [openDrawer])
 
   // Close dropdown or drawer on Escape key or outside click
   useEffect(() => {
@@ -91,26 +103,12 @@ const Header = () => {
             <FaBars size={20} />
           </button>
 
-          <Link
-            to='/'
-            className='flex items-center py-1 group shrink-0'
-            aria-label='GrabItGo Home'
-          >
-            <img
-              src={logo}
-              width={155}
-              height={50}
-              alt='GrabItGo Logo'
-              className='hidden lg:block object-contain transition-transform group-hover:scale-102'
-            />
-            <img
-              src={logo}
-              width={120}
-              height={40}
-              alt='GrabItGo Logo'
-              className='lg:hidden object-contain'
-            />
-          </Link>
+          <div className='hidden lg:block'>
+            <Logo size='md' showTagline={false} />
+          </div>
+          <div className='lg:hidden'>
+            <Logo size='sm' showTagline={false} />
+          </div>
         </div>
 
         {/* Center: Fluid Desktop Search Bar */}
@@ -236,14 +234,9 @@ const Header = () => {
           >
             {/* Drawer Header */}
             <div className='flex items-center justify-between pb-3 border-b border-surface-border'>
-              <Link
-                to='/'
-                onClick={handleCloseDrawer}
-                aria-label='GrabItGo Home'
-                className='flex items-center'
-              >
-                <img src={logo} width={130} height={42} alt='GrabItGo' className='object-contain' />
-              </Link>
+              <div onClick={handleCloseDrawer}>
+                <Logo size='sm' />
+              </div>
               <button
                 type='button'
                 onClick={handleCloseDrawer}

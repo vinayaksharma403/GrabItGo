@@ -78,13 +78,13 @@ const SubCategoryPage = () => {
     columnHelper.accessor('name', {
       header: 'Subcategory Name',
       cell: (info) => (
-        <span className='font-bold text-slate-900'>{info.getValue()}</span>
+        <span className='font-bold text-surface-title'>{info.getValue()}</span>
       )
     }),
     columnHelper.accessor('image', {
       header: 'Thumbnail',
       cell: (info) => (
-        <div className='w-12 h-12 rounded-xl bg-slate-50 border border-slate-200 overflow-hidden flex items-center justify-center p-1 cursor-pointer group hover:border-emerald-500 transition-colors'>
+        <div className='w-12 h-12 rounded-xl bg-surface-50 border border-surface-border overflow-hidden flex items-center justify-center p-1 cursor-pointer group hover:border-brand-500 transition-colors'>
           <img
             src={info.getValue() || '/placeholder.png'}
             alt='Subcategory preview'
@@ -105,7 +105,7 @@ const SubCategoryPage = () => {
       cell: (info) => {
         const catArray = info.getValue()
         if (!catArray || catArray.length === 0) {
-          return <span className='text-slate-400'>—</span>
+          return <span className='text-surface-muted'>—</span>
         }
         return (
           <div className='flex flex-wrap gap-1'>
@@ -129,7 +129,7 @@ const SubCategoryPage = () => {
       <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
         <div>
           <div className='flex items-center gap-2'>
-            <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+            <h1 className='text-2xl font-bold text-surface-title tracking-tight'>
               Subcategory Management
             </h1>
             {!loading && data.length > 0 && (
@@ -138,7 +138,7 @@ const SubCategoryPage = () => {
               </span>
             )}
           </div>
-          <p className='text-sm text-slate-500 mt-1'>
+          <p className='text-sm text-surface-muted mt-1'>
             Organize secondary groupings mapped to parent categories
           </p>
         </div>
@@ -146,7 +146,7 @@ const SubCategoryPage = () => {
         <button
           type='button'
           onClick={() => setOpenAddSubCategory(true)}
-          className='btn-primary self-start sm:self-auto inline-flex items-center gap-2 font-semibold text-sm shadow-subtle'
+          className='btn-primary self-start sm:self-auto inline-flex items-center gap-2 font-semibold text-sm shadow-subtle cursor-pointer'
         >
           <FiPlus size={16} />
           <span>Add Subcategory</span>
@@ -155,14 +155,14 @@ const SubCategoryPage = () => {
 
       {/* Content */}
       {loading ? (
-        <div className='bg-white rounded-2xl border border-slate-200/80 p-6 shadow-card space-y-3 animate-pulse'>
-          <div className='h-8 bg-slate-200 rounded-lg w-full mb-4' />
+        <div className='bg-white rounded-card border border-surface-border p-6 shadow-subtle space-y-3 animate-pulse'>
+          <div className='h-8 bg-surface-200 rounded-lg w-full mb-4' />
           {[...Array(5)].map((_, idx) => (
-            <div key={idx} className='h-12 bg-slate-100 rounded-lg w-full' />
+            <div key={idx} className='h-12 bg-surface-100 rounded-lg w-full' />
           ))}
         </div>
       ) : data.length === 0 ? (
-        <div className='bg-white rounded-2xl border border-slate-200/80 p-8 sm:p-12 shadow-card'>
+        <div className='bg-white rounded-card border border-surface-border p-8 sm:p-12 shadow-subtle'>
           <NoData
             icon={FiLayers}
             title='No Subcategories Found'

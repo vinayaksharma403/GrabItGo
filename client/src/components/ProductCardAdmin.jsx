@@ -40,9 +40,9 @@ const ProductCardAdmin = ({ data, fetchData }) => {
       : '/placeholder.png'
 
   return (
-    <div className='group bg-white border border-slate-200/80 rounded-2xl shadow-card hover:border-slate-300 hover:shadow-hover transition-all duration-200 overflow-hidden flex flex-col justify-between'>
+    <div className='group bg-white border border-surface-border rounded-card shadow-card hover:border-surface-border-strong hover:shadow-card-hover transition-all duration-200 overflow-hidden flex flex-col justify-between'>
       {/* Product Image Frame */}
-      <div className='relative w-full h-44 bg-slate-50 flex items-center justify-center p-3'>
+      <div className='relative w-full h-44 bg-surface-50 flex items-center justify-center p-3'>
         <img
           src={imageSrc}
           alt={data?.name || 'Product SKU'}
@@ -66,8 +66,8 @@ const ProductCardAdmin = ({ data, fetchData }) => {
                 aria-label={`View image ${idx + 1}`}
                 className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${
                   currentImage === idx
-                    ? 'bg-emerald-600'
-                    : 'bg-slate-300 hover:bg-emerald-400'
+                    ? 'bg-brand-600'
+                    : 'bg-surface-border hover:bg-brand-400'
                 }`}
               />
             ))}
@@ -95,18 +95,18 @@ const ProductCardAdmin = ({ data, fetchData }) => {
       {/* Product Details */}
       <div className='p-4 flex-1 flex flex-col justify-between text-left'>
         <div>
-          <h3 className='font-bold text-sm text-slate-900 truncate' title={data?.name}>
+          <h3 className='font-bold text-sm text-surface-title truncate' title={data?.name}>
             {data?.name || 'Untitled SKU'}
           </h3>
-          <p className='text-xs text-slate-500 mt-0.5'>{data?.unit || '1 unit'}</p>
+          <p className='text-xs text-surface-muted mt-0.5'>{data?.unit || '1 unit'}</p>
         </div>
 
-        <div className='mt-3 pt-2 border-t border-slate-100 flex items-baseline justify-between'>
-          <span className='font-bold text-sm text-emerald-700'>
+        <div className='mt-3 pt-2 border-t border-surface-border flex items-baseline justify-between'>
+          <span className='font-bold text-sm text-brand-700'>
             {data?.price != null ? DisplayPriceInRupees(data.price) : '—'}
           </span>
           {data?.discount ? (
-            <span className='text-[11px] font-semibold text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded'>
+            <span className='text-[11px] font-semibold text-amber-800 bg-amber-50 border border-amber-200/80 px-1.5 py-0.5 rounded-control'>
               {data.discount}% OFF
             </span>
           ) : null}
@@ -114,7 +114,7 @@ const ProductCardAdmin = ({ data, fetchData }) => {
       </div>
 
       {/* Action Buttons */}
-      <div className='px-3 pb-3 pt-1 flex items-center justify-between gap-2 border-t border-slate-100 bg-slate-50/50'>
+      <div className='px-3 pb-3 pt-1 flex items-center justify-between gap-2 border-t border-surface-border bg-surface-50/50'>
         <button
           type='button'
           onClick={() => setEditOpen(true)}

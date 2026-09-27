@@ -158,9 +158,9 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
   if (loading) {
     return (
       <div className='fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center z-50 p-4'>
-        <div className='bg-white p-6 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3'>
+        <div className='bg-white p-6 rounded-card shadow-modal border border-surface-border flex items-center gap-3'>
           <svg
-            className='animate-spin h-5 w-5 text-emerald-600'
+            className='animate-spin h-5 w-5 text-brand-600'
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
             viewBox='0 0 24 24'
@@ -179,7 +179,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
               d='M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z'
             />
           </svg>
-          <span className='text-sm font-semibold text-slate-800'>Loading SKU details...</span>
+          <span className='text-sm font-semibold text-surface-title'>Loading SKU details...</span>
         </div>
       </div>
     )
@@ -197,22 +197,22 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
       onClick={close}
     >
       <div
-        className='bg-white w-full max-w-3xl p-6 sm:p-7 rounded-2xl shadow-2xl border border-slate-200/80 relative my-auto max-h-[90vh] overflow-y-auto'
+        className='bg-white w-full max-w-3xl p-6 sm:p-7 rounded-card shadow-modal border border-surface-border relative my-auto max-h-[90vh] overflow-y-auto'
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className='flex items-center justify-between pb-4 mb-4 border-b border-slate-100'>
+        <div className='flex items-center justify-between pb-4 mb-4 border-b border-surface-border'>
           <div>
-            <h2 id='edit-product-heading' className='text-lg font-bold text-slate-900'>
+            <h2 id='edit-product-heading' className='text-lg font-bold text-surface-title'>
               Edit Product SKU
             </h2>
-            <p className='text-xs text-slate-500'>Update product details, pricing, and media</p>
+            <p className='text-xs text-surface-muted'>Update product details, pricing, and media</p>
           </div>
           <button
             type='button'
             onClick={close}
             aria-label='Close dialog'
-            className='text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer'
+            className='text-surface-muted hover:text-surface-title p-1.5 rounded-control hover:bg-surface-50 transition-colors cursor-pointer'
           >
             <IoClose size={22} />
           </button>
@@ -220,14 +220,14 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
 
         {/* Product Images Strip */}
         <div className='mb-5'>
-          <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2'>
+          <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-2'>
             Product Media
           </label>
           <div className='flex gap-3 overflow-x-auto pb-2'>
             {(data.images || []).map((img, idx) => (
               <div
                 key={idx}
-                className='relative w-24 h-24 border border-slate-200 rounded-xl overflow-hidden shrink-0 bg-slate-50 p-1'
+                className='relative w-24 h-24 border border-surface-border rounded-control overflow-hidden shrink-0 bg-surface-50 p-1'
               >
                 <img
                   src={img}
@@ -248,10 +248,10 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
               tabIndex={0}
               role='button'
               aria-label='Add more images'
-              className='w-24 h-24 border-2 border-dashed border-slate-300 hover:border-emerald-500 rounded-xl flex flex-col items-center justify-center cursor-pointer bg-slate-50 hover:bg-emerald-50/40 shrink-0 transition-colors'
+              className='w-24 h-24 border-2 border-dashed border-surface-border hover:border-brand-500 rounded-control flex flex-col items-center justify-center cursor-pointer bg-surface-50 hover:bg-brand-50/40 shrink-0 transition-colors'
             >
-              <FiUploadCloud size={20} className='text-slate-400 mb-1' />
-              <span className='text-[10px] font-semibold text-slate-600'>
+              <FiUploadCloud size={20} className='text-surface-muted mb-1' />
+              <span className='text-[10px] font-semibold text-surface-title'>
                 {saving ? 'Uploading...' : '+ Add'}
               </span>
               <input
@@ -267,7 +267,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
         {/* Form Fields */}
         <form onSubmit={handleSubmit} className='space-y-4'>
           <div>
-            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+            <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1'>
               Product Name *
             </label>
             <input
@@ -281,7 +281,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
 
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <div>
-              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+              <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1'>
                 Category *
               </label>
               <select
@@ -301,7 +301,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
             </div>
 
             <div>
-              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+              <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1'>
                 Subcategory *
               </label>
               <select
@@ -334,7 +334,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
 
           <div className='grid grid-cols-1 sm:grid-cols-3 gap-4'>
             <div>
-              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+              <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1'>
                 Unit / Size
               </label>
               <input
@@ -346,7 +346,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
             </div>
 
             <div>
-              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+              <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1'>
                 Price (₹) *
               </label>
               <input
@@ -360,7 +360,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
             </div>
 
             <div>
-              <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+              <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1'>
                 Stock
               </label>
               <input
@@ -374,7 +374,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
           </div>
 
           <div>
-            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+            <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1'>
               Discount (%)
             </label>
             <input
@@ -387,7 +387,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
           </div>
 
           <div>
-            <label className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1'>
+            <label className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1'>
               Description
             </label>
             <textarea
@@ -400,7 +400,7 @@ const EditProductAdmin = ({ close, productId, fetchData }) => {
           </div>
 
           {/* Action Buttons */}
-          <div className='flex items-center justify-end gap-3 pt-3 border-t border-slate-100'>
+          <div className='flex items-center justify-end gap-3 pt-3 border-t border-surface-border'>
             <button
               type='button'
               onClick={close}

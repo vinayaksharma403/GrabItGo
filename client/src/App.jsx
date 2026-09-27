@@ -11,21 +11,30 @@ import { setAllCategory, setAllSubCategory, setLoadingCategory } from './store/p
 import { useDispatch } from 'react-redux';
 import Axios from './utils/axios';
 import SummaryApi from './common/SummaryApi';
+import { useGlobalContext } from './provider/GlobalContext';
 
 function App() {
   const dispatch = useDispatch();
+  const { fetchAddress, fetchCart } = useGlobalContext() || {};
 
   const fetchUser = useCallback(async () => {
     try {
+      const token = localStorage.getItem('accessToken');
+      if (!token) return;
+
       const userData = await fetchUserDetails();
 
       if (userData?.data) {
         dispatch(setUserDetails(userData.data));
+
+        // Authenticated user: Initialize authoritative cart and address state
+        if (fetchCart) await fetchCart();
+        if (fetchAddress) await fetchAddress();
       }
     } catch (error) {
       console.error("fetchUser error:", error?.message || error);
     }
-  }, [dispatch]);
+  }, [dispatch, fetchCart, fetchAddress]);
 
   const fetchCategory = useCallback(async () => {
     try {
@@ -66,6 +75,7 @@ function App() {
     fetchCategory();
     fetchSubCategory();
   }, [fetchUser, fetchCategory, fetchSubCategory]);
+
 
   return (
     <>

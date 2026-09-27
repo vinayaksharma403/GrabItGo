@@ -18,15 +18,15 @@ const NotFoundPage = () => {
           <FiShoppingBag size={38} className='text-brand-600' />
         </div>
 
-        <div className='inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100/70 text-emerald-800 mb-3'>
+        <div className='inline-block px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-brand-50 text-brand-800 border border-brand-200/80 mb-3'>
           404 • Page Not Found
         </div>
 
-        <h1 className='text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-3'>
+        <h1 className='text-2xl sm:text-3xl font-extrabold text-surface-title tracking-tight mb-3'>
           Looking for Something Fresh?
         </h1>
 
-        <p className='text-sm sm:text-base text-slate-600 leading-relaxed mb-8 max-w-md mx-auto'>
+        <p className='text-sm sm:text-base text-surface-body leading-relaxed mb-8 max-w-md mx-auto'>
           We couldn’t find the page or product you were looking for. It might have been moved, renamed, or is temporarily unavailable.
         </p>
 
@@ -59,7 +59,7 @@ const NotFoundPage = () => {
         </div>
 
         {/* Quick Suggestion Box */}
-        <div className='mt-8 pt-6 border-t border-slate-100 text-xs text-slate-500'>
+        <div className='mt-8 pt-6 border-t border-surface-border text-xs text-surface-muted'>
           <span>Need help finding everyday essentials? </span>
           <Link to='/#categories' className='text-brand-600 hover:text-brand-700 font-semibold underline underline-offset-2'>
             Explore All Categories

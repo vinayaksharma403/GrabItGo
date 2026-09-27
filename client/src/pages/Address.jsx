@@ -56,10 +56,10 @@ const Address = () => {
       {/* Page Header */}
       <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
         <div>
-          <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+          <h1 className='text-2xl font-bold text-surface-title tracking-tight'>
             Saved Addresses
           </h1>
-          <p className='text-sm text-slate-500 mt-1'>
+          <p className='text-sm text-surface-muted mt-1'>
             Manage your delivery locations for fast 10-minute drop-offs
           </p>
         </div>
@@ -75,7 +75,7 @@ const Address = () => {
 
       {/* Address List or Empty State */}
       {addressList.length === 0 ? (
-        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-12'>
+        <div className='bg-white rounded-card border border-surface-border shadow-card p-6 sm:p-12'>
           <NoData
             icon={FiMapPin}
             title='No Saved Addresses'
@@ -89,11 +89,11 @@ const Address = () => {
           {addressList.map((address, index) => (
             <div
               key={address._id || index}
-              className='bg-white rounded-2xl border border-slate-200/80 shadow-card hover:border-slate-300 transition-all p-5 flex flex-col justify-between group'
+              className='bg-white rounded-card border border-surface-border shadow-card hover:border-surface-border-strong transition-all p-5 flex flex-col justify-between group'
             >
               <div>
                 <div className='flex items-center justify-between mb-3'>
-                  <div className='inline-flex items-center gap-2 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full'>
+                  <div className='inline-flex items-center gap-2 text-xs font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full'>
                     <FiMapPin size={13} />
                     <span>Address #{index + 1}</span>
                   </div>
@@ -102,7 +102,7 @@ const Address = () => {
                       type='button'
                       onClick={() => handleEditAddress(address)}
                       aria-label={`Edit address at ${address.city}`}
-                      className='p-1.5 text-slate-500 hover:text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors cursor-pointer'
+                      className='p-1.5 text-surface-muted hover:text-brand-600 hover:bg-brand-50 rounded-control transition-colors cursor-pointer'
                       title='Edit Address'
                     >
                       <FiEdit2 size={15} />
@@ -111,7 +111,7 @@ const Address = () => {
                       type='button'
                       onClick={() => setDeleteAddressId(address._id)}
                       aria-label={`Delete address at ${address.city}`}
-                      className='p-1.5 text-slate-500 hover:text-rose-600 hover:bg-rose-50 rounded-lg transition-colors cursor-pointer'
+                      className='p-1.5 text-surface-muted hover:text-rose-600 hover:bg-rose-50 rounded-control transition-colors cursor-pointer'
                       title='Delete Address'
                     >
                       <FiTrash2 size={15} />
@@ -119,18 +119,18 @@ const Address = () => {
                   </div>
                 </div>
 
-                <h3 className='font-bold text-slate-900 text-sm leading-snug mb-1'>
+                <h3 className='font-bold text-surface-title text-sm leading-snug mb-1'>
                   {address.address_line}
                 </h3>
-                <p className='text-xs text-slate-600 leading-relaxed'>
+                <p className='text-xs text-surface-muted leading-relaxed'>
                   {address.city}, {address.state} —{' '}
-                  <span className='font-semibold'>{address.pincode}</span>
+                  <span className='font-semibold text-surface-title'>{address.pincode}</span>
                 </p>
-                <p className='text-xs text-slate-500 mt-0.5'>{address.country}</p>
+                <p className='text-xs text-surface-muted mt-0.5'>{address.country}</p>
               </div>
 
-              <div className='pt-4 mt-3 border-t border-slate-100 flex items-center gap-2 text-xs text-slate-600 font-medium'>
-                <FiPhone size={13} className='text-slate-400' />
+              <div className='pt-4 mt-3 border-t border-surface-border flex items-center gap-2 text-xs text-surface-title font-medium'>
+                <FiPhone size={13} className='text-surface-muted' />
                 <span>Mobile: {address.mobile}</span>
               </div>
             </div>

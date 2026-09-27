@@ -17,11 +17,11 @@ const ConfirmBox = ({
       onKeyDown={(e) => {
         if (e.key === 'Escape') close?.()
       }}
-      className='fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex justify-center items-center p-4 animate-fadeIn'
+      className='fixed inset-0 z-50 bg-surface-title/60 backdrop-blur-xs flex justify-center items-center p-4 animate-fadeIn'
       onClick={close}
     >
       <div
-        className='bg-white w-full max-w-md p-6 rounded-2xl shadow-xl border border-slate-200/80 animate-fadeIn'
+        className='bg-white w-full max-w-md p-6 rounded-card shadow-modal border border-surface-border animate-fadeIn'
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -31,29 +31,29 @@ const ConfirmBox = ({
               <FiAlertTriangle size={20} />
             </div>
             <div>
-              <h2 id='confirm-dialog-title' className='text-base font-bold text-slate-900'>
+              <h2 id='confirm-dialog-title' className='text-base font-bold text-surface-title'>
                 {title}
               </h2>
-              <p className='text-xs text-slate-500'>Irreversible action</p>
+              <p className='text-xs text-surface-muted'>Irreversible action</p>
             </div>
           </div>
           <button
             type='button'
             onClick={close}
             aria-label='Close dialog'
-            className='text-slate-400 hover:text-slate-700 transition-colors cursor-pointer p-1 rounded-lg hover:bg-slate-100'
+            className='text-surface-muted hover:text-surface-title transition-colors cursor-pointer p-1 rounded-control hover:bg-surface-50'
           >
             <IoClose size={20} />
           </button>
         </div>
 
         {/* Body */}
-        <p className='text-sm text-slate-600 mb-6 leading-relaxed'>
+        <p className='text-sm text-surface-body mb-6 leading-relaxed'>
           {message}
         </p>
 
         {/* Buttons */}
-        <div className='flex justify-end gap-3 pt-2 border-t border-slate-100'>
+        <div className='flex justify-end gap-3 pt-2 border-t border-surface-border'>
           <button
             type='button'
             onClick={cancel}

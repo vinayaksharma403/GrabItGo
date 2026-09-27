@@ -29,7 +29,7 @@ const StatusBadge = ({ status }) => {
   const s = (status || 'pending').toLowerCase()
   if (s === 'paid') {
     return (
-      <span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/80'>
+      <span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200/80'>
         <FiCheckCircle size={13} />
         <span>Paid</span>
       </span>
@@ -37,7 +37,7 @@ const StatusBadge = ({ status }) => {
   }
   if (s === 'pending') {
     return (
-      <span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-700 border border-amber-200/80'>
+      <span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-50 text-amber-800 border border-amber-200/80'>
         <FiClock size={13} />
         <span>Pending</span>
       </span>
@@ -45,7 +45,7 @@ const StatusBadge = ({ status }) => {
   }
   if (s === 'cancelled') {
     return (
-      <span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 border border-slate-300/80'>
+      <span className='inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-surface-100 text-surface-title border border-surface-border'>
         <FiXCircle size={13} />
         <span>Cancelled</span>
       </span>
@@ -107,31 +107,34 @@ const OrderDetailModal = ({ order, onClose, onStatusUpdated }) => {
       role='dialog'
       aria-modal='true'
       aria-labelledby='modal-order-title'
+      onKeyDown={(e) => {
+        if (e.key === 'Escape') onClose?.()
+      }}
       className='fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 overflow-y-auto animate-fadeIn'
       onClick={onClose}
     >
       <div
-        className='bg-white rounded-2xl max-w-2xl w-full p-5 sm:p-7 shadow-modal border border-slate-200 relative my-auto max-h-[90vh] overflow-y-auto'
+        className='bg-white rounded-card max-w-2xl w-full p-5 sm:p-7 shadow-modal border border-surface-border relative my-auto max-h-[90vh] overflow-y-auto'
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className='flex items-start justify-between gap-3 pb-4 border-b border-slate-100'>
+        <div className='flex items-start justify-between gap-3 pb-4 border-b border-surface-border'>
           <div>
             <div className='flex items-center gap-2 flex-wrap'>
-              <h2 id='modal-order-title' className='text-lg sm:text-xl font-bold text-slate-900'>
+              <h2 id='modal-order-title' className='text-lg sm:text-xl font-bold text-surface-title'>
                 Order #{order?.orderId}
               </h2>
               <button
                 type='button'
                 onClick={() => handleCopy(order?.orderId, 'Order ID')}
                 title='Copy Order ID'
-                className='text-slate-400 hover:text-slate-600 p-1 rounded cursor-pointer'
+                className='text-surface-muted hover:text-surface-title p-1 rounded cursor-pointer'
               >
                 <FiCopy size={14} />
               </button>
               <StatusBadge status={order?.payment_status} />
             </div>
-            <p className='text-xs text-slate-500 mt-1'>
+            <p className='text-xs text-surface-muted mt-1'>
               Placed on {new Date(order?.createdAt).toLocaleDateString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}
             </p>
           </div>
@@ -139,7 +142,7 @@ const OrderDetailModal = ({ order, onClose, onStatusUpdated }) => {
             type='button'
             onClick={onClose}
             aria-label='Close modal'
-            className='p-1.5 rounded-full text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors cursor-pointer'
+            className='p-1.5 rounded-control text-surface-muted hover:text-surface-title hover:bg-surface-50 transition-colors cursor-pointer'
           >
             <FiX size={20} />
           </button>
@@ -150,65 +153,65 @@ const OrderDetailModal = ({ order, onClose, onStatusUpdated }) => {
           {/* Customer & Address Grid */}
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             {/* Customer Info */}
-            <div className='bg-slate-50 rounded-xl p-3.5 border border-slate-200/70'>
-              <div className='flex items-center gap-2 text-xs font-bold text-slate-700 mb-2 uppercase tracking-wider'>
+            <div className='bg-surface-50 rounded-control p-3.5 border border-surface-border'>
+              <div className='flex items-center gap-2 text-xs font-bold text-surface-title mb-2 uppercase tracking-wider'>
                 <FiUser size={14} className='text-brand-600' />
                 <span>Customer Details</span>
               </div>
-              <p className='text-sm font-semibold text-slate-900'>{customerName}</p>
-              <p className='text-xs text-slate-600 truncate mt-0.5'>{customerEmail}</p>
-              <p className='text-xs text-slate-500 mt-0.5'>Phone: {customerMobile}</p>
+              <p className='text-sm font-semibold text-surface-title'>{customerName}</p>
+              <p className='text-xs text-surface-muted truncate mt-0.5'>{customerEmail}</p>
+              <p className='text-xs text-surface-muted mt-0.5'>Phone: {customerMobile}</p>
             </div>
 
             {/* Delivery Address */}
-            <div className='bg-slate-50 rounded-xl p-3.5 border border-slate-200/70'>
-              <div className='flex items-center gap-2 text-xs font-bold text-slate-700 mb-2 uppercase tracking-wider'>
+            <div className='bg-surface-50 rounded-control p-3.5 border border-surface-border'>
+              <div className='flex items-center gap-2 text-xs font-bold text-surface-title mb-2 uppercase tracking-wider'>
                 <FiMapPin size={14} className='text-brand-600' />
                 <span>Delivery Address</span>
               </div>
               {address ? (
-                <div className='text-xs text-slate-700 leading-relaxed'>
+                <div className='text-xs text-surface-title leading-relaxed'>
                   <p className='font-medium'>{address.address_line}</p>
                   <p>{address.city}, {address.state} - {address.pincode}</p>
-                  <p className='text-slate-500 mt-0.5'>{address.country || 'India'} • Ph: {address.mobile}</p>
+                  <p className='text-surface-muted mt-0.5'>{address.country || 'India'} • Ph: {address.mobile}</p>
                 </div>
               ) : (
-                <p className='text-xs text-slate-400 italic'>No address record attached</p>
+                <p className='text-xs text-surface-muted italic'>No address record attached</p>
               )}
             </div>
           </div>
 
           {/* Ordered Line Items */}
           <div>
-            <h3 className='text-xs font-bold text-slate-700 uppercase tracking-wider mb-2.5'>
+            <h3 className='text-xs font-bold text-surface-title uppercase tracking-wider mb-2.5'>
               Ordered Items ({order?.items?.length || 0})
             </h3>
-            <div className='border border-slate-200 rounded-xl overflow-hidden divide-y divide-slate-100'>
+            <div className='border border-surface-border rounded-control overflow-hidden divide-y divide-surface-border'>
               {order?.items?.map((item, idx) => (
-                <div key={item.productId || idx} className='p-3 flex items-center justify-between gap-3 text-xs sm:text-sm hover:bg-slate-50/60'>
+                <div key={item.productId || idx} className='p-3 flex items-center justify-between gap-3 text-xs sm:text-sm hover:bg-surface-50'>
                   <div className='flex items-center gap-3 min-w-0'>
                     {item.image?.[0] ? (
                       <img
                         src={item.image[0]}
                         alt={item.name}
-                        className='w-11 h-11 object-cover rounded-lg bg-slate-100 shrink-0 border border-slate-200/60'
+                        className='w-11 h-11 object-cover rounded-control bg-surface-50 shrink-0 border border-surface-border'
                       />
                     ) : (
-                      <div className='w-11 h-11 rounded-lg bg-slate-100 flex items-center justify-center shrink-0 text-slate-400'>
+                      <div className='w-11 h-11 rounded-control bg-surface-50 flex items-center justify-center shrink-0 text-surface-muted'>
                         <FiPackage size={18} />
                       </div>
                     )}
                     <div className='min-w-0'>
-                      <p className='font-medium text-slate-900 truncate'>{item.name}</p>
-                      <p className='text-xs text-slate-500'>
+                      <p className='font-medium text-surface-title truncate'>{item.name}</p>
+                      <p className='text-xs text-surface-muted'>
                         {DisplayPriceInRupees(item.unitPrice)} × {item.quantity} units
                         {item.discountPercent > 0 && (
-                          <span className='ml-1.5 text-emerald-600 font-semibold'>({item.discountPercent}% OFF)</span>
+                          <span className='ml-1.5 text-brand-700 font-semibold'>({item.discountPercent}% OFF)</span>
                         )}
                       </p>
                     </div>
                   </div>
-                  <span className='font-bold text-slate-900 shrink-0'>
+                  <span className='font-bold text-surface-title shrink-0'>
                     {DisplayPriceInRupees(item.lineTotal)}
                   </span>
                 </div>
@@ -217,23 +220,23 @@ const OrderDetailModal = ({ order, onClose, onStatusUpdated }) => {
           </div>
 
           {/* Financial Summary */}
-          <div className='bg-slate-50 rounded-xl p-3.5 border border-slate-200/70 space-y-1.5 text-xs sm:text-sm'>
-            <div className='flex justify-between text-slate-600'>
+          <div className='bg-surface-50 rounded-control p-3.5 border border-surface-border space-y-1.5 text-xs sm:text-sm'>
+            <div className='flex justify-between text-surface-muted'>
               <span>Items Subtotal:</span>
               <span>{DisplayPriceInRupees(order?.subTotalAmt || order?.totalAmt)}</span>
             </div>
-            <div className='flex justify-between text-slate-600'>
+            <div className='flex justify-between text-surface-muted'>
               <span>Delivery Fee:</span>
-              <span className='text-emerald-700 font-medium'>FREE</span>
+              <span className='text-brand-700 font-medium'>FREE</span>
             </div>
-            <div className='flex justify-between font-extrabold text-slate-900 text-sm sm:text-base pt-1.5 border-t border-slate-200'>
+            <div className='flex justify-between font-extrabold text-surface-title text-sm sm:text-base pt-1.5 border-t border-surface-border'>
               <span>Total Payable Amount:</span>
               <span className='text-brand-700'>{DisplayPriceInRupees(order?.totalAmt)}</span>
             </div>
           </div>
 
           {/* Status Update Control Section */}
-          <div className='bg-amber-50/60 border border-amber-200/70 rounded-xl p-4'>
+          <div className='bg-amber-50/70 border border-amber-200/80 rounded-control p-4'>
             <h4 className='text-xs font-bold text-amber-900 uppercase tracking-wider mb-2.5'>
               Update Order & Payment Status
             </h4>
@@ -243,7 +246,7 @@ const OrderDetailModal = ({ order, onClose, onStatusUpdated }) => {
                 onChange={(e) => setSelectedStatus(e.target.value)}
                 disabled={updating}
                 aria-label='Select new order status'
-                className='input-field py-2 text-xs sm:text-sm bg-white font-medium text-slate-800'
+                className='input-field py-2 text-xs sm:text-sm bg-white font-medium text-surface-title'
               >
                 <option value='pending'>Payment Pending (pending)</option>
                 <option value='paid'>Paid & Settled (paid)</option>
@@ -269,7 +272,7 @@ const OrderDetailModal = ({ order, onClose, onStatusUpdated }) => {
         </div>
 
         {/* Footer */}
-        <div className='pt-3 border-t border-slate-100 flex justify-end'>
+        <div className='pt-3 border-t border-surface-border flex justify-end'>
           <button
             type='button'
             onClick={onClose}
@@ -364,7 +367,7 @@ const AdminOrders = () => {
       <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
         <div>
           <div className='flex items-center gap-2'>
-            <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+            <h1 className='text-2xl font-bold text-surface-title tracking-tight'>
               Customer Orders
             </h1>
             {!loading && totalCount > 0 && (
@@ -373,7 +376,7 @@ const AdminOrders = () => {
               </span>
             )}
           </div>
-          <p className='text-sm text-slate-500 mt-1'>
+          <p className='text-sm text-surface-muted mt-1'>
             Inspect real-time customer purchases, review delivery addresses, and manage fulfillment status
           </p>
         </div>
@@ -391,10 +394,10 @@ const AdminOrders = () => {
       </div>
 
       {/* Filter & Search Bar */}
-      <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-4 space-y-3 sm:space-y-0 sm:flex sm:items-center sm:justify-between sm:gap-4'>
+      <div className='bg-white rounded-card border border-surface-border shadow-card p-4 space-y-3 sm:space-y-0 sm:flex sm:items-center sm:justify-between sm:gap-4'>
         {/* Search */}
         <div className='relative flex-1 max-w-md'>
-          <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400'>
+          <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-surface-muted'>
             <FiSearch size={16} />
           </div>
           <input
@@ -409,7 +412,7 @@ const AdminOrders = () => {
 
         {/* Status Filter & Reset */}
         <div className='flex items-center gap-2.5 flex-wrap sm:flex-nowrap'>
-          <div className='flex items-center gap-1.5 text-xs text-slate-500 font-medium shrink-0'>
+          <div className='flex items-center gap-1.5 text-xs text-surface-muted font-medium shrink-0'>
             <FiFilter size={14} />
             <span>Status:</span>
           </div>
@@ -420,7 +423,7 @@ const AdminOrders = () => {
               setPage(1)
             }}
             aria-label='Filter orders by status'
-            className='input-field py-2 text-xs sm:text-sm bg-white font-medium text-slate-700 min-w-[140px]'
+            className='input-field py-2 text-xs sm:text-sm bg-white font-medium text-surface-title min-w-[140px]'
           >
             <option value=''>All Statuses</option>
             <option value='paid'>Paid</option>
@@ -433,7 +436,7 @@ const AdminOrders = () => {
             <button
               type='button'
               onClick={handleClearFilters}
-              className='text-xs font-semibold text-rose-600 hover:text-rose-700 hover:bg-rose-50 px-2.5 py-2 rounded-lg transition-colors cursor-pointer shrink-0'
+              className='text-xs font-semibold text-rose-600 hover:text-rose-700 hover:bg-rose-50 px-2.5 py-2 rounded-control transition-colors cursor-pointer shrink-0'
             >
               Reset
             </button>
@@ -443,21 +446,21 @@ const AdminOrders = () => {
 
       {/* Loading Skeletons */}
       {loading ? (
-        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-4 space-y-3'>
+        <div className='bg-white rounded-card border border-surface-border shadow-card p-4 space-y-3'>
           {[1, 2, 3, 4, 5].map((n) => (
-            <div key={n} className='animate-pulse flex items-center justify-between p-3 bg-slate-50 rounded-xl gap-4'>
+            <div key={n} className='animate-pulse flex items-center justify-between p-3 bg-surface-50 rounded-control gap-4'>
               <div className='space-y-2 flex-1'>
-                <div className='h-4 bg-slate-200 rounded w-1/4' />
-                <div className='h-3 bg-slate-200 rounded w-1/3' />
+                <div className='h-4 bg-surface-100 rounded w-1/4' />
+                <div className='h-3 bg-surface-100 rounded w-1/3' />
               </div>
-              <div className='h-6 bg-slate-200 rounded-full w-20' />
-              <div className='h-8 bg-slate-200 rounded-lg w-24' />
+              <div className='h-6 bg-surface-100 rounded-full w-20' />
+              <div className='h-8 bg-surface-100 rounded-control w-24' />
             </div>
           ))}
         </div>
       ) : orders.length === 0 ? (
         /* Empty State */
-        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card py-16 px-4'>
+        <div className='bg-white rounded-card border border-surface-border shadow-card py-16 px-4'>
           <NoData
             title='No Orders Found'
             description={
@@ -471,10 +474,10 @@ const AdminOrders = () => {
         /* Orders Presentation */
         <div className='space-y-4'>
           {/* Desktop Table View */}
-          <div className='hidden md:block bg-white rounded-2xl border border-slate-200/80 shadow-card overflow-hidden'>
+          <div className='hidden md:block bg-white rounded-card border border-surface-border shadow-card overflow-hidden'>
             <div className='overflow-x-auto'>
-              <table className='w-full text-left text-xs sm:text-sm text-slate-700'>
-                <thead className='bg-slate-50 text-[11px] font-bold text-slate-500 uppercase tracking-wider border-b border-slate-200/80'>
+              <table className='w-full text-left text-xs sm:text-sm text-surface-title'>
+                <thead className='bg-surface-50 text-[11px] font-bold text-surface-muted uppercase tracking-wider border-b border-surface-border'>
                   <tr>
                     <th scope='col' className='px-4 py-3.5'>Order ID</th>
                     <th scope='col' className='px-4 py-3.5'>Customer</th>
@@ -485,23 +488,23 @@ const AdminOrders = () => {
                     <th scope='col' className='px-4 py-3.5 text-right'>Action</th>
                   </tr>
                 </thead>
-                <tbody className='divide-y divide-slate-100'>
+                <tbody className='divide-y divide-surface-border'>
                   {orders.map((order) => {
                     const custName = order?.userId?.name || 'Guest Customer'
                     const custEmail = order?.userId?.email || ''
                     const itemCount = order?.items?.reduce((sum, it) => sum + (it.quantity || 1), 0) || 0
 
                     return (
-                      <tr key={order._id} className='hover:bg-slate-50/80 transition-colors'>
+                      <tr key={order._id} className='hover:bg-surface-50/80 transition-colors'>
                         {/* Order ID */}
-                        <td className='px-4 py-3.5 font-semibold text-slate-900'>
+                        <td className='px-4 py-3.5 font-semibold text-surface-title'>
                           <div className='flex items-center gap-1.5'>
-                            <span className='font-mono text-xs text-slate-800'>{order.orderId}</span>
+                            <span className='font-mono text-xs text-surface-title'>{order.orderId}</span>
                             <button
                               type='button'
                               onClick={() => handleCopyOrderId(order.orderId)}
                               title='Copy Order ID'
-                              className='text-slate-400 hover:text-slate-600 p-0.5 rounded cursor-pointer'
+                              className='text-surface-muted hover:text-surface-title p-0.5 rounded cursor-pointer'
                             >
                               <FiCopy size={12} />
                             </button>
@@ -510,12 +513,12 @@ const AdminOrders = () => {
 
                         {/* Customer */}
                         <td className='px-4 py-3.5'>
-                          <p className='font-semibold text-slate-900'>{custName}</p>
-                          {custEmail && <p className='text-xs text-slate-500 truncate max-w-[180px]'>{custEmail}</p>}
+                          <p className='font-semibold text-surface-title'>{custName}</p>
+                          {custEmail && <p className='text-xs text-surface-muted truncate max-w-[180px]'>{custEmail}</p>}
                         </td>
 
                         {/* Date */}
-                        <td className='px-4 py-3.5 text-xs text-slate-500 whitespace-nowrap'>
+                        <td className='px-4 py-3.5 text-xs text-surface-muted whitespace-nowrap'>
                           {new Date(order.createdAt).toLocaleDateString('en-IN', {
                             dateStyle: 'short',
                             timeStyle: 'short',
@@ -524,14 +527,14 @@ const AdminOrders = () => {
 
                         {/* Items */}
                         <td className='px-4 py-3.5'>
-                          <span className='inline-flex items-center gap-1 text-slate-700 font-medium'>
-                            <FiPackage size={14} className='text-slate-400' />
+                          <span className='inline-flex items-center gap-1 text-surface-title font-medium'>
+                            <FiPackage size={14} className='text-surface-muted' />
                             <span>{itemCount} {itemCount === 1 ? 'item' : 'items'}</span>
                           </span>
                         </td>
 
                         {/* Total */}
-                        <td className='px-4 py-3.5 font-bold text-slate-900 whitespace-nowrap'>
+                        <td className='px-4 py-3.5 font-bold text-surface-title whitespace-nowrap'>
                           {DisplayPriceInRupees(order.totalAmt)}
                         </td>
 
@@ -568,22 +571,22 @@ const AdminOrders = () => {
               return (
                 <div
                   key={order._id}
-                  className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-4 space-y-3'
+                  className='bg-white rounded-card border border-surface-border shadow-card p-4 space-y-3'
                 >
                   <div className='flex items-start justify-between gap-2'>
                     <div>
                       <div className='flex items-center gap-1.5'>
-                        <span className='font-mono font-bold text-xs text-slate-900'>#{order.orderId}</span>
+                        <span className='font-mono font-bold text-xs text-surface-title'>#{order.orderId}</span>
                         <button
                           type='button'
                           onClick={() => handleCopyOrderId(order.orderId)}
                           aria-label='Copy Order ID'
-                          className='text-slate-400 hover:text-slate-600 p-0.5'
+                          className='text-surface-muted hover:text-surface-title p-0.5'
                         >
                           <FiCopy size={12} />
                         </button>
                       </div>
-                      <p className='text-xs text-slate-500 mt-0.5'>
+                      <p className='text-xs text-surface-muted mt-0.5'>
                         {new Date(order.createdAt).toLocaleDateString('en-IN', {
                           dateStyle: 'medium',
                           timeStyle: 'short',
@@ -593,14 +596,14 @@ const AdminOrders = () => {
                     <StatusBadge status={order.payment_status} />
                   </div>
 
-                  <div className='flex items-center justify-between text-xs text-slate-600 pt-2 border-t border-slate-100'>
-                    <span>Customer: <strong className='text-slate-900'>{custName}</strong></span>
+                  <div className='flex items-center justify-between text-xs text-surface-title pt-2 border-t border-surface-border'>
+                    <span>Customer: <strong className='text-surface-title'>{custName}</strong></span>
                     <span>{itemCount} {itemCount === 1 ? 'item' : 'items'}</span>
                   </div>
 
-                  <div className='flex items-center justify-between pt-2 border-t border-slate-100'>
+                  <div className='flex items-center justify-between pt-2 border-t border-surface-border'>
                     <div>
-                      <span className='text-[11px] text-slate-400 uppercase font-bold tracking-wider'>Total: </span>
+                      <span className='text-[11px] text-surface-muted uppercase font-bold tracking-wider'>Total: </span>
                       <span className='text-sm font-extrabold text-brand-700'>
                         {DisplayPriceInRupees(order.totalAmt)}
                       </span>
@@ -622,9 +625,9 @@ const AdminOrders = () => {
 
           {/* Pagination Controls */}
           {totalPages > 1 && (
-            <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm text-slate-600'>
+            <div className='bg-white rounded-card border border-surface-border shadow-card p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm text-surface-muted'>
               <span>
-                Showing page <strong className='text-slate-900'>{page}</strong> of <strong className='text-slate-900'>{totalPages}</strong> ({totalCount} total orders)
+                Showing page <strong className='text-surface-title'>{page}</strong> of <strong className='text-surface-title'>{totalPages}</strong> ({totalCount} total orders)
               </span>
 
               <div className='flex items-center gap-2'>

@@ -67,20 +67,20 @@ const Profile = () => {
     <div className='space-y-6 animate-fadeIn'>
       {/* Page Title */}
       <div>
-        <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+        <h1 className='text-2xl font-bold text-surface-title tracking-tight'>
           Profile Settings
         </h1>
-        <p className='text-sm text-slate-500 mt-1'>
+        <p className='text-sm text-surface-muted mt-1'>
           Manage your account information and contact preferences
         </p>
       </div>
 
       {/* Main Profile Card */}
-      <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-8'>
+      <div className='bg-white rounded-card border border-surface-border shadow-card p-6 sm:p-8'>
         {/* Avatar Section */}
-        <div className='flex flex-col sm:flex-row items-center sm:items-start gap-5 pb-6 border-b border-slate-100'>
+        <div className='flex flex-col sm:flex-row items-center sm:items-start gap-5 pb-6 border-b border-surface-border'>
           <div className='relative group'>
-            <div className='w-24 h-24 rounded-full overflow-hidden ring-4 ring-emerald-500/10 shadow-md bg-slate-100 flex items-center justify-center'>
+            <div className='w-24 h-24 rounded-full overflow-hidden ring-4 ring-brand-500/10 shadow-md bg-surface-100 flex items-center justify-center'>
               {user.avatar ? (
                 <img
                   alt={user.name ? `${user.name}'s profile avatar` : 'Profile avatar'}
@@ -91,14 +91,14 @@ const Profile = () => {
                   }}
                 />
               ) : (
-                <FaCircleUser size={72} className='text-slate-300' />
+                <FaCircleUser size={72} className='text-surface-muted/60' />
               )}
             </div>
             <button
               type='button'
               onClick={() => setProfileAvatarEdit(true)}
               aria-label='Edit profile avatar'
-              className='absolute bottom-0 right-0 p-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full shadow-md transition-transform hover:scale-105 cursor-pointer'
+              className='absolute bottom-0 right-0 p-2 bg-brand-600 hover:bg-brand-700 text-white rounded-full shadow-md transition-transform hover:scale-105 cursor-pointer'
               title='Change avatar'
             >
               <FiCamera size={15} />
@@ -107,25 +107,25 @@ const Profile = () => {
 
           <div className='text-center sm:text-left flex-1'>
             <div className='flex flex-wrap items-center justify-center sm:justify-start gap-2'>
-              <h2 className='text-lg font-bold text-slate-900'>
+              <h2 className='text-lg font-bold text-surface-title'>
                 {user.name || 'GrabItGo User'}
               </h2>
               {user.verify_email ? (
-                <span className='inline-flex items-center gap-1 text-[11px] font-semibold bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full'>
+                <span className='inline-flex items-center gap-1 text-[11px] font-semibold bg-emerald-50 text-emerald-800 px-2 py-0.5 rounded-full border border-emerald-200/80'>
                   <FiCheckCircle size={12} />
                   Verified
                 </span>
               ) : (
-                <span className='inline-flex items-center gap-1 text-[11px] font-semibold bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full'>
+                <span className='inline-flex items-center gap-1 text-[11px] font-semibold bg-amber-50 text-amber-800 px-2 py-0.5 rounded-full border border-amber-200/80'>
                   Unverified
                 </span>
               )}
             </div>
-            <p className='text-sm text-slate-500 mt-0.5'>{user.email || 'No email attached'}</p>
+            <p className='text-sm text-surface-muted mt-0.5'>{user.email || 'No email attached'}</p>
             <button
               type='button'
               onClick={() => setProfileAvatarEdit(true)}
-              className='mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600 hover:text-emerald-700 hover:bg-emerald-50 px-3 py-1.5 rounded-lg transition-colors cursor-pointer border border-emerald-200'
+              className='mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 hover:text-brand-700 hover:bg-brand-50 px-3 py-1.5 rounded-control transition-colors cursor-pointer border border-brand-200'
             >
               <FiCamera size={13} />
               <span>Change Photo</span>
@@ -140,12 +140,12 @@ const Profile = () => {
             <div>
               <label
                 htmlFor='name'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Full Name
               </label>
               <div className='relative'>
-                <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400'>
+                <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-surface-muted'>
                   <FiUser size={16} />
                 </div>
                 <input
@@ -165,12 +165,12 @@ const Profile = () => {
             <div>
               <label
                 htmlFor='email'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Email Address
               </label>
               <div className='relative'>
-                <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400'>
+                <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-surface-muted'>
                   <FiMail size={16} />
                 </div>
                 <input
@@ -190,12 +190,12 @@ const Profile = () => {
             <div className='sm:col-span-2 max-w-md'>
               <label
                 htmlFor='mobile'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Mobile Number
               </label>
               <div className='relative'>
-                <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400'>
+                <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-surface-muted'>
                   <FiPhone size={16} />
                 </div>
                 <input
@@ -254,16 +254,16 @@ const Profile = () => {
       </div>
 
       {/* Security & Password Card */}
-      <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4'>
+      <div className='bg-white rounded-card border border-surface-border shadow-card p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4'>
         <div className='flex items-start gap-4'>
-          <div className='p-3 bg-amber-50 text-amber-600 rounded-xl shrink-0'>
+          <div className='p-3 bg-amber-50 text-amber-700 rounded-control shrink-0 border border-amber-200/80'>
             <FiShield size={22} />
           </div>
           <div>
-            <h3 className='font-bold text-slate-900 text-sm'>
+            <h3 className='font-bold text-surface-title text-sm'>
               Account Security & Password
             </h3>
-            <p className='text-xs text-slate-500 mt-0.5 leading-relaxed'>
+            <p className='text-xs text-surface-muted mt-0.5 leading-relaxed'>
               Need to update your account password? Use our secure OTP-verified password reset.
             </p>
           </div>

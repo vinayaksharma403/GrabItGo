@@ -4,6 +4,7 @@ import SummaryApi from '../common/SummaryApi';
 import AxiosToastError from '../utils/AxiosToastError';
 import { useDispatch } from 'react-redux';
 import { setAddressList } from '../store/addressSlice';
+import { updateCart } from '../store/userSlice';
 import { GlobalContext } from './GlobalContext';
 
 const GlobalProvider = ({ children }) => {
@@ -13,15 +14,47 @@ const GlobalProvider = ({ children }) => {
 
   const fetchAddress = useCallback(async () => {
     try {
+      const token = localStorage.getItem('accessToken');
+      if (!token) return [];
+
       const response = await Axios({
         ...SummaryApi.getAddress,
       });
       const { data: responseData } = response;
       if (responseData.success) {
-        dispatch(setAddressList(responseData.data));
+        const addressData = responseData.data || [];
+        dispatch(setAddressList(addressData));
+        return addressData;
       }
+      return [];
     } catch (err) {
-      AxiosToastError(err);
+      if (err?.response?.status !== 401) {
+        AxiosToastError(err);
+      }
+      return [];
+    }
+  }, [dispatch]);
+
+  const fetchCart = useCallback(async () => {
+    try {
+      const token = localStorage.getItem('accessToken');
+      if (!token) return [];
+
+      const response = await Axios({
+        ...SummaryApi.getCart,
+      });
+      const { data: responseData } = response;
+      if (responseData.success) {
+        const cartData = responseData.data || [];
+        dispatch(updateCart(cartData));
+        return cartData;
+      }
+      return [];
+    } catch (err) {
+      if (err?.response?.status !== 401) {
+        AxiosToastError(err);
+      }
+      return [];
     }
   }, [dispatch]);
 
@@ -32,8 +65,9 @@ const GlobalProvider = ({ children }) => {
       error,
       setError,
       fetchAddress,
+      fetchCart,
     }),
-    [isLoading, error, fetchAddress]
+    [isLoading, error, fetchAddress, fetchCart]
   );
 
   return (
@@ -44,3 +78,4 @@ const GlobalProvider = ({ children }) => {
 };
 
 export default GlobalProvider;
+

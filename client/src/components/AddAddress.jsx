@@ -67,24 +67,24 @@ const AddAddress = ({ close, selectedAddress }) => {
       onKeyDown={(e) => {
         if (e.key === 'Escape') close?.()
       }}
-      className='fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 overflow-y-auto animate-fadeIn'
+      className='fixed inset-0 bg-surface-title/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 z-50 overflow-y-auto animate-fadeIn'
       onClick={() => close?.()}
     >
       <div
-        className='bg-white w-full max-w-lg rounded-2xl shadow-xl border border-slate-200/80 my-auto max-h-[90vh] overflow-y-auto'
+        className='bg-white w-full max-w-lg rounded-card shadow-modal border border-surface-border my-auto max-h-[92vh] overflow-y-auto'
         onClick={(e) => e.stopPropagation()}
       >
         {/* Modal Header */}
-        <div className='flex items-center justify-between p-5 border-b border-slate-100'>
+        <div className='flex items-center justify-between p-4 sm:p-5 border-b border-surface-border'>
           <div className='flex items-center gap-2.5'>
-            <div className='w-9 h-9 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shadow-subtle'>
+            <div className='w-9 h-9 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shadow-subtle'>
               <FiMapPin size={18} />
             </div>
             <div>
-              <h2 id='address-dialog-title' className='text-base font-bold text-slate-900'>
-                {selectedAddress ? 'Edit Delivery Address' : 'Add New Address'}
+              <h2 id='address-dialog-title' className='text-base font-bold text-surface-title'>
+                {selectedAddress ? 'Edit Delivery Address' : 'Add Delivery Address'}
               </h2>
-              <p className='text-xs text-slate-500'>
+              <p className='text-xs text-surface-muted'>
                 {selectedAddress ? 'Update address details below' : 'Where should we deliver your orders?'}
               </p>
             </div>
@@ -93,19 +93,19 @@ const AddAddress = ({ close, selectedAddress }) => {
             type='button'
             onClick={close}
             aria-label='Close dialog'
-            className='p-1.5 hover:bg-slate-100 rounded-lg transition-colors text-slate-400 hover:text-slate-700 cursor-pointer'
+            className='p-1.5 hover:bg-surface-50 rounded-control transition-colors text-surface-muted hover:text-surface-title cursor-pointer'
           >
             <IoClose size={20} />
           </button>
         </div>
 
         {/* Modal Form */}
-        <form onSubmit={handleSubmit} className='p-5 space-y-4'>
+        <form onSubmit={handleSubmit} className='p-4 sm:p-5 space-y-4'>
           {/* Address Line */}
           <div>
             <label
               htmlFor='address_line'
-              className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
             >
               Flat, House No., Building, Street / Area
             </label>
@@ -126,7 +126,7 @@ const AddAddress = ({ close, selectedAddress }) => {
             <div>
               <label
                 htmlFor='address_city'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 City / District
               </label>
@@ -144,7 +144,7 @@ const AddAddress = ({ close, selectedAddress }) => {
             <div>
               <label
                 htmlFor='address_state'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 State
               </label>
@@ -166,7 +166,7 @@ const AddAddress = ({ close, selectedAddress }) => {
             <div>
               <label
                 htmlFor='address_pincode'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Pincode / Postal Code
               </label>
@@ -184,7 +184,7 @@ const AddAddress = ({ close, selectedAddress }) => {
             <div>
               <label
                 htmlFor='address_country'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Country
               </label>
@@ -205,12 +205,12 @@ const AddAddress = ({ close, selectedAddress }) => {
           <div>
             <label
               htmlFor='address_mobile'
-              className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
             >
               Contact Mobile Number
             </label>
             <div className='relative'>
-              <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400'>
+              <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-surface-muted'>
                 <FiPhone size={15} />
               </div>
               <input
@@ -227,7 +227,7 @@ const AddAddress = ({ close, selectedAddress }) => {
           </div>
 
           {/* Actions */}
-          <div className='flex items-center justify-end gap-3 pt-4 border-t border-slate-100'>
+          <div className='flex items-center justify-end gap-3 pt-4 border-t border-surface-border'>
             <button
               type='button'
               onClick={close}
@@ -238,7 +238,7 @@ const AddAddress = ({ close, selectedAddress }) => {
             <button
               type='submit'
               disabled={loading}
-              className='btn-primary py-2.5 px-5 text-xs font-semibold inline-flex items-center gap-2'
+              className='btn-primary py-2.5 px-5 text-xs font-semibold inline-flex items-center gap-2 cursor-pointer disabled:opacity-50'
             >
               {loading ? (
                 <span>Saving...</span>

@@ -1,13 +1,14 @@
-import React, { useEffect, useState, useCallback } from 'react'
+import React, { useEffect, useState, useCallback, useRef } from 'react'
 import Axios from '../utils/axios'
 import SummaryApi from '../common/SummaryApi'
 import AxiosToastError from '../utils/AxiosToastError'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import toast from 'react-hot-toast'
 import { loadStripe } from '@stripe/stripe-js'
 import NoData from '../components/NoData'
+import AddAddress from '../components/AddAddress'
 import {
   FiMinus,
   FiPlus,
@@ -20,9 +21,12 @@ import {
   FiMapPin
 } from 'react-icons/fi'
 import { LuPackage, LuShoppingBag } from 'react-icons/lu'
+import { createProductURL } from '../utils/validURLConver'
+import { useGlobalContext } from '../provider/GlobalContext'
+import { updateCart } from '../store/userSlice'
 
 // Stripe Payment Modal Component
-const StripePaymentModal = ({ clientSecret, publishableKey, order, onClose, onSuccess }) => {
+const StripePaymentModal = ({ clientSecret, publishableKey, order, onClose, onSuccess, fetchCart }) => {
   const [stripe, setStripe] = useState(null)
   const [elements, setElements] = useState(null)
   const [isProcessing, setIsProcessing] = useState(false)
@@ -31,6 +35,8 @@ const StripePaymentModal = ({ clientSecret, publishableKey, order, onClose, onSu
 
   useEffect(() => {
     let unmounted = false
+    let paymentElementInstance = null
+
     const initStripe = async () => {
       try {
         if (!publishableKey) {
@@ -42,19 +48,32 @@ const StripePaymentModal = ({ clientSecret, publishableKey, order, onClose, onSu
         setStripe(stripeInstance)
 
         const elementsInstance = stripeInstance.elements({ clientSecret })
+        if (unmounted) return
         setElements(elementsInstance)
 
-        const paymentElement = elementsInstance.create('payment')
-        paymentElement.mount('#stripe-payment-element-container')
-        setIsMounted(true)
+        const container = document.getElementById('stripe-payment-element-container')
+        if (container && !unmounted) {
+          container.innerHTML = '' // Prevent React 19 duplicate mount artifacts
+          paymentElementInstance = elementsInstance.create('payment')
+          paymentElementInstance.mount('#stripe-payment-element-container')
+          setIsMounted(true)
+        }
       } catch (err) {
-        setErrorMessage(err.message || 'Failed to initialize payment form')
+        if (!unmounted) {
+          setErrorMessage(err.message || 'Failed to initialize payment form')
+        }
       }
     }
 
     initStripe()
     return () => {
       unmounted = true
+      try {
+        paymentElementInstance?.unmount()
+        paymentElementInstance?.destroy()
+      } catch {
+        // cleanup ignore
+      }
     }
   }, [clientSecret, publishableKey])
 
@@ -75,12 +94,18 @@ const StripePaymentModal = ({ clientSecret, publishableKey, order, onClose, onSu
       })
 
       if (error) {
-        setErrorMessage(error.message || 'Payment failed. Please try again.')
+        setErrorMessage(error.message || 'Payment failed. Please check your card details and try again.')
       } else if (paymentIntent && (paymentIntent.status === 'succeeded' || paymentIntent.status === 'processing')) {
         toast.success('Payment successful! Your order has been placed.')
+        if (fetchCart) {
+          await fetchCart()
+        }
         onSuccess()
       } else {
         toast.success('Payment processed successfully!')
+        if (fetchCart) {
+          await fetchCart()
+        }
         onSuccess()
       }
     } catch (err) {
@@ -229,7 +254,7 @@ const CartItemRow = ({ item, updatingId, onUpdateQty, onRemove }) => {
           <div className='flex justify-between items-start gap-2'>
             <div>
               <Link
-                to={`/product/${product._id}`}
+                to={createProductURL(product.name, product._id)}
                 className='font-semibold text-xs sm:text-sm text-surface-title hover:text-brand-700 transition-colors line-clamp-2'
               >
                 {product.name || 'Product Item'}
@@ -303,32 +328,52 @@ const CartItemRow = ({ item, updatingId, onUpdateQty, onRemove }) => {
 const Cart = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
+  const [initialLoading, setInitialLoading] = useState(true)
   const [updatingId, setUpdatingId] = useState(null)
   const [checkoutLoading, setCheckoutLoading] = useState(false)
   const [selectedAddressId, setSelectedAddressId] = useState('')
   const [checkoutErrors, setCheckoutErrors] = useState([])
   const [stripePaymentData, setStripePaymentData] = useState(null)
+  const [openAddAddress, setOpenAddAddress] = useState(false)
+
+  const isCheckingOutRef = useRef(false)
+  const isUpdatingRef = useRef(false)
 
   const user = useSelector((state) => state.user)
   const addressList = useSelector((state) => state.addresses.addressList)
+  const dispatch = useDispatch()
   const navigate = useNavigate()
+  const location = useLocation()
+  const { fetchAddress, fetchCart: globalFetchCart } = useGlobalContext() || {}
 
   const fetchCart = useCallback(async () => {
     try {
+      const token = localStorage.getItem('accessToken')
+      if (!token) {
+        setData([])
+        setInitialLoading(false)
+        return
+      }
+
       setLoading(true)
       const response = await Axios({
         ...SummaryApi.getCart,
       })
       const { data: responseData } = response
       if (responseData.success) {
-        setData(responseData.data || [])
+        const items = responseData.data || []
+        setData(items)
+        dispatch(updateCart(items))
       }
     } catch (error) {
-      AxiosToastError(error)
+      if (error?.response?.status !== 401) {
+        AxiosToastError(error)
+      }
     } finally {
       setLoading(false)
+      setInitialLoading(false)
     }
-  }, [])
+  }, [dispatch])
 
   useEffect(() => {
     if (addressList && addressList.length > 0) {
@@ -336,8 +381,19 @@ const Cart = () => {
     }
   }, [addressList])
 
+  // Handle auto-checkout if user navigated via Buy Now
+  useEffect(() => {
+    if (location.state?.autoCheckout && !initialLoading && !loading) {
+      if (!addressList || addressList.length === 0) {
+        setOpenAddAddress(true)
+      }
+    }
+  }, [location.state, initialLoading, loading, addressList])
+
   const updateQuantity = async (cartId, quantity) => {
+    if (isUpdatingRef.current) return
     try {
+      isUpdatingRef.current = true
       setUpdatingId(cartId)
       const response = await Axios({
         ...SummaryApi.updateCart,
@@ -346,17 +402,20 @@ const Cart = () => {
       const { data: responseData } = response
       if (responseData.success) {
         setCheckoutErrors([])
-        fetchCart()
+        await fetchCart()
       }
     } catch (error) {
       AxiosToastError(error)
     } finally {
       setUpdatingId(null)
+      isUpdatingRef.current = false
     }
   }
 
   const removeItem = async (cartId) => {
+    if (isUpdatingRef.current) return
     try {
+      isUpdatingRef.current = true
       setUpdatingId(cartId)
       const response = await Axios({
         ...SummaryApi.removeFromCart,
@@ -366,16 +425,17 @@ const Cart = () => {
       if (responseData.success) {
         toast.success('Removed from cart')
         setCheckoutErrors([])
-        fetchCart()
+        await fetchCart()
       }
     } catch (error) {
       AxiosToastError(error)
     } finally {
       setUpdatingId(null)
+      isUpdatingRef.current = false
     }
   }
 
-  const validItems = data.filter((item) => Boolean(item.productId))
+  const validItems = data.filter((item) => Boolean(item?.productId && typeof item.productId === 'object' && item.productId?._id))
 
   const totalQty = validItems.reduce((prev, curr) => prev + (Number(curr.quantity) || 0), 0)
   const totalPrice = validItems.reduce((prev, curr) => {
@@ -386,9 +446,11 @@ const Cart = () => {
   }, 0)
 
   const handleCheckout = async () => {
+    if (isCheckingOutRef.current || checkoutLoading) return
+
     if (!user?._id) {
       toast.error('Please login to proceed to checkout')
-      navigate('/login')
+      navigate('/login', { state: { from: '/cart' } })
       return
     }
 
@@ -405,12 +467,13 @@ const Cart = () => {
         : user.address_details?.[0])
 
     if (!addressId) {
-      toast.error('Please add a delivery address before proceeding')
-      navigate('/dashboard/address')
+      toast.error('Please add a delivery address to complete your order')
+      setOpenAddAddress(true)
       return
     }
 
     try {
+      isCheckingOutRef.current = true
       setCheckoutLoading(true)
       setCheckoutErrors([])
 
@@ -432,6 +495,9 @@ const Cart = () => {
           })
         } else {
           toast.success('Order placed successfully!')
+          if (fetchCart) {
+            await fetchCart()
+          }
           navigate('/dashboard/myorders')
         }
       }
@@ -444,14 +510,23 @@ const Cart = () => {
       }
     } finally {
       setCheckoutLoading(false)
+      isCheckingOutRef.current = false
     }
   }
 
   useEffect(() => {
-    if (user?._id) {
+    const token = localStorage.getItem('accessToken')
+    if (token) {
       fetchCart()
+      if (!addressList || addressList.length === 0) {
+        fetchAddress?.()
+      }
+    } else {
+      setInitialLoading(false)
     }
-  }, [user?._id, fetchCart])
+  }, [user?._id, fetchCart, fetchAddress, addressList])
+
+  const isAuthenticated = Boolean(user?._id || localStorage.getItem('accessToken'))
 
   return (
     <section className='min-h-[calc(100vh-80px)] bg-surface-50 py-6 sm:py-8'>
@@ -492,16 +567,27 @@ const Cart = () => {
         )}
 
         {/* Loading Spinner */}
-        {loading ? (
+        {initialLoading || loading ? (
           <div className='flex flex-col items-center justify-center py-20 gap-3'>
             <div className='inline-block w-10 h-10 border-3 border-brand-200 border-t-brand-600 rounded-full animate-spin' />
             <span className='text-xs font-semibold text-surface-muted'>Loading your cart...</span>
+          </div>
+        ) : !isAuthenticated ? (
+          /* Unauthenticated State */
+          <div className='py-16 bg-white rounded-card shadow-subtle border border-surface-border my-4'>
+            <NoData
+              icon={LuShoppingBag}
+              title='Please log in to view your cart'
+              description='Sign in to your GrabItGo account to view your saved items, addresses, and proceed to secure checkout.'
+              actionText='Log In / Sign Up'
+              actionHref='/login'
+            />
           </div>
         ) : validItems.length === 0 ? (
           /* Empty Cart State */
           <div className='py-16 bg-white rounded-card shadow-subtle border border-surface-border my-4'>
             <NoData
-              icon={<LuShoppingBag size={48} className='text-brand-600' />}
+              icon={LuShoppingBag}
               title='Your Cart is Empty'
               description='Add everyday fresh groceries, snacks, and essentials to get started.'
               actionText='Explore Products'
@@ -510,6 +596,7 @@ const Cart = () => {
           </div>
         ) : (
           /* Two-Column Cart Layout */
+
           <div className='grid grid-cols-1 lg:grid-cols-12 gap-6'>
             {/* LEFT COLUMN: Cart Items */}
             <div className='lg:col-span-7 xl:col-span-8 space-y-3'>
@@ -533,12 +620,13 @@ const Cart = () => {
                     <FiMapPin size={16} className='text-brand-600' />
                     <h2 className='font-bold text-sm text-surface-title'>Delivery Address</h2>
                   </div>
-                  <Link
-                    to='/dashboard/address'
-                    className='text-xs font-semibold text-brand-600 hover:text-brand-700 transition-colors'
+                  <button
+                    type='button'
+                    onClick={() => setOpenAddAddress(true)}
+                    className='text-xs font-semibold text-brand-600 hover:text-brand-700 transition-colors cursor-pointer'
                   >
-                    + Manage
-                  </Link>
+                    + Add / Manage
+                  </button>
                 </div>
 
                 {addressList && addressList.length > 0 ? (
@@ -576,12 +664,13 @@ const Cart = () => {
                 ) : (
                   <div className='text-center py-4 bg-surface-50 rounded-control border border-surface-border/60'>
                     <p className='text-xs text-surface-muted mb-2'>No delivery address on file</p>
-                    <Link
-                      to='/dashboard/address'
-                      className='inline-block text-xs btn-primary px-3 py-1.5'
+                    <button
+                      type='button'
+                      onClick={() => setOpenAddAddress(true)}
+                      className='inline-block text-xs btn-primary px-3.5 py-1.5 cursor-pointer font-semibold shadow-xs'
                     >
-                      Add New Address
-                    </Link>
+                      Add Delivery Address
+                    </button>
                   </div>
                 )}
               </div>
@@ -637,7 +726,7 @@ const Cart = () => {
                 {/* Trust Highlight Chips */}
                 <div className='mt-4 pt-3 border-t border-surface-border/60 flex items-center justify-between text-[11px] text-surface-muted'>
                   <span className='flex items-center gap-1'>
-                    <FiTruck size={13} className='text-brand-600' /> 10-Min Fast Delivery
+                    <FiTruck size={13} className='text-brand-600' /> Fast Local Dispatch
                   </span>
                   <span className='flex items-center gap-1'>
                     <FiLock size={13} className='text-brand-600' /> Stripe Secured
@@ -646,6 +735,11 @@ const Cart = () => {
               </div>
             </div>
           </div>
+        )}
+
+        {/* Inline Add Address Dialog */}
+        {openAddAddress && (
+          <AddAddress close={() => setOpenAddAddress(false)} />
         )}
 
         {/* Stripe Payment Modal */}
@@ -659,6 +753,7 @@ const Cart = () => {
               setStripePaymentData(null)
               navigate('/dashboard/myorders')
             }}
+            fetchCart={globalFetchCart || fetchCart}
           />
         )}
       </div>

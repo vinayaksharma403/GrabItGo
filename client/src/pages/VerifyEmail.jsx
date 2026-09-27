@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom'
 import { FiCheckCircle, FiAlertCircle, FiArrowRight } from 'react-icons/fi'
 import Axios from '../utils/axios'
 import SummaryApi from '../common/SummaryApi'
+import Logo from '../components/Logo'
 
 const VerifyEmail = () => {
   const [searchParams] = useSearchParams()
@@ -52,13 +53,18 @@ const VerifyEmail = () => {
   }, [code])
 
   return (
-    <section className='min-h-[80vh] flex items-center justify-center py-10 px-4 sm:px-6'>
-      <div className='w-full max-w-md bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-8 text-center animate-fadeIn'>
+    <section className='min-h-[80vh] flex items-center justify-center py-10 px-4 sm:px-6 bg-surface-50'>
+      <div className='w-full max-w-md bg-white rounded-card border border-surface-border shadow-modal p-6 sm:p-8 text-center animate-fadeIn'>
+        {/* Brand Logo */}
+        <div className='flex justify-center mb-6'>
+          <Logo size='md' />
+        </div>
+
         {status === 'loading' && (
-          <div className='py-6'>
-            <div className='inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 mb-4 shadow-subtle'>
+          <div className='py-4'>
+            <div className='inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-50 text-brand-600 mb-4 shadow-subtle'>
               <svg
-                className='animate-spin h-7 w-7 text-emerald-600'
+                className='animate-spin h-7 w-7 text-brand-600'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
@@ -78,24 +84,24 @@ const VerifyEmail = () => {
                 />
               </svg>
             </div>
-            <h1 className='text-xl font-bold text-slate-900 mb-2'>
+            <h1 className='text-xl font-bold text-surface-title mb-2'>
               Verifying Your Email
             </h1>
-            <p className='text-sm text-slate-500 leading-relaxed'>
+            <p className='text-sm text-surface-muted leading-relaxed'>
               Please wait while we confirm your email address.
             </p>
           </div>
         )}
 
         {status === 'success' && (
-          <div className='py-4 animate-fadeIn'>
-            <div className='inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 mb-4 shadow-subtle'>
+          <div className='py-2 animate-fadeIn'>
+            <div className='inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-100 text-brand-600 mb-4 shadow-subtle'>
               <FiCheckCircle size={32} />
             </div>
-            <h1 className='text-2xl font-bold text-slate-900 mb-2'>
+            <h1 className='text-2xl font-bold text-surface-title mb-2'>
               Email Verified!
             </h1>
-            <p className='text-sm text-slate-600 mb-6 leading-relaxed'>
+            <p className='text-sm text-surface-muted mb-6 leading-relaxed'>
               {message} Your GrabItGo account is now fully active.
             </p>
             <Link
@@ -109,14 +115,14 @@ const VerifyEmail = () => {
         )}
 
         {status === 'error' && (
-          <div className='py-4 animate-fadeIn'>
-            <div className='inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-rose-50 text-rose-600 mb-4 shadow-subtle'>
+          <div className='py-2 animate-fadeIn'>
+            <div className='inline-flex items-center justify-center w-14 h-14 rounded-full bg-rose-50 text-rose-600 mb-4 shadow-subtle'>
               <FiAlertCircle size={32} />
             </div>
-            <h1 className='text-2xl font-bold text-slate-900 mb-2'>
+            <h1 className='text-2xl font-bold text-surface-title mb-2'>
               Verification Failed
             </h1>
-            <p className='text-sm text-slate-600 mb-6 leading-relaxed'>
+            <p className='text-sm text-surface-muted mb-6 leading-relaxed'>
               {message}
             </p>
             <div className='flex flex-col sm:flex-row gap-3'>

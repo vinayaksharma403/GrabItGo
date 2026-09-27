@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { IoSearch } from 'react-icons/io5'
 import { FiTruck, FiShield, FiCheckCircle, FiClock, FiLayers } from 'react-icons/fi'
 import CategoryWiseProductDisplay from '../components/CategoryWiseProductDisplay'
+import { validURLConvert } from '../utils/validURLConver'
 
 const Home = () => {
   const loadingCategory = useSelector((state) => state.product.loadingCategory)
@@ -20,13 +21,13 @@ const Home = () => {
       )
 
       if (!subcategory) {
-        return // Prevent crash
+        return // Prevent crash if no subcategory linked yet
       }
 
       const categoryId = id
       const subCategoryId = subcategory._id
 
-      const url = `/${encodeURIComponent(cat)}-${categoryId}/${encodeURIComponent(subcategory.name)}-${subCategoryId}`
+      const url = `/${validURLConvert(cat || 'category')}-${categoryId}/${validURLConvert(subcategory.name || 'subcategory')}-${subCategoryId}`
       navigate(url)
     },
     [subCategoryData, navigate]
@@ -42,7 +43,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className='container mx-auto px-3 sm:px-4 pt-4 pb-2'>
         <div className='relative rounded-card overflow-hidden bg-gradient-to-r from-brand-700 via-brand-600 to-emerald-800 text-white shadow-elevated p-5 sm:p-8 lg:p-10'>
-          {/* Subtle Accent Grid */}
+          {/* Subtle Accent Grid Overlay */}
           <div className='absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none' />
 
           <div className='relative z-10 max-w-2xl'>
@@ -74,7 +75,7 @@ const Home = () => {
 
               <a
                 href='#categories'
-                className='btn-outline border-white/30 text-white hover:bg-white/10 hover:text-white hover:border-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5'
+                className='btn-outline border-white/30 text-white hover:bg-white/10 hover:text-white hover:border-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 inline-flex items-center'
               >
                 Explore Categories
               </a>
@@ -90,12 +91,14 @@ const Home = () => {
             src={banner}
             className='w-full h-auto hidden lg:block object-cover'
             alt='GrabItGo daily essentials & fresh discounts banner'
+            loading='eager'
             fetchPriority='high'
           />
           <img
             src={bannerMobile}
             className='w-full h-auto lg:hidden object-cover'
             alt='GrabItGo daily essentials & fresh discounts banner'
+            loading='eager'
             fetchPriority='high'
           />
         </div>
@@ -147,7 +150,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className='grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2.5 sm:gap-3.5'>
+        <div className='grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-2 sm:gap-3.5'>
           {loadingCategory ? (
             new Array(10).fill(null).map((_, index) => (
               <div

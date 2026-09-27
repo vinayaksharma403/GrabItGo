@@ -7,11 +7,14 @@ import SummaryApi from "../common/SummaryApi";
 import CardLoading from "./CardLoading";
 import CardProduct from "./CardProduct";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { validURLConvert } from "../utils/validURLConver";
 
 const CategoryWiseProductDisplay = ({ id, name }) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [hasFetched, setHasFetched] = useState(false);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(false);
   const scrollRef = useRef(null);
   const sectionRef = useRef(null);
 
@@ -21,8 +24,16 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
   );
 
   const seeAllUrl = matchingSubCategory
-    ? `/${encodeURIComponent(name || "")}-${id}/${encodeURIComponent(matchingSubCategory.name || "")}-${matchingSubCategory._id}`
+    ? `/${validURLConvert(name || "category")}-${id}/${validURLConvert(matchingSubCategory.name || "subcategory")}-${matchingSubCategory._id}`
     : "";
+
+  const checkScrollability = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const { scrollLeft, scrollWidth, clientWidth } = el;
+    setCanScrollLeft(scrollLeft > 4);
+    setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 4);
+  }, []);
 
   const fetchCategoryWiseProduct = useCallback(async () => {
     if (!id || hasFetched) return;
@@ -69,12 +80,22 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
     };
   }, [fetchCategoryWiseProduct]);
 
+  // Check scrollability on data update and window resize
+  useEffect(() => {
+    checkScrollability();
+    window.addEventListener("resize", checkScrollability);
+    return () => {
+      window.removeEventListener("resize", checkScrollability);
+    };
+  }, [data, loading, checkScrollability]);
+
   const loadingCardNumber = new Array(6).fill(null);
 
   const scroll = (direction) => {
     if (scrollRef.current) {
-      const scrollAmount = direction === "left" ? -320 : 320;
+      const scrollAmount = direction === "left" ? -300 : 300;
       scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      setTimeout(checkScrollability, 350);
     }
   };
 
@@ -92,7 +113,7 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
               {name}
             </h2>
             <p className="text-[11px] sm:text-xs text-surface-muted hidden sm:block">
-              Fresh stock & best prices for you
+              Fresh stock & daily grocery essentials
             </p>
           </div>
 
@@ -112,20 +133,23 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
           )}
         </div>
 
-        {/* Scrollable Product Row */}
+        {/* Scrollable Product Row with intelligent controls */}
         <div className="relative group/row">
-          {/* Left Scroll Button */}
-          <button
-            type="button"
-            onClick={() => scroll("left")}
-            aria-label={`Scroll ${name} products left`}
-            className="hidden md:flex items-center justify-center absolute -left-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm border border-surface-border text-surface-title rounded-full shadow-card p-2 hover:bg-brand-50 hover:text-brand-600 hover:border-brand-200 z-[5] min-w-[38px] min-h-[38px] transition-all opacity-0 group-hover/row:opacity-100 focus:opacity-100"
-          >
-            <ChevronLeft size={20} />
-          </button>
+          {/* Left Scroll Button - only visible when actually scrollable */}
+          {canScrollLeft && (
+            <button
+              type="button"
+              onClick={() => scroll("left")}
+              aria-label={`Scroll ${name} products left`}
+              className="hidden md:flex items-center justify-center absolute -left-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm border border-surface-border text-surface-title rounded-full shadow-card p-2 hover:bg-brand-50 hover:text-brand-600 hover:border-brand-200 z-[5] min-w-[38px] min-h-[38px] transition-all cursor-pointer"
+            >
+              <ChevronLeft size={20} />
+            </button>
+          )}
 
           <div
             ref={scrollRef}
+            onScroll={checkScrollability}
             className="flex gap-3 sm:gap-4 overflow-x-auto scroll-smooth scrollbar-hide py-1 px-0.5"
           >
             {loading || (!hasFetched && data.length === 0)
@@ -142,15 +166,17 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
                 ))}
           </div>
 
-          {/* Right Scroll Button */}
-          <button
-            type="button"
-            onClick={() => scroll("right")}
-            aria-label={`Scroll ${name} products right`}
-            className="hidden md:flex items-center justify-center absolute -right-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm border border-surface-border text-surface-title rounded-full shadow-card p-2 hover:bg-brand-50 hover:text-brand-600 hover:border-brand-200 z-[5] min-w-[38px] min-h-[38px] transition-all opacity-0 group-hover/row:opacity-100 focus:opacity-100"
-          >
-            <ChevronRight size={20} />
-          </button>
+          {/* Right Scroll Button - only visible when actually scrollable */}
+          {canScrollRight && (
+            <button
+              type="button"
+              onClick={() => scroll("right")}
+              aria-label={`Scroll ${name} products right`}
+              className="hidden md:flex items-center justify-center absolute -right-3 top-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-sm border border-surface-border text-surface-title rounded-full shadow-card p-2 hover:bg-brand-50 hover:text-brand-600 hover:border-brand-200 z-[5] min-w-[38px] min-h-[38px] transition-all cursor-pointer"
+            >
+              <ChevronRight size={20} />
+            </button>
+          )}
         </div>
       </div>
     </section>

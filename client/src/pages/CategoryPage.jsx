@@ -69,7 +69,7 @@ const CategoryPage = () => {
       <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
         <div>
           <div className='flex items-center gap-2'>
-            <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+            <h1 className='text-2xl font-bold text-surface-title tracking-tight'>
               Category Management
             </h1>
             {!loading && categoryData.length > 0 && (
@@ -78,7 +78,7 @@ const CategoryPage = () => {
               </span>
             )}
           </div>
-          <p className='text-sm text-slate-500 mt-1'>
+          <p className='text-sm text-surface-muted mt-1'>
             Organize catalog hierarchy and browse categories
           </p>
         </div>
@@ -86,7 +86,7 @@ const CategoryPage = () => {
         <button
           type='button'
           onClick={() => setOpenUploadCategory(true)}
-          className='btn-primary self-start sm:self-auto inline-flex items-center gap-2 font-semibold text-sm shadow-subtle'
+          className='btn-primary self-start sm:self-auto inline-flex items-center gap-2 font-semibold text-sm shadow-subtle cursor-pointer'
         >
           <FiPlus size={16} />
           <span>Add Category</span>
@@ -99,15 +99,15 @@ const CategoryPage = () => {
           {[...Array(8)].map((_, idx) => (
             <div
               key={idx}
-              className='bg-white rounded-2xl border border-slate-200/80 p-4 shadow-card animate-pulse space-y-3'
+              className='bg-white rounded-card border border-surface-border p-4 shadow-subtle animate-pulse space-y-3'
             >
-              <div className='w-full h-32 bg-slate-200 rounded-xl' />
-              <div className='h-4 bg-slate-200 rounded w-2/3 mx-auto' />
+              <div className='w-full h-32 bg-surface-200 rounded-xl' />
+              <div className='h-4 bg-surface-200 rounded w-2/3 mx-auto' />
             </div>
           ))}
         </div>
       ) : categoryData.length === 0 ? (
-        <div className='bg-white rounded-2xl border border-slate-200/80 p-8 sm:p-12 shadow-card'>
+        <div className='bg-white rounded-card border border-surface-border p-8 sm:p-12 shadow-subtle'>
           <NoData
             icon={FiGrid}
             title='No Categories Found'
@@ -121,9 +121,9 @@ const CategoryPage = () => {
           {categoryData.map((category, index) => (
             <div
               key={category._id || index}
-              className='bg-white rounded-2xl border border-slate-200/80 shadow-card hover:border-slate-300 hover:shadow-hover transition-all duration-200 overflow-hidden flex flex-col justify-between group'
+              className='bg-white rounded-card border border-surface-border shadow-subtle hover:border-brand-300 hover:shadow-card transition-all duration-200 overflow-hidden flex flex-col justify-between group'
             >
-              <div className='w-full h-36 flex items-center justify-center p-3 bg-slate-50'>
+              <div className='w-full h-36 flex items-center justify-center p-3 bg-surface-50'>
                 <img
                   src={category.image}
                   alt={category.name || 'Category'}
@@ -136,12 +136,12 @@ const CategoryPage = () => {
               </div>
 
               <div className='p-3 text-center flex-1'>
-                <h3 className='font-bold text-xs sm:text-sm text-slate-900 truncate' title={category.name}>
+                <h3 className='font-bold text-xs sm:text-sm text-surface-title truncate' title={category.name}>
                   {category.name}
                 </h3>
               </div>
 
-              <div className='p-2 flex gap-1.5 border-t border-slate-100 bg-slate-50/50'>
+              <div className='p-2 flex gap-1.5 border-t border-surface-border/60 bg-surface-50/50'>
                 <button
                   type='button'
                   onClick={() => {
@@ -149,7 +149,7 @@ const CategoryPage = () => {
                     setEditData(category)
                   }}
                   aria-label={`Edit category ${category.name}`}
-                  className='flex-1 btn-secondary py-1 text-xs font-semibold inline-flex items-center justify-center gap-1'
+                  className='flex-1 btn-secondary py-1 text-xs font-semibold inline-flex items-center justify-center gap-1 cursor-pointer'
                 >
                   <FiEdit2 size={12} />
                   <span>Edit</span>
@@ -161,7 +161,7 @@ const CategoryPage = () => {
                     setDeleteCategory(category)
                   }}
                   aria-label={`Delete category ${category.name}`}
-                  className='flex-1 btn-danger py-1 text-xs font-semibold inline-flex items-center justify-center gap-1'
+                  className='flex-1 btn-danger py-1 text-xs font-semibold inline-flex items-center justify-center gap-1 cursor-pointer'
                 >
                   <FiTrash2 size={12} />
                   <span>Delete</span>

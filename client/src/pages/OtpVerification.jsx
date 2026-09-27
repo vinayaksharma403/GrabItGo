@@ -5,10 +5,12 @@ import Axios from '../utils/axios'
 import SummaryApi from '../common/SummaryApi'
 import AxiosToastError from '../utils/AxiosToastError'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
+import Logo from '../components/Logo'
 
 const OtpVerification = () => {
   const [data, setData] = useState(['', '', '', '', '', ''])
   const [loading, setLoading] = useState(false)
+  const isSubmittingRef = useRef(false)
   const navigate = useNavigate()
   const inputRef = useRef([])
   const location = useLocation()
@@ -60,10 +62,12 @@ const OtpVerification = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if (!validValue || loading) return
+    if (!validValue || loading || isSubmittingRef.current) return
+
+    isSubmittingRef.current = true
+    setLoading(true)
 
     try {
-      setLoading(true)
       const response = await Axios({
         ...SummaryApi.forgot_password_otp_verification,
         data: {
@@ -92,23 +96,29 @@ const OtpVerification = () => {
       AxiosToastError(error)
     } finally {
       setLoading(false)
+      isSubmittingRef.current = false
     }
   }
 
   return (
-    <section className='min-h-[80vh] flex items-center justify-center py-10 px-4 sm:px-6'>
-      <div className='w-full max-w-md bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-8 animate-fadeIn'>
-        {/* Header Branding */}
+    <section className='min-h-[80vh] flex items-center justify-center py-10 px-4 sm:px-6 bg-surface-50'>
+      <div className='w-full max-w-md bg-white rounded-card border border-surface-border shadow-modal p-6 sm:p-8 animate-fadeIn'>
+        {/* Brand Logo */}
+        <div className='flex justify-center mb-6'>
+          <Logo size='md' />
+        </div>
+
+        {/* Header Title */}
         <div className='text-center mb-6'>
-          <div className='inline-flex items-center justify-center w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 mb-3 shadow-subtle'>
+          <div className='inline-flex items-center justify-center w-12 h-12 rounded-full bg-brand-50 text-brand-600 mb-3 shadow-subtle'>
             <FiShield size={24} />
           </div>
-          <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+          <h1 className='text-2xl font-bold text-surface-title tracking-tight'>
             Enter Verification Code
           </h1>
-          <p className='text-sm text-slate-500 mt-1.5 leading-relaxed'>
+          <p className='text-sm text-surface-muted mt-1.5 leading-relaxed'>
             We sent a 6-digit verification code to{' '}
-            <span className='font-semibold text-slate-800 break-all'>{email}</span>.
+            <span className='font-semibold text-surface-title break-all'>{email}</span>.
           </p>
         </div>
 
@@ -117,7 +127,7 @@ const OtpVerification = () => {
           <div>
             <label
               htmlFor='otp-0'
-              className='block text-xs font-semibold text-slate-700 uppercase tracking-wider text-center mb-3'
+              className='block text-xs font-semibold text-surface-title uppercase tracking-wider text-center mb-3'
             >
               6-Digit Code
             </label>
@@ -138,7 +148,7 @@ const OtpVerification = () => {
                   onChange={(e) => handleInputChange(index, e.target.value)}
                   onKeyDown={(e) => handleKeyDown(index, e)}
                   onPaste={index === 0 ? handlePaste : undefined}
-                  className='w-11 h-12 sm:w-12 sm:h-14 text-center font-bold text-xl text-slate-900 bg-slate-50 border border-slate-300 rounded-xl focus:bg-white focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/20 outline-none transition-all'
+                  className='w-11 h-12 sm:w-12 sm:h-14 text-center font-bold text-xl text-surface-title bg-surface-50 border border-surface-border rounded-control focus:bg-white focus:border-brand-600 focus:ring-2 focus:ring-brand-500/20 outline-none transition-all'
                 />
               ))}
             </div>
@@ -148,7 +158,7 @@ const OtpVerification = () => {
           <button
             type='submit'
             disabled={!validValue || loading}
-            className='btn-primary w-full py-2.5 flex items-center justify-center gap-2 font-semibold text-sm tracking-wide'
+            className='btn-primary w-full py-2.5 flex items-center justify-center gap-2 font-semibold text-sm tracking-wide disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer'
           >
             {loading ? (
               <span className='inline-flex items-center gap-2'>
@@ -184,17 +194,17 @@ const OtpVerification = () => {
         </form>
 
         {/* Navigation Link */}
-        <div className='mt-6 pt-5 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500'>
+        <div className='mt-6 pt-5 border-t border-surface-border flex items-center justify-between text-xs text-surface-muted'>
           <Link
             to='/forgot-password'
-            className='inline-flex items-center gap-1 font-medium hover:text-slate-800 transition-colors'
+            className='inline-flex items-center gap-1 font-medium hover:text-surface-title transition-colors'
           >
             <FiArrowLeft size={14} />
             <span>Change Email</span>
           </Link>
           <Link
             to='/login'
-            className='font-semibold text-emerald-600 hover:text-emerald-700 transition-colors'
+            className='font-semibold text-brand-600 hover:text-brand-700 transition-colors'
           >
             Back to Sign In
           </Link>

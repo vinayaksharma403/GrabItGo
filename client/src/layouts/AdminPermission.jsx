@@ -10,13 +10,13 @@ const AdminPermission = ({ children }) => {
   if (!isAdmin(user.role)) {
     return (
       <div className='flex flex-col items-center justify-center min-h-[60vh] text-center p-6 animate-fadeIn'>
-        <div className='w-16 h-16 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center mb-4 shadow-subtle'>
+        <div className='w-16 h-16 rounded-card bg-rose-50 text-rose-600 flex items-center justify-center mb-4 shadow-subtle border border-rose-100'>
           <FiShieldOff size={32} />
         </div>
-        <h2 className='text-xl font-bold text-slate-900 mb-2'>
+        <h2 className='text-xl font-bold text-surface-title mb-2'>
           Administrator Access Required
         </h2>
-        <p className='text-sm text-slate-500 max-w-md mb-6 leading-relaxed'>
+        <p className='text-sm text-surface-muted max-w-md mb-6 leading-relaxed'>
           You do not have administrative privileges to view or manage this section. If you believe this is in error, please contact support.
         </p>
         <Link

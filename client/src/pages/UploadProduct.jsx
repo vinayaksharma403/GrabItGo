@@ -135,16 +135,16 @@ const UploadProduct = () => {
           <div className='flex items-center gap-2'>
             <Link
               to='/dashboard/product'
-              className='p-1.5 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-lg transition-colors'
+              className='p-1.5 text-surface-muted hover:text-surface-title hover:bg-surface-50 rounded-control transition-colors'
               title='Back to Products'
             >
               <FiArrowLeft size={18} />
             </Link>
-            <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+            <h1 className='text-2xl font-bold text-surface-title tracking-tight'>
               Upload Product
             </h1>
           </div>
-          <p className='text-sm text-slate-500 mt-1 pl-8'>
+          <p className='text-sm text-surface-muted mt-1 pl-8'>
             Add a new product item to your grocery catalog
           </p>
         </div>
@@ -153,16 +153,16 @@ const UploadProduct = () => {
       {/* Main Form */}
       <form onSubmit={handleSubmit} className='space-y-6'>
         {/* Section 1: Basic Information */}
-        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-7 space-y-4'>
-          <div className='flex items-center gap-2 pb-3 border-b border-slate-100'>
-            <FiPackage size={17} className='text-emerald-600' />
-            <h2 className='font-bold text-sm text-slate-900'>General Information</h2>
+        <div className='bg-white rounded-card border border-surface-border shadow-card p-6 sm:p-7 space-y-4'>
+          <div className='flex items-center gap-2 pb-3 border-b border-surface-border'>
+            <FiPackage size={17} className='text-brand-600' />
+            <h2 className='font-bold text-sm text-surface-title'>General Information</h2>
           </div>
 
           <div>
             <label
               htmlFor='product_name'
-              className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
             >
               Product Name *
             </label>
@@ -181,7 +181,7 @@ const UploadProduct = () => {
           <div>
             <label
               htmlFor='product_desc'
-              className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+              className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
             >
               Description
             </label>
@@ -198,8 +198,8 @@ const UploadProduct = () => {
         </div>
 
         {/* Section 2: Categorization */}
-        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-7 space-y-4'>
-          <h2 className='font-bold text-sm text-slate-900 pb-3 border-b border-slate-100'>
+        <div className='bg-white rounded-card border border-surface-border shadow-card p-6 sm:p-7 space-y-4'>
+          <h2 className='font-bold text-sm text-surface-title pb-3 border-b border-surface-border'>
             Categorization
           </h2>
 
@@ -207,7 +207,7 @@ const UploadProduct = () => {
             <div>
               <label
                 htmlFor='product_category'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Category *
               </label>
@@ -231,7 +231,7 @@ const UploadProduct = () => {
             <div>
               <label
                 htmlFor='product_subcategory'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Subcategory *
               </label>
@@ -255,8 +255,8 @@ const UploadProduct = () => {
         </div>
 
         {/* Section 3: Pricing & Inventory */}
-        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-7 space-y-4'>
-          <h2 className='font-bold text-sm text-slate-900 pb-3 border-b border-slate-100'>
+        <div className='bg-white rounded-card border border-surface-border shadow-card p-6 sm:p-7 space-y-4'>
+          <h2 className='font-bold text-sm text-surface-title pb-3 border-b border-surface-border'>
             Pricing & Inventory
           </h2>
 
@@ -264,7 +264,7 @@ const UploadProduct = () => {
             <div>
               <label
                 htmlFor='product_unit'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Unit / Size
               </label>
@@ -282,7 +282,7 @@ const UploadProduct = () => {
             <div>
               <label
                 htmlFor='product_stock'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Stock Units
               </label>
@@ -300,7 +300,7 @@ const UploadProduct = () => {
             <div>
               <label
                 htmlFor='product_price'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Price (₹) *
               </label>
@@ -319,7 +319,7 @@ const UploadProduct = () => {
             <div>
               <label
                 htmlFor='product_discount'
-                className='block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5'
+                className='block text-xs font-semibold text-surface-title uppercase tracking-wider mb-1.5'
               >
                 Discount (%)
               </label>
@@ -337,20 +337,20 @@ const UploadProduct = () => {
         </div>
 
         {/* Section 4: Product Images */}
-        <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-6 sm:p-7 space-y-4'>
-          <h2 className='font-bold text-sm text-slate-900 pb-3 border-b border-slate-100'>
+        <div className='bg-white rounded-card border border-surface-border shadow-card p-6 sm:p-7 space-y-4'>
+          <h2 className='font-bold text-sm text-surface-title pb-3 border-b border-surface-border'>
             Product Images
           </h2>
 
           <label
             htmlFor='upload_prod_images'
-            className='flex flex-col items-center justify-center p-6 border-2 border-dashed border-slate-300 hover:border-emerald-500 rounded-2xl bg-slate-50 hover:bg-emerald-50/40 cursor-pointer transition-colors text-center'
+            className='flex flex-col items-center justify-center p-6 border-2 border-dashed border-surface-border hover:border-brand-500 rounded-card bg-surface-50 hover:bg-brand-50/40 cursor-pointer transition-colors text-center'
           >
-            <FiUploadCloud size={28} className='text-slate-400 mb-2' />
-            <span className='text-xs font-semibold text-slate-700'>
+            <FiUploadCloud size={28} className='text-surface-muted mb-2' />
+            <span className='text-xs font-semibold text-surface-title'>
               Click or drag photos to upload
             </span>
-            <span className='text-[11px] text-slate-400 mt-0.5'>
+            <span className='text-[11px] text-surface-muted mt-0.5'>
               PNG, JPG, WEBP formats accepted
             </span>
             <input
@@ -366,7 +366,7 @@ const UploadProduct = () => {
           {data.image.length > 0 && (
             <div className='flex flex-wrap gap-3 pt-2'>
               {data.image.map((img, idx) => (
-                <div key={idx} className='relative w-24 h-24 rounded-xl overflow-hidden border border-slate-200 shadow-subtle group'>
+                <div key={idx} className='relative w-24 h-24 rounded-control overflow-hidden border border-surface-border shadow-subtle group'>
                   <img
                     src={img}
                     alt={`Preview ${idx + 1}`}

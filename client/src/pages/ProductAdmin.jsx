@@ -61,7 +61,7 @@ const ProductAdmin = () => {
       <div className='flex flex-col sm:flex-row sm:items-center justify-between gap-4'>
         <div>
           <div className='flex items-center gap-2'>
-            <h1 className='text-2xl font-bold text-slate-900 tracking-tight'>
+            <h1 className='text-2xl font-bold text-surface-title tracking-tight'>
               Product Inventory
             </h1>
             {!loading && totalCount > 0 && (
@@ -70,7 +70,7 @@ const ProductAdmin = () => {
               </span>
             )}
           </div>
-          <p className='text-sm text-slate-500 mt-1'>
+          <p className='text-sm text-surface-muted mt-1'>
             Manage catalog pricing, stock inventory, and product listings
           </p>
         </div>
@@ -85,9 +85,9 @@ const ProductAdmin = () => {
       </div>
 
       {/* Search & Filter Bar */}
-      <div className='bg-white rounded-2xl border border-slate-200/80 shadow-card p-4'>
+      <div className='bg-white rounded-card border border-surface-border shadow-card p-4'>
         <div className='relative max-w-md'>
-          <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400'>
+          <div className='absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-surface-muted'>
             <FiSearch size={16} />
           </div>
           <input
@@ -107,17 +107,17 @@ const ProductAdmin = () => {
           {[...Array(10)].map((_, i) => (
             <div
               key={i}
-              className='bg-white rounded-2xl border border-slate-200/80 p-4 shadow-card animate-pulse space-y-3'
+              className='bg-white rounded-card border border-surface-border p-4 shadow-card animate-pulse space-y-3'
             >
-              <div className='w-full h-40 bg-slate-200 rounded-xl' />
-              <div className='h-4 bg-slate-200 rounded w-3/4' />
-              <div className='h-3 bg-slate-100 rounded w-1/2' />
-              <div className='h-5 bg-slate-200 rounded w-1/3 pt-2' />
+              <div className='w-full h-40 bg-surface-100 rounded-control' />
+              <div className='h-4 bg-surface-100 rounded w-3/4' />
+              <div className='h-3 bg-surface-50 rounded w-1/2' />
+              <div className='h-5 bg-surface-100 rounded w-1/3 pt-2' />
             </div>
           ))}
         </div>
       ) : productData.length === 0 ? (
-        <div className='bg-white rounded-2xl border border-slate-200/80 p-8 sm:p-12 shadow-card'>
+        <div className='bg-white rounded-card border border-surface-border p-8 sm:p-12 shadow-card'>
           <NoData
             icon={FiBox}
             title={debouncedSearch ? 'No matching products found' : 'No products in inventory'}
@@ -141,7 +141,7 @@ const ProductAdmin = () => {
 
           {/* Pagination */}
           {totalPages > 1 && (
-            <div className='flex items-center justify-between bg-white rounded-2xl border border-slate-200/80 shadow-card p-4'>
+            <div className='flex items-center justify-between bg-white rounded-card border border-surface-border shadow-card p-4'>
               <button
                 type='button'
                 onClick={() => setPage((prev) => Math.max(prev - 1, 1))}
@@ -152,9 +152,9 @@ const ProductAdmin = () => {
                 <span>Previous</span>
               </button>
 
-              <span className='text-xs font-semibold text-slate-600'>
-                Page <span className='text-slate-900 font-bold'>{page}</span> of{' '}
-                <span className='text-slate-900 font-bold'>{totalPages}</span>
+              <span className='text-xs font-semibold text-surface-muted'>
+                Page <span className='text-surface-title font-bold'>{page}</span> of{' '}
+                <span className='text-surface-title font-bold'>{totalPages}</span>
               </span>
 
               <button
