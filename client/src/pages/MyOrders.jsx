@@ -138,7 +138,7 @@ const MyOrders = () => {
         <div className='space-y-5'>
           {data.map((order) => {
             const formattedDate = order.createdAt
-              ? new Date(order.createdAt).toLocaleDateString('en-IN', {
+              ? new Date(order.createdAt).toLocaleString('en-IN', {
                   day: 'numeric',
                   month: 'short',
                   year: 'numeric',

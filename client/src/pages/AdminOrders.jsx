@@ -135,7 +135,7 @@ const OrderDetailModal = ({ order, onClose, onStatusUpdated }) => {
               <StatusBadge status={order?.payment_status} />
             </div>
             <p className='text-xs text-surface-muted mt-1'>
-              Placed on {new Date(order?.createdAt).toLocaleDateString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })}
+              Placed on {order?.createdAt ? new Date(order.createdAt).toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' }) : '—'}
             </p>
           </div>
           <button
@@ -519,10 +519,10 @@ const AdminOrders = () => {
 
                         {/* Date */}
                         <td className='px-4 py-3.5 text-xs text-surface-muted whitespace-nowrap'>
-                          {new Date(order.createdAt).toLocaleDateString('en-IN', {
+                          {order?.createdAt ? new Date(order.createdAt).toLocaleString('en-IN', {
                             dateStyle: 'short',
                             timeStyle: 'short',
-                          })}
+                          }) : '—'}
                         </td>
 
                         {/* Items */}
@@ -587,10 +587,10 @@ const AdminOrders = () => {
                         </button>
                       </div>
                       <p className='text-xs text-surface-muted mt-0.5'>
-                        {new Date(order.createdAt).toLocaleDateString('en-IN', {
+                        {order?.createdAt ? new Date(order.createdAt).toLocaleString('en-IN', {
                           dateStyle: 'medium',
                           timeStyle: 'short',
-                        })}
+                        }) : '—'}
                       </p>
                     </div>
                     <StatusBadge status={order.payment_status} />

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react'
+import { createPortal } from 'react-dom'
 import Logo from './Logo'
 import Search from './Search'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
@@ -221,69 +222,74 @@ const Header = () => {
       )}
 
       {/* Mobile Slide-over Drawer Navigation */}
-      {openDrawer && (
-        <div
-          role='dialog'
-          aria-modal='true'
-          aria-label='Mobile Navigation Drawer'
-          className='fixed inset-0 bg-surface-title/50 backdrop-blur-xs z-50 lg:hidden flex transition-opacity animate-fadeIn'
-        >
+      {openDrawer &&
+        typeof document !== 'undefined' &&
+        createPortal(
           <div
-            ref={drawerRef}
-            className='w-4/5 max-w-sm h-full bg-white shadow-modal flex flex-col justify-between overflow-y-auto animate-fadeIn border-r border-surface-border p-4'
+            role='dialog'
+            aria-modal='true'
+            aria-label='Mobile Navigation Drawer'
+            className='fixed inset-0 bg-slate-900/50 backdrop-blur-xs z-[100] lg:hidden flex transition-opacity animate-fadeIn'
+            onClick={handleCloseDrawer}
           >
-            {/* Drawer Header */}
-            <div className='flex items-center justify-between pb-3 border-b border-surface-border'>
-              <div onClick={handleCloseDrawer}>
-                <Logo size='sm' />
-              </div>
-              <button
-                type='button'
-                onClick={handleCloseDrawer}
-                aria-label='Close Navigation Menu'
-                className='p-2 rounded-full hover:bg-surface-50 text-surface-muted hover:text-surface-title transition-colors cursor-pointer'
-              >
-                <IoClose size={24} />
-              </button>
-            </div>
-
-            {/* Drawer Content */}
-            <div className='flex-1 py-4'>
-              {user?._id ? (
-                <UserMenu close={handleCloseDrawer} />
-              ) : (
-                <div className='flex flex-col gap-4 text-center py-6'>
-                  <div className='w-16 h-16 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center mx-auto'>
-                    <FaUser size={28} />
-                  </div>
-                  <div>
-                    <h3 className='font-bold text-base text-surface-title'>Welcome to GrabItGo</h3>
-                    <p className='text-xs text-surface-muted mt-1'>
-                      Sign in to manage orders, saved addresses, and enjoy faster checkout.
-                    </p>
-                  </div>
-                  <button
-                    type='button'
-                    onClick={() => {
-                      handleCloseDrawer()
-                      redirectToLoginPage()
-                    }}
-                    className='btn-primary w-full py-2.5 text-sm font-semibold'
-                  >
-                    Log In / Sign Up
-                  </button>
+            <div
+              ref={drawerRef}
+              className='w-4/5 max-w-sm h-full bg-white shadow-modal flex flex-col justify-between overflow-y-auto animate-fadeIn border-r border-surface-border p-4'
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Drawer Header */}
+              <div className='flex items-center justify-between pb-3 border-b border-surface-border'>
+                <div onClick={handleCloseDrawer}>
+                  <Logo size='sm' />
                 </div>
-              )}
-            </div>
+                <button
+                  type='button'
+                  onClick={handleCloseDrawer}
+                  aria-label='Close Navigation Menu'
+                  className='p-2 rounded-full hover:bg-surface-50 text-surface-muted hover:text-surface-title transition-colors cursor-pointer'
+                >
+                  <IoClose size={24} />
+                </button>
+              </div>
 
-            {/* Drawer Trust Badge Footer */}
-            <div className='pt-3 border-t border-surface-border text-center text-xs text-surface-muted'>
-              <p className='font-medium text-brand-700'>GrabItGo Quick Commerce</p>
-              <p className='text-[11px] text-surface-muted mt-0.5'>Fast • Fresh • Secure</p>
+              {/* Drawer Content */}
+              <div className='flex-1 py-4 overflow-y-auto'>
+                {user?._id ? (
+                  <UserMenu close={handleCloseDrawer} />
+                ) : (
+                  <div className='flex flex-col gap-4 text-center py-6'>
+                    <div className='w-16 h-16 rounded-full bg-brand-50 text-brand-600 flex items-center justify-center mx-auto'>
+                      <FaUser size={28} />
+                    </div>
+                    <div>
+                      <h3 className='font-bold text-base text-surface-title'>Welcome to GrabItGo</h3>
+                      <p className='text-xs text-surface-muted mt-1'>
+                        Sign in to manage orders, saved addresses, and enjoy faster checkout.
+                      </p>
+                    </div>
+                    <button
+                      type='button'
+                      onClick={() => {
+                        handleCloseDrawer()
+                        redirectToLoginPage()
+                      }}
+                      className='btn-primary w-full py-2.5 text-sm font-semibold'
+                    >
+                      Log In / Sign Up
+                    </button>
+                  </div>
+                )}
+              </div>
+
+              {/* Drawer Trust Badge Footer */}
+              <div className='pt-3 border-t border-surface-border text-center text-xs text-surface-muted'>
+                <p className='font-medium text-brand-700'>GrabItGo Quick Commerce</p>
+                <p className='text-[11px] text-surface-muted mt-0.5'>Fast • Fresh • Secure</p>
+              </div>
             </div>
-          </div>
-        </div>
-      )}
+          </div>,
+          document.body
+        )}
     </header>
   )
 }

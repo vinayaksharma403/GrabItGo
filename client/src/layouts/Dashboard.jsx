@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import UserMenu from '../components/UserMenu'
 import { Outlet, useLocation, Link } from 'react-router-dom'
 import { FiMenu, FiX, FiChevronRight } from 'react-icons/fi'
@@ -64,30 +65,36 @@ const Dashboard = () => {
       </div>
 
       {/* Mobile Drawer Navigation Modal */}
-      {mobileMenuOpen && (
-        <div
-          className='lg:hidden fixed inset-0 z-40 bg-slate-900/40 backdrop-blur-xs flex animate-fadeIn'
-          onClick={() => setMobileMenuOpen(false)}
-        >
+      {mobileMenuOpen &&
+        typeof document !== 'undefined' &&
+        createPortal(
           <div
-            className='w-4/5 max-w-xs bg-white h-full p-4 overflow-y-auto shadow-modal animate-fadeIn'
-            onClick={(e) => e.stopPropagation()}
+            className='lg:hidden fixed inset-0 z-[100] bg-slate-900/50 backdrop-blur-xs flex animate-fadeIn'
+            onClick={() => setMobileMenuOpen(false)}
+            role='dialog'
+            aria-modal='true'
+            aria-label='Account Navigation Drawer'
           >
-            <div className='flex justify-between items-center mb-3 pb-2 border-b border-surface-border'>
-              <span className='font-bold text-surface-title text-sm'>Account Navigation</span>
-              <button
-                type='button'
-                onClick={() => setMobileMenuOpen(false)}
-                className='text-surface-muted hover:text-surface-title p-1.5 rounded-control hover:bg-surface-50 transition-colors cursor-pointer'
-                aria-label='Close Account Menu'
-              >
-                <FiX size={18} />
-              </button>
+            <div
+              className='w-4/5 max-w-xs bg-white h-full p-4 overflow-y-auto shadow-modal animate-fadeIn border-r border-surface-border'
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className='flex justify-between items-center mb-3 pb-2 border-b border-surface-border'>
+                <span className='font-bold text-surface-title text-sm'>Account Navigation</span>
+                <button
+                  type='button'
+                  onClick={() => setMobileMenuOpen(false)}
+                  className='text-surface-muted hover:text-surface-title p-1.5 rounded-control hover:bg-surface-50 transition-colors cursor-pointer'
+                  aria-label='Close Account Menu'
+                >
+                  <FiX size={18} />
+                </button>
+              </div>
+              <UserMenu close={() => setMobileMenuOpen(false)} />
             </div>
-            <UserMenu close={() => setMobileMenuOpen(false)} />
-          </div>
-        </div>
-      )}
+          </div>,
+          document.body
+        )}
 
       {/* Desktop Sidebar (>= lg) */}
       <aside className='hidden lg:block w-72 bg-white border-r border-surface-border p-5 shrink-0 min-h-[calc(100vh-80px)]'>

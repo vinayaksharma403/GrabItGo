@@ -71,7 +71,11 @@ const Logo = ({ size = 'md', showTagline = false, className = '', link = true })
 
   if (link) {
     return (
-      <Link to='/' aria-label='GrabItGo Home' className='focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-lg p-0.5 transition-transform'>
+      <Link
+        to='/'
+        aria-label='GrabItGo Home'
+        className='outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 rounded-lg p-0.5 transition-transform inline-block select-none'
+      >
         {content}
       </Link>
     )
