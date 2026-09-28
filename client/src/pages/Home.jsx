@@ -42,22 +42,33 @@ const Home = () => {
     <div className='w-full min-h-screen bg-white'>
       {/* Hero Section */}
       <section className='container mx-auto px-3 sm:px-4 pt-4 pb-2'>
-        <div className='relative rounded-card overflow-hidden bg-gradient-to-r from-brand-700 via-brand-600 to-emerald-800 text-white shadow-elevated p-5 sm:p-8 lg:p-10'>
-          {/* Subtle Accent Grid Overlay */}
-          <div className='absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none' />
+        <div className='relative rounded-card overflow-hidden bg-gradient-to-r from-emerald-950 via-emerald-900 to-emerald-800 text-white shadow-elevated p-5 sm:p-8 lg:p-10 border border-emerald-800/40'>
+          {/* Subtle Ambient Depth Lighting */}
+          <div className='absolute -right-16 -top-16 w-64 h-64 sm:w-80 sm:h-80 bg-emerald-500/15 rounded-full blur-3xl pointer-events-none' />
+          <div className='absolute right-1/4 -bottom-20 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl pointer-events-none' />
 
-          <div className='relative z-10 max-w-2xl'>
-            <div className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md text-emerald-100 text-xs font-medium mb-3 sm:mb-4 border border-white/10'>
-              <span className='text-amber-300 font-bold'>⚡ Quick Commerce</span>
-              <span>•</span>
-              <span>Everyday Essentials Delivered Fast</span>
+          {/* Content-side high-contrast directional overlay */}
+          <div className='absolute inset-0 bg-gradient-to-r from-emerald-950/90 via-emerald-900/50 to-transparent pointer-events-none' />
+
+          {/* Subtle Accent Grid Overlay */}
+          <div className='absolute inset-0 opacity-[0.07] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none' />
+
+          {/* Living Hero Copy Block with subtle desktop micro-interaction */}
+          <div className='relative z-10 max-w-2xl transition-transform duration-300 ease-out group/hero hover:-translate-y-0.5'>
+            {/* Eyebrow badge */}
+            <div className='inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-950/60 backdrop-blur-md text-emerald-200 text-xs font-medium mb-3 sm:mb-4 border border-emerald-700/50 shadow-sm transition-colors duration-200 group-hover/hero:border-emerald-500/60 group-hover/hero:bg-emerald-900/70'>
+              <span className='text-amber-400 font-bold flex items-center gap-1'>⚡ Quick Commerce</span>
+              <span className='text-emerald-400/60'>•</span>
+              <span className='text-emerald-100 font-medium'>Everyday Essentials Delivered Fast</span>
             </div>
 
-            <h1 className='text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight text-white mb-2 sm:mb-3'>
+            {/* Main heading with high-contrast text */}
+            <h1 className='text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-tight text-white mb-2 sm:mb-3 drop-shadow-sm transition-colors duration-200'>
               Fresh Groceries & Daily Essentials At Your Door
             </h1>
 
-            <p className='text-xs sm:text-sm lg:text-base text-emerald-100/90 leading-relaxed mb-5 sm:mb-6 max-w-xl'>
+            {/* Supporting paragraph */}
+            <p className='text-xs sm:text-sm lg:text-base text-emerald-100/95 leading-relaxed mb-5 sm:mb-6 max-w-xl font-normal transition-colors duration-200'>
               Order farm-fresh vegetables, dairy, pantry staples, snacks, and household items in minutes with complete checkout security.
             </p>
 
@@ -67,7 +78,7 @@ const Home = () => {
                 type='button'
                 onClick={() => navigate('/search')}
                 aria-label='Search all products'
-                className='btn-accent text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 shadow-card inline-flex items-center gap-2 cursor-pointer'
+                className='btn-accent text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 shadow-card inline-flex items-center gap-2 cursor-pointer transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-amber-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-900'
               >
                 <IoSearch size={16} />
                 <span>Search Products</span>
@@ -75,7 +86,7 @@ const Home = () => {
 
               <a
                 href='#categories'
-                className='btn-outline border-white/30 text-white hover:bg-white/10 hover:text-white hover:border-white text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 inline-flex items-center'
+                className='btn-outline border-emerald-400/40 bg-white/5 backdrop-blur-sm text-emerald-100 hover:bg-white/15 hover:text-white hover:border-emerald-300 text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2.5 inline-flex items-center transition-all duration-200 focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-emerald-900'
               >
                 Explore Categories
               </a>
